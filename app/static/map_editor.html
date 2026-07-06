@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VibeMix 星图编辑器</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:      #0d0f18;
+    --surface: #161926;
+    --border:  #252840;
+    --accent:  #7c6af5;
+    --green:   #3cb87a;
+    --text:    #e2e4f0;
+    --muted:   #5a5e7a;
+    --r: 38px;   /* node circle radius */
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "PingFang SC", "SF Pro Display", system-ui, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── TOOLBAR ── */
+  #toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+  #toolbar h1 { font-size: 14px; font-weight: 700; color: var(--accent); white-space: nowrap; }
+  #toolbar label { font-size: 11px; color: var(--muted); white-space: nowrap; }
+  #toolbar input, #toolbar select {
+    background: var(--bg); border: 1px solid var(--border);
+    color: var(--text); border-radius: 6px; padding: 4px 8px;
+    font-size: 12px; outline: none;
+  }
+  #toolbar input:focus, #toolbar select:focus { border-color: var(--accent); }
+  #apiBase  { width: 170px; }
+  #jwtInput { width: 280px; font-size: 11px; }
+  button {
+    background: var(--accent); color: #fff; border: none;
+    border-radius: 6px; padding: 5px 12px; font-size: 12px;
+    cursor: pointer; transition: opacity .15s; white-space: nowrap;
+  }
+  button:hover  { opacity: .83; }
+  button.ghost {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  button.ghost:hover { border-color: var(--accent); color: var(--accent); }
+  #saveBtn { background: var(--green); }
+  #status {
+    font-size: 11px; color: var(--muted); margin-left: auto; white-space: nowrap;
+  }
+  #status.ok  { color: var(--green); }
+  #status.err { color: #e05858; }
+
+  /* ── FILTER BAR ── */
+  #filterBar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: var(--muted);
+    min-height: 32px;
+  }
+  #filterBar .flabel { color: var(--muted); white-space: nowrap; }
+  .edge-toggle {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 12px; cursor: pointer;
+    border: 1px solid var(--border); font-size: 11px;
+    transition: all .15s; user-select: none;
+  }
+  .edge-toggle.active { border-color: currentColor; }
+  .edge-toggle .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ── LEGEND ── */
+  #legend {
+    display: flex; align-items: center; gap: 14px;
+    padding: 4px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    font-size: 10px; color: var(--muted); flex-shrink: 0; flex-wrap: wrap;
+  }
+  .li { display: flex; align-items: center; gap: 5px; }
+  .ldot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .lline { width: 20px; height: 0; border-top: 2px solid var(--accent); flex-shrink: 0; }
+  .lline.dashed { border-top-style: dashed; }
+
+  /* ── VIEWPORT ── */
+  #viewport {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+  }
+  #canvas { display: block; }
+
+  /* nodes */
+  .node-group { cursor: grab; user-select: none; }
+  .node-group:active { cursor: grabbing; }
+  .node-circle { transition: filter .1s; }
+  .node-group:hover .node-circle { filter: brightness(1.25) drop-shadow(0 0 6px rgba(124,106,245,.5)); }
+
+  .node-text-main {
+    font-size: 12px; font-weight: 600; fill: #fff;
+    text-anchor: middle; dominant-baseline: central;
+    pointer-events: none;
+  }
+  .node-text-sub {
+    font-size: 9px; fill: rgba(255,255,255,.4);
+    text-anchor: middle; dominant-baseline: central;
+    pointer-events: none;
+  }
+
+  /* edges */
+  .edge-prog  { stroke: var(--accent); stroke-width: 1.8; fill: none; opacity: .65; }
+  .edge-assoc { fill: none; stroke-width: 1.2; stroke-dasharray: 5,3; opacity: .5; }
+  .edge-label-text {
+    font-size: 9px; fill: var(--muted); text-anchor: middle;
+    dominant-baseline: central; pointer-events: none;
+  }
+
+  /* tooltip */
+  #tooltip {
+    position: fixed; background: #1e2235; border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 11px; line-height: 1.7;
+    pointer-events: none; display: none; z-index: 999;
+    max-width: 210px; color: var(--text);
+  }
+  #tooltip b { color: var(--accent); }
+
+  /* empty */
+  #empty {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: var(--muted); font-size: 13px; gap: 10px;
+  }
+  #empty span { font-size: 44px; }
+</style>
+</head>
+<body>
+
+<div id="toolbar">
+  <h1>⭐ 星图编辑器</h1>
+  <label>API</label>
+  <input id="apiBase" placeholder="http://localhost:5000" />
+  <label>JWT</label>
+  <input id="jwtInput" type="password" placeholder="保存时需要" />
+  <label>主题</label>
+  <select id="themeSelect"><option value="">-- 选择主题 --</option></select>
+  <button onclick="loadTheme()">加载</button>
+  <button class="ghost" onclick="resetLayout()">重置位置</button>
+  <button id="saveBtn" onclick="savePositions()">💾 保存 (⌘S)</button>
+  <span id="status">请选择主题后点击加载</span>
+</div>
+
+<div id="filterBar">
+  <span class="flabel">关联边：</span>
+  <span id="edgeFilters" style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+    <span style="color:var(--muted);font-size:11px;">加载主题后显示</span>
+  </span>
+</div>
+
+<div id="legend">
+  <div class="li"><div class="ldot" style="background:#1e4fa0;border:2px solid #4a9eff"></div> 入口</div>
+  <div class="li"><div class="ldot" style="background:#6b3010;border:2px solid #e8875a"></div> BOSS</div>
+  <div class="li"><div class="ldot" style="background:#1e1f3a;border:1px solid #3a3d65"></div> 普通</div>
+  <div class="li"><div class="lline"></div> 进阶边</div>
+  <div class="li"><div class="lline dashed" style="border-color:#888"></div> 关联边</div>
+  <div style="margin-left:auto;font-size:10px;">拖动节点微调位置 · 右键查看详情</div>
+</div>
+
+<div id="viewport">
+  <svg id="canvas" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arr-prog" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+        <path d="M0,0 L0,7 L7,3.5 z" fill="#7c6af5" opacity=".65"/>
+      </marker>
+    </defs>
+    <g id="g-assoc"></g>
+    <g id="g-prog"></g>
+    <g id="g-nodes"></g>
+  </svg>
+  <div id="empty"><span>🗺️</span><div>选择主题并点击「加载」</div></div>
+</div>
+<div id="tooltip"></div>
+
+<script>
+// ── Constants ──────────────────────────────────────────────────────────────
+const R     = 38;    // node circle radius
+const PAD   = 30;    // canvas padding
+
+// Association edge colors per label
+const ASSOC_COLORS = {
+  '同源同法': '#f59e42',
+  '同门衍生': '#42c4f5',
+  '风味相近': '#a855f7',
+};
+const ASSOC_DEFAULT = '#888899';
+
+// ── State ─────────────────────────────────────────────────────────────────
+let themeData    = null;
+let nodeMap      = {};      // {id: {id, x, y, ...}}
+let origPos      = {};
+let drag         = null;
+let visibleLabels = new Set();  // which assoc labels are visible
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+function apiBase() { return ($('apiBase').value || window.location.origin).replace(/\/+$/, ''); }
+function jwt()     { return $('jwtInput').value.trim(); }
+function setStatus(msg, cls='') {
+  const el = $('status');
+  el.textContent = msg; el.className = cls;
+}
+
+// ── Load theme list ────────────────────────────────────────────────────────
+async function initThemes() {
+  try {
+    const res = await fetch(apiBase() + '/api/v1/map/themes/list');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const { data } = await res.json();
+    const sel = $('themeSelect');
+    sel.innerHTML = '<option value="">-- 选择主题 --</option>';
+    (data.themes || []).forEach(t => {
+      const o = document.createElement('option');
+      o.value = t.id;
+      o.textContent = `${t.name_zh}（${t.node_total} 节点）`;
+      sel.appendChild(o);
+    });
+    setStatus('选择主题后点击加载', 'ok');
+  } catch(e) {
+    setStatus('无法加载主题列表：' + e.message, 'err');
+  }
+}
+
+// ── Load theme ─────────────────────────────────────────────────────────────
+async function loadTheme() {
+  const tid = $('themeSelect').value;
+  if (!tid) { setStatus('请先选择主题', 'err'); return; }
+  setStatus('加载中…');
+  try {
+    const res = await fetch(`${apiBase()}/api/v1/map/themes/${tid}/layout`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const { data } = await res.json();
+    themeData = data;
+
+    nodeMap = {};
+    data.nodes.forEach(n => {
+      nodeMap[n.id] = { ...n,
+        x: n.pos_x != null ? n.pos_x : 480,
+        y: n.pos_y != null ? n.pos_y : 150,
+      };
+    });
+    origPos = Object.fromEntries(
+      Object.keys(nodeMap).map(id => [id, { x: nodeMap[id].x, y: nodeMap[id].y }])
+    );
+
+    // init visible labels
+    const labels = new Set(
+      data.edges.filter(e => e.type === 'association' && e.label)
+               .map(e => e.label)
+    );
+    visibleLabels = new Set(labels);
+    buildEdgeFilters(labels);
+
+    render();
+    setStatus(`已加载「${data.theme.name_zh}」— ${data.nodes.length} 节点`, 'ok');
+  } catch(e) {
+    setStatus('加载失败：' + e.message, 'err');
+  }
+}
+
+// ── Build edge filter toggles ──────────────────────────────────────────────
+function buildEdgeFilters(labels) {
+  const container = $('edgeFilters');
+  container.innerHTML = '';
+
+  // progression toggle
+  const progBtn = makeToggle('进阶边', '#7c6af5', true, 'prog');
+  container.appendChild(progBtn);
+
+  if (labels.size === 0) {
+    container.insertAdjacentHTML('beforeend', '<span style="color:var(--muted)">（无关联边）</span>');
+    return;
+  }
+
+  labels.forEach(label => {
+    const color = ASSOC_COLORS[label] || ASSOC_DEFAULT;
+    const btn = makeToggle(label, color, true, 'assoc:' + label);
+    container.appendChild(btn);
+  });
+
+  // show all / hide all buttons
+  const showAll = document.createElement('button');
+  showAll.className = 'ghost'; showAll.style.fontSize='11px'; showAll.style.padding='3px 8px';
+  showAll.textContent = '全显'; showAll.onclick = () => {
+    labels.forEach(l => visibleLabels.add(l));
+    container.querySelectorAll('[data-kind^="assoc:"]').forEach(b => b.classList.add('active'));
+    applyEdgeVisibility();
+  };
+  const hideAll = document.createElement('button');
+  hideAll.className = 'ghost'; hideAll.style.fontSize='11px'; hideAll.style.padding='3px 8px';
+  hideAll.textContent = '全隐'; hideAll.onclick = () => {
+    visibleLabels.clear();
+    container.querySelectorAll('[data-kind^="assoc:"]').forEach(b => b.classList.remove('active'));
+    applyEdgeVisibility();
+  };
+  container.appendChild(showAll);
+  container.appendChild(hideAll);
+}
+
+function makeToggle(label, color, active, kind) {
+  const span = document.createElement('span');
+  span.className = 'edge-toggle' + (active ? ' active' : '');
+  span.style.color = color;
+  span.dataset.kind = kind;
+  span.innerHTML = `<span class="dot" style="background:${color}"></span>${label}`;
+  span.onclick = () => {
+    if (kind === 'prog') {
+      span.classList.toggle('active');
+      $('g-prog').style.display = span.classList.contains('active') ? '' : 'none';
+      return;
+    }
+    const lbl = kind.replace('assoc:', '');
+    span.classList.toggle('active');
+    if (span.classList.contains('active')) visibleLabels.add(lbl);
+    else                                   visibleLabels.delete(lbl);
+    applyEdgeVisibility();
+  };
+  return span;
+}
+
+function applyEdgeVisibility() {
+  document.querySelectorAll('.assoc-edge-group').forEach(g => {
+    const lbl = g.dataset.label;
+    g.style.display = (lbl && visibleLabels.has(lbl)) ? '' : 'none';
+  });
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────
+function render() {
+  if (!themeData) return;
+  $('empty').style.display = 'none';
+
+  const gAssoc = $('g-assoc');
+  const gProg  = $('g-prog');
+  const gNodes = $('g-nodes');
+  gAssoc.innerHTML = ''; gProg.innerHTML = ''; gNodes.innerHTML = '';
+
+  // Canvas size
+  const xs = Object.values(nodeMap).map(n => n.x);
+  const ys = Object.values(nodeMap).map(n => n.y);
+  const cw = Math.max(960,  Math.max(...xs) + R + PAD + 40);
+  const ch = Math.max(800,  Math.max(...ys) + R + PAD + 60);
+
+  const svg = $('canvas');
+  svg.setAttribute('width', cw);
+  svg.setAttribute('height', ch);
+
+  // ── Edges ──
+  // Group association edges by label
+  const assocGroups = {};
+  themeData.edges.filter(e => e.type === 'association').forEach(e => {
+    const lbl = e.label || '';
+    if (!assocGroups[lbl]) assocGroups[lbl] = [];
+    assocGroups[lbl].push(e);
+  });
+
+  Object.entries(assocGroups).forEach(([lbl, edges]) => {
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    g.classList.add('assoc-edge-group');
+    g.dataset.label = lbl;
+    g.style.display = visibleLabels.has(lbl) ? '' : 'none';
+    const color = ASSOC_COLORS[lbl] || ASSOC_DEFAULT;
+
+    edges.forEach(e => {
+      const from = nodeMap[e.from], to = nodeMap[e.to];
+      if (!from || !to) return;
+      const path = svgElem('path');
+      path.setAttribute('d', buildEdge(from, to, 'assoc'));
+      path.setAttribute('class', 'edge-assoc');
+      path.setAttribute('stroke', color);
+      g.appendChild(path);
+
+      if (lbl) {
+        const mx = (from.x + to.x) / 2, my = (from.y + to.y) / 2;
+        const txt = svgElem('text');
+        txt.setAttribute('x', mx + 8); txt.setAttribute('y', my);
+        txt.setAttribute('class', 'edge-label-text');
+        txt.setAttribute('fill', color);
+        txt.textContent = lbl;
+        g.appendChild(txt);
+      }
+    });
+    gAssoc.appendChild(g);
+  });
+
+  // Progression edges
+  themeData.edges.filter(e => e.type === 'progression').forEach(e => {
+    const from = nodeMap[e.from], to = nodeMap[e.to];
+    if (!from || !to) return;
+    const path = svgElem('path');
+    path.setAttribute('d', buildEdge(from, to, 'prog'));
+    path.setAttribute('class', 'edge-prog');
+    path.setAttribute('marker-end', 'url(#arr-prog)');
+    path.setAttribute('data-from', e.from);
+    path.setAttribute('data-to',   e.to);
+    gProg.appendChild(path);
+  });
+
+  // ── Nodes ──
+  Object.values(nodeMap).forEach(n => {
+    const g = svgElem('g');
+    g.setAttribute('class', 'node-group');
+    g.setAttribute('data-id', n.id);
+    g.setAttribute('transform', `translate(${n.x},${n.y})`);
+
+    const fillColor   = n.is_entry_node ? '#1e4fa0' : n.is_boss ? '#6b3010' : '#1a1c35';
+    const strokeColor = n.is_entry_node ? '#4a9eff' : n.is_boss ? '#e8875a' : '#3a3d65';
+    const strokeWidth = (n.is_entry_node || n.is_boss) ? 2.5 : 1.5;
+
+    const circle = svgElem('circle');
+    circle.setAttribute('r', R);
+    circle.setAttribute('fill', fillColor);
+    circle.setAttribute('stroke', strokeColor);
+    circle.setAttribute('stroke-width', strokeWidth);
+    circle.setAttribute('class', 'node-circle');
+    g.appendChild(circle);
+
+    // Name (split long names into 2 lines)
+    const name = n.display_name_zh || n.node_key || '';
+    const lines = splitName(name);
+    if (lines.length === 1) {
+      const t = svgElem('text');
+      t.setAttribute('x', 0); t.setAttribute('y', lines.length > 1 ? -6 : 2);
+      t.setAttribute('class', 'node-text-main');
+      t.textContent = lines[0];
+      g.appendChild(t);
+    } else {
+      lines.forEach((line, i) => {
+        const t = svgElem('text');
+        t.setAttribute('x', 0);
+        t.setAttribute('y', i === 0 ? -8 : 8);
+        t.setAttribute('class', 'node-text-main');
+        t.setAttribute('font-size', '11');
+        t.textContent = line;
+        g.appendChild(t);
+      });
+    }
+
+    // Complexity dots at bottom
+    const stars = '·'.repeat(n.complexity || 1);
+    const sub = svgElem('text');
+    sub.setAttribute('x', 0); sub.setAttribute('y', R - 8);
+    sub.setAttribute('class', 'node-text-sub');
+    sub.textContent = n.is_boss ? 'BOSS' : stars;
+    g.appendChild(sub);
+
+    gNodes.appendChild(g);
+
+    g.addEventListener('mousedown', e => startDrag(e, n.id));
+    g.addEventListener('contextmenu', e => { e.preventDefault(); showTooltip(e, n); });
+  });
+}
+
+// ── Edge path (vertical bezier) ────────────────────────────────────────────
+function buildEdge(from, to, type) {
+  const offset = type === 'prog' ? (R + 4) : (R - 6);
+  const x1 = from.x, y1 = from.y + offset;
+  const x2 = to.x,   y2 = to.y   - offset;
+  const cy = (y1 + y2) / 2;
+  // Horizontal offset for same-column edges to avoid straight overlap
+  const sameCol = Math.abs(from.x - to.x) < 10;
+  const cx1 = sameCol ? x1 + 80 : x1;
+  const cx2 = sameCol ? x2 + 80 : x2;
+  return `M ${x1} ${y1} C ${cx1} ${cy}, ${cx2} ${cy}, ${x2} ${y2}`;
+}
+
+// ── Redraw edges for a moved node ──────────────────────────────────────────
+function redrawEdgesForNode(nid) {
+  if (!themeData) return;
+  const progPaths = $('g-prog').querySelectorAll('path');
+  progPaths.forEach(p => {
+    const f = +p.dataset.from, t = +p.dataset.to;
+    if (f === nid || t === nid) {
+      const from = nodeMap[f], to = nodeMap[t];
+      if (from && to) p.setAttribute('d', buildEdge(from, to, 'prog'));
+    }
+  });
+  // Redraw assoc edges (full re-render of assoc layer is simpler)
+  redrawAssocEdges();
+}
+
+function redrawAssocEdges() {
+  $('g-assoc').querySelectorAll('.assoc-edge-group').forEach(grp => {
+    const paths = grp.querySelectorAll('path');
+    const edgesForGroup = themeData.edges.filter(e =>
+      e.type === 'association' && (e.label || '') === grp.dataset.label
+    );
+    edgesForGroup.forEach((e, i) => {
+      const from = nodeMap[e.from], to = nodeMap[e.to];
+      if (from && to && paths[i]) {
+        paths[i].setAttribute('d', buildEdge(from, to, 'assoc'));
+      }
+    });
+  });
+}
+
+// ── Drag ──────────────────────────────────────────────────────────────────
+function startDrag(e, nid) {
+  if (e.button !== 0) return;
+  e.stopPropagation();
+  const pt = svgCoord(e);
+  drag = { nid, ox: nodeMap[nid].x - pt.x, oy: nodeMap[nid].y - pt.y };
+  window.addEventListener('mousemove', onMove);
+  window.addEventListener('mouseup',   onUp);
+}
+function onMove(e) {
+  if (!drag) return;
+  const pt = svgCoord(e);
+  const n = nodeMap[drag.nid];
+  n.x = Math.max(R + PAD, pt.x + drag.ox);
+  n.y = Math.max(R + PAD, pt.y + drag.oy);
+  const g = document.querySelector(`[data-id="${drag.nid}"]`);
+  if (g) g.setAttribute('transform', `translate(${n.x},${n.y})`);
+  redrawEdgesForNode(drag.nid);
+}
+function onUp() {
+  drag = null;
+  window.removeEventListener('mousemove', onMove);
+  window.removeEventListener('mouseup',   onUp);
+}
+
+function svgCoord(e) {
+  const svg = $('canvas');
+  const pt  = svg.createSVGPoint();
+  pt.x = e.clientX; pt.y = e.clientY;
+  const ctm = svg.getScreenCTM();
+  return ctm ? pt.matrixTransform(ctm.inverse()) : { x: e.clientX, y: e.clientY };
+}
+
+// ── Reset ──────────────────────────────────────────────────────────────────
+function resetLayout() {
+  if (!themeData) return;
+  Object.keys(nodeMap).forEach(id => {
+    const o = origPos[id];
+    if (o) { nodeMap[id].x = o.x; nodeMap[id].y = o.y; }
+  });
+  render();
+  setStatus('已重置到算法初始位置', 'ok');
+}
+
+// ── Save ───────────────────────────────────────────────────────────────────
+async function savePositions() {
+  if (!themeData) { setStatus('请先加载主题', 'err'); return; }
+  if (!jwt())     { setStatus('保存需要 JWT Token', 'err'); return; }
+
+  const updates = Object.values(nodeMap).map(n => ({
+    node_id: n.id,
+    pos_x: Math.round(n.x * 10) / 10,
+    pos_y: Math.round(n.y * 10) / 10,
+  }));
+  setStatus('保存中…');
+  try {
+    const res = await fetch(apiBase() + '/api/v1/map/nodes/positions', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + jwt() },
+      body: JSON.stringify({ updates }),
+    });
+    const json = await res.json();
+    if (!res.ok || json.code !== 0) throw new Error(json.message || 'HTTP ' + res.status);
+    origPos = Object.fromEntries(
+      Object.keys(nodeMap).map(id => [id, { x: nodeMap[id].x, y: nodeMap[id].y }])
+    );
+    setStatus(`✓ 已保存 ${updates.length} 个节点`, 'ok');
+  } catch(e) {
+    setStatus('保存失败：' + e.message, 'err');
+  }
+}
+
+// ── Tooltip ────────────────────────────────────────────────────────────────
+function showTooltip(e, n) {
+  const tt = $('tooltip');
+  tt.innerHTML = `
+    <b>${n.display_name_zh || n.node_key}</b><br/>
+    ID: ${n.id}  cocktail: ${n.cocktail_id}<br/>
+    复杂度: ${'★'.repeat(n.complexity || 1)}<br/>
+    基酒: ${(n.base_spirits || []).join(', ') || '无'}
+    ${n.is_entry_node ? '<br/><span style="color:#4a9eff">⬤ 入口节点</span>' : ''}
+    ${n.is_boss ? '<br/><span style="color:#e8875a">⬤ BOSS</span>' : ''}
+    <br/><span style="color:var(--muted)">pos (${Math.round(n.x)}, ${Math.round(n.y)})</span>
+  `;
+  tt.style.display = 'block';
+  tt.style.left = (e.clientX + 12) + 'px';
+  tt.style.top  = Math.min(e.clientY + 12, window.innerHeight - 160) + 'px';
+  function hide() { tt.style.display = 'none'; document.removeEventListener('click', hide); }
+  setTimeout(() => document.addEventListener('click', hide), 80);
+}
+
+// ── Utils ──────────────────────────────────────────────────────────────────
+function svgElem(tag) { return document.createElementNS('http://www.w3.org/2000/svg', tag); }
+
+function splitName(name) {
+  if (!name) return [''];
+  if (name.length <= 4) return [name];
+  // Split roughly in half
+  const mid = Math.ceil(name.length / 2);
+  return [name.slice(0, mid), name.slice(mid)];
+}
+
+// ── Keyboard ──────────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); savePositions(); }
+});
+
+// ── Boot ───────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  $('apiBase').value = window.location.origin;
+  const saved = sessionStorage.getItem('vm_jwt');
+  if (saved) $('jwtInput').value = saved;
+  $('jwtInput').addEventListener('change', () => sessionStorage.setItem('vm_jwt', $('jwtInput').value));
+  $('themeSelect').addEventListener('keydown', e => { if (e.key === 'Enter') loadTheme(); });
+  initThemes();
+});
+</script>
+</body>
+</html>
