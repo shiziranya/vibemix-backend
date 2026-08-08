@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调酒地图节点完成 - 测试页面</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        canvas {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            max-width: 100%;
+            display: block;
+            margin: 20px 0;
+        }
+        button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0051D5;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .secondary {
+            background: #5AC8FA;
+        }
+        .secondary:hover {
+            background: #32ADE6;
+        }
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+        .result.success {
+            background: #D1F2EB;
+            border: 1px solid #1ABC9C;
+            color: #0E6655;
+        }
+        .result.error {
+            background: #FADBD8;
+            border: 1px solid #E74C3C;
+            color: #922B21;
+        }
+        .result h3 {
+            margin-top: 0;
+        }
+        .result img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .loading.active {
+            display: block;
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007AFF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍸 调酒地图节点完成测试</h1>
+        
+        <div class="form-group">
+            <label>JWT Token (从登录接口获取)</label>
+            <input type="text" id="token" placeholder="Bearer eyJhbGciOiJIUzI1NiIs..." />
+        </div>
+        
+        <div class="form-group">
+            <label>节点 ID</label>
+            <input type="number" id="nodeId" placeholder="123" value="1" />
+        </div>
+        
+        <div class="form-group">
+            <label>模板 ID (可选)</label>
+            <input type="text" id="templateId" placeholder="classic_v1" />
+        </div>
+        
+        <div class="form-group">
+            <label>心情描述 (可选)</label>
+            <textarea id="moodCaption" placeholder="今天调了一杯完美的马天尼..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>卡片预览</label>
+            <canvas id="cardCanvas" width="540" height="960"></canvas>
+        </div>
+        
+        <button onclick="renderCard()" class="secondary">重新渲染卡片</button>
+        <button onclick="submitCompletion()">提交完成节点</button>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>正在处理...</p>
+        </div>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // 渲染示例卡片
+        function renderCard() {
+            const canvas = document.getElementById('cardCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // 清空画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // 绘制渐变背景
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // 绘制装饰圆圈
+            ctx.globalAlpha = 0.1;
+            ctx.fillStyle = 'white';
+            ctx.beginPath();
+            ctx.arc(400, 100, 150, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1.0;
+            
+            // 绘制鸡尾酒图标 (简单示意)
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 120px serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('🍸', canvas.width / 2, 300);
+            
+            // 绘制标题
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 48px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('马天尼', canvas.width / 2, 450);
+            
+            // 绘制副标题
+            ctx.font = '24px sans-serif';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.fillText('Martini', canvas.width / 2, 490);
+            
+            // 绘制心情描述
+            const mood = document.getElementById('moodCaption').value || '今天完成了这杯经典鸡尾酒';
+            ctx.font = '20px sans-serif';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            
+            // 文字换行处理
+            const maxWidth = canvas.width - 80;
+            const lineHeight = 30;
+            const words = mood.split('');
+            let line = '';
+            let y = 600;
+            
+            for (let i = 0; i < words.length; i++) {
+                const testLine = line + words[i];
+                const metrics = ctx.measureText(testLine);
+                
+                if (metrics.width > maxWidth && i > 0) {
+                    ctx.fillText(line, canvas.width / 2, y);
+                    line = words[i];
+                    y += lineHeight;
+                } else {
+                    line = testLine;
+                }
+            }
+            ctx.fillText(line, canvas.width / 2, y);
+            
+            // 绘制底部装饰
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.fillRect(0, canvas.height - 100, canvas.width, 1);
+            
+            // 绘制日期
+            const date = new Date().toLocaleDateString('zh-CN');
+            ctx.font = '16px sans-serif';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+            ctx.fillText(date, canvas.width / 2, canvas.height - 50);
+        }
+        
+        // 提交节点完成
+        async function submitCompletion() {
+            const token = document.getElementById('token').value.trim();
+            const nodeId = document.getElementById('nodeId').value;
+            const templateId = document.getElementById('templateId').value.trim();
+            const moodCaption = document.getElementById('moodCaption').value.trim();
+            
+            if (!token) {
+                showError('请输入 JWT Token');
+                return;
+            }
+            
+            if (!nodeId) {
+                showError('请输入节点 ID');
+                return;
+            }
+            
+            // 显示加载状态
+            document.getElementById('loading').classList.add('active');
+            document.getElementById('result').style.display = 'none';
+            
+            try {
+                // 获取Canvas的Blob
+                const canvas = document.getElementById('cardCanvas');
+                const blob = await new Promise(resolve => {
+                    canvas.toBlob(resolve, 'image/png', 0.95);
+                });
+                
+                // 构建表单数据
+                const formData = new FormData();
+                formData.append('image', blob, 'card.png');
+                
+                if (templateId) {
+                    formData.append('template_id', templateId);
+                }
+                if (moodCaption) {
+                    formData.append('mood_caption', moodCaption);
+                }
+                
+                // 发送请求
+                const response = await fetch(`/api/map/nodes/${nodeId}/complete-with-card`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': token.startsWith('Bearer ') ? token : `Bearer ${token}`
+                    },
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                // 隐藏加载状态
+                document.getElementById('loading').classList.remove('active');
+                
+                if (response.ok && result.code === 0) {
+                    showSuccess(result);
+                } else {
+                    showError(result.message || '请求失败');
+                }
+            } catch (error) {
+                document.getElementById('loading').classList.remove('active');
+                showError('网络错误: ' + error.message);
+                console.error(error);
+            }
+        }
+        
+        // 显示成功结果
+        function showSuccess(result) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = 'result success';
+            resultDiv.style.display = 'block';
+            
+            resultDiv.innerHTML = `
+                <h3>✅ 节点完成成功！</h3>
+                <p><strong>节点 ID:</strong> ${result.data.node_id}</p>
+                <p><strong>获得经验:</strong> ${result.data.reward_xp} XP</p>
+                <p><strong>卡片 ID:</strong> ${result.data.card.card_id}</p>
+                <p><strong>卡片状态:</strong> ${result.data.card.status}</p>
+                <p><strong>卡片图片:</strong></p>
+                <img src="${result.data.card.image_url}" alt="生成的卡片" />
+            `;
+        }
+        
+        // 显示错误信息
+        function showError(message) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.className = 'result error';
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h3>❌ 错误</h3>
+                <p>${message}</p>
+            `;
+        }
+        
+        // 页面加载时渲染卡片
+        window.onload = function() {
+            renderCard();
+        };
+    </script>
+</body>
+</html>

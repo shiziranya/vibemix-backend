@@ -102,6 +102,10 @@ class CocktailService:
                     COALESCE(f.name_zh, f.name, i.name_zh, i.name)        AS name_zh,
                     ci.measure_raw,
                     ci.measure_ml,
+                    ci.measure_normalized,
+                    ci.measure_value,
+                    ci.measure_unit,
+                    ci.measure_type,
                     COALESCE(f.is_easily_available, i.is_easily_available) AS is_easily_available,
                     COALESCE(f.category, i.category)                       AS category
                 FROM cocktail_ingredients ci
@@ -122,6 +126,10 @@ class CocktailService:
                 "name_zh": row.name_zh,
                 "measure_raw": row.measure_raw,
                 "measure_ml": float(row.measure_ml) if row.measure_ml else None,
+                "measure": row.measure_normalized or row.measure_raw or "适量",  # 优先使用规范化用量
+                "measure_value": float(row.measure_value) if row.measure_value else None,
+                "measure_unit": row.measure_unit,
+                "measure_type": row.measure_type,
                 "is_easily_available": row.is_easily_available,
                 "category": row.category,
                 "status": "unknown",
