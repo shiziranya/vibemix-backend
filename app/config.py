@@ -15,6 +15,9 @@ class BaseConfig:
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(
         seconds=int(os.environ.get("JWT_REFRESH_TOKEN_EXPIRES", 2592000))
     )
+    
+    # JSON 配置：确保中文正常显示，不转换为 Unicode 编码
+    JSON_AS_ASCII = False
 
     # Database
     SQLALCHEMY_DATABASE_URI = os.environ.get(
@@ -77,6 +80,10 @@ class BaseConfig:
 
     # CORS
     CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*")
+
+    # Card Generation Service
+    CARD_GEN_SERVICE_URL = os.environ.get("CARD_GEN_SERVICE_URL", "http://localhost:8001")
+    CARD_GEN_TIMEOUT = int(os.environ.get("CARD_GEN_TIMEOUT", "60"))
 
     # Upload limits (card submit allows up to 20 MB for frontend-rendered images)
     MAX_CONTENT_LENGTH = 20 * 1024 * 1024  # 20MB

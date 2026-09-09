@@ -1,12 +1,22 @@
 from __future__ import annotations
 
-from flask import Blueprint, request
+from flask import Blueprint, current_app, request
 from flask_jwt_extended import get_jwt_identity, jwt_required
 
 from ..services.map_service import map_service
 from ..utils.response import error, success
 
 map_bp = Blueprint("map", __name__)
+
+
+def _get_full_image_url(image_url: str | None) -> str | None:
+    """将相对路径的图片URL转换为完整URL"""
+    if not image_url:
+        return None
+    if image_url.startswith(('http://', 'https://')):
+        return image_url
+    base_url = current_app.config.get('BASE_URL', '')
+    return f"{base_url}{image_url}"
 
 
 # ── 公开：主题列表（无需登录，供编辑器使用）──────────────────────────────
@@ -281,7 +291,7 @@ def get_theme_layout(theme_id: int):
                 "is_boss": r.is_boss,
                 "complexity": r.complexity,
                 "gateway_spirit": r.gateway_spirit,
-                "image_url": r.image_url,
+                "image_url": _get_full_image_url(r.image_url),
                 "reward_xp": r.reward_xp,
                 "sort_order": r.sort_order,
                 "pos_x": float(r.pos_x) if r.pos_x is not None else None,

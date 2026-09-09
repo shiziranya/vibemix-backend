@@ -102,7 +102,27 @@ def normalize_measure(measure_raw):
     measure_raw = measure_raw.strip()
     measure_lower = measure_raw.lower()
     
-    # 1. 检查描述性关键词
+    # 1. 特殊模式：Juice of X (X个水果的汁)
+    juice_pattern = r'juice\s+of\s+([\d/\s\.]+)'
+    juice_match = re.search(juice_pattern, measure_lower)
+    if juice_match:
+        value_str = juice_match.group(1).strip()
+        value = parse_fraction(value_str)
+        if value is not None:
+            # 转换为规范化表达：如 "1个青柠汁"、"1/2个柠檬汁"
+            if value == int(value):
+                normalized = f'{int(value)}个果汁'
+            else:
+                # 保留分数形式
+                normalized = f'{value_str}个果汁'
+            return {
+                'normalized': normalized,
+                'value': value,
+                'unit': '个',
+                'type': 'approximate'
+            }
+    
+    # 2. 检查描述性关键词
     for keyword, normalized in DESCRIPTIVE_KEYWORDS.items():
         if keyword in measure_lower:
             if normalized is None:
@@ -115,16 +135,31 @@ def normalize_measure(measure_raw):
             }
     
     # 2. 尝试解析 "数值+单位" 格式
-    # 匹配模式：数字(可能带空格和分数) + 可选单位
-    pattern = r'([\d\s/\.]+)\s*(oz|ml|cl|pint|quart|gallon|tsp|tbsp|teaspoon|tablespoon|dash|dashes|barspoon|barspoons|shot)?'
+    # 匹配模式：数字(可能带空格、分数、范围) + 可选单位
+    # 支持: "2 oz", "1.5 cl", "2-3 oz", "1/2 tsp"
+    pattern = r'([\d\s/\.\-]+)\s*(oz|ml|cl|pint|quart|gallon|tsp|tbsp|teaspoon|tablespoon|dash|dashes|barspoon|barspoons|shot)?'
     match = re.match(pattern, measure_lower, re.IGNORECASE)
     
     if match:
         value_str = match.group(1)
         unit = match.group(2)
         
-        # 解析数值
-        value = parse_fraction(value_str)
+        # 处理范围表达式 "2-3" -> 取平均值
+        if '-' in value_str and not value_str.strip().startswith('-'):
+            parts = value_str.split('-')
+            if len(parts) == 2:
+                val1 = parse_fraction(parts[0].strip())
+                val2 = parse_fraction(parts[1].strip())
+                if val1 is not None and val2 is not None:
+                    value = (val1 + val2) / 2  # 取平均值
+                else:
+                    value = None
+            else:
+                value = None
+        else:
+            # 解析数值
+            value = parse_fraction(value_str)
+        
         if value is None:
             return {
                 'normalized': '适量',

@@ -8,6 +8,7 @@ from sqlalchemy import func, text
 from ..extensions import db, get_redis
 from ..models.cabinet import UserCabinet
 from ..models.ingredient_family import IngredientFamily
+from ..models.user import User
 from ..utils.errors import FamilyAlreadyInCabinet, FamilyNotFound
 
 _STATS_TTL = 300  # 5 minutes
@@ -57,11 +58,18 @@ class CabinetService:
         except Exception:
             pass
 
+        # 更新推荐基酒
+        self.update_user_spirit_recommendation(user_id)
+
         return {**fam.to_dict(in_cabinet=True), "newly_unlocked": newly, **stats}
 
     # ── 删除品类 ─────────────────────────────────────────────────────────────
 
     def remove_ingredient(self, user_id: str, family_id: int) -> dict:
+        # 计算删除前的可调配方数
+        before_ids = self._get_user_cabinet_family_ids(user_id)
+        before_count = self._count_unlocked_recipes(before_ids)
+        
         entry = (
             db.session.query(UserCabinet)
             .filter_by(user_id=uuid.UUID(user_id), family_id=family_id)
@@ -70,6 +78,12 @@ class CabinetService:
         if entry:
             db.session.delete(entry)
             db.session.commit()
+        
+        # 计算删除后的可调配方数
+        after_ids = self._get_user_cabinet_family_ids(user_id)
+        after_count = self._count_unlocked_recipes(after_ids)
+        recipes_lost = max(0, before_count - after_count)
+        
         self._invalidate_stats_cache(user_id)
 
         try:
@@ -78,7 +92,11 @@ class CabinetService:
         except Exception:
             pass
 
-        return self.get_stats(user_id)
+        # 更新推荐基酒
+        self.update_user_spirit_recommendation(user_id)
+
+        stats = self.get_stats(user_id)
+        return {**stats, "recipes_lost": recipes_lost}
 
     # ── 统计 ─────────────────────────────────────────────────────────────────
 
@@ -148,9 +166,19 @@ class CabinetService:
         可调制配方数量：配方中所有 ingredient_family.is_easily_available=FALSE 的
         原料品类都在用户酒柜（cabinet_family_ids）中，则该配方可调制。
         is_easily_available=TRUE 的品类（果汁/苏打等）视为随时可得。
+        
+        关键逻辑：
+        - 只检查 is_easily_available=FALSE 的原料
+        - 这些原料必须在用户酒柜中
+        - 便利店易购材料（is_easily_available=TRUE）被忽略
+        - 空酒柜时，返回只需便利店材料的配方（无需任何购买的材料）
+        
+        示例：
+        - 空酒柜：返回只需便利店材料的配方（如"甜蜜香蕉"只需蜂蜜+牛奶+香蕉）
+        - 有材料：返回可用酒柜材料+便利店材料制作的配方
         """
-        if not cabinet_family_ids:
-            return 0
+        # 空数组传给 PostgreSQL 的 ALL() 运算符会让条件永远为真
+        # 因此空酒柜时会返回所有不含 is_easily_available=FALSE 原料的配方
         return db.session.execute(
             text("""
                 SELECT COUNT(DISTINCT c.id)
@@ -164,7 +192,7 @@ class CabinetService:
                       AND ci.ingredient_family_id != ALL(:fids)
                 )
             """),
-            {"fids": cabinet_family_ids},
+            {"fids": cabinet_family_ids or []},
         ).scalar() or 0
 
     def _count_newly_unlocked(self, user_id: str, new_family_id: int) -> int:
@@ -186,6 +214,100 @@ class CabinetService:
         if not fam:
             raise FamilyNotFound()
         return self._count_newly_unlocked(user_id, family_id)
+
+    # ── 推荐基酒 ─────────────────────────────────────────────────────────────
+
+    def calculate_best_spirit_recommendation(self, user_id: str) -> dict | None:
+        """
+        计算用户添加哪个基酒后能解锁最多的配方数量。
+        
+        算法：
+        1. 获取所有未拥有的基酒品类
+        2. 遍历每个基酒，模拟添加后能解锁的配方数量
+        3. 返回解锁配方最多的基酒
+        
+        注意：
+        - 只计算 is_easily_available=FALSE 的原料
+        - 便利店易购材料（果汁、糖浆等）不影响计算
+        
+        返回: {"family_id": int, "unlock_count": int, "family": dict} 或 None
+        """
+        # 获取用户当前酒柜中的品类
+        current_family_ids = self._get_user_cabinet_family_ids(user_id)
+        
+        # 获取所有基酒品类（排除已经在酒柜中的）
+        base_spirit_families = (
+            db.session.query(IngredientFamily)
+            .filter(
+                IngredientFamily.is_base_spirit.is_(True),
+                ~IngredientFamily.id.in_(current_family_ids) if current_family_ids else True
+            )
+            .all()
+        )
+        
+        if not base_spirit_families:
+            return None
+        
+        best_family = None
+        max_unlock_count = 0
+        
+        # 遍历每个基酒，计算能解锁的配方数量
+        for family in base_spirit_families:
+            # 模拟添加该基酒后的酒柜
+            simulated_family_ids = current_family_ids + [family.id]
+            unlock_count = self._count_unlocked_recipes(simulated_family_ids)
+            
+            # 计算新增解锁数量
+            current_unlock_count = self._count_unlocked_recipes(current_family_ids)
+            new_unlock_count = unlock_count - current_unlock_count
+            
+            if new_unlock_count > max_unlock_count:
+                max_unlock_count = new_unlock_count
+                best_family = family
+        
+        if best_family:
+            return {
+                "family_id": best_family.id,
+                "unlock_count": max_unlock_count,
+                "family": best_family.to_dict(in_cabinet=False),
+            }
+        
+        return None
+
+    def update_user_spirit_recommendation(self, user_id: str) -> None:
+        """
+        更新用户表中的推荐基酒信息。
+        """
+        recommendation = self.calculate_best_spirit_recommendation(user_id)
+        
+        user = db.session.query(User).filter_by(id=uuid.UUID(user_id)).first()
+        if user:
+            if recommendation:
+                user.recommended_spirit_family_id = recommendation["family_id"]
+                user.recommended_spirit_unlock_count = recommendation["unlock_count"]
+            else:
+                user.recommended_spirit_family_id = None
+                user.recommended_spirit_unlock_count = None
+            
+            db.session.commit()
+
+    def get_user_spirit_recommendation(self, user_id: str) -> dict | None:
+        """
+        获取用户的推荐基酒信息（从用户表读取）。
+        """
+        user = db.session.query(User).filter_by(id=uuid.UUID(user_id)).first()
+        if not user or not user.recommended_spirit_family_id:
+            return None
+        
+        family = db.session.get(IngredientFamily, user.recommended_spirit_family_id)
+        if not family:
+            return None
+        
+        return {
+            "family_id": user.recommended_spirit_family_id,
+            "unlock_count": user.recommended_spirit_unlock_count,
+            "family": family.to_dict(in_cabinet=False),
+        }
 
     # ── 搜索原料 ─────────────────────────────────────────────────────────────
 

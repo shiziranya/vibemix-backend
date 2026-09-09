@@ -77,3 +77,51 @@ def search_ingredients():
         q=q, category=category, family=family, page=page, per_page=per_page, user_id=user_id
     )
     return success(result)
+
+
+@cabinet_bp.route("/recommendation", methods=["GET"])
+@jwt_required()
+def get_spirit_recommendation():
+    """获取推荐的基酒信息
+    
+    该接口返回添加哪个基酒后能解锁最多配方。
+    
+    计算逻辑：
+    - 只计算 is_easily_available=FALSE 的材料（需要购买的材料）
+    - 忽略 is_easily_available=TRUE 的材料（便利店易购，如果汁、糖浆等）
+    """
+    user_id = get_jwt_identity()
+    recommendation = cabinet_service.get_user_spirit_recommendation(user_id)
+    
+    if recommendation:
+        return success(recommendation)
+    else:
+        return success({
+            "family_id": None,
+            "unlock_count": 0,
+            "family": None,
+            "message": "暂无推荐"
+        })
+
+
+@cabinet_bp.route("/recommendation/refresh", methods=["POST"])
+@jwt_required()
+def refresh_spirit_recommendation():
+    """手动刷新推荐的基酒信息
+    
+    重新计算并更新用户的基酒推荐。
+    通常在添加/删除酒柜物品时会自动触发，此接口用于手动刷新。
+    """
+    user_id = get_jwt_identity()
+    cabinet_service.update_user_spirit_recommendation(user_id)
+    recommendation = cabinet_service.get_user_spirit_recommendation(user_id)
+    
+    if recommendation:
+        return success(recommendation)
+    else:
+        return success({
+            "family_id": None,
+            "unlock_count": 0,
+            "family": None,
+            "message": "暂无推荐"
+        })

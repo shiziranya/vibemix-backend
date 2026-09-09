@@ -2,6 +2,13 @@
 .env
 .env.*
 *.env
+!.env.example
+
+# Large / generated cocktail artifacts (keep images/ and thumbnails/)
+app/static/cocktail/images_backup/
+app/static/cocktail/*.zip
+app/static/cocktail/_batches/
+app/static/background/* copy.*
 
 # Python
 __pycache__/

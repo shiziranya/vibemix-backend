@@ -7,6 +7,7 @@ from typing import List, Optional
 from sqlalchemy import Boolean, DateTime, Integer, Numeric, SmallInteger, String, Text
 from sqlalchemy.dialects.postgresql import ARRAY, JSONB
 from sqlalchemy.orm import Mapped, mapped_column
+from flask import current_app
 
 from ..extensions import db
 
@@ -74,22 +75,59 @@ class Cocktail(db.Model):
         onupdate=lambda: datetime.now(timezone.utc),
     )
 
-    def to_summary(self):
-        return {
+    def _get_full_image_url(self):
+        """生成完整的图片URL"""
+        if not self.image_url:
+            return None
+        
+        # 如果已经是完整URL（http/https开头），直接返回
+        if self.image_url.startswith(('http://', 'https://')):
+            return self.image_url
+        
+        # 如果是相对路径，拼接BASE_URL
+        base_url = current_app.config.get('BASE_URL', '')
+        return f"{base_url}{self.image_url}"
+    
+    def to_summary(self, translate_enums: bool = False):
+        """
+        返回配方摘要信息
+        
+        Args:
+            translate_enums: 是否将枚举值翻译为中文（默认 False 保持英文）
+        """
+        data = {
             "id": self.id,
             "name": self.name,
             "name_zh": self.name_zh or self.name,
             "abv_level": self.abv_level,
             "difficulty": self.difficulty,
-            "image_url": self.image_url,
+            "image_url": self._get_full_image_url(),
             "mood_tags": self.mood_tags or [],
             "flavor_tags": self.flavor_tags or [],
             "glass_type": self.glass_type,
         }
+        
+        if translate_enums:
+            from ..utils.enums import (
+                translate_flavor_tags,
+                translate_mood_tags,
+                translate_glass_type,
+            )
+            data["mood_tags_zh"] = translate_mood_tags(self.mood_tags or [])
+            data["flavor_tags_zh"] = translate_flavor_tags(self.flavor_tags or [])
+            data["glass_type_zh"] = translate_glass_type(self.glass_type)
+        
+        return data
 
-    def to_dict(self):
-        return {
-            **self.to_summary(),
+    def to_dict(self, translate_enums: bool = False):
+        """
+        返回配方完整信息
+        
+        Args:
+            translate_enums: 是否将枚举值翻译为中文（默认 False 保持英文）
+        """
+        data = {
+            **self.to_summary(translate_enums=translate_enums),
             "category": self.category,
             "iba_category": self.iba_category,
             "is_alcoholic": self.is_alcoholic,
@@ -111,6 +149,7 @@ class Cocktail(db.Model):
             "calories": self.calories,
             "carbs_g": float(self.carbs_g) if self.carbs_g is not None else None,
         }
+        return data
 
 
 class CocktailIngredient(db.Model):

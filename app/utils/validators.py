@@ -13,7 +13,7 @@ VALID_FLAVOR_TAGS = {
 VALID_ABV_PREFS = {"low", "medium", "high", "non-alcoholic", "any"}
 VALID_RECIPE_TYPES = {"classic", "original"}
 VALID_COCKTAIL_CATEGORIES = {"Craft", "Classic", "Other", "Shot"}
-VALID_TEMPLATE_IDS = {"amber", "blue", "noir", "white"}
+# 模板验证已移除 - 由 card_gen 服务动态提供，不在此处硬编码
 
 
 def validate_phone(phone: str) -> str:
@@ -65,8 +65,19 @@ def validate_recommend_request(data: dict) -> dict:
 
 def validate_card_request(data: dict) -> dict:
     cocktail_id = data.get("cocktail_id")
-    if not cocktail_id or not isinstance(cocktail_id, int):
-        raise ValidationError("cocktail_id 必填且必须是整数")
+    # 适配 int 和 str 类型
+    if not cocktail_id:
+        raise ValidationError("cocktail_id 必填")
+    
+    if isinstance(cocktail_id, int):
+        pass  # 已经是整数
+    elif isinstance(cocktail_id, str):
+        try:
+            cocktail_id = int(cocktail_id)
+        except ValueError:
+            raise ValidationError("cocktail_id 必须是整数或可转换为整数的字符串")
+    else:
+        raise ValidationError("cocktail_id 必须是整数或字符串")
 
     # text_overrides: {layer_id: {x: float, y: float}} — 仅验证结构，不限制 key
     text_overrides = data.get("text_overrides") or {}
@@ -85,9 +96,10 @@ def validate_card_request(data: dict) -> dict:
             }
 
     template_id = data.get("template_id") or None
-    if template_id and template_id not in VALID_TEMPLATE_IDS:
-        raise ValidationError(f"template_id 必须是 {sorted(VALID_TEMPLATE_IDS)} 之一")
-
+    # 验证 template_id 必须是字符串类型（不能是字典对象）
+    if template_id is not None and not isinstance(template_id, str):
+        raise ValidationError("template_id 必须是字符串")
+    
     return {
         "session_id": data.get("session_id"),
         "cocktail_id": cocktail_id,

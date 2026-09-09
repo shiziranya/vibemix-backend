@@ -10,3 +10,4 @@ init_celery(app)
 
 # Import tasks to register them
 import app.tasks.card_tasks  # noqa: F401, E402
+import app.tasks.cleanup_tasks  # noqa: F401, E402

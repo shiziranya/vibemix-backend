@@ -1,0 +1,4249 @@
+[
+ {
+  "id": "1087",
+  "name": "Salty Swede",
+  "name_zh": "咸味瑞典人",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{citrus,bitter,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz Karlsson's Gold Vodka, 2 oz Fresh grapefruit juice, 1 oz Club soda, 1 tincture Grapefruit bitters\n\nPreparation:\nCombine the Karlsson's Gold Vodka and grapefruit in a shaker with ice. Shake for 15 seconds and strain over fresh ice in an old-fashioned glass that has a salted rim. Top the cocktail with the club soda.\n\nNotes: Play around with different kinds of salt. The salty swede ",
+  "steps": [
+   "用柠檬角擦拭古典杯沿，在碟中铺满柚子盐，将杯沿倒扣均匀沾上盐边",
+   "在摇酒壶中加入冰块，依次倒入2 oz Karlsson's Gold 伏特加、2 oz 鲜榨西柚汁和1滴管葡萄柚苦精酊剂",
+   "盖上摇酒壶，用力摇晃15秒至外壁结霜",
+   "在准备好的盐边古典杯中放入新鲜大块冰，将摇好的酒液双重过滤倒入杯中",
+   "沿杯壁缓缓倒入1 oz 苏打水，轻轻提拉搅拌一圈后上桌"
+  ]
+ },
+ {
+  "id": "1226",
+  "name": "SOMA Fizz",
+  "name_zh": "SOMA 菲士",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{citrus,creamy,floral,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Junipero Gin, .5 oz Lemon juice, .75 oz Luxardo Triplum (Triple Sec), .75 oz Heavy Cream, 2 dash Orange Bitters, 2 oz Club Soda\n\nPreparation:\nPour 2 oz. of Club Soda into a Collin’s Glass. Hard shake first fIve ingredients with ice for at 20 seconds. Slowly strain into the Collins glass. Garnish with an orange wedge.\n\nGarnish: Orange wedge",
+  "steps": [
+   "在可林杯中倒入2 oz苏打水",
+   "在摇酒壶中依次量取并加入1.5 oz Junipero金酒、0.5 oz柠檬汁、0.75 oz路萨多三重橙酒、0.75 oz重奶油和2 dash橙味苦精",
+   "向摇酒壶中加入冰块，盖上壶盖，用力摇晃20秒",
+   "将摇好的酒液通过滤网缓慢滤入已盛有苏打水的可林杯中",
+   "用橙角装饰杯沿"
+  ]
+ },
+ {
+  "id": "1255",
+  "name": "Kentucky Likker",
+  "name_zh": "肯塔基烈酒",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{herbal,bitter,spicy,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Hirsch Small Batch Reserve Bourbon, 1 oz Luxardo Amaro Abano, 2 dash Orange Bitters, 1 splash Club Soda\n\nPreparation:\nPour the ingredients in an old fashioned glass, then fill up with ice and stir well before serving.\n\nGarnish: Lemon Peel, Luxardo Cherry",
+  "steps": [
+   "准备一只古典杯。",
+   "量取1.5 oz Hirsch Small Batch Reserve Bourbon，倒入古典杯中。",
+   "量取1 oz Luxardo Amaro Abano，倒入杯中。",
+   "加入2 dash Orange Bitters。",
+   "加入1 splash Club Soda。",
+   "将杯中加满冰块，然后用吧勺轻柔搅拌30圈约20秒，直至酒液充分冷却融合。",
+   "取柠檬皮扭转释放精油后放入杯沿，再放入一颗Luxardo樱桃作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1316",
+  "name": "Toasted Drop",
+  "name_zh": "炙烤滴落",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{citrus,sweet,sour,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Citrus-flavored Vodka, .75 oz Luxardo Limoncello, .5 oz Luxardo Amaretto di Saschira, 1 oz Fresh sweet n' sour, .5 oz Egg white\n\nPreparation:\nShake all ingredients with ice then strain into a chilled cocktail glass.\n\nGarnish: Cinnamon sugar rim",
+  "steps": [
+   "用柠檬角擦拭马天尼杯口，沾取肉桂糖形成均匀糖边，然后将杯子放入冰箱冷藏",
+   "在摇酒壶中依次加入0.5 oz蛋清、1 oz新鲜酸甜汁、0.75 oz路萨多柠檬切罗酒、0.5 oz Luxardo Amaretto杏仁利口酒、1.5 oz柑橘风味伏特加，不加冰盖上壶盖干摇",
+   "打开壶盖，加入冰块至八分满，重新盖紧壶盖，用力摇合",
+   "取出冷藏的马天尼杯，使用双重过滤法将酒液滤入杯中",
+   "平稳上桌，糖边即为装饰"
+  ]
+ },
+ {
+  "id": "1358",
+  "name": "Abano Sour",
+  "name_zh": "阿巴诺酸酒",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,sour,sweet,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Luxardo Amaro Abano, 1 oz Fresh Lemon Juice, .25 oz Agave Nectar, 1 dash Grapefruit Bitters, .5 oz Egg White\n\nPreparation:\nShake ingredients with ice then strain into a sour cocktail glass previously rimmed with cardamom sugar.\n\nGarnish: Cardamom Sugar",
+  "steps": [
+   "用柠檬汁或水沾湿鸡尾酒杯沿，然后在豆蔻糖中旋转沾取，使杯口均匀裹上糖边，备用",
+   "依次将1.5 oz路萨朵阿巴诺苦味酒、1 oz鲜榨柠檬汁、0.25 oz龙舌兰花蜜、1 dash西柚苦精和0.5 oz蛋清倒入摇酒壶",
+   "不加冰，盖紧摇酒壶，干摇约10秒，使蛋清充分乳化",
+   "加入冰块，再次盖紧，用力摇晃15秒，直至壶身结霜",
+   "双重过滤倒入已饰边边的鸡尾酒杯中，即可上桌"
+  ]
+ },
+ {
+  "id": "1526",
+  "name": "Bloody Swede",
+  "name_zh": "血腥瑞典人",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{savory,spicy,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n2 oz Karlsson's Gold Vodka, 2 oz Bloody mix*, 1  Caper berry, 1  Celery stalk, 1  Cherry tomato, 1  Pepperoncini, 1  Pickled okra, 1  Cocktail onion, 1  Pipparas Pepper, 1  Lemon slice, 1  Jalapeno stuffed olive\n\nPreparation:\nCombine all ingredients in a large pitcher and mix well. Store in fridge over night to let all the flavors meld together.\n\nNotes: *Blood",
+  "steps": [
+   "冰镇鸡尾酒杯：提前放入冰块或冷藏备用。",
+   "量取原料：在摇酒壶中倒入2 oz Karlsson's Gold伏特加和2 oz血腥玛丽混合料。",
+   "摇匀：加入冰块，盖紧壶盖，用力摇晃15秒，使酒液充分混合并冷却。",
+   "过滤倒杯：使用双重过滤网将酒液滤入冰镇过的鸡尾酒杯中。",
+   "装饰：用竹签依次串上柠檬片、刺山柑果、樱桃番茄、佩佩罗奇尼辣椒、腌秋葵、鸡尾酒洋葱、皮帕拉斯辣椒和塞满哈拉佩诺的橄榄，横置于杯口，另插一根芹菜梗作点缀。"
+  ]
+ },
+ {
+  "id": "1542",
+  "name": "My Spicy Valentine",
+  "name_zh": "我的辣味情人",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,creamy,spicy,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Karlsson's Gold Vodka, 1 oz Creme de Cacao, .5 oz Orange liqueur, 2 oz Milk, 3 dash Chocolate bitters",
+  "steps": [
+   "准备波士顿摇酒器、量酒器和预先冰镇的鸡尾酒杯",
+   "在摇酒器中依次量入：1.5 oz 伏特加、1 oz 可可利口酒、0.5 oz 橙味利口酒、2 oz 牛奶和3 dash巧克力苦精",
+   "加入满杯冰块",
+   "盖紧摇酒器，用力摇晃15秒，直至摇酒器外壁结霜",
+   "双重过滤后倒入冰镇的鸡尾酒杯，无需装饰即可上桌"
+  ]
+ },
+ {
+  "id": "904",
+  "name": "The Happy Place",
+  "name_zh": "快乐之地",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,sour,fruity,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Elizabeth Montana\nBar/Company: Forgery & Verso\nLocation: San Francisco\n\nIngredients:\n2 oz Junipero Gin, .75 oz House-made Cranberry Syrup*, .5 oz Lemon Juice, .5 oz Cranberry Juice, .25 oz Lillet Blanc, 4 dash Forgery Earth Day Bitters,  mist Laphroaig\n\nPreparation:\n*House-made Cranberry syrup: \n-- 2 cups Fresh Cranberries\n-- 1 cup Sugar\n-- 1 cup Water\n-- 2 Bay Leaves\n-- .25 cup Pink Pe",
+  "steps": [
+   "准备鸡尾酒杯，将其放入冰箱或加冰冷却备用；准备摇酒壶、量酒器和滤网。",
+   "在摇酒壶中依次倒入2 oz Junipero金酒、.75 oz 自制蔓越莓糖浆、.5 oz 柠檬汁、.5 oz 蔓越莓汁、.25 oz 利莱白和4 dash Forgery地球日苦精。",
+   "在摇酒壶中加入足量冰块。",
+   "盖紧摇酒壶，用力摇晃15秒，使酒液充分混合并冷却。",
+   "取出冰好的鸡尾酒杯，将摇和后的酒液经滤网双重过滤倒入杯中。",
+   "在酒液表面喷上一层拉弗格威士忌薄雾（使用喷雾瓶）。"
+  ]
+ },
+ {
+  "id": "919",
+  "name": "Cut & Rum",
+  "name_zh": "切割与朗姆",
+  "category": "Craft",
+  "glass_type": "Smoked Glass",
+  "flavor_tags": "{herbal,bitter,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jose Pereiro\nBar/Company: Drift Fish House & Oyster Bar\nLocation: Atlanta\n\nIngredients:\n.75 oz Banks 5 Rum, .75 oz Denizen Aged White Rum?, .75 oz Denizen Aged White Rum?, .75 oz Luxardo Amaro Abano\n\nPreparation:\nAdd all ingredients in mixing glass, stir and strain over 2x2 ice cube in?smoked glass on hickory board. Garnish with orange peel and clothes pin.\n\nGarnish: Orange Peel",
+  "steps": [
+   "在烟熏杯中放入一块2x2英寸的大冰块，并将杯子置于山核桃木板上备用",
+   "用量酒器分别量取 Banks 5 朗姆酒、Denizen 陈年白朗姆酒、Denizen 陈年白朗姆酒及路萨朵阿巴诺苦味酒各 0.75 oz，依次倒入混合杯中",
+   "向混合杯中加入适量冰块，用吧勺轻柔搅拌30圈，约20秒，直至酒液充分冷却且适度稀释",
+   "用滤网将混合好的酒液过滤，倒入烟熏杯中的大冰块上",
+   "取一片橙皮，在杯口上方扭转释放油脂，然后用衣夹将橙皮夹在杯沿作为装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "931",
+  "name": "Fiona Graham",
+  "name_zh": "菲奥娜·格雷厄姆",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{bitter,herbal,tropical,savory}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Chris Morris\nLocation: Houston\n\nIngredients:\n1.5 oz Luxardo Bitter Bianco, 1 oz Junmai Sake, .25 oz Coconut Rum, 1 dash Orange Bitters, 1 dash Coconut Vinegar\n\nPreparation:\nAdd all ingredients to a mixing glass. Stir until thoroughly chilled (~30 seconds). Strain into a chilled cocktail glass. Serve with one big rock. Garnish with an expressed orange swath.\n\nGarnish: Expressed Orange Sw",
+  "steps": [
+   "将尼克诺拉杯放入冰箱或装满冰块进行冰镇。",
+   "在搅拌杯中依次量取1.5 oz Luxardo白色苦酒、1 oz纯米清酒、0.25 oz椰子朗姆酒、1 dash橙味苦精和1 dash椰子醋。",
+   "往搅拌杯中加入冰块，用吧勺搅拌约30秒，直至酒液彻底冷却。",
+   "从冰箱取出冰好的尼克诺拉杯，在杯中放入一块大冰。",
+   "将搅拌好的酒液通过滤网倒入杯中。",
+   "切取一条橙皮，在杯口上方用力挤压出柑橘油并涂抹杯缘，然后将橙皮条投入杯中或搭在杯沿作装饰。"
+  ]
+ },
+ {
+  "id": "977",
+  "name": "Kick the Pigeon",
+  "name_zh": "踢鸽子",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{sweet,floral,citrus,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\noz Pink Pigeon Rum,  oz St. Germaine Elderflower Liqueur,  oz Lemon ,  oz Vanilla Syrup,  oz Prosecco\n\nPreparation:\nBuild and serve in a champagne flute.",
+  "steps": [
+   "准备好一个香槟笛杯。",
+   "在笛杯中依次加入 oz Pink Pigeon 朗姆酒、 oz 圣哲曼接骨木花利口酒、 oz 柠檬汁、 oz 香草糖浆。",
+   "用吧勺轻轻搅拌5圈约10秒，使材料融合。",
+   "缓慢倒入冰镇普洛赛克起泡酒至满杯。",
+   "用柠檬皮拧香或柠檬片装饰杯口，即可上桌。"
+  ]
+ },
+ {
+  "id": "980",
+  "name": "Pink Pigeon Punch",
+  "name_zh": "粉红鸽子潘趣",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{tropical,sweet,fruity,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n7 oz Pink Pigeon Rum, 1 oz Agave Syrup, 7 oz Watermelon, 2  Lemon Juice,  top Ginger Beer\n\nPreparation:\nBuild in a large pitcher or punchbowl. Combine Pink Pigeon Rum, juice from 2 lemons and agave. Blend 7 oz. of fresh watermelon in a blender and puree to mixture. Add a generous amount of ice and stir. Top with ginger beer. Ladle or pour into coupe glasses.",
+  "steps": [
+   "准备一个大潘趣碗或壶，将7盎司新鲜西瓜放入搅拌机打成顺滑果泥。",
+   "在潘趣碗中，倒入7盎司Pink Pigeon朗姆酒、1盎司龙舌兰糖浆和2个柠檬的鲜榨汁。",
+   "加入打好的西瓜果泥，用吧勺搅拌均匀。",
+   "加入大量冰块，用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却。",
+   "沿碗壁缓缓注入适量姜汁啤酒至满，轻微提起混合。",
+   "用长柄勺将潘趣酒分装入冰过的碟形杯中，即可上桌享用。"
+  ]
+ },
+ {
+  "id": "981",
+  "name": "Kentucky Garrigue",
+  "name_zh": "肯塔基加里格",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{fruity,spicy,sweet,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz Wild Turkey 101 Bourbon, .75 oz Strawberry, Black Pepper Balsamic Shrub*, .75 oz Luxardo Sangue Morlacco Cherry Liqueur, 1 oz Fever-Tree Tonic Water\n\nPreparation:\nBuild in a mixing glass and add ice. Slowly pour back and forth between two tins, about 4-6 times. Then dump the whole cocktail into a Fizz or Collins glass.\n\nGarnish:",
+  "steps": [
+   "准备一个混合杯和一个可林杯，以及一个摇酒壶（两个锡杯）。",
+   "在混合杯中加入1.5盎司野火鸡101波本威士忌、0.75盎司草莓、0.75盎司黑胡椒香脂醋灌木和0.75盎司路萨朵桑格·莫拉科樱桃利口酒。",
+   "在混合杯中加入冰块。",
+   "将混合杯中的酒液缓慢倒入另一个锡杯，再倒回，来回倾倒4至6次，以混合并稀释。",
+   "将混合好的鸡尾酒连同冰块一起倒入可林杯中。",
+   "在杯中倒入1盎司Fever-Tree汤力水，轻轻搅拌。",
+   "根据喜好装饰（如草莓或黑胡椒粒），即可享用。"
+  ]
+ },
+ {
+  "id": "1026",
+  "name": "La Hops Vie",
+  "name_zh": "啤酒花人生",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{citrus,herbal,refreshing,sour}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz Hophead Vodka, .75 oz Fresh Lemon Juice, .75 oz Fresh Grapefruit Juice, .5 oz Simple Syrup,   Gin Barrel Aged Orange Bitters,   Fresh Basil Leaves\n\nPreparation:\nCombine all ingredients in a shaker and shake until proper dilution. Double strain into a chilled martini or coupe glass and garnish with 2 fresh basil leaves that have been lightly \"spanked\" to release aromatics.\n\nGarnis",
+  "steps": [
+   "将马天尼杯放入冰箱或加冰预冷。",
+   "在雪克壶中依次倒入2 oz Hophead伏特加、.75 oz鲜榨柠檬汁、.75 oz鲜榨西柚汁、.5 oz简易糖浆和2 dashes金酒桶陈橙味苦精。",
+   "往雪克壶中加满冰块。",
+   "盖紧雪克壶，用力摇晃约15秒，直至壶壁起霜。",
+   "取出冰好的马天尼杯，使用双重过滤（滤网加细筛）将酒液倒入杯中。",
+   "轻拍两片新鲜罗勒叶以释放香气，然后放入酒面作为装饰。"
+  ]
+ },
+ {
+  "id": "1034",
+  "name": "The Monte Rua",
+  "name_zh": "蒙特鲁阿",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{fruity,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n4 oz Ca' Secco Sparkling, 1 bsp Luxardo Cherry Syrup\n\nPreparation:\nCombine all ingredients in a sparkling wine glass.\n\nGarnish: Luxardo Cherry\n\nNotes: Luxardo & Ca'Secco PR partnership Fall 2015",
+  "steps": [
+   "将冰镇过的香槟笛杯置于吧台。",
+   "用量勺量取 1 bsp 路萨多樱桃糖浆，轻轻倒入杯底。",
+   "沿杯壁缓慢倒入 4 oz Ca' Secco 起泡酒。",
+   "用鸡尾酒签刺取一颗路萨多樱桃，架在杯口装饰后上桌。"
+  ]
+ },
+ {
+  "id": "1042",
+  "name": "The Lover's Quarrel",
+  "name_zh": "恋人争吵",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,spicy,citrus,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Russell Davis\nBar/Company: Rickhouse\nLocation: San Francisco\n\nIngredients:\n1 oz No.3 London Dry Gin, 1 oz Maurin Quina, .75 oz King's Ginger Liqueur, .5 oz Honey Jalape?o syrup, 1 oz Orange juice, .5 oz Lemon juice, 1 oz Soda water\n\nPreparation:\nCombine all ingredients into a large punch bowl and add large ice cube/cubes. Garnish liberally with slice fruits.\n\nGarnish: Sliced Peaches, Ja",
+  "steps": [
+   "准备一个大号调酒碗（潘趣碗）。",
+   "依次量取1 oz No.3伦敦干金酒、1 oz莫兰奎那酒、0.75 oz国王姜味利口酒、0.5 oz蜂蜜哈瓦那辣椒糖浆、1 oz橙汁、0.5 oz柠檬汁，全部倒入调酒碗中。",
+   "将1 oz苏打水倒入碗中，然后放入大冰块。",
+   "用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却融合。",
+   "用滤网将混合液过滤倒入鸡尾酒杯中。",
+   "在杯口或杯中放入切片桃子、哈瓦那辣椒、柠檬和橙子装饰。"
+  ]
+ },
+ {
+  "id": "1053",
+  "name": "Nieux Carré",
+  "name_zh": "新奥尔良广场",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{herbal,bitter,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n1.5 oz Karlsson's Gold Vodka, .75 oz Gran Duque d Alba Solera gran Reserva brandy, .75 oz Carpano Antica Vermouth, .25 oz Benedictine, 1 tincture Peychaud's Bitters, 1 tincture Angostura bitters\n\nPreparation:\nCombine all liquid ingredients in a chilled mixing glass with cracked ice and stir for 20 seconds.\nDouble strain the cocktail over a large cube placed in",
+  "steps": [
+   "准备一个古典杯，置于吧台。",
+   "在杯中依次量入1.5 oz Karlsson's Gold伏特加、.75 oz Gran Duque d'Alba索莱拉特级珍藏白兰地、.75 oz Carpano Antica味美思、.25 oz 廊酒、1 tincture Peychaud's苦精酊剂和1 tincture 安高天娜苦精酊剂。",
+   "加入大块新鲜冰块至杯满。",
+   "用吧勺轻轻搅拌30秒，直至酒液充分冷却融合。",
+   "无需装饰，直接附上杯垫上桌。"
+  ]
+ },
+ {
+  "id": "1082",
+  "name": "Fuji-La",
+  "name_zh": "富士拉",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,fruity,refreshing,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Qwesha Byrd\nLocation: Houston\n\nIngredients:\n.5 oz Luxardo Bitter Bianco, 1 oz Junipero Gin, 1.5 oz Apple Water*, 1 ml Citric Acid Solution**\n\nPreparation:\nCombine Luxardo, gin, apple water and citric acid solution into a shaker tin and shake to chill. Double strain into a coupe glass and garnish with a slice of Fuji apple lightly dusted with cinnamon.\n\n*Apple Water:\n-- 1 Fuji Apple\n-- 2",
+  "steps": [
+   "准备摇酒壶、量酒器（及小量杯）、碟形杯，并备好冰块。",
+   "使用量酒器，依次向摇酒壶中加入 .5 oz Luxardo Bitter Bianco、1 oz Junipero 金酒、1.5 oz 苹果水，以及 1 ml 柠檬酸溶液。",
+   "向摇酒壶中加入足量冰块。",
+   "盖紧摇酒壶，用力摇晃约15秒，直至壶身充分结霜。",
+   "使用双重过滤网将酒液滤入冰过的碟形杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1459",
+  "name": "Polish Penance",
+  "name_zh": "波兰忏悔",
+  "category": "Craft",
+  "glass_type": "Etched Rocks Glass",
+  "flavor_tags": "{herbal,fruity,spicy,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz House-made Slivovitz (Plum Brandy), 1 oz Chamomile Tea-Infused Noilly Prat Dry Vermouth, .5 oz King's Ginger Liqueur, 3 dash Peychaud's Bitters\n\nPreparation:\nStir and strain. Hoshizaki ice.\n\nGarnish: Lemon Twist",
+  "steps": [
+   "在蚀刻古典杯中放入一块Hoshizaki大冰，备用。",
+   "在调酒杯中依次加入：1.5 oz 自制斯利沃维茨李子白兰地、1 oz 洋甘菊茶浸渍Noilly Prat干味美思、0.5 oz 国王姜味利口酒、3 dash Peychaud's苦精。",
+   "向调酒杯中加入搅拌用冰，用吧勺轻柔搅拌30圈约20秒，直至充分冷却并融合。",
+   "将搅拌好的酒液通过过滤网倒入已备好冰块的蚀刻古典杯中。",
+   "切取一片柠檬皮，在杯沿上方扭转挤压释放油脂后放入酒中作装饰。"
+  ]
+ },
+ {
+  "id": "1529",
+  "name": "II Piacere",
+  "name_zh": "欢愉",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sour,sweet,fruity,nutty,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Ann Maynard\nLocation: Austin\n\nIngredients:\n1.5 oz English Harbour Rum, .5 oz Luxardo Angioletto (Hazelnut Liqueur), .5 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Fresh lemon juice, .25 oz Luxardo Maraschino Cherry/Cherries, 1  Egg white, 4 dash Bittermens Boston Bittahs",
+  "steps": [
+   "准备波士顿摇酒壶（或三段式摇酒壶）、量酒器、过滤器和预先冰镇的鸡尾酒杯。",
+   "在摇酒壶中依次加入1.5 oz 英港朗姆酒、.5 oz 榛子利口酒、.5 oz 樱桃利口酒、.5 oz 鲜榨柠檬汁、1个蛋清和4滴苦精，暂不加冰先扣合壶身，用力干摇15秒以乳化蛋清。",
+   "开壶加入半壶冰块，再次扣合壶身，用力湿摇15秒直至壶身结霜。",
+   "卸下壶盖，将酒液经滤网和细孔过滤器双重过滤倒入冰镇鸡尾酒杯中。",
+   "将.25 oz Luxardo马拉斯奇诺樱桃作为装饰置于杯底或杯沿，立即上桌。"
+  ]
+ },
+ {
+  "id": "1555",
+  "name": "Kerouac",
+  "name_zh": "凯鲁亚克",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{citrus,bitter,refreshing,sour}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kevin Diedrich\n\nIngredients:\n1.5 oz Chinaco Reposado Tequila, .5 oz Gran Classico, .5 oz Luxardo Triplum (Triple Sec), .5 oz Lime, .5 oz Grapefruit,  top Soda\n\nGarnish: Grapefruit Twist",
+  "steps": [
+   "取一只可林杯，加入冰块至八分满，备用。",
+   "在摇酒壶中依次加入 1.5 oz 奇纳科陈酿龙舌兰酒、.5 oz Gran Classico 苦味酒、.5 oz 路萨多三重橙酒、.5 oz 鲜榨青柠汁和 .5 oz 鲜榨葡萄柚汁。",
+   "向摇酒壶中加入冰块，盖上壶盖，用力摇晃 15 秒，使酒液充分冷却和混合。",
+   "将摇好的酒液通过滤网倒入准备好的可林杯中。",
+   "沿着杯壁缓缓注入苏打水，直至满杯。",
+   "在杯口上方扭曲一块葡萄柚皮，释放油脂后放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1195",
+  "name": "Masataka's Vision",
+  "name_zh": "政孝之见",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,bitter,spicy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Larry Miller \nLocation: Austin\n\nIngredients:\n2 oz Nikka Whisky Taketsuru Pure Malt 12 YO, .5 oz Luxardo Amaro Abano, 3 dash House-made Rasta Bitters\n\nPreparation:\nMuddle orange twist with sugar. Add ice. Pour ingredients over ice. Add bitters\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "在调酒杯中放入一块方糖和一片橙皮扭，用捣棒轻捣约15秒，使橙皮释出精油并与糖融合",
+   "加入满杯冰块",
+   "量取并倒入2 oz Nikka 竹鹤12年纯麦威士忌和.5 oz 路萨朵阿巴诺苦味酒",
+   "滴入3 dash 自制拉斯塔苦精",
+   "用吧勺轻柔搅拌30圈约20秒，使材料充分冷却并融合",
+   "隔冰过滤倒入冰镇过的鸡尾酒杯中",
+   "用一颗路萨朵樱桃装饰杯口后上桌"
+  ]
+ },
+ {
+  "id": "1544",
+  "name": "Doitashimashie",
+  "name_zh": "请多关照",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{sweet,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nick Meyer\nBar/Company: The Soigne Group\nLocation: Los Angeles\n\nIngredients:\n2 oz Nikka Coffey Grain Whisky, .25 oz Demerara Syrup, 1 dash Angostura bitters\n\nGarnish: Orange Twist, Mint",
+  "steps": [
+   "准备一个古典杯，放入一块大冰块或冰球。",
+   "量取 2 oz 一甲科菲谷物威士忌，缓缓注入杯中。",
+   "加入 0.25 oz 德梅拉拉糖浆。",
+   "滴入 1 dash 安高天娜苦精。",
+   "用吧勺轻柔搅拌 30 圈约 20 秒，使酒液充分冷却融合。",
+   "取一块橙皮扭挤释放油脂，擦拭杯沿后投入杯中，最后放入一枝薄荷装饰。"
+  ]
+ },
+ {
+  "id": "1253",
+  "name": "Glimpse of Seduction",
+  "name_zh": "诱惑一瞥",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,citrus,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n.75 oz Luxardo Maraschino Liqueur, .75 oz Grapefruit flavored Vodka, .5 oz Fresh lemon juice, 1 float Pomegranate liqueur, 2 scoop Lemon sorbet\n\nPreparation:\nPour the first four ingredients in a blender and blend until smooth. Serve into a champagne saucer. Top with Pomegranate Liqueur float.\n\nGarnish: Fresh lychee",
+  "steps": [
+   "准备搅拌机和碟形香槟杯（鸡尾酒杯），确保搅拌机干净。",
+   "向搅拌机中加入 .75 oz 路萨朵黑樱桃利口酒、.75 oz 西柚味伏特加、.5 oz 鲜榨柠檬汁和 2 scoop 柠檬雪芭。",
+   "盖上搅拌机盖，高速搅打约 15-20 秒，至混合物完全顺滑无冰粒。",
+   "将搅拌好的酒液倒入准备好的碟形香槟杯中。",
+   "缓缓沿吧勺背部向杯中倒入 1 float 石榴利口酒，使其漂浮在酒液表面形成分层。",
+   "在杯沿装饰一颗新鲜荔枝，即可上桌。"
+  ]
+ },
+ {
+  "id": "1249",
+  "name": "Ch?teau Montifaud Creation",
+  "name_zh": "蒙蒂福城堡特调",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,nutty,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sophie\n\nIngredients:\n1.5 oz Chateau de Montifaud Cognac VS, 1 oz Lemon Juice, .25 oz Orgeat (Almond) Syrup, .25 oz Triple Sec,  top Lemonade\n\nPreparation:\nPour the Cognac and lemon juice into the glass and then add orgeat syrup; fill with ices cubes and mix with a spoon. At the end, add lemonade and lemon peel.\n\nGarnish: Lemon Peel",
+  "steps": [
+   "准备一只鸡尾酒杯。",
+   "在杯中依次倒入蒙蒂福干邑 VS 1.5 oz、柠檬汁 1 oz、杏仁糖浆 .25 oz、橙味利口酒 .25 oz。",
+   "加入冰块至满杯，用吧勺轻柔搅拌混合。",
+   "沿杯壁缓缓倒入柠檬汽水至满杯。",
+   "取一片柠檬皮，在杯口上方拧挤出油脂并放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1258",
+  "name": "Profundo",
+  "name_zh": "深邃",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{rich,sweet,creamy,nutty}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.25 oz Hirsch Small Batch Reserve Bourbon, 1.25 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Chocolate Liqueur, 1 oz Heavy cream flavored with Hum Liqueur\n\nPreparation:\nPour the liquor ingredients over ice and top with half inch (about one centimeter) layer of lightly whipped cream shaken with Hum Liqueur.\n\nGarnish: Fresh cherry",
+  "steps": [
+   "将鸡尾酒杯放入冰箱冷藏或加入冰块冰镇备用。",
+   "在调酒杯中加入八分满冰块，依次量入1.25 oz Hirsch 小批量珍藏波本威士忌、1.25 oz 路萨朵桑格·莫拉科樱桃利口酒和.5 oz 巧克力利口酒。",
+   "用吧勺轻柔搅拌30圈约20秒，直至酒液充分冷却融合。",
+   "取出冰镇好的鸡尾酒杯，将调酒杯中的酒液通过滤网滤入杯中。",
+   "在另一个小碗中将1 oz Hum利口酒风味浓奶油用手持打泡器或蛋抽轻打发约15秒，至微稠仍可流动的状态。",
+   "将轻打发奶油沿吧勺背缓缓倒在酒液表面，形成约1厘米厚的分层。",
+   "在奶油层中央放上一颗新鲜樱桃装饰，立即上桌。"
+  ]
+ },
+ {
+  "id": "1282",
+  "name": "The Rusty Tack",
+  "name_zh": "生锈的图钉",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{spicy,sweet,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz King's Ginger Liqueur, 1 oz Glenrothes Vintage Reserve\n\nPreparation:\nServe neat or on the rocks.",
+  "steps": [
+   "在古典杯中放入一颗大冰块或加满冰块，冰镇杯子",
+   "用量酒器分别量取1 oz 国王姜味利口酒和1 oz Glenrothes 年份珍藏威士忌，依次倒入杯中",
+   "使用吧勺轻柔搅拌15秒，使酒液融合并充分降温",
+   "无需装饰，直接上桌享用"
+  ]
+ },
+ {
+  "id": "1332",
+  "name": "Frankie and Johnnie",
+  "name_zh": "弗兰基与约翰尼",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,citrus,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Floyd\nLocation: Austin\n\nIngredients:\n1 oz King's Ginger Liqueur, 1 oz C. Drouin Pommeau de Normandie, .5 oz Fresh lemon juice, .5 oz Fresh orange juice, 1 dash Jerry Thomas Bitters\n\nPreparation:\nShake and serve up.\n\nGarnish: Lemon wheel",
+  "steps": [
+   "准备摇酒器和鸡尾酒杯，将鸡尾酒杯预先冷藏。",
+   "在摇酒器中依次量取：1 oz 国王姜味利口酒、1 oz C. 德鲁安诺曼底苹果酒、.5 oz 鲜榨柠檬汁、.5 oz 鲜榨橙汁，并加入1 dash 杰瑞·托马斯苦精。",
+   "向摇酒器中加入冰块至满。",
+   "盖紧摇酒器，用力摇晃15秒，使酒液充分混合并迅速冷却。",
+   "取出冷藏好的鸡尾酒杯，使用双重过滤将酒液倒入杯中。",
+   "取一片柠檬轮，卡在杯沿装饰即可上桌。"
+  ]
+ },
+ {
+  "id": "1344",
+  "name": "Pants off Dance off",
+  "name_zh": "脱裤起舞",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,sour,herbal,bitter}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean Gleason\nBar/Company: Biltong Bar\nLocation: Atlanta\n\nIngredients:\n.75 oz BarSol Perfecto Amor (Aperitif Wine), .5 oz Lime Juice, 1 oz Junipero Gin, .5 oz Grenadine, 1 dash Angostura Bitters, 1 drop Bittermens Burlesque Bitters\n\nPreparation:\nShake and top with Anchor Steam.",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或装满冰块冷却，备用。",
+   "在摇酒壶中依次加入1 oz Junipero金酒、0.75 oz BarSol Perfecto Amor开胃酒、0.5 oz青柠汁、0.5 oz红石榴糖浆、1 dash安高天娜苦精和1滴Bittermens Burlesque苦精。",
+   "加入冰块至摇酒壶八分满，盖紧壶盖，用力摇晃15秒。",
+   "将酒液通过双重滤网过滤倒入冰过的鸡尾酒杯中。"
+  ]
+ },
+ {
+  "id": "1356",
+  "name": "Pistachio Follies",
+  "name_zh": "开心果狂想曲",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{nutty,creamy,sweet,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1 oz Luxardo Amaro Abano, 1 oz Aged Rum, 1 oz Fresh cream(not whipped), .5 oz Pistachio syrup\n\nPreparation:\nShake ingredients with ice then strain into a cocktail glass previously swirled with chocolate syrup and rimmed with ground pistachios.\n\nGarnish: Ground pistachios\n\nNotes: When grinding pistachios add a tiny pinch of coffee powder and salt.",
+  "steps": [
+   "取一个鸡尾酒杯，倒入少许巧克力糖浆并旋转杯子使内壁形成纹路，然后将杯沿在装有碎开心果的碟子上按压沾满开心果碎，备用",
+   "在摇酒壶中依次加入1 oz 路萨朵阿巴诺苦味酒、1 oz 陈年朗姆酒、1 oz 未打发鲜奶油和0.5 oz 开心果糖浆",
+   "往摇酒壶中加入冰块至八分满",
+   "盖紧摇酒壶，用力摇晃15秒，使材料充分融合并冷却",
+   "取下壶盖，将酒液通过双重滤网过滤倒入已准备好的鸡尾酒杯中",
+   "在酒液表面撒上少许碎开心果作为装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1353",
+  "name": "Vesper's Sister",
+  "name_zh": "薇丝朋的姐妹",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{floral,herbal,sweet,dry}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz Van Gogh Blue Vodka, 1 oz No.3 London Dry Gin, .5 oz Lillet Blanc, .25 oz St. Germain\n\nPreparation:\nShake ingredients very well with ice and strain into a martini glass. Garnish with lemon and orange twists.\n\nGarnish: Lemon Twist, Orange Twist",
+  "steps": [
+   "准备马天尼杯并放入冰箱冷藏降温，同时准备好调酒器（摇酒壶）和滤冰器。",
+   "在摇酒壶中加入冰块，然后依次量取1 oz 梵高蓝伏特加、1 oz No.3 伦敦干金酒、.5 oz 利莱白、.25 oz 圣哲曼接骨木花利口酒倒入。",
+   "盖紧摇酒壶，用力摇晃15秒，使酒液充分混合并冷却。",
+   "从冰箱取出冰镇的马天尼杯，将摇酒壶中的酒液通过滤冰器双重过滤倒入杯中。",
+   "用柠檬皮扭花和橙皮扭花装饰杯沿，即可上桌。"
+  ]
+ },
+ {
+  "id": "1545",
+  "name": "Lucky No.3",
+  "name_zh": "幸运三号",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{bitter,sweet,herbal,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nick Meyer\nBar/Company: The Soigne Group\nLocation: Los Angeles\n\nIngredients:\n1.5 oz No.3 London Dry Gin, 1 oz Luxardo Aperitivo, .75 oz Tempus Fugit Alessio Vermouth di Torino Rosso, 1 dash Grapefruit Bitters, 1 pinch Kosher Salt\n\nGarnish: Grapefruit Twist",
+  "steps": [
+   "在古典杯中放入大块冰块或一个方形冰，静置冰杯。",
+   "在调酒杯中依次量入1.5 oz No.3伦敦干金酒、1 oz 路萨朵开胃酒、0.75 oz Tempus Fugit Alessio 都灵红味美思、1 dash 西柚苦精和1 pinch 犹太盐。",
+   "向调酒杯中加入七八分满的食用冰，用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却融合。",
+   "倒掉古典杯中融化的冰水，用隔冰匙将搅拌好的酒液过滤倒入杯中。",
+   "取一块葡萄柚皮，在杯口上方挤压并扭转，释放皮油后擦拭杯沿，将皮卷放入酒中作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1421",
+  "name": "Donaji",
+  "name_zh": "多纳希",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{smoky,citrus,sweet,sour}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Julian Cox\n\nIngredients:\n2 oz Mezcal, .5 oz Fresh Lemon Juice, .5 oz Fresh Lime Juice, .75 oz Agave Nectar\n\nPreparation:\nShaken and strained over ice in a rocks glass.\n\n*Chapuline, Salt & Chile Pepper Rim:\nGrind the chapuline  (dried crickets) and dried chile pepper in a mortar and pestle, as it becomes a powder, throw in the salt and pour onto a plate. Use a fresh lime wedge to moisten",
+  "steps": [
+   "将干蚱蜢和干辣椒用研钵研磨成粉末，加入适量盐混合均匀，倒入平盘中备用。",
+   "用新鲜青柠角润湿古典杯的杯口边缘，然后将杯口在粉末中旋转按压，形成均匀的杯边。",
+   "在摇酒器中加入2 oz梅斯卡尔酒、.5 oz鲜榨柠檬汁、.5 oz鲜榨青柠汁和.75 oz龙舌兰花蜜。",
+   "向摇酒器中加入冰块，盖上壶盖，用力摇晃15秒。",
+   "在古典杯中放入新鲜冰块，将摇匀的酒液通过滤冰器倒入杯中。",
+   "将调制好的多纳希鸡尾酒直接上桌享用。"
+  ]
+ },
+ {
+  "id": "1439",
+  "name": "El Mustavo",
+  "name_zh": "埃尔·穆斯塔沃",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{smoky,bitter,herbal,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Coly Den\nBar/Company: The Must\nLocation: Los Angeles\n\nIngredients:\n2 oz Mezcal, 1 oz Tempus Fugit Alessio Vermouth Chinato, 1 oz Campari, 2 dash Rhubarb Bitters, 2 dash Orange Bitters\n\nPreparation:\nStir all ingredients and pour over 2-inch single ice cube. Garnish with birch smoked sea salt rim and bow tie orange peel.\n\nGarnish: Birch Smoked Sea Salt Rim, Bow Tie Orange Peel",
+  "steps": [
+   "用桦木烟熏海盐为鸡尾酒杯制作盐边",
+   "在调酒杯中加入梅斯卡尔酒2盎司、Tempus Fugit Alessio金纳托味美思1盎司、金巴利1盎司、大黄苦精2 dash和橙味苦精2 dash",
+   "加入冰块，用吧勺搅拌约35圈（约25秒）至酒液充分冷却和融合",
+   "将一块2英寸方冰放入备好盐边的鸡尾酒杯中",
+   "用滤冰器将搅拌好的酒液过滤倒入杯中，覆盖冰块",
+   "用蝴蝶结形橙皮装饰即可上桌"
+  ]
+ },
+ {
+  "id": "1516",
+  "name": "Soleo",
+  "name_zh": "索莱欧",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,herbal,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1 oz Luxardo Limoncello, 1 oz Herbal Liqueur\n\nPreparation:\nUse an empty bottle of 750ml capacity and combine together 12 ounces - 360 ml of each of the two liqueurs and store in the freezer. Serve very cold in a small cordial glass without ice.\n\nGarnish: Fresh lemon verbena sprig\n\nNotes: Shake the bottle containing the mixture before serving.",
+  "steps": [
+   "将1 oz路萨多柠檬切罗酒和1 oz草本利口酒倒入可密封的小玻璃瓶中，盖紧瓶盖，摇匀后放入冷冻室冷冻至少2小时，直至酒液充分冰镇。",
+   "从冷冻室取出预混酒瓶，拧紧瓶盖，用力摇晃约10秒，使酒液均匀融合。",
+   "将冰镇过的鸡尾酒杯置于杯垫上。",
+   "直接将摇晃后的混合酒液倒入杯中，不加冰。",
+   "取一支新鲜柠檬马鞭草枝，轻拍后斜插入杯沿作为装饰，即刻上桌。"
+  ]
+ },
+ {
+  "id": "1531",
+  "name": "The Fifth Star",
+  "name_zh": "第五星",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,smoky,earthy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Liz Pearce\nLocation: Chicago\n\nIngredients:\n1.5 oz Nikka Whisky Taketsuru Pure Malt 12 YO, .5 oz Luxardo Amaretto di Saschira, .5 oz Luxardo Bitter, .5 oz Luxardo Fernet, .25 oz Lustau Dry Olorosso Sherry,  oz La Colombe Cold Draft Coffee",
+  "steps": [
+   "准备一个调酒杯和量酒器，在鸡尾酒杯中预先冰杯。",
+   "在调酒杯中依次量取并加入：1.5 oz Nikka 竹鹤12年纯麦威士忌、.5 oz Luxardo Amaretto di Saschira 杏仁利口酒、.5 oz Luxardo 比特酒、.5 oz 路萨朵菲奈特、.25 oz Lustau 干型奥罗露索雪莉酒、oz La Colombe 冷萃咖啡。",
+   "加入老冰至调酒杯八分满，用吧勺轻柔搅拌30圈约20秒，直至充分冷却并融合。",
+   "倒掉鸡尾酒杯中的冰水，使用茱莉普滤网将混合液过滤倒入冰镇好的鸡尾酒杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1554",
+  "name": "The King's Ginger Truffles",
+  "name_zh": "国王姜味松露",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,rich,spicy,earthy}",
+  "abv_level": "non-alcoholic",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 1/2 cups Good quality dark chocolate, 1 cup Double cream, 5 Tbsp The King's Ginger, 1 tsp Finely chopped drained stem ginger in syrup",
+  "steps": [
+   "准备鸡尾酒杯、小锅、耐热搅拌碗、量杯和量匙",
+   "将1 1/2杯优质黑巧克力切成小块放入搅拌碗中",
+   "小锅中加热1杯双倍奶油至刚冒泡（约80°C），立即倒入巧克力碗，静置1分钟后轻柔搅拌至丝滑融合",
+   "加入5汤匙国王姜酒和1茶匙切碎沥干的糖浆浸渍姜茎，持续搅拌30秒使其充分混合",
+   "将混合液通过细筛过滤倒入鸡尾酒杯中",
+   "在表面点缀少许预留的姜茎碎作为装饰，立即上桌"
+  ]
+ },
+ {
+  "id": "1552",
+  "name": "The Greatest Punch on Earth",
+  "name_zh": "世上最棒的宾治",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sour,savory,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick\nBar/Company: Jupiter Olympus\nLocation: San Francisco\n\nIngredients:\n4 oz Don Cesar Pisco, 1 oz Luxardo Triplum (Triple Sec), 4 oz Apple Cider, 2 oz Oloroso Sherry, 1 oz Sherry Vinegar,   Regans' Orange Bitters,   Angostura Bitters",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或装满冰块预冷。",
+   "在调酒杯中依次量入4 oz Don Cesar皮斯科白兰地、1 oz 路萨多三重橙酒、4 oz 苹果西打、2 oz 欧洛罗索雪莉酒和1 oz 雪利醋。",
+   "加入2 dashes 雷根橙味苦精和2 dashes 安高天娜苦精。",
+   "加入冰块至七分满，用吧勺轻柔搅拌30圈约20秒，直至充分冷却融合。",
+   "取出预冷好的鸡尾酒杯，将酒液经滤网倒入杯中，无需装饰即可上桌。"
+  ]
+ },
+ {
+  "id": "1562",
+  "name": "Potrero Hill",
+  "name_zh": "波特雷罗山",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,fruity,citrus,herbal,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Theo Sabatini\nBar/Company: Novo Restaurant Lounge\nLocation: San Luis Obispo\n\nIngredients:\n1 oz Junipero Gin, .5 oz White Peach & Orange Chamomile Infused Sweet Vermouth, .5 oz Cinnamon Wineshine Brandy, 1 dash Simple Syrup, .5 oz Grapefruit Juice, .5 oz Lemon Juice, 4 oz Bundaberg Ginger Beer",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰预冷备用。",
+   "在摇酒壶中依次加入1 oz Junipero金酒、.5 oz白桃与橙子洋甘菊浸渍甜味美思、.5 oz肉桂风味白兰地、1 dash简易糖浆、.5 oz西柚汁和.5 oz柠檬汁。",
+   "向摇酒壶中加入冰块，盖紧壶盖，用力摇晃15秒。",
+   "取出预冷的鸡尾酒杯，将摇酒壶中的酒液经双重过滤网倒入杯中。",
+   "沿杯壁缓慢倒入4 oz Bundaberg姜汁啤酒，轻轻提拉吧勺一圈使其融合。"
+  ]
+ },
+ {
+  "id": "903",
+  "name": "Flor de Amaras",
+  "name_zh": "阿玛拉斯之花",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{smoky,floral,sour,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kelly McCarthy\nLocation: Boston\n\nIngredients:\n1.5 oz Mezcal, 1 oz Hibiscus Simple Syrup*, .5 oz Lime Juice,  top Soda Water\n\nPreparation:\n*Hibiscus Simple Syrup:\n1:1 w/ a cup of dried hibiscus steeping for 30-40 min\n\nGarnish: Marigold Petals",
+  "steps": [
+   "将鸡尾酒杯提前放入冰箱冷藏，并准备好摇酒壶、量酒器、滤网等器具。",
+   "在摇酒壶中依次量取并加入1.5 oz梅斯卡尔酒、1 oz木槿糖浆和.5 oz青柠汁。",
+   "向摇酒壶中加满冰块，盖紧壶盖，用力摇晃15秒，使酒液充分冷却混合。",
+   "取出冰镇好的鸡尾酒杯，用滤网将摇好的酒液双重过滤倒入杯中。",
+   "沿杯壁缓缓注入苏打水至满杯（约30-60毫升），轻提吧勺在液面下方轻轻搅动一圈使其融合。",
+   "在酒液表面撒上新鲜金盏花瓣作为装饰，随即上桌。"
+  ]
+ },
+ {
+  "id": "909",
+  "name": "Wabash Avenue Sour",
+  "name_zh": "瓦巴什大道酸酒",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{sour,sweet,fruity,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Phillip Ricafort\nBar/Company: American Oak\nLocation: Alameda\n\nIngredients:\n2 oz Bourbon, 1 oz Fresh Lemon Juice, .5 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Small Hand Foods Pineapple Gum Syrup, .5 oz Egg White\n\nPreparation:\nAdd all ingredients and dry-shake (without ice), then add ice, and shake again. Strain into coupe and garnish with rhubarb bitters.\n\nGarnish: Rhubarb Bitter",
+  "steps": [
+   "在波士顿摇酒壶中，依次加入 2 oz 波本威士忌、1 oz 鲜榨柠檬汁、0.5 oz 路萨朵桑格·莫拉科樱桃利口酒、0.5 oz Small Hand Foods 菠萝树胶糖浆和 0.5 oz 蛋清。",
+   "不加冰，合上摇酒壶，用力干摇 15 秒，使蛋清充分乳化起泡。",
+   "打开摇酒壶，加入冰块至满，再次合上，用力湿摇 15 秒，使酒液迅速冷却并进一步融合。",
+   "使用双重过滤（霍桑滤网加细网滤器）将酒液滤入预先冰镇的碟形杯中。",
+   "在酒液表面滴加数滴大黄苦精作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "912",
+  "name": "King's Snap the Chocolate Out of You",
+  "name_zh": "国王的姜饼诱惑",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{spicy,sweet,creamy,nutty}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Ian Julian\nLocation: New Orleans\n\nIngredients:\n1 oz King's Ginger Liqueur, 1.5 oz Homemade milk chocolate, .75 oz Hazelnut Cinnamon syrup,  oz Marshmallow whip cream,  oz Ginger snaps\n\nPreparation:\nAdd all ingredients except the whip cream and ginger snap. Shake and double into a rocks glass with no ice. Top with marshmallow whip cream. Garnish with Ginger snap crumbles.\n\nGarnish: Ginge",
+  "steps": [
+   "准备摇酒器、双重过滤网和古典杯。",
+   "将1 oz国王姜味利口酒、1.5 oz自制牛奶巧克力、0.75 oz榛子肉桂糖浆依次量入摇酒器中。",
+   "加入冰块，盖紧摇酒器，用力摇晃15秒。",
+   "使用双重过滤网将酒液滤入无冰的古典杯中。",
+   "在酒液表面轻轻铺上适量棉花糖打发奶油。",
+   "撒上姜饼碎屑作为装饰。"
+  ]
+ },
+ {
+  "id": "907",
+  "name": "The Bittered Valley",
+  "name_zh": "苦味山谷",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,herbal,earthy,nutty}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nik Virrey\nLocation: Seattle\n\nIngredients:\n1.25 oz Luxardo Maraschino Liqueur, 4 drops Acid phosphate, 2 oz BarSol Primero Quebranta Pisco, .75 oz Luxardo Amaro Abano, .25 oz Luxardo Fernet, 3 dash Scrappy's Aromatic Bitters\n\nPreparation:\n1st glass ingredients:\nLuxardo Maraschino, Acid Phosphate\n\n2nd glass ingredients:\nBarSol Quebranta Pisco, Luxardo Amaro Abano, Luxardo Fernet, Scrappy",
+  "steps": [
+   "准备两个调酒杯，将路萨朵黑樱桃利口酒1.25 oz和磷酸4滴倒入第一个杯中，用吧勺轻搅混合",
+   "在第二个调酒杯中依次加入BarSol Primero Quebranta皮斯科白兰地2 oz、路萨朵阿巴诺苦味酒0.75 oz、路萨朵菲奈特0.25 oz和Scrappy's芳香苦精3 dash，轻柔搅拌融合",
+   "将第一个杯中的混合物倒入第二个杯中，继续搅拌使所有原料均匀融合",
+   "在第二个杯中加入足量冰块，用吧勺搅拌30圈约20秒，至充分冷却",
+   "将搅拌好的酒液经滤网滤入预先冰过的鸡尾酒杯中",
+   "无需额外装饰，直接上桌享用"
+  ]
+ },
+ {
+  "id": "917",
+  "name": "Paradiso Sun",
+  "name_zh": "天堂阳光",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{citrus,sweet,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Caterina Miltenberger\n\nIngredients:\n1.5 oz Junipero Gin, 1 oz Lime Sour, .5 oz Orange Juice, .25 oz Dry Curacao\n\nPreparation:\nAdd all ingredients in a mixing glass with fresh ice. Shake vigorously and strain into a Nick & Nora glass. Garnish with orange slice and 1 bar spoon juniper berries.\n\nGarnish: Orange Wedge, Juniper Berries",
+  "steps": [
+   "准备尼克诺拉杯，并备好摇酒壶、量酒器和过滤器。",
+   "用量酒器依次量取1.5盎司 Junipero 金酒、1盎司青柠酸味糖浆、0.5盎司橙汁和0.25盎司干橙酒，倒入摇酒壶中。",
+   "在摇酒壶中加入新鲜冰块，盖紧壶盖，用力摇晃15秒。",
+   "将过滤器盖在摇酒壶上，把酒液倒入尼克诺拉杯中。",
+   "切一片橙子楔装饰杯口，并在酒液表面轻轻放上1吧勺杜松子。"
+  ]
+ },
+ {
+  "id": "924",
+  "name": "A.Nise",
+  "name_zh": "A.Nise",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{tropical,fruity,sweet,citrus,nutty}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kate KaiKaew\nBar/Company: Osha\nLocation: San Francisco\n\nIngredients:\n1.5 oz Pink Pigeon Rum, .5 oz Luxardo Amaretto di Saschira, .5 oz Osha Falernum, .5 oz Lemon juice, 1 oz Pineapple juice, 3 dash Orange bitters\n\nPreparation:\nAdd all ingredients into a shaker with ice. Shake. Strain over fresh ice into a rocks glass. Garnish with star anise and two slices lemongrass.\n\nGarnish: Star Ani",
+  "steps": [
+   "在古典杯中放入新鲜冰块，静置待用；准备摇酒壶。",
+   "向摇酒壶中依次加入1.5 oz Pink Pigeon朗姆酒、0.5 oz Luxardo Amaretto杏仁利口酒、0.5 oz Osha Falernum香料糖浆、0.5 oz柠檬汁、1 oz菠萝汁和3 dashes橙味苦精。",
+   "在摇酒壶中加入满杯冰块。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "取下摇酒壶盖，将酒液双重过滤倒入已备好冰块的古典杯中。",
+   "用一颗八角茴香和两片柠檬草薄片装饰杯口。"
+  ]
+ },
+ {
+  "id": "928",
+  "name": "The Mad King",
+  "name_zh": "疯狂国王",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{spicy,sweet,rich,herbal}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz Glenrothes Vintage Reserve, 1 oz King's Ginger Liqueur, .25 oz Honey Syrup, 1 dash Angostura Bitters\n\nPreparation:\nAdd all ingredients to a mixing glass and stir for 15-20 seconds. Strain into a highball filled with fresh ice.\n\nGarnish: Flamed Lemon Peel",
+  "steps": [
+   "准备调酒杯（mixing glass）、吧勺、量酒器（jigger）和高球杯，并在高球杯中加满新鲜冰块。",
+   "用量酒器依次量取2 oz Glenrothes 年份珍藏威士忌、1 oz 国王姜味利口酒、.25 oz 蜂蜜糖浆，全部倒入调酒杯中。",
+   "加入1 dash 安高天娜苦精。",
+   "用吧勺在调酒杯中搅拌15-20秒，使酒液充分冷却融合。",
+   "将搅拌好的酒液过滤倒入已加冰的高球杯中。",
+   "取一片柠檬皮，在杯口上方挤压并点火烧香（flamed lemon peel），然后投入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "923",
+  "name": "The King's Medicine",
+  "name_zh": "国王的良药",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{spicy,herbal,bitter,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Matt Grippo\nBar/Company: Blackbird\nLocation: San Francisco\n\nIngredients:\n1.5 oz King's Ginger Liqueur, .5 oz Luxardo Fernet, .25 oz BenRiach Curiositas Single Malt 10 YO, .75 oz Lemon Juice\n\nPreparation:\nAdd all ingredients into a shaker with ice, shake furiously. Fine strain into chilled coupe. Garnish with a lemon twist.\n\nGarnish: Lemon Twist",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷，备用。",
+   "在摇酒壶中依次量入：1.5 oz 国王姜味利口酒、.5 oz 路萨朵菲奈特、.25 oz BenRiach Curiositas 10年单一麦芽威士忌、.75 oz 柠檬汁。",
+   "向摇酒壶中加入满冰，盖紧壶盖，用力摇晃15秒。",
+   "取出冰镇好的碟形杯，将酒液通过细滤网双重过滤倒入杯中。",
+   "取一片柠檬皮，在杯口上方扭转挤出皮油，放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "930",
+  "name": "Lux Shandy",
+  "name_zh": "乐莎香迪",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{bitter,citrus,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Naomi Levy\nBar/Company: Eastern Standard\nLocation: Boston\n\nIngredients:\n1 oz Luxardo Aperitivo, .5 oz Lemon Juice, .5 oz Orange Juice, .5 oz Simple Syrup,  top Anchor California Lager\n\nPreparation:\nAdd all ingredients to a mixing glass. Add ice and integration shake. Pour over fresh ice into a highball and top with California Lager. Garnish with a half orange wheel.\n\nGarnish: Half Orang",
+  "steps": [
+   "在高球杯中加满新鲜冰块，备用。",
+   "在调酒杯中依次量入1 oz路萨朵开胃酒、.5 oz柠檬汁、.5 oz橙汁和.5 oz简易糖浆。",
+   "向调酒杯中加入冰块，盖紧后用力摇晃15秒。",
+   "使用滤网将混合酒液过滤倒入备好的高球杯中。",
+   "沿杯壁缓慢倒入Anchor加州拉格啤酒至满杯。",
+   "在杯口卡上半个橙轮装饰。"
+  ]
+ },
+ {
+  "id": "929",
+  "name": "The Robert Baratheon",
+  "name_zh": "劳勃·拜拉席恩",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{smoky,herbal,dry,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz Single Malt Scotch, .25 oz Dry Vermouth, .25 oz Luxardo Maraschino Liqueur, 2 dash Angostura Bitters\n\nPreparation:\nAdd all ingredients to a mixing glass filled with ice. Stir until cold and strain into a chilled coupe.\n\nGarnish: Luxardo Cherry\n\nNotes: Photo credit: liquor.com",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷，准备混合杯、吧勺和滤网。",
+   "在混合杯中依次加入2 oz单一麦芽苏格兰威士忌、.25 oz干味美思、.25 oz路萨朵黑樱桃利口酒和2 dash安高天娜苦精。",
+   "加入冰块至混合杯八分满，用吧勺轻柔搅拌约30秒，直至杯壁起霜、酒液充分冷却。",
+   "取出预冷的碟形杯，放上滤网，将混合液过滤倒入杯中。",
+   "用一颗路萨朵樱桃在杯壁边缘或杯底装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "936",
+  "name": "The Bitter King",
+  "name_zh": "苦味国王",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{spicy,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz King's Ginger Liqueur, .75 oz Lemon Juice, .75 oz Simple Syrup\n\nPreparation:\nAdd all ingredients to a shaker, add ice, shake and strain into a martini glass garnish with a Luxardo Cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "取出摇酒壶、量酒器和马天尼杯，将马天尼杯提前冰镇。",
+   "用量酒器依次量取2 oz国王姜味利口酒、0.75 oz柠檬汁、0.75 oz简易糖浆，倒入摇酒壶中。",
+   "向摇酒壶中加入冰块至八分满。",
+   "盖紧摇酒壶，用力上下摇晃15秒。",
+   "取出冰镇的马天尼杯，将摇和后的酒液通过滤网滤入杯中。",
+   "用酒签插一颗Luxardo樱桃，放入杯中作装饰。"
+  ]
+ },
+ {
+  "id": "941",
+  "name": "La Batida Loca",
+  "name_zh": "疯狂巴蒂达",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{tropical,creamy,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Paul Sauter\nBar/Company: Tippling Hall\nLocation: Chicago\n\nIngredients:\n2 oz Ypioca Brasilizar Cachaca Prata Reserva Especial, 1.5 oz Sweetened Condensed Milk, 1 oz Passion Fruit (fresh or puree), .5 oz Pilon Syrup*\n\nPreparation:\nAdd all of the ingredients, except seeds, to a shaker with ice and shake well. Double strain onto fresh ice into a collins glass. Garnish with 1 spoon of passio",
+  "steps": [
+   "在摇酒壶中加入适量冰块",
+   "用量酒器分别量取2 oz Ypioca Brasilizar 银标珍藏卡莎萨、1.5 oz 甜炼乳、1 oz 百香果（果肉或果泥）和0.5 oz 皮隆糖浆，依次倒入摇酒壶中",
+   "盖紧壶盖，用力摇晃15秒，使所有材料充分混合并冷却",
+   "在可林杯中放满冰块",
+   "将摇好的酒液经双重过滤网倒入准备好的可林杯中",
+   "用新鲜百香果半切或果皮装饰杯沿，即可上桌"
+  ]
+ },
+ {
+  "id": "938",
+  "name": "San Francisco Strong (Skrong)",
+  "name_zh": "旧金山强袭",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{bitter,citrus,herbal,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Matt Grippo\nBar/Company: Blackbird\nLocation: San Francisco\n\nIngredients:\n.75 oz Junipero Gin, .75 oz Tempus Fugit Kina L'Aero d'Or, .75 oz Luxardo Bitter Bianco, .75 oz Lemon Juice, .75 oz Egg Whites, .5 oz Rich Simple Syrup*\n\nPreparation:\nAdd all ingredients to tin and dry shake. Add ice and vigorously shake for 12 seconds. Fine strain into chilled cocktail glass. Garnish by sprinkling",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或填入冰块冷却备用",
+   "在摇酒器中依次加入：Junipero金酒.75 oz、Tempus Fugit Kina L'Aero d'Or开胃酒.75 oz、Luxardo白色苦酒.75 oz、柠檬汁.75 oz、蛋清.75 oz、高浓度单糖浆.5 oz",
+   "不添加冰块，盖紧摇酒器，用力干摇15秒，使蛋清充分起泡乳化",
+   "向摇酒器中加入适量冰块，再次盖紧并用力摇晃15秒，直至摇酒器表面结霜",
+   "取出冷却的鸡尾酒杯，弃去杯内冰块，透过细网过滤器双重过滤酒液倒入杯中，立即上桌"
+  ]
+ },
+ {
+  "id": "954",
+  "name": "Off the Radar",
+  "name_zh": "雷达之外",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{floral,herbal,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Junipero Gin, .5 oz Lemon Juice, .25 oz Luxardo Maraschino Liqueur, .25 oz Liqueur de Violette, 3-4 oz Tonic Water\n\nPreparation:\nAdd gin, lemon juice, maraschino liqueur, and liqueur de violette to a collins glass filled with ice. Add tonic water; stir to combine. Garnish with a lemon wheel.\n\nGarnish: Lemon Wheel",
+  "steps": [
+   "在高脚可林杯中加入满杯冰块",
+   "依次量取1.5 oz Junipero金酒、0.5 oz柠檬汁、0.25 oz路萨朵黑樱桃利口酒、0.25 oz紫罗兰利口酒，倒入杯中",
+   "沿杯壁缓慢注入3-4 oz汤力水",
+   "用吧勺轻轻搅拌10圈约15秒，使酒液与汤力水融合",
+   "取一片柠檬轮卡在杯沿或轻放入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "952",
+  "name": "Mule Pigeon",
+  "name_zh": "骡子鸽",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{spicy,refreshing,citrus}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Ryan Chetiyawardana\n\nIngredients:\n40 ml Pink Pigeon Rum, 2 dash Angostura Bitters,  top Ginger Beer\n\nPreparation:\nAdd cubed ice to a highball, add 2 dashes of Angostura Bitters, top with ginger beer, garnish with a sprig of basil.\n\nGarnish: Basil Sprig",
+  "steps": [
+   "在高球杯中加满方块冰至杯口",
+   "量取40 ml Pink Pigeon Rum 倒入杯中",
+   "滴入2 dash Angostura Bitters",
+   "沿杯壁缓缓注入姜汁啤酒至满杯",
+   "取一枝新鲜罗勒轻拍后插入杯中装饰"
+  ]
+ },
+ {
+  "id": "965",
+  "name": "Creek Ran Dry",
+  "name_zh": "溪流干涸",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,herbal,dry}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1 oz Pear Brandy, 1 oz Dry Vermouth, .5 oz Chateau de Montifaud Pineau des Charentes Blanc, .5 oz Dolin Genepy\n\nPreparation:\nBarrel aged for 5 months in a used bourbon barrel.\n\nStir with ice and strain into a small coupe. Garnish with an orange twist.\n\nGarnish: Orange Twist",
+  "steps": [
+   "准备好搅拌杯、量酒器、吧勺、滤网和冰镇过的碟形杯。",
+   "在搅拌杯中加入适量冰块，至七八分满。",
+   "依次量取1 oz梨子白兰地、1 oz干味美思、.5 oz蒙蒂福城堡夏朗德皮诺白葡萄酒、.5 oz Dolin杰内普利口酒，倒入搅拌杯中。",
+   "用吧勺轻柔搅拌约30圈（约20秒），直至酒液充分冷却和适度稀释。",
+   "使用滤网将酒液过滤倒入冰镇过的碟形杯中。",
+   "切取一块橙皮，在杯口上方拧扭释放精油，擦拭杯沿后放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "976",
+  "name": "Buzzard's Bay",
+  "name_zh": "巴泽兹湾",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{bitter,herbal,sour,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick\nBar/Company: Bon Vivants\n\nIngredients:\n2 part No.3 London Dry Gin, .5 part Real Cranberry Juice, .25 part Luxardo Fernet, .5 part Lime juice, 1.5 part Puer Black Tea\n\nPreparation:\nBuild and pour in punch bowl over large ice block.\n\nGarnish: Top with brine foam (optional)",
+  "steps": [
+   "在古典杯中放入一大块冰块备用。",
+   "依次量取2份No.3伦敦干金酒、0.5份纯蔓越莓汁、0.25份路萨朵菲奈特、0.5份青柠汁和1.5份普洱红茶，倒入调酒杯中。",
+   "用吧勺搅拌约30圈至充分混合且适当冷却。",
+   "将混合好的酒液滤入装有冰块的古典杯中。"
+  ]
+ },
+ {
+  "id": "979",
+  "name": "The King's Ginger Summer Cup",
+  "name_zh": "国王姜夏杯",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,spicy,refreshing,fruity}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz King's Ginger Liqueur, 1.5 oz Cranberry Juice, 1.5 oz Fever-Tree Lemonade\n\nPreparation:\nBuild in a glass over ice. Add lemon wheels and strawberries. Finish with a splash of fresh lemon or top up with some sparkling wine. This drink can also be made in jugs or punch bowls.\n\nGarnish: Lemon Wheel, Strawberry",
+  "steps": [
+   "准备一个高球杯，加入冰块至八分满。",
+   "依次量取并倒入1 oz国王姜味利口酒和1.5 oz蔓越莓汁。",
+   "倒入1.5 oz Fever-Tree柠檬汽水。",
+   "用吧勺轻轻搅拌5-6圈约10秒，使酒液融合。",
+   "放入柠檬轮和草莓切片作为装饰。"
+  ]
+ },
+ {
+  "id": "982",
+  "name": "Bitter Valencia",
+  "name_zh": "苦味瓦伦西亚",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{bitter,creamy,floral,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Justin Ware\nLocation: Houston\n\nIngredients:\n.75 oz Luxardo Bitter Bianco, .75 oz Gin, .75 oz Clarified Milk*, 2 dash Orange Bitters, 4 drops Vanilla\n\nPreparation:\nBuild in a mixing glass. Add ice. Stir to dilute. Strain into a Nick & Nora glass. Garnish with an orange twist.\n\n*Clarified Milk:\n-- 1 C Whole Milk\n-- .5 oz Lemon Juice\n\nHeat milk to just before a simmer, then add lemon juice",
+  "steps": [
+   "将尼克诺拉杯放入冰箱或加冰预冷。准备波士顿摇酒壶、量酒器、吧匙和双重滤网。",
+   "向摇酒壶中依次加入0.75 oz Luxardo Bitter Bianco、0.75 oz 金酒、0.75 oz 澄清牛奶、2 dash 橙味苦精和4 drops 香草精。",
+   "摇酒壶内加入满冰，扣紧壶身。",
+   "用力摇和15秒，直到壶身结霜。",
+   "取出预冷的尼克诺拉杯，倒掉冰水。使用双重滤网将酒液滤入杯中"
+  ]
+ },
+ {
+  "id": "984",
+  "name": "Little Ground Tapper",
+  "name_zh": "小地敲击者",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{fruity,sweet,herbal,tropical}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Claire & Chad\nBar/Company: Tin Roof Drink Community\nLocation: San Francisco\n\nIngredients:\n2 oz H by HINE, .25 oz Small Hand Foods Pineapple Gum Syrup, 1 bsp Luxardo Maraschino Liqueur, 2 dash Angostura Bitters\n\nPreparation:\nBuild in an old fashioned glass over ice. Garnish with orange peel.\n\nGarnish: Orange Peel\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "在古典杯中加入足量冰块",
+   "量取2 oz H by HINE干邑倒入杯中",
+   "量取.25 oz Small Hand Foods菠萝树胶糖浆倒入杯中",
+   "量取1 bsp路萨朵黑樱桃利口酒倒入杯中",
+   "加入2 dash安高天娜苦精",
+   "用吧匙轻柔搅拌约20圈使其混合冷却",
+   "切取橙皮，挤压释放油脂并擦拭杯沿，随后投入杯中装饰"
+  ]
+ },
+ {
+  "id": "985",
+  "name": "Prince of Humbugs",
+  "name_zh": "骗子王子",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{bitter,earthy,spicy,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick \nBar/Company: Jupiter Olympus \nLocation: San Francisco\n\nIngredients:\n2 oz Hirsch Small Batch Reserve Bourbon, .75 oz Luxardo Bitter, .5 oz Cold Blue Bottle Coffee, .25 oz Luxardo Anisette, 2 dash Peychaud's Bitters\n\nPreparation:\nBuild in collins glass. Top with soda. Orange peel.\n\nGarnish: Orange Peel",
+  "steps": [
+   "在可林杯中加满冰块。",
+   "量取2 oz Hirsch小批量珍藏波本威士忌、.75 oz Luxardo比特酒、.5 oz 冷萃蓝瓶咖啡、.25 oz Luxardo茴香酒和2 dash Peychaud's苦精，依次倒入可林杯中。",
+   "用吧勺轻柔搅拌5-10圈，使原料充分融合。",
+   "用苏打水补满杯子，轻轻提拉吧勺再次融合。",
+   "取一片橙皮，在杯口上方挤压出橙皮油，然后将橙皮放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "989",
+  "name": "Rita's Song",
+  "name_zh": "丽塔之歌",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{smoky,sweet,earthy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jim Romdall\n\nIngredients:\n2 oz Nikka Whisky Taketsuru Pure Malt 12 YO, .5 oz 15 YO Sherry, 2 dashes Dr. Adam's Boker's bitters, .25 oz Simple syrup\n\nPreparation:\nBuild in old fashioned glass, stir and serve over large ice cube.",
+  "steps": [
+   "将一块大冰块放入古典杯中",
+   "在杯中量入2 oz 竹鹤12年纯麦威士忌、0.5 oz YO雪莉酒、2 dashes Dr. Adam's Boker's 苦精和0.25 oz 简易糖浆",
+   "用吧勺轻柔搅拌30圈约20秒，直至酒液均匀冷却",
+   "无需装饰，直接上桌"
+  ]
+ },
+ {
+  "id": "994",
+  "name": "La Chiara",
+  "name_zh": "拉基亚拉",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{bitter,citrus,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Pasha Morshedi\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, 1 oz BarSol Primero Quebranta Pisco, 2 oz Fever-Tree Indian Tonic, 1 dash Luxardo Maraschino Liqueur\n\nPreparation:\nBuild spirits in a tall glass over clear ice. Top with 4 oz tonic and garnish with a lemon twist curled into a flower if you're feeling fancy.\n\nGarnish: Lemon Twist",
+  "steps": [
+   "在可林杯中放入透明冰块至八分满",
+   "在杯中倒入1 oz Luxardo 白色苦酒",
+   "在杯中倒入1 oz BarSol Primero Quebranta 皮斯科白兰地",
+   "滴入1 dash 路萨朵黑樱桃利口酒",
+   "用吧勺轻柔搅拌5圈使其混合",
+   "沿杯壁缓缓注入2 oz 芬味树印度汤力水",
+   "将一片柠檬皮扭转释放精油后投入杯中装饰"
+  ]
+ },
+ {
+  "id": "987",
+  "name": "The King's Squeeze",
+  "name_zh": "国王的挤压",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n35 ml King's Ginger Liqueur, 125 ml Fever-Tree Bitter Lemon\n\nPreparation:\nBuild in ice-filled tall glass, garnish with a squeeze of lime.\n\nGarnish: Lime Squeeze",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰预冷，同时在调酒杯中装满冰块。",
+   "量取35 ml国王姜味利口酒，倒入装有冰块的调酒杯中。",
+   "量取125 ml Fever-Tree苦柠檬水，沿杯壁缓缓倒入调酒杯。",
+   "用吧勺轻柔搅拌30秒，使酒液充分冷却和融合。",
+   "取出预冷的鸡尾酒杯，将调好的酒液隔冰滤入杯中。",
+   "切取一角青柠，在杯口上方挤出汁液后投入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "999",
+  "name": "Hidarite",
+  "name_zh": "左手边",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,rich,herbal,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Nikka Coffey Grain Whiskey, .75 oz Luxardo Bitter, .75 oz Tempus Fugit Alessio Vermouth di Torino Rosso, 2 dash Chocolate Bitters\n\nPreparation:\nChilled. Serve up or on the rocks.\n\nNotes: Japanese riff on a Left Hand cocktail",
+  "steps": [
+   "将调酒杯预先冰镇，加入适量冰块",
+   "量取1.5 oz 一甲科菲谷物威士忌、.75 oz Luxardo 比特酒、.75 oz Tempus Fugit Alessio 都灵红味美思、2 dash 巧克力苦精，依次倒入调酒杯中",
+   "用吧勺轻柔搅拌约30秒，直至酒液充分冷却和稀释",
+   "将鸡尾酒杯提前冰杯，倒掉融化的冰水",
+   "使用滤网将搅拌好的酒液过滤倒入冰好的鸡尾酒杯中"
+  ]
+ },
+ {
+  "id": "1002",
+  "name": "Rudolph's Rose",
+  "name_zh": "鲁道夫的玫瑰",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,floral,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz Christmas Spirit, .25 oz Luxardo Maraschino Liqueur, .5 oz Chateau de Montifaud Pineau des Charentes Rose, .75 oz Tempus Fugit Gran Classico Bitter\n\nPreparation:\nCombine all ingredients and stir with ice in a mixing glass. Strain into coupe glass and garnish with a Luxardo Cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "将所有原料量取后依次倒入调酒杯：1.5 oz 圣诞烈酒、0.25 oz 路萨朵黑樱桃利口酒、0.5 oz 蒙蒂福城堡夏朗德皮诺桃红葡萄酒、0.75 oz 坦帕斯·福吉特格兰经典苦精",
+   "加入冰块至调酒杯七分满",
+   "用吧勺搅拌约30圈，约20秒，直至酒液充分冷却并适当稀释",
+   "使用滤网将酒液过滤倒入冰过的碟形杯中",
+   "在杯沿放置一颗路萨朵樱桃作为装饰"
+  ]
+ },
+ {
+  "id": "1005",
+  "name": "A Love Song",
+  "name_zh": "情歌",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{bitter,herbal,sweet,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Russell Davis\nLocation: San Francisco\n\nIngredients:\n1 oz No.3 London Dry Gin, 1 oz Maurin Quina, .5 oz Luxardo Bitter, .5 oz King's Ginger Liqueur\n\nPreparation:\nCombine all ingredients besides blood orange into a mixing glass and stir until proper dilution (15-20 seconds). Pour into a small martini glass. Rub a thin slice of blood orange around the rim and place in drink.\n\nGarnish: Bloo",
+  "steps": [
+   "准备搅拌杯、量酒器、吧勺和冰镇的马天尼杯。",
+   "在搅拌杯中加入足量冰块，然后依次量取1 oz No.3 伦敦干金酒、1 oz 莫兰奎那酒、.5 oz Luxardo 比特酒、.5 oz 国王姜味利口酒倒入。",
+   "用吧勺轻柔搅拌15-20秒，直至酒液充分冷却并适度稀释。",
+   "将酒液通过滤网滤入冰镇的马天尼杯中。",
+   "取一片血橙薄片，沿杯缘擦拭一圈后放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1007",
+  "name": "Mother Superior",
+  "name_zh": "圣母院长",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{herbal,citrus,bitter,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Alex Quesada\nBar/Company: Local Edition\nLocation: San Francisco\n\nIngredients:\n1.5 oz Blanc Vermouth, .75 oz Lemon Juice, .5 oz Junipero Gin, .5 oz Giffard Pamplemousse, .5 oz House-made Yellow Shaw-treuse*, .5 oz Tonic, 2 dash Celery Bitters, 2 dash Coriander Tincture\n\nPreparation:\nCombine all ingredients except for tonic. Shake with ice. Strain into a chilled coupe. Top with the tonic ",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷，另准备摇酒器。",
+   "在摇酒器中依次加入1.5 oz白味美思、0.75 oz柠檬汁、0.5 oz Junipero金酒、0.5 oz吉发葡萄柚利口酒、0.5 oz自制黄查特酒、2 dash芹菜苦精和2 dash芫荽酊剂。",
+   "向摇酒器中加满冰块，盖紧后用力摇晃15秒，直至壶身结霜。",
+   "取出预冷的碟形杯，将摇酒器中的酒液通过双重滤网（细滤）倒入杯中。",
+   "在酒液表面轻轻倒入0.5 oz汤力水，无需搅拌。"
+  ]
+ },
+ {
+  "id": "1011",
+  "name": "Charente Royale",
+  "name_zh": "皇家夏朗德",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{floral,sweet,refreshing,herbal}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kevin Diedrich\nBar/Company: Turnkey\nLocation: San Francisco\n\nIngredients:\n1.5 oz H by HINE, .5 oz Elderflower Liqueur, 2 dash Absinthe,  top Sparkling Wine\n\nPreparation:\nCombine all ingredients except sparkling wine in a shaker. Add ice and shake until chilled through. Double strain into a champagne flute and garnish with an orange twist.\n\nGarnish: Orange Twist",
+  "steps": [
+   "准备摇酒壶，并备好香槟笛杯。",
+   "使用量酒器向摇酒壶中依次量取1.5 oz H by HINE干邑、0.5 oz接骨木花利口酒和2 dash苦艾酒。",
+   "往摇酒壶中加入足量冰块，合上壶盖，用力摇晃约15秒，直至壶身冰凉。",
+   "用双重过滤的方式（霍桑滤网加细筛）将酒液滤入准备好的香槟笛杯中。",
+   "沿杯壁缓缓注入起泡酒至满杯，轻轻提拉吧勺使其略微融合。",
+   "用削皮刀取一条橙皮，扭转释油后架于杯沿或投入杯中作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1014",
+  "name": "The Palace Cellar",
+  "name_zh": "宫殿酒窖",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{spicy,sweet,herbal,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Michael Esposito\nBar/Company: Snake Oil Company\nLocation: San Diego\n\nIngredients:\n1.5 oz King's Ginger Liqueur, .5 oz Pink Pigeon Rum, .5 oz Fresh-pressed Lemon Juice, .5 oz Snake Oil's House-made Sarsaparilla Syrup, .75 oz Carbonated Water, 1 dash Snake Oil's House-made Pomegranate Bitters\n\nPreparation:\nCombine all ingredients in a Collins glass and stir. Garnish with a slice of ginger",
+  "steps": [
+   "在可林杯中加入满杯冰块",
+   "依次量取1.5 oz国王姜味利口酒、.5 oz Pink Pigeon朗姆酒、.5 oz鲜榨柠檬汁、.5 oz蛇油牌自制沙士糖浆和1 dash蛇油自制石榴苦精，倒入可林杯中",
+   "加入.75 oz苏打水",
+   "用吧勺轻轻搅拌10秒，使酒液均匀冷却",
+   "放入姜片和柠檬轮装饰"
+  ]
+ },
+ {
+  "id": "1017",
+  "name": "La Madrugada",
+  "name_zh": "黎明破晓",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{sour,herbal,bitter,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Enrique Sanchez\nLocation: Pacifica\n\nIngredients:\n1.5 oz BarSol Perfecto Amor (Aperitif Wine), .5 oz Lemon juice, .5 oz Luxardo Amaro Abano, .25 oz Luxardo Maraschino Liqueur\n\nPreparation:\nCombine all ingredients in a mixing glass and add ice. Shake well and double strain and serve into a coupe.",
+  "steps": [
+   "准备一个碟形杯和摇酒壶。",
+   "用量酒器依次将1.5 oz BarSol Perfecto Amor开胃酒、.5 oz柠檬汁、.5 oz路萨朵阿巴诺苦味酒、.25 oz路萨朵黑樱桃利口酒倒入摇酒壶中。",
+   "往摇酒壶中加入适量冰块。",
+   "盖紧摇酒壶，用力摇晃15秒，直至壶体外部结霜。",
+   "使用双重过滤网将酒液滤入准备好的碟形杯中。"
+  ]
+ },
+ {
+  "id": "1018",
+  "name": "The Rickenbacker",
+  "name_zh": "里肯巴克",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,dry,savory}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Location: San Francisco\n\nIngredients:\n2 oz Hophead Vodka, 1 oz Tempus Fugit Alessio Vermouth Bianco, 2 dash Luxardo Maraschino Liqueur,   Salt\n\nPreparation:\nCombine all ingredients in a mixing glass and stir until proper dilution. Strain into a chilled cocktail glass. Garnish with a sage leaf speared through two cocktail onions.\n\nGarnish: Sage Leaf, Cocktail Onions",
+  "steps": [
+   "准备调酒杯和滤网，并提前将鸡尾酒杯放入冰箱冰镇。",
+   "在调酒杯中依次加入2 oz Hophead伏特加、1 oz 时光飞逝亚历西奥白味美思、2 dash路萨朵黑樱桃利口酒和一小撮盐。",
+   "加入冰块至八分满，用吧勺轻柔搅拌30圈约30秒，直至充分冷却并适当稀释。",
+   "架上滤网，将搅拌好的酒液过滤倒入冰镇的鸡尾酒杯中。",
+   "取一片鼠尾草叶，依次穿过两颗鸡尾洋葱，置于杯沿作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1021",
+  "name": "Sahara Glowing Heart",
+  "name_zh": "撒哈拉炽热之心",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{fruity,sweet,herbal,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: John Codd\nBar/Company: Tradition\nLocation: San Francisco\n\nIngredients:\n1.5 oz Junipero Gin, .75 oz Apricot Eau-de-Vie, .25 oz Grenadine, 2 dash Lemon Bitters, 2 dash Absinthe\n\nPreparation:\nCombine all ingredients in a mixing glass, add ice and then stir. Strain into a Nick & Nora glass and garnish with a lemon twist.\n\nGarnish: Lemon Twist\n\nNotes: Junipero Gin 20th Anniversary Signature ",
+  "steps": [
+   "将尼克诺拉杯放入冰箱或加冰预先冰镇，同时准备好调酒杯、吧勺、量酒器、滤网和冰块。",
+   "在调酒杯中依次量取：1.5 oz Junipero 金酒、0.75 oz 杏子白兰地、0.25 oz 红石榴糖浆、2 dash 苦艾酒和2 dash 柠檬苦精。",
+   "向调酒杯中加入满杯冰块，用吧勺平稳搅拌30秒，使酒液充分冷却并融合。",
+   "取出冰镇好的尼克诺拉杯，将滤网扣在调酒杯口，把混合好的酒液过滤倒入杯中。",
+   "切取一片柠檬皮，在杯缘上方扭转释放油脂，然后将柠檬皮螺旋放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1022",
+  "name": "Nori & Islay",
+  "name_zh": "海苔与艾雷岛",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{savory,herbal,smoky,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Anthony Parks\nBar/Company: Mourad\nLocation: San Francisco\n\nIngredients:\n1.5 oz Junipero Gin, 1.5 oz Nori-Infused Sake*, 1 dash Celery Bitters, 3 dash Islay Scotch\n\nPreparation:\nCombine all ingredients in a mixing glass, stir, and strain into a chilled Nick & Nora glass. Garnish with a picked cucumber ribbon.\n\n*Nori-Infused Sake: \n-- Ginjo Sake\n-- Nori Seaweed Sheet\n\nUsing an Oji Style C",
+  "steps": [
+   "将尼克诺拉杯放入冰箱或加冰预冷，确保酒杯冰镇。",
+   "在搅拌杯中倒入1.5 oz Junipero金酒、1.5 oz海苔浸渍清酒和1 dash芹菜苦精。",
+   "加入冰块，用吧匙轻柔搅拌30圈约20秒，使酒液充分冷却融合。",
+   "取出冰镇好的尼克诺拉杯，使用滤冰器将搅拌好的酒液过滤倒入杯中。",
+   "在鸡尾酒表面轻轻滴入3 dash艾雷岛苏格兰威士忌，使其漂浮形成烟熏尾韵。"
+  ]
+ },
+ {
+  "id": "1025",
+  "name": "Chippendale Rosetone",
+  "name_zh": "齐本德尔玫瑰色调",
+  "category": "Craft",
+  "glass_type": "Punch Bowl",
+  "flavor_tags": "{fruity,citrus,sweet,refreshing,floral}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 part Gin, .25 part Luxardo Apricot Liqueur, .75 part Casoni 1814, .5 part Dry Vermouth, 1 part Unfiltered Apple Juice, 1 part Fresh Lemon Juice, .5 part Rich Simple Syrup (2:1), 2 part Jasmine Green Tea\n\nPreparation:\nCombine all ingredients in a punch bowl, add a large chunk or block of ice, garnish with lemon wheels and apple slices. Serve when punch is chilled.\n\nGarnish: Lemon W",
+  "steps": [
+   "准备一个干净的潘趣碗，并将2 part茉莉绿茶提前泡好并冷却备用。",
+   "在潘趣碗中依次量取加入1.5 part金酒、0.25 part路萨朵杏子利口酒、0.75 part卡索尼1814、0.5 part干味美思、1 part未过滤苹果汁、1 part鲜榨柠檬汁、0.5 part浓糖浆和2 part冷却的茉莉绿茶。",
+   "用吧勺轻柔搅拌约15秒，使所有材料充分融合。",
+   "放入一大块冰块或冰砖，继续搅拌约30秒，直至酒液充分冷却。",
+   "在液面装饰柠檬轮和苹果片，即可上桌享用。"
+  ]
+ },
+ {
+  "id": "1023",
+  "name": "You Bet Your Ascot",
+  "name_zh": "阿斯科特赌注",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,bitter,nutty,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jason Rager\nBar/Company: AQ\nLocation: San Francisco\n\nIngredients:\n1.5 oz H by HINE, .75 oz Bonal, .5 oz Luxardo Amaro Abano, .25 oz Nocino\n\nPreparation:\nCombine all ingredients in a mixing glass. Stir until 2 oz water is diluted. Strain into a sherry or nosing glass. Flame and discard an orange peel. Drink deeply.\n\nGarnish: Orange peel",
+  "steps": [
+   "准备调酒杯、吧勺、过滤器，并将鸡尾酒杯提前冰镇。",
+   "用量酒器依次量取1.5 oz H by HINE 干邑、0.75 oz 博纳尔、0.5 oz 路萨朵阿巴诺苦味酒、0.25 oz 诺奇诺核桃利口酒，全部倒入调酒杯中。",
+   "加入冰块至调酒杯八分满，用吧勺轻柔搅拌约30秒（约40-50圈），直至稀释水量约2 oz。",
+   "架好过滤器，将搅拌好的酒液缓慢过滤倒入冰镇鸡尾酒杯中。",
+   "取一片橙皮，点燃后在杯口上方挤压出橙皮精油，随即丢弃橙皮即可上桌。"
+  ]
+ },
+ {
+  "id": "1028",
+  "name": "Boko Buku",
+  "name_zh": "波科布库",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{smoky,spicy,earthy,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Tyler Chauvin\nBar/Company: Treo\nLocation: New Orleans\n\nIngredients:\n1.5 oz Mezcal, .75 oz Don Ciccio & Figli Concerto, .125 oz Vanilla Marinade, 8 dash Mole Bitters\n\nPreparation:\nCombine all ingredients in a shaker tin and shake vigorously. Double strain with a fine mesh strainer into a highball glass.",
+  "steps": [
+   "准备摇酒壶、细网过滤器和高球杯备用。",
+   "向摇酒壶中依次加入1.5盎司梅斯卡尔酒、.75盎司唐·奇乔与菲格里协奏曲利口酒、.125盎司香草腌料和8滴莫莱苦精。",
+   "加入冰块至摇酒壶七八分满，盖紧壶盖，用力摇晃15秒。",
+   "将细网过滤器置于高球杯上，双重滤出摇好的酒液。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1041",
+  "name": "Cut To The Chase",
+  "name_zh": "直截了当",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{herbal,bitter,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz J.H. Cutter Whisky, .75 oz Averna Amaro, .5 oz Alvear PX Sherry, 2 dash Angostura Bitters\n\nPreparation:\nCombine all ingredients in to a mixing glass and add ice.\n\nStir for about 10-15 seconds.\n\nStrain in to a cocktail coupe or a glass of your choosing.\n\nGarnish with an orange twist expressed over the top of the drink.\n\nGarnish: Orange Twist",
+  "steps": [
+   "在调酒杯中依次量入2 oz J.H. Cutter威士忌、.75 oz Averna阿马罗、.5 oz Alvear PX雪莉酒和2 dash安高天娜苦精",
+   "在调酒杯中加入冰块至八分满",
+   "用吧勺轻柔搅拌约15圈，时长约15秒，使酒液充分冷却融合",
+   "将滤冰器扣在调酒杯上，将酒液滤入冰过的碟形杯中",
+   "取一片橙皮，在杯口上方用力挤压使其精油喷洒于酒面，然后放入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "1039",
+  "name": "Bunny Poison",
+  "name_zh": "兔子毒药",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{herbal,citrus,refreshing,sour,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Alta CA\nLocation: San Francisco\n\nIngredients:\n2 oz Rhubarb Cucumber & Mint-Infused Junipero Gin, .75 oz Lemon Juice, .75 oz Tempus Fugit Alessio Vermouth Bianco, .5 oz Rhubarb Juice, .5 oz Grapefruit Juice, .5 oz Rhubarb Syrup, 2 dash Fee Brothers Celery Bitters\n\nPreparation:\nCombine all ingredients in Perlini sparkling cocktail shaker, shake and double strain into cocktail glass. (Fo",
+  "steps": [
+   "冷却鸡尾酒杯，将酒杯放入冰箱或装满冰块静置备用。",
+   "在摇酒壶中依次加入：2 oz 大黄黄瓜薄荷浸渍Junipero金酒、.75 oz 柠檬汁、.75 oz 时光飞逝亚历西奥白味美思、.5 oz 大黄汁、.5 oz 西柚汁、.5 oz 大黄糖浆和2 dash Fee Brothers西芹苦精。",
+   "在摇酒壶中加满冰块，确保液体完全覆盖冰块。",
+   "盖紧摇酒壶，用力摇晃15秒，使酒液充分冷却并融合。",
+   "取出冷却好的鸡尾酒杯，将摇制好的酒液通过双重过滤（细网滤网）倒入杯中。"
+  ]
+ },
+ {
+  "id": "1047",
+  "name": "Bacio Romana",
+  "name_zh": "罗马之吻",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,dry,floral}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Harold Madison\nLocation: Houston\n\nIngredients:\n1.5 oz Luxardo Bitter Bianco, .5 oz BarSol Pisco, .5 oz Luxardo Maraschino Liqueur, .5 oz Dry Vermouth\n\nPreparation:\nCombine all ingredients into mixing glass. Add ice. Stir until very cold. Strain and fine strain to prevent ice chips in coupe glass. Garnish with orange twist entwined around a cinnamon stick.\n\nGarnish: Cinnamon Stick, Orang",
+  "steps": [
+   "准备好调酒杯、吧勺、滤网、锥形滤网和碟形杯。",
+   "在调酒杯中依次量入1.5 oz 路萨朵白色苦酒、0.5 oz BarSol皮斯科、0.5 oz 路萨朵黑樱桃利口酒和0.5 oz 干味美思。",
+   "向调酒杯中加入冰块至八分满，用吧勺轻柔搅拌30～40圈约20秒，直至酒液充分冷却。",
+   "将锥形滤网置于碟形杯上，通过普通滤网双重过滤倒入杯中，避免冰渣混入。",
+   "切一片橙皮，扭转使其释放油脂，将其缠绕在一根肉桂棒上，放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1049",
+  "name": "Jack Cherry Sour (2001 Remix)",
+  "name_zh": "杰克樱桃酸酒（2001重混版）",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{sour,fruity,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Russell David\nBar/Company: Unlimited Liabilities\n\nIngredients:\n1.5 oz Jack Daniel's, .5 oz Luxardo Sangue Morlacco Cherry Liqueur, 1 oz Fresh Lemon Juice, .25 oz Cane Sugar Syrup*, 1 dash Angostura Orange Bitters\n\nPreparation:\nCombine all ingredients, add ice, and shake. Double strain into an old fashioned glass and add fresh ice. Garnish with an orange slice (1/4 wheel) and Luxardo Che",
+  "steps": [
+   "在古典杯中放入大块冰块，备用。",
+   "用量酒器依次量取1.5 oz杰克丹尼威士忌、.5 oz路萨朵桑格·莫拉科樱桃利口酒、1 oz鲜榨柠檬汁、.25 oz蔗糖糖浆和1 dash安高天娜橙味苦精，倒入摇酒器。",
+   "向摇酒器中加入冰块，盖紧后用力摇晃15秒。",
+   "取下摇酒器盖子，将酒液过滤倒入已备好的加冰古典杯中。"
+  ]
+ },
+ {
+  "id": "1048",
+  "name": "3 Degrees",
+  "name_zh": "三度空间",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{herbal,citrus,fruity,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.75 oz No.3 London Dry Gin, .75 oz Velvet Falernum, .5 oz Lime juice, .5 oz Pear Sage Foam, 1 float Prosecco\n\nPreparation:\nCombine all ingredients with ice, shake, strain into martini glass, top with prosecco, garnish with sage.\n\nGarnish: Sage",
+  "steps": [
+   "将马天尼杯放入冰箱或加冰冷却，备好摇酒壶、量酒器、滤网、搅拌棒等调酒用具。",
+   "用量酒器依次量取1.75 oz No.3 伦敦干金酒、0.75 oz 天鹅绒法勒纳姆、0.5 oz 青柠汁和0.5 oz 梨子鼠尾草泡沫，倒入摇酒壶中。",
+   "在摇酒壶中加入足量冰块，盖上壶盖并扣紧。",
+   "双手握紧摇酒壶，用力上下摇晃15秒左右，直至壶身明显起雾、手感冰凉。",
+   "打开摇酒壶，装上滤网，将混合酒液过滤倒入已冰镇的马天尼杯中。",
+   "沿杯壁缓慢倒入少量普洛赛克起泡酒，使其漂浮在酒液表面，形成浮层。",
+   "取新鲜鼠尾草一片，轻拍释放香气后，插在杯沿或漂浮于泡沫上作为装饰，立即上桌。"
+  ]
+ },
+ {
+  "id": "1051",
+  "name": "Three Flips",
+  "name_zh": "三重翻转",
+  "category": "Craft",
+  "glass_type": "Snifter",
+  "flavor_tags": "{herbal,sweet,creamy,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin, 1.5 oz Averna, .75 oz Honey, 1 whole Egg\n\nPreparation:\nCombine all ingredients, shake for 20 seconds. Add ice and shake again. Strain into a snifter. Garnish with shaved nutmeg.\n\nGarnish: Nutmeg, shaved",
+  "steps": [
+   "准备摇酒壶、量酒器、球形杯及双重滤网",
+   "在摇酒壶中依次倒入1.5 oz No.3伦敦干金酒、1.5 oz Averna阿马罗、0.75 oz蜂蜜，并打入1个全蛋",
+   "不添加冰块，密闭摇酒壶，用力干摇20秒，使蛋液充分乳化",
+   "开壶加入冰块，再次密闭并用力摇晃约15秒，使酒液充分冷却",
+   "使用双重滤网将酒液过滤倒入球形杯中",
+   "在酒液表面刨上适量肉豆蔻碎作为装饰"
+  ]
+ },
+ {
+  "id": "1054",
+  "name": "L.E.S. Is More",
+  "name_zh": "少即是多",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{herbal,citrus,sweet,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n1.5 oz Karlsson's Gold Vodka, .75 oz Esprit de June, .5 oz Fresh lemon juice, .5 oz Simple syrup\n\nPreparation:\nCombine all liquid ingredients in a highball or Collins glass with ice.\nStir lightly and garnish with a lemon twist making sure to release all the essential oils out of the twist. Also make sure to rub the entire rim of the glass with the twist before",
+  "steps": [
+   "在高球杯中装满冰块，备用",
+   "在摇酒器中依次量入 Karlsson's Gold 伏特加 1.5 oz、Esprit de June 0.75 oz、鲜榨柠檬汁 0.5 oz、简易糖浆 0.5 oz",
+   "摇酒器加满冰块，盖紧后用力摇晃 15 秒",
+   "双重过滤后倒入已备好的高球杯中"
+  ]
+ },
+ {
+  "id": "1057",
+  "name": "Cut and Run",
+  "name_zh": "抽身而退",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{herbal,spicy,citrus,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz J.H. Cutter Whisky, 1 oz  Moroccan Mint Tea (chilled)*, .75 oz The King's Ginger, .5 oz Lemon Juice, .25 oz Rich Honey Syrup**\n\nPreparation:\nCombine all the ingredients in a mixing glass and stir for about 10 seconds. Strain in to an Old Fashioned glass or glass of your choosing. Add large ice cubes. Garnish with a lemon wheel, mint sprigs and a blackberry.\n\n*Moroccan Mint Tea ",
+  "steps": [
+   "在古典杯中放入大块冰或足量冰块，备用。",
+   "依次将1.5 oz J.H. Cutter威士忌、1 oz冰镇摩洛哥薄荷茶、0.75 oz国王姜酒、0.5 oz柠檬汁和0.25 oz浓醇蜂蜜糖浆量入调酒器。",
+   "向调酒器中加入冰块，盖紧摇壶，用力摇晃15秒，直至壶身结霜、酒液充分冷却融合。",
+   "打开调酒器，使用滤网将混合酒液过滤倒入备好的古典杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1058",
+  "name": "The Stand By",
+  "name_zh": "待命",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{herbal,bitter,sweet,nutty}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Vince Toscano\nBar/Company: Rye\nLocation: San Francisco\n\nIngredients:\n2 oz Junipero Gin, .5 oz Luxardo Bitter, 1 bsp Kalani Coconut Liqueur, 1 dash Angostura Bitters, 1 dash Peychaud's Bitters\n\nPreparation:\nCombine all the ingredients in an old-fashioned glass. Stir on the rocks. Garnish with lemon peel.\n\nGarnish: Lemon Peel",
+  "steps": [
+   "在古典杯中加入冰块至八分满",
+   "将2 oz Junipero 金酒倒入杯中",
+   "倒入0.5 oz Luxardo 比特酒和1 bsp 卡拉尼椰子利口酒",
+   "分别加入1 dash 安高天娜苦精和1 dash Peychaud's 苦精",
+   "用吧勺轻柔搅拌约15秒，使酒液融合并适度冷却",
+   "挤压柠檬皮释放油脂，并放入杯中装饰"
+  ]
+ },
+ {
+  "id": "1059",
+  "name": "Second City Sour",
+  "name_zh": "第二城酸酒",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{sour,sweet,citrus,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Patrick Poelvoorde\nBar/Company: Park Tavern\nLocation: San Francisco\n\nIngredients:\n2 oz Hirsch Small Batch Reserve Bourbon, 1 oz Fresh Lemon Juice, .5 oz Orange-scented Maple Syrup*, 1 oz Tempus Fugit Alessio Vermouth di Torino Rosso\n\nPreparation:\nCombine bourbon, lemon juice, and syrup in a shaker and add cold ice. Shake until chilled well (10-30 sec. depending on the quality of the ice",
+  "steps": [
+   "准备一个可林杯，加入冰块，放置备用。",
+   "在摇酒壶中量取 Hirsch 小批量珍藏波本威士忌：2 oz Hirsch Small Batch Reserve Bourbon。",
+   "量取鲜榨柠檬汁：1 oz Fresh Lemon Juice，加入摇酒壶。",
+   "量取橙香枫糖浆：.5 oz Orange-scented Maple Syrup*，加入摇酒壶。",
+   "量取 Tempus Fugit Alessio 都灵红味美思：1 oz Tempus Fugit Alessio Vermouth di Torino Rosso，加入摇酒壶。",
+   "在摇酒壶中加入足量冰块，盖紧壶盖，用力摇晃15秒。",
+   "将摇好的酒液过滤倒入已放冰块的可林杯中。"
+  ]
+ },
+ {
+  "id": "1065",
+  "name": "West Bank",
+  "name_zh": "西岸",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{bitter,earthy,rich,smoky}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Claire Sprouse\nBar/Company: The Bywater\nLocation: Los Gatos\n\nIngredients:\n1.5 oz HINE Rare VSOP, .5 oz Cynar, .5 oz Bywater Spice Mix*, 1 oz Cold-Brew Coffee\n\nPreparation:\nCombine ingredients and shake with ice. Strain into a rocks glass over fresh ice. Grate nutmeg on top.\n\n*Bywater Spice Mix: Simple syrup infused with Vietnamese cinnamon, licorice root, and clove",
+  "steps": [
+   "在古典杯中放入新鲜冰块，备用。",
+   "在摇酒壶中依次加入御鹿珍酿VSOP干邑1.5 oz、奇纳尔0.5 oz、滨水香料混合0.5 oz和冷萃咖啡1 oz。",
+   "在摇酒壶中加满冰块，盖紧壶盖，用力摇晃15秒。",
+   "将摇和好的酒液通过滤网滤入已备好冰块的古典杯中。",
+   "在酒液表面磨上肉豆蔻粉，即可上桌。"
+  ]
+ },
+ {
+  "id": "1071",
+  "name": "Radice Amara",
+  "name_zh": "拉迪切阿玛拉",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,earthy,savory}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Elyse Blechman\nLocation: Houston\n\nIngredients:\n1.5 oz Luxardo Bitter Bianco, 1 oz Reisetbauer Carrot Eau De Vie, .75 oz Genevieve Gin\n\nPreparation:\nCombine ingredients in mixing glass, and stir with ice to dilution. Strain into a coupe cocktail glass. Garnish with a trimmed carrot ribbon.\n\nGarnish: Carrot Ribbon",
+  "steps": [
+   "在调酒杯（mixing glass）中依次量取原料：1.5 oz Luxardo Bitter Bianco、1 oz Reisetbauer Carrot Eau De Vie、.75 oz Genevieve Gin",
+   "向调酒杯中加入足量冰块",
+   "用吧勺轻柔搅拌30圈约20秒，直至酒液充分冷却并适度稀释",
+   "使用滤网（julep strainer）将酒液滤入预冷的碟形杯中",
+   "将修剪好的胡萝卜丝带（carrot ribbon）装饰于杯沿或酒液表面"
+  ]
+ },
+ {
+  "id": "1073",
+  "name": "Miyagikyo Kick",
+  "name_zh": "宫城峡之击",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{citrus,nutty,sweet,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Quinn\n\nIngredients:\n1.5 oz Nikka Whisky Miyagikyo Single Malt 12 YO, .75 oz Rare Wine Co. Charleston Sercial Madeira, .75 oz Fresh lime juice, .625 oz Small Hands Food orgeat\n\nPreparation:\nCombine ingredients into a cocktail shaker. \nShake with ice vigorously for 10-15 seconds. \nStrain into a chilled coupe glass. No garnish.\n\nNotes: http://www.foodrepublic.com/2014/11/07/miyagikyo",
+  "steps": [
+   "将碟形杯放入冷冻室或加冰预冷备用。",
+   "在调酒壶中依次加入1.5 oz一甲威士忌宫城峡单一麦芽12年、.75 oz珍稀酒业查尔斯顿瑟西尔马德拉酒、.75 oz鲜榨青柠汁和.625 oz汉兹食品杏仁糖浆。",
+   "向调酒壶中加入冰块，密封后用力摇晃10-15秒。",
+   "取出预冷的碟形杯，将酒液通过滤网双重过滤倒入杯中。"
+  ]
+ },
+ {
+  "id": "1072",
+  "name": "Don't Rock the Boat Punch",
+  "name_zh": "勿扰潘趣",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,spicy,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kevin Martin\nBar/Company: Eastern Standard\nLocation: Boston\n\nIngredients:\n1 part No.3 London Dry Gin, 1 part Rooibus Tea (steeped and cooled), 1 part Mulled Cider (cooled), .5 part Clover Honey Syrup, .33 part Cava,   Angostura\n\nPreparation:\nCombine ingredients into a chilled punch bowl, ice and dilute appropriately, garnish seasonally.",
+  "steps": [
+   "准备一个预先冰镇的大号潘趣碗。",
+   "在碗中依次量入1 part No.3伦敦干金酒、1 part 冲泡冷却的路易波士茶、1 part 冷却的热香料苹果酒、0.5 part 三叶草蜂蜜糖浆，并滴入安高天娜苦精。",
+   "加入足量冰块至碗容量约2/3处，轻柔搅拌30圈约20秒，使酒液充分冷却并适度稀释。",
+   "沿碗壁缓慢倒入0.33 part卡瓦起泡酒，用吧勺轻轻提拉混合以避免消泡。",
+   "将调制好的潘趣酒分装至冰镇的鸡尾酒杯中，即可上桌。"
+  ]
+ },
+ {
+  "id": "1068",
+  "name": "Shadowcat",
+  "name_zh": "影猫",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,citrus,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Conal Nielsen\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, 1 oz Barr Hill Gin, .75 oz Falernum, 1 oz Topo Chico Mineral Water, 1 dash Lemon Bitters\n\nPreparation:\nCombine ingredients in a pint glass, stir with ice to chill. Double strain into a coupe glass. Garnish with mint and lemon wedge flag.\n\nGarnish: Mint, Lemon Wedge",
+  "steps": [
+   "准备品脱杯、吧勺、量酒器、双重过滤器，并将碟形杯放入冰箱冷藏或加冰预冷。",
+   "在品脱杯中依次量入1 oz Luxardo 白色苦酒、1 oz 巴尔山金酒、.75 oz 法勒诺姆糖浆、1 oz Topo Chico 矿泉水，并滴入1 dash 柠檬苦精。",
+   "往品脱杯中加入满杯冰块，用吧勺轻柔搅拌30圈约30秒，直至杯壁充分起霜。",
+   "将双重过滤器置于预冷的碟形杯上，将混合液过滤倒入杯中。",
+   "在杯缘插上一束新鲜薄荷，再以柠檬角及旗签制作柠檬旗装饰，随即上桌。"
+  ]
+ },
+ {
+  "id": "1077",
+  "name": "The Canevari Cocktail",
+  "name_zh": "卡内瓦里鸡尾酒",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{bitter,herbal,sweet,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jeff Kinder\nBar/Company: Bryant's Cocktail Lounge\nLocation: Milwaukee\n\nIngredients:\n1.5 oz Old Tom Gin, 1 oz Cocchi Vermouth di Torino, .5 oz Luxardo Bitter, 3 dash Angostura Bitters\n\nPreparation:\nCombine ingredients, stir until well chilled, and strain in to a cocktail glass. Serve with an orange twist.\n\nGarnish: Orange Twist",
+  "steps": [
+   "准备调酒杯、吧勺和滤冰器，将鸡尾酒杯提前冰镇。",
+   "在调酒杯中加入1.5 oz Old Tom Gin、1 oz Cocchi Vermouth di Torino、.5 oz Luxardo Bitter和3 dash Angostura Bitters。",
+   "加入冰块至调酒杯八分满。",
+   "用吧勺搅拌约30秒，直至酒液充分冷却、杯壁起霜。",
+   "用滤冰器将酒液过滤倒入冰镇过的鸡尾酒杯中。",
+   "取一片橙皮，在杯口上方扭转挤出精油，放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1076",
+  "name": "Elgin Elixir",
+  "name_zh": "埃尔金灵药",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{fruity,bitter,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Alan Kropf\nLocation: San Francisco\n\nIngredients:\n1 oz BenRiach Single Malt 12 YO, 1 oz C. Drouin Calvados Selection, 1 oz Luxardo Aperitivo\n\nPreparation:\nCombine ingredients with ice in a mixing glass and stir. Strain over a large cube in a rocks glass and garnish with an orange peel.",
+  "steps": [
+   "准备调酒杯、量酒器、吧勺和滤网，在古典杯中放入一块大冰块。",
+   "用量酒器依次量取1 oz 本利亚克单一麦芽威士忌12年、1 oz C. Drouin 精选卡尔瓦多斯和1 oz 路萨朵开胃酒，倒入调酒杯中。",
+   "往调酒杯中加入冰块至八分满，用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却融合。",
+   "将滤网置于古典杯上方，把搅拌好的酒液过滤倒入杯中，覆盖在大冰块上。",
+   "取一片新鲜橙皮，在杯口上方扭转挤出橙皮油，擦拭杯缘后投入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1080",
+  "name": "Shroud of the Inca",
+  "name_zh": "印加裹尸布",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,fruity,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Arien Chabolla\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, .25 oz Castilian Tincture*, .75 oz BarSol Supremo Moste Verde Italia Pisco, 2 oz Prosecco\n\nPreparation:\nCombine Luxardo, BarSol, and tincture. Ice, stir, and strain into chilled coupe. Top with Prosecco. Gently set candied blood orange wheel (thinly sliced) garnish into drink and serve.\n\n*Castillian Tincture:\n-- ",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷，准备调酒壶及冰块。",
+   "用量酒器分别量取1 oz Luxardo Bitter Bianco、.75 oz BarSol Supremo Moste Verde Italia Pisco、.25 oz Castilian Tincture，依次倒入调酒壶。",
+   "在调酒壶中加入足量冰块。",
+   "盖紧壶盖，用力摇晃15秒，直至壶壁结霜。",
+   "取出预冷的碟形杯，使用隔冰器将混合酒液过滤倒入杯中。",
+   "沿杯壁缓缓注入2 oz Prosecco，轻微用吧勺提拉融合。",
+   "无需额外装饰，直接上桌享用。"
+  ]
+ },
+ {
+  "id": "1078",
+  "name": "Erasmus' Revenge",
+  "name_zh": "伊拉斯谟的复仇",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,herbal,citrus,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Keli Rivers\n\nIngredients:\n2 oz Junipero Gin, .5 oz Carpano Antica, 1 bsp Calisaya, 3 dash The Bitter Truth Grapefruit Bitters\n\nPreparation:\nCombine ingredients. Pour over big cube and stir. Add the grapefruit peel.\n\nGarnish: Grapefruit Peel",
+  "steps": [
+   "将鸡尾酒杯提前冰镇，准备调酒杯。",
+   "在调酒杯中依次倒入2 oz Junipero Gin、.5 oz Carpano Antica、1 bsp Calisaya 和3 dash The Bitter Truth Grapefruit Bitters。",
+   "往调酒杯中放入一大块冰块，用吧勺均匀搅拌约30秒，直至酒液充分冷却。",
+   "取出冰镇好的鸡尾酒杯，使用滤网将混合酒液过滤倒入杯中。",
+   "切取新鲜西柚皮，在杯口上方拧压释放油脂，用皮擦拭杯沿后投入杯中装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1083",
+  "name": "The Cliffdiver",
+  "name_zh": "悬崖跳水者",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{fruity,spicy,citrus,sweet,tropical}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.25 oz D'aristi 10 YR Rum, .5 oz The Genuine Curacao Liqueur Blue, .25 oz Tempus Fugit Liqueur de Violettes, 1 oz Lime Juice, .5 oz Tahitian Vanilla Bean Syrup, 1 float Ginger Beer, 3 dash Angostura Bitters\n\nPreparation:\nCombine rum, curacao, violettes, and lime juice in a shaker, add ice and shake vigorously. Double strain into a chilled collins glass. Add fresh ice in the collins g",
+  "steps": [
+   "在可林杯中加满冰块，备用。",
+   "在摇酒器中依次加入达里斯蒂10年朗姆酒1.25盎司、真品蓝橙利口酒0.5盎司、Tempus Fugit紫罗兰利口酒0.25盎司、青柠汁1盎司、大溪地香草豆糖浆0.5盎司。",
+   "向摇酒器中加满冰块，用力摇晃15秒。",
+   "将摇好的混合液通过隔冰器滤入加冰的可林杯中。",
+   "沿吧勺背缓缓倒入姜汁啤酒，使其漂浮在液面。",
+   "在顶层滴入3滴安高天娜苦精。"
+  ]
+ },
+ {
+  "id": "1091",
+  "name": "A Regal Air",
+  "name_zh": "皇家气息",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{herbal,spicy,citrus,dry}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Amy Lewis \nBar/Company: One Sixty Blue\nLocation: Chicago, Ill\n\nIngredients:\n3 oz Domingo Perez Marin 'la Guita' Manzanilla Sherry, .5 oz King's Ginger Liqueur, .25 oz Chartreuse , .25 oz Juice of an Orange\n\nPreparation:\nCombine these ingredients and roll gently over ice and strain into a martini glass. Top with pumpkin foam.",
+  "steps": [
+   "将马天尼杯放入冰箱或加冰预冷备用。",
+   "在调酒壶中依次加入3 oz 多明戈·佩雷斯·马林'La Guita'曼萨尼亚雪莉酒、0.5 oz 国王姜味利口酒、0.25 oz 查特酒和0.25 oz 鲜榨橙汁。",
+   "向调酒壶中加入满杯冰块，盖上壶盖，轻柔地滚动混合约15秒。",
+   "取出预冷的马天尼杯，将酒液通过滤网倒入杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1097",
+  "name": "The Molino",
+  "name_zh": "莫利诺",
+  "category": "Craft",
+  "glass_type": "Pilsner Glass",
+  "flavor_tags": "{sour,sweet,nutty,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Palizzi Social Club\nLocation: Philadelphia\n\nIngredients:\n1.5 oz Bourbon, .5 oz Luxardo Amaretto di Saschira, .5 oz Demerara Syrup (1:1), .75 oz Lemon Juice, 1  Egg White\n\nPreparation:\nDry shake all ingredients. Hard shake with ice. Double strain into small pilsner glass. Garnish with Luxardo Cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "准备摇酒器，依次量取1.5 oz波本威士忌、.5 oz Luxardo Amaretto di Saschira杏仁利口酒、.5 oz德麦拉拉糖浆、.75 oz柠檬汁和1个蛋清加入摇酒器。",
+   "不加入冰块，盖上摇酒器，用力干摇15秒，使蛋清充分乳化起泡。",
+   "打开摇酒器加入冰块，再次密封后用力摇晃15秒，使酒体充分冷却并混合。",
+   "使用双重过滤网将酒液滤入冰镇的小皮尔森杯中。",
+   "以Luxardo樱桃装饰杯沿即可上桌。"
+  ]
+ },
+ {
+  "id": "1093",
+  "name": "Bubbly Bird",
+  "name_zh": "气泡鸟",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{fruity,bitter,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kate Grutman\n\nIngredients:\n1 oz Pink Pigeon Rum, 1 fill Champagne, 1 dash Angostura bitters, 1 dash Peach bitters, 1 dash Luxardo Fernet\n\nPreparation:\nDash each bitter and the Fernet over sugar cube in base of Champagne glass so that the sugar is fully saturated with mixture. Add Pink Pigeon Rum and top with chilled Champagne. Garnish with a twist of lemon.\n\nGarnish: Lemon twist",
+  "steps": [
+   "在冰镇过的香槟笛杯底部放入一块方糖",
+   "分别滴入1 dash安高天娜苦精、1 dash桃子苦精和1 dash路萨朵菲奈特于方糖上，直至方糖完全浸润",
+   "量取1 oz粉鸽朗姆酒，沿杯壁缓缓注入杯中",
+   "缓慢倒入足量冰镇香槟（1 fill Champagne）至满杯",
+   "取一片柠檬皮，在杯口上方扭曲挤出油脂后投入杯中装饰"
+  ]
+ },
+ {
+  "id": "1106",
+  "name": "The King's Froth & Frizz",
+  "name_zh": "国王泡沫与嘶嘶",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{spicy,fruity,sour,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jupiter Olympus\nLocation: San Francisco\n\nIngredients:\n1 oz BarSol Selecto Italia Pisco, 1.25 oz King's Ginger Liqueur, .5 oz Peach Brandy, .5 oz Lemon juice, .5 oz Egg white\n\nPreparation:\nDry shake, then shake with ice. Double strain into flute or sour glass. Top with a Saison.\n\nZest orange over top and garnish with a star anise.\n\nGarnish: Star Anise",
+  "steps": [
+   "将所有量取好的原料：1 oz BarSol Selecto Italia 皮斯科白兰地、1.25 oz 国王姜味利口酒、.5 oz 桃子白兰地、.5 oz 柠檬汁、.5 oz 蛋清，倒入摇酒壶中。",
+   "盖上摇酒壶，不加冰用力干摇15秒，使蛋清充分起泡。",
+   "打开摇酒壶加入冰块，再次盖紧并用力摇制约15秒，直至壶体结霜。",
+   "使用双重过滤网（茶滤+壶隔）将酒液滤入香槟笛杯中。",
+   "沿杯壁缓缓注入saison啤酒，制造分层与泡沫酒帽。",
+   "在杯上方拧挤橙皮油，然后将一颗八角点缀于泡沫之上作为装饰。"
+  ]
+ },
+ {
+  "id": "1104",
+  "name": "Platonic Snuggle",
+  "name_zh": "柏拉图式依偎",
+  "category": "Craft",
+  "glass_type": "Shorty Beer",
+  "flavor_tags": "{spicy,creamy,rich,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Natasha David\nBar/Company: Nitecap\n\nIngredients:\n.5 oz H by HINE, .5 oz El Dorado 12 Year Old Rum, .5 oz Hamilton Black Jamaican Pot Still Rum, .5 oz Cinnamon Syrup, .5 oz Heavy Cream, 1 tsp St. Elizabeth Allspice Dram, 1 whole Egg,  top Founders Porter\n\nPreparation:\nDry shake, strain, top with porter.\n\nGarnish: Orange Twist, Grated Nutmeg",
+  "steps": [
+   "准备所有原料、摇酒器、量酒器（带1 tsp刻度）和短身啤酒杯。",
+   "依次量取并倒入摇酒器：.5 oz H by HINE干邑、.5 oz 埃尔·多拉多12年朗姆酒、.5 oz 汉密尔顿黑色牙买加壶式蒸馏朗姆酒、.5 oz 肉桂糖浆、.5 oz 重奶油、1 tsp 圣伊丽莎白多香果酒，再打入1个全蛋。",
+   "不加冰，盖紧摇酒器，用力干摇15秒，使蛋液和奶油充分乳化。",
+   "将摇酒器中的混合酒液经滤网过滤，倒入短身啤酒杯。",
+   "沿杯壁缓慢倒入创始者波特啤酒，直至液面满至杯沿。",
+   "用橙皮扭在杯沿擦拭一圈后投入杯中，再在酒液表面磨撒肉豆蔻粉装饰。"
+  ]
+ },
+ {
+  "id": "1111",
+  "name": "The Alpine Mist",
+  "name_zh": "阿尔卑斯迷雾",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{smoky,spicy,fruity,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Tineke Triggs\n\nIngredients:\n2 oz Mezcal, 2 oz Reed's Premium Ginger Brew, 1 tsp Seedless Blackberry Jam, 1  Lime, juiced, 12  Mint Leaves, muddled\n\nPreparation:\nFill a cocktail shaker with ice. Add all ingredients except the garnish and shake well. Stain into a very chilled martini glass (martini glass should have a sugar rim on half of the glass) and top with a splash of ginger beer. G",
+  "steps": [
+   "将马天尼杯放入冰箱或加冰块冰镇备用。",
+   "在摇酒壶中放入12片新鲜薄荷叶与1茶匙无籽黑莓果酱，用捣棒轻轻挤压捣碎，释放香气。",
+   "将整颗青柠榨汁，取全部青柠汁倒入摇酒壶，再加入2盎司梅斯卡尔酒。",
+   "加入冰块至摇酒壶八分满，盖紧壶盖，用力摇晃。",
+   "取出冰镇的马天尼杯，将摇好的混合液通过双重滤网滤入杯中。",
+   "沿杯壁缓缓倒入2盎司里德优质姜汁汽水，用吧勺轻轻提拉一圈融合。",
+   "用青柠片或剩余薄荷枝装饰杯沿，立即上桌。"
+  ]
+ },
+ {
+  "id": "1119",
+  "name": "Pacific Kick",
+  "name_zh": "太平洋冲击",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{bitter,citrus,nutty,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz Japanese Whisky, 3 oz Amaro Angeleno, 1 oz Luxardo Orgeat Syrup, 1 oz Lemon Juice\n\nPreparation:\nFill shaker with ingredients and ice. Shake. Strain into old fashioned or rocks glass filled with ice.\n\nNotes: Photo credit: liquor.com",
+  "steps": [
+   "准备摇酒壶，并准备一只古典杯，杯中加满冰块备用。",
+   "向摇酒壶中依次加入1 oz日本威士忌、3 oz安杰雷诺苦酒、1 oz路萨多杏仁糖浆和1 oz柠檬汁。",
+   "向摇酒壶中加入足量冰块，盖紧壶盖。",
+   "用力摇晃15秒，直至摇酒壶外壁起霜。",
+   "打开壶盖，使用滤网将酒液滤入已加冰的古典杯中。"
+  ]
+ },
+ {
+  "id": "1121",
+  "name": "The Mayan Premonition",
+  "name_zh": "玛雅预感",
+  "category": "Craft",
+  "glass_type": "Wine Glass",
+  "flavor_tags": "{fruity,citrus,bitter,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Chinaco Blanco Tequila, .75 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Fresh Lime Juice, 1 float Bitter Lemon Soda\n\nPreparation:\nFill up a stemmed wine glass with ice then pour the ingredients, stir and serve.\n\nGarnish: Fresh Ginger Slice, Luxardo Cherry",
+  "steps": [
+   "在葡萄酒杯中加满冰块",
+   "量取1.5 oz Chinaco 银标龙舌兰酒、0.75 oz 路萨朵桑格·莫拉科樱桃利口酒和0.5 oz 鲜榨青柠汁，依次倒入杯中",
+   "用吧勺轻柔搅拌约10圈，使酒液混合并降温",
+   "沿杯壁缓缓注入苦柠檬苏打水，使其漂浮于表面",
+   "放入一片新鲜姜片和一颗路萨朵樱桃作为装饰，上桌"
+  ]
+ },
+ {
+  "id": "1120",
+  "name": "Citrus Quo (Adapted)",
+  "name_zh": "柑橘现状（改编版）",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,bitter,herbal,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .5 oz Luxardo Limoncello, .5 oz Luxardo Aperitivo, 3 oz Tonic water\n\nPreparation:\nFill up a stem-less wine glass with ice and pour the ingredients over, stir and serve.\n\nGarnish: Grapefruit spiral\n\nNotes: Adapted from Francesco Lafranconi's recipe in the Luxardo cocktail book. He originally called for Luxardo Dry Gin, which ",
+  "steps": [
+   "准备一个无脚葡萄酒杯，加满冰块",
+   "量取1.5 oz No.3 伦敦干金酒，倒入杯中",
+   "量取.5 oz 路萨多柠檬切罗酒，倒入杯中",
+   "量取.5 oz 路萨朵开胃酒，倒入杯中",
+   "倒入3 oz 汤力水",
+   "用吧勺轻柔搅拌15秒，使材料混合均匀",
+   "用西柚螺旋装饰后上桌"
+  ]
+ },
+ {
+  "id": "1124",
+  "name": "Ypioca Chile Punch",
+  "name_zh": "Ypioca 辣椒宾治",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,citrus,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Lauren Sanchez\nLocation: Miami\n\nIngredients:\n2 part Ypioca Brasilizar Cachaca Prata Classica, 1 part Fresh Lime Juice, .5 part Agave, .5 part Ancho Reyes Ancho Chile Liqueur\n\nPreparation:\nFor a punch, combine Ypioca, lime, agave and Ancho Reyes together. Add fresh pineapple chunks, 3 thin sliced chiles (seeds included) and 1 star anise to garnish.\n\nGarnish: Pineapple Chunks, Dried Ancho",
+  "steps": [
+   "将鸡尾酒杯放入冰箱冷藏或加冰预冷，同时准备摇酒壶和量酒器。",
+   "在摇酒壶中依次加入2份Ypioca Brasilizar银标经典卡莎萨、1份鲜榨青柠汁、0.5份龙舌兰糖浆和0.5份安乔雷耶斯安乔辣椒利口酒。",
+   "向摇酒壶中加入冰块至八分满。",
+   "盖紧摇酒壶，用力摇晃约15秒，直至壶壁结霜。",
+   "取出预冷的鸡尾酒杯，隔着滤网将酒液双重过滤倒入杯中。"
+  ]
+ },
+ {
+  "id": "1117",
+  "name": "A Southern Jackass",
+  "name_zh": "南方蠢驴",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{spicy,sweet,bitter,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Julian Miller\nBar/Company: Partender\nLocation: San Francisco\n\nIngredients:\n1.5 oz Prichard's Lincoln County Lightning, .5 oz King's Ginger Liqueur, .5 oz Cinnamon-Candied Ginger Syrup*, 3 dash Angostura Bitters,  top Club Soda\n\nPreparation:\nFill a shaker with an old fashioned glass worth of ice. Add all ingredients except for the club soda. Shake vigorously for 20 seconds, then dump int",
+  "steps": [
+   "在古典杯中，依次量入1.5 oz普里查德林肯郡闪电酒、0.5 oz国王姜味利口酒、0.5 oz肉桂糖渍姜糖浆和3 dash安高天娜苦精。",
+   "加入大块冰块至杯满。",
+   "用吧勺轻轻搅拌约10秒，使酒液冷却融合。",
+   "沿杯壁缓缓倒入苏打水至满。",
+   "轻搅一次后即可上桌。"
+  ]
+ },
+ {
+  "id": "1125",
+  "name": "Prata Punch",
+  "name_zh": "普拉塔宾治",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Lauren Sanchez\nLocation: Miami\n\nIngredients:\n2 part Ypioca Brasilizar Cachaca Prata Reserva Especial, .5 part Lillet Rose, .5 part Guava Nectar, .25 part Fresh Lime Juice, .25 part Agave,  top Banfi Rosa Regale Sparkling Wine\n\nPreparation:\nFor punch, combine Ypioca, Lillet Rose, guava nectar, lime and agave. Top with Rosa Regale sparkling and add sliced strawberries and thin-sliced lime",
+  "steps": [
+   "在摇酒壶中依次加入2份Ypioca Brasilizar银标珍藏卡莎萨、0.5份丽叶玫瑰、0.5份番石榴蜜、0.25份鲜榨青柠汁和0.25份龙舌兰糖浆",
+   "在摇酒壶中加满冰块，扣紧壶盖，用力摇晃15秒",
+   "将混合酒液通过双重过滤网倒入冰镇过的鸡尾酒杯中",
+   "沿杯壁缓缓倒入班菲罗莎雷加莱起泡酒至满杯，轻微搅动融合"
+  ]
+ },
+ {
+  "id": "1126",
+  "name": "Engaged and Cant-Aloupe",
+  "name_zh": "订婚与蜜瓜",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{fruity,sweet,citrus,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Van Flandern\n\nIngredients:\n1.5 oz BarSol Supremo Moste Verde Italia Pisco, 1.25 oz Fresh Cantaloupe Juice, .5 oz Fresh Lime Juice, .75 oz Beet Sugar Water*, 1  Egg White\n\nPreparation:\nGarnish with 3 drops of Angostura Bitters over foam.\n\n*Beet Sugar Water:\n-- 50% Beet Sugar\n-- 50% Water\n\nGarnish: Angostura Bitters\n\nNotes: Featured on Extra TV June 2016",
+  "steps": [
+   "准备摇酒壶、量酒器、滤网和古典杯，确保工具洁净。",
+   "用量酒器依次量取1.5 oz 巴索至尊莫斯特佛得意大利皮斯科、1.25 oz 鲜榨哈密瓜汁、0.5 oz 鲜榨青柠汁、0.75 oz 甜菜糖水和1个蛋清，全部加入摇酒壶中。",
+   "不添加冰块，扣紧摇酒壶，用力干摇15秒，使蛋清充分乳化成绵密泡沫。",
+   "打开摇酒壶，加入适量冰块，再次扣紧并用力摇晃15秒，直至壶身结霜。",
+   "使用双重滤网过滤酒液，倒入预冷的古典杯中，静待泡沫浮起。",
+   "在泡沫表面小心滴入3滴安格斯特拉苦精作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1130",
+  "name": "Blind Luck",
+  "name_zh": "盲运",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{bitter,fruity,sweet,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Andrew Grala\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, 2.5 oz Old Tom Gin, 2 bsp Real Lemon Juice, 2 bsp Strawberry-Raspberry Simple Syrup*\n\nPreparation:\nHard vigorous shake with high density ice for 5-6 seconds. Hawthorne and fine strain into a chilled martini glass. Garnish with a mint sprig spanked and lightly rubbed around the edge of the glass. Raspberry garnish a",
+  "steps": [
+   "准备马天尼杯，放入冰块冰杯备用；将摇酒器准备好。",
+   "在摇酒器中依次量取并加入：2.5 oz Old Tom Gin、1 oz Luxardo Bitter Bianco、2 bsp 真实柠檬汁、2 bsp 草莓覆盆子单糖浆。",
+   "向摇酒器中加满冰块，盖紧后用力摇晃15秒。",
+   "将冰杯的马天尼杯倒空，架好滤网，将摇好的酒液双重过滤倒入杯中。",
+   "无需装饰，直接上桌享用。"
+  ]
+ },
+ {
+  "id": "1135",
+  "name": "Karlsson's Kold Brew",
+  "name_zh": "卡尔森冷萃",
+  "category": "Craft",
+  "glass_type": "Espresso Cup",
+  "flavor_tags": "{bitter,earthy,creamy,spicy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n1 oz Karlsson's Gold Vodka (Coffee-Infused), .75 oz Café Moka, .75 oz Cardamom syrup*, 2 Tbsp Soy milk coffee foam**, 1 pinch Espresso powder\n\nPreparation:\nIn a Boston shaker combine all liquid ingredients (not the foam) with cracked ice and shake vigorously for 20 seconds. Double strain the cocktail into an espresso cup. Using an aero-latte frothing whip frot",
+  "steps": [
+   "将浓缩咖啡杯置于吧台，确保杯具洁净。",
+   "向杯中依次倒入1 oz卡尔森金伏特加、0.75 oz摩卡咖啡和0.75 oz豆蔻糖浆。",
+   "用吧勺轻柔搅拌均匀，约10秒，使液体充分融合。",
+   "在混合液表面缓慢铺上2 Tbsp豆奶咖啡泡沫，形成分层。",
+   "在泡沫顶部撒上1 pinch浓缩咖啡粉作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1139",
+  "name": "Asian Affair",
+  "name_zh": "亚洲情事",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{herbal,citrus,spicy,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n2 oz Karlsson's Gold Vodka, .75 oz Boiron Kalamansi Juice, .5 oz Thai Basil Syrup*, .5 oz Cocchi Americano, 2 oz Fentimans Ginger Beer\n\nPreparation:\nIn a Boston shaker, combine all liquid ingredients except the ginger beer with cracked ice and shake vigorously for 30 seconds. Double strain over ice into a 16 oz. highball or Collins glass and top with the ginge",
+  "steps": [
+   "在高球杯中装满冰块。",
+   "量取2 oz Karlsson's Gold 伏特加、.75 oz 博伊隆卡曼橘汁、.5 oz 泰国罗勒糖浆和.5 oz 科奇阿美利加诺，依次倒入杯中。",
+   "用吧勺轻柔搅拌10秒，使所有材料融合。",
+   "缓缓倒入2 oz 芬特曼姜汁啤酒，轻轻提拉搅拌一圈，即可上桌。"
+  ]
+ },
+ {
+  "id": "1141",
+  "name": "Tambourine",
+  "name_zh": "铃鼓",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{tropical,citrus,sour,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sean McClure\n\nIngredients:\n2 oz Karlsson's Gold Vodka, .75 oz Pineapple juice, .5 oz Fresh lime juice, .5 oz Kaffir lime & tamarind compound syrup*\n\nPreparation:\nIn a Boston shaker, combine all liquid ingredients with cracked ice and shake vigorously for 30 seconds. Double strain into a frozen 4.5 oz. coupe glass. Garnish with 1/2 piece kaffir lime leaf. (Clap the leaf several times bef",
+  "steps": [
+   "准备摇酒器并放入适量冰块",
+   "在摇酒器中依次量取并加入2 oz Karlsson's Gold伏特加、.75 oz菠萝汁、.5 oz鲜榨青柠汁和.5 oz泰国青柠与罗望子复合糖浆",
+   "盖上摇酒器，用力摇晃15秒，使酒液充分混合与冷却",
+   "将酒液通过滤网倒入预先冰镇的碟形杯中",
+   "检查杯口有无浮沫，必要时撇去，直接上桌"
+  ]
+ },
+ {
+  "id": "1144",
+  "name": "Barbary Coast Bulldog",
+  "name_zh": "巴巴里海岸斗牛犬",
+  "category": "Craft",
+  "glass_type": "Bucket",
+  "flavor_tags": "{creamy,sweet,rich,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Hophead Vodka, .75 oz Luxardo Espresso Italian Liqueur, 2 oz Cream, 2 oz Mexican Coca Cola\n\nPreparation:\nIn a bucket glass, combine Hophead, coffee liqueur, and cream. Add Ice and give a quick stir. Top with cold Mexican Coke and garnish with a Luxardo Cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "准备一个冰桶杯。",
+   "用量酒器量取Hophead伏特加1.5 oz、Luxardo意式浓缩咖啡利口酒0.75 oz和奶油2 oz，依次倒入冰桶杯中。",
+   "向杯中加入冰块至八成满，然后用吧勺快速搅拌约5秒。",
+   "沿杯壁缓慢倒入墨西哥可口可乐2 oz，形成分层。",
+   "在杯口装饰一颗Luxardo樱桃，即可上桌。"
+  ]
+ },
+ {
+  "id": "1147",
+  "name": "The No.3 Winter Cup",
+  "name_zh": "3号冬季杯",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{herbal,citrus,spicy,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n25 ml No.3 London Dry Gin, 25 ml King's Ginger Liqueur, 12.5 ml Red Vermouth (Antica Formula), 150 ml Good quality sharp lemonade\n\nPreparation:\nIn a highball glass full of ice add No.3, King's Ginger and red vermouth. Top up with the lemonade and serve with a slice of ginger and a wedge of pink grapefruit.\n\nGarnish: Pink Grapefruit wedge, Ginger",
+  "steps": [
+   "在高球杯中装满冰块",
+   "量取25 ml No.3伦敦干金酒，倒入杯中",
+   "量取25 ml国王姜味利口酒，倒入杯中",
+   "量取12.5 ml红味美思（Antica Formula），倒入杯中",
+   "沿杯壁缓慢注入150 ml优质酸爽柠檬水至满杯",
+   "用吧勺轻轻提拉一次，使酒液轻微融合",
+   "放置一片姜和一个粉红西柚角在杯口作为装饰"
+  ]
+ },
+ {
+  "id": "1152",
+  "name": "Passionate Pigeon",
+  "name_zh": "热情鸽子",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{tropical,fruity,sweet,refreshing,citrus}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jason Fendick\nLocation: United Kingdom\n\nIngredients:\n50 ml Pink Pigeon Rum, 50 ml Lychee juice, .5  Lime, juiced, 1  Passion fruit, 1 float Ginger beer\n\nPreparation:\nIn a mixing glass, combine Pink Pigeon Rum, Lychee Juice and the juice from 1/2 a lime. Add the pulp of one passion fruit (to prep passion fruit: cut in half, setting aside a small slice for garnish and scoop out the pulp a",
+  "steps": [
+   "在高球杯（可林杯）中放入青柠半颗，使用压榨器压出所有汁液，将榨过的青柠壳丢入杯中",
+   "用量酒器量取50毫升Pink Pigeon朗姆酒和50毫升荔枝汁，依次倒入杯中",
+   "用吧勺轻柔搅拌10秒，使底部青柠汁与酒液融合",
+   "杯子加满碎冰或方块冰，然后缓缓注入姜汁啤酒至液面接近杯口形成float层，轻提吧勺略搅",
+   "用刀将百香果对半切开，其中一半果肉朝下卡在杯沿作为装饰，若有多余青柠角可一同点缀，插入吸管后上桌"
+  ]
+ },
+ {
+  "id": "1154",
+  "name": "The No.3 Winter Punch",
+  "name_zh": "三号冬季宾治",
+  "category": "Craft",
+  "glass_type": "Punch Bowl",
+  "flavor_tags": "{citrus,spicy,refreshing,herbal}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 part No.3 London Dry Gin, 1 part King's Ginger Liqueur, .5 part Red Vermouth (Antica Formula), 6 part Good quality sharp lemonade\n\nPreparation:\nIn a punch bowl add ingredients per person.\n\nGarnish: Pink Grapefruit wedge, Ginger",
+  "steps": [
+   "清洗并准备好潘趣碗，置于操作台中央",
+   "按所需人数比例，依次向潘趣碗中加入 1 part No.3 伦敦干金酒、1 part 国王姜味利口酒和 .5 part 红味美思（Antica Formula）",
+   "量取 6 part 优质酸爽柠檬水，沿碗壁缓缓倒入潘趣碗中",
+   "用长柄吧勺轻轻搅拌约20秒，使所有原料充分混合",
+   "将潘趣碗上桌，在每个饮杯中放入粉红葡萄柚角和姜片作为装饰"
+  ]
+ },
+ {
+  "id": "1153",
+  "name": "Mayan Decadence",
+  "name_zh": "玛雅奢靡",
+  "category": "Craft",
+  "glass_type": "Bucket",
+  "flavor_tags": "{spicy,sweet,earthy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Ronaldo Colli\nLocation: San Francisco\n\nIngredients:\n1.75 oz Chinaco Anejo Tequila, .5 oz Xtabentun Liqueur (honey, anis), 3 dash Bittermens Xocolatl Mole Bitters, 3 dash Fee Brothers Aztec Chocolate Bitters\n\nPreparation:\nIn a pint glass pour all the ingredients, stir and strain into a bucket glass 3/4 full of ice and garnish with an orange peel.\n\nGarnish: Orange Peel",
+  "steps": [
+   "在冰桶杯中加入冰块至3/4满",
+   "在品脱杯中量入1.75盎司Chinaco陈年龙舌兰酒、0.5盎司Xtabentun利口酒、3滴Bittermens Xocolatl墨西哥巧克力苦精和3滴Fee Brothers阿兹特克巧克力苦精",
+   "在品脱杯中加入冰块，然后用吧勺搅拌约20秒，至酒液充分冷却",
+   "使用过滤网将混合酒液滤入准备好的冰桶杯中",
+   "取一片橙皮，在杯口上方扭曲释放油脂，然后挂于杯沿装饰"
+  ]
+ },
+ {
+  "id": "1163",
+  "name": "Desmond's Choice",
+  "name_zh": "德斯蒙德之选",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{sweet,rich,bitter,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n2 oz Hirsch Small Batch Reserve Bourbon, .5 oz Creme de Cacao, .25 oz Pierre Ferrand Dry Orange Curacao, 3 dash The Bitter Truth Jerry Thomas Bitters\n\nPreparation:\nIn old fashioned glass, lightly muddle orange zest with bitters and orange curacao.  Add bourbon and creme de cacao then stir with ice for proper dilution (depending on ice) and mixing of ingredients.\n\nGarnish: Orange Peel,",
+  "steps": [
+   "在古典杯中放入一小片新鲜橙皮，加入3 dash The Bitter Truth Jerry Thomas 苦精和0.25 oz Pierre Ferrand 干橙库拉索酒，用捣棒轻轻按压橙皮约10秒，释放油脂。",
+   "向杯中加入2 oz Hirsch 小批量珍藏波本威士忌和0.5 oz 可可利口酒。",
+   "加入大块冰块至八分满，用吧勺搅拌约30圈（约20秒），直至杯壁起霜、酒液充分冷却和稀释。",
+   "杯口点缀一片新鲜橙皮，并放入一颗 Luxardo 樱桃装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1174",
+  "name": "The 42nd Round",
+  "name_zh": "第42轮",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{smoky,herbal,bitter,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Raul Ayala\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1 oz Junipero Gin, 5 oz Compas Box Great King Street Blended Scotch Whisky, 1 oz Byrrh Grand Quinquina, .5 oz Anchor Christmas Ale 2016*, 2 dash Bittercube Corazon Bitters, 2 dash The Bitter Truth Orange Bitters\n\nPreparation:\nMix all ingredients in a mixing glass and stir for 15-20 secs depending on the type of ic",
+  "steps": [
+   "准备好调酒杯（Mixing Glass）、量酒器、吧勺和鸡尾酒杯，将鸡尾酒杯提前冰镇。",
+   "在调酒杯中加入适量冰块。",
+   "使用量酒器依次量取并倒入：1 oz Junipero 金酒、5 oz Compas Box Great King Street 调和苏格兰威士忌、1 oz Byrrh Grand Quinquina、.5 oz Anchor Christmas Ale 2016*，然后分别加入2 dash Bittercube Corazon 苦精和2 dash The Bitter Truth 橙味苦精。",
+   "用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却融合。",
+   "取出冰镇好的鸡尾酒杯，使用滤网（Strainer）将混合好的酒液过滤倒入杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1177",
+  "name": "Trip to Jarnac",
+  "name_zh": "雅纳克之旅",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,sweet,herbal,spicy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz H by HINE, .5 oz Orange Juice, .75 oz Lemon Juice, .25 oz Batavia Arrack, .5 oz Simple Syrup, 1 dash Angostura Bitters\n\nPreparation:\nMix all ingredients together.\n\nNotes: Featured at the 2016/2017 SpeedRack",
+  "steps": [
+   "将鸡尾酒杯提前冰镇备用，准备摇酒壶、量酒器和滤网。",
+   "在摇酒壶中依次加入1 oz H by HINE干邑、0.5 oz橙汁、0.75 oz柠檬汁、0.25 oz巴达维亚亚力酒、0.5 oz简易糖浆，最后滴入1 dash安高天娜苦精。",
+   "加入冰块至八分满，盖紧摇酒壶，用力摇晃15秒。",
+   "使用双重滤网将酒液过滤倒入已冰镇的鸡尾酒杯中，立即上桌。"
+  ]
+ },
+ {
+  "id": "1175",
+  "name": "The Nutty Sensation",
+  "name_zh": "坚果感官",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{nutty,rich,herbal,bitter,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Raul Ayala\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n.75 oz Junipero Gin, .75 oz H by HINE, .75 oz Chateau de Montifaud Pineau des Charentes Blanc, .75 oz Oloroso & Moscatel Blend*, 2 dash The Bitter Truth Xocolate Bitters, 2 dash Orange Bitters,   Walnut Oil\n\nPreparation:\nMix all ingredients in a tin except for the walnut oil. Utilizing the throwing technique, thro",
+  "steps": [
+   "将碟形杯冰镇后，倒入少量核桃油旋转杯壁使其均匀附着，弃去多余油分",
+   "在调酒杯中依次量取 .75 oz Junipero 金酒、.75 oz H by HINE 干邑、.75 oz 蒙蒂福城堡夏朗德皮诺白葡萄酒、.75 oz 奥洛罗索与麝香葡萄混合酒",
+   "加入 2 dash The Bitter Truth 巧克力苦精和 2 dash 橙味苦精",
+   "加入冰块，用吧匙搅拌约30秒至充分冷却并适度稀释",
+   "将混合液过滤倒入准备好的核桃油涂杯"
+  ]
+ },
+ {
+  "id": "1184",
+  "name": "You're Bitter Than That",
+  "name_zh": "你比那更苦",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,citrus,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kevin Mabry\nBar/Company: Capo Restaurant\nLocation: Boston\n\nIngredients:\n.75 oz Blanco Tequila, .75 oz Luxardo Bitter Bianco, .75 oz Luxardo Sangue Morlacco Cherry Liqueur, .75 oz Fresh Lime Juice, .25 oz Rich Simple Syrup (2:1)\n\nPreparation:\nMount all ingredients in a shaker tin. Add ice. Hard shake. Double strain into a chilled coupe glass. Garnish with orange twist.\n\nGarnish: Orange T",
+  "steps": [
+   "将0.75 oz白龙舌兰酒、0.75 oz Luxardo白色苦酒、0.75 oz路萨朵桑格·莫拉科樱桃利口酒、0.75 oz鲜榨青柠汁和0.25 oz浓糖浆（2:1）依次量入摇酒壶中。",
+   "向摇酒壶中加入足量冰块。",
+   "密封摇酒壶，用力摇晃约15秒，直至壶壁结霜。",
+   "双重过滤倒入预先冰镇的碟形杯中。",
+   "取一片橙皮，在杯沿上方挤压出表皮油脂并擦拭杯缘，最后将橙皮扭投入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1190",
+  "name": "Feingold",
+  "name_zh": "费因戈尔德",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,rich,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Rafa García Febles\nLocation: New York\n\nIngredients:\n2 oz Brandy, .5 oz Orange Cordial, 1 bsp Luxardo Sangue Morlacco Cherry Liqueur, 1  Luxardo Cherry (muddled), 1 dash Aromatic Bitters, 1 dash Cherry Bitters\n\nPreparation:\nMuddle cherry in liquid ingredients. Shake, double strain over cracked ice. Garnish with two more cherries on a pick with an orange flag.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "在摇酒壶中放入1颗路萨多樱桃，加入2 oz白兰地、.5 oz橙味甜露酒、1 bsp路萨朵桑格·莫拉科樱桃利口酒、1 dash芳香苦精和1 dash樱桃苦精。",
+   "用捣棒轻轻捣碎樱桃，使果汁与酒液融合。",
+   "加入冰块，盖上摇酒壶，用力摇晃15秒。",
+   "用双重过滤网将酒液滤入装有碎冰的预冷鸡尾酒杯中。",
+   "用酒签串上两颗路萨多樱桃和一片橙皮旗，架在杯口装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1199",
+  "name": "Stone Fruit Patch V1",
+  "name_zh": "核果园 V1",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Caterina Miltenberger\n\nIngredients:\n1 oz Luxardo Maraschino Liqueur, .5 oz Peach Puree, .75 oz Lime Juice, 3  Raspberries\n\nPreparation:\nMuddle raspberries in mixing glass. Add remainder of ingredients in a mixing glass with fresh ice. Shake vigorously strain over fresh ice. Garnish with raspberry and mint.\n\nGarnish: Raspberry, Mint",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加入冰块预冷；准备好调酒杯、摇酒器、量酒器、捣棒和过滤器。",
+   "在调酒杯中放入3个覆盆子，用捣棒轻轻捣碎。",
+   "依次量取并倒入1 oz路萨朵黑樱桃利口酒、0.75 oz青柠汁和0.5 oz桃泥。",
+   "加入新鲜冰块，盖紧摇酒器，用力摇晃15秒。",
+   "使用双重过滤网将酒液滤入预冷的鸡尾酒杯中。",
+   "杯口装饰一颗覆盆子和一枝新鲜薄荷叶。"
+  ]
+ },
+ {
+  "id": "1196",
+  "name": "Ginger Pigeon",
+  "name_zh": "姜汁粉鸽",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,citrus,fruity,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1 oz Pink Pigeon Rum, .5 oz Luxardo Aperitivo, .5 oz Simple syrup, .5 oz Lemon juice, 1 float Ginger beer, 4 pieces Chopped pineapple, 3 pieces Ginger root\n\nPreparation:\nMuddle pineapple and ginger root, lemon juice and simple syrup, then add Aperitivo and rum, shake well, over ice and top up with Ginger beer.",
+  "steps": [
+   "在摇酒壶底部放入4块菠萝块和3块姜块，加入.5 oz 柠檬汁和.5 oz 简易糖浆，用捣棒用力捣压约30秒，充分释放果汁和香气。",
+   "向壶中倒入1 oz Pink Pigeon朗姆酒和.5 oz 路萨朵开胃酒。",
+   "加入冰块至八分满，盖紧壶盖，用力摇晃15秒。",
+   "使用双重过滤网将酒液滤入预先冰镇的鸡尾酒杯中。",
+   "沿杯壁缓缓倒入姜汁啤酒，使其漂浮于顶层，完成漂浮层。"
+  ]
+ },
+ {
+  "id": "1198",
+  "name": "Stone Fruit Patch V2",
+  "name_zh": "核果园 V2",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Caterina Miltenberger\n\nIngredients:\n1 oz Luxardo Maraschino Liqueur, .5 oz Peach Puree, .75 oz Lime Juice, 3  Raspberries, 1 oz Sparkling Wine\n\nPreparation:\nMuddle raspberries in mixing glass. Add remainder of ingredients in a mixing glass with fresh ice. Shake vigorously and strain into a well chilled coupe. Top off with sparkling wine. Garnish with raspberry and mint.\n\nGarnish: Raspbe",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷备用",
+   "在调酒杯中放入3颗覆盆子，用捣棒轻轻挤压捣碎",
+   "向捣碎的覆盆子中加入1 oz 路萨朵黑樱桃利口酒、0.5 oz 桃泥、0.75 oz 青柠汁，再加入新鲜冰块至调酒杯八分满",
+   "将所有材料倒入摇酒壶，盖紧后用力摇晃15秒，至壶身起霜",
+   "用双重过滤网将混合液滤入预冷好的碟形杯中",
+   "沿杯壁缓缓倒入1 oz 起泡酒，使其浮于表面",
+   "在杯沿饰以新鲜覆盆子和薄荷叶，即可上桌"
+  ]
+ },
+ {
+  "id": "1206",
+  "name": "Mystique Green (Adapted)",
+  "name_zh": "神秘绿（改编版）",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{floral,citrus,sweet,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .75 oz Luxardo Triplum (Triple Sec), .75 oz Elderflower Liqueur, 1 oz Fresh lime juice, .5  Kiwi\n\nPreparation:\nMuddle the kiwi pulp with lime juice in a shaker tin. Add ice and liquors and shake vigorously. Strain into a chilled cocktail glass.\n\nGarnish: Lotus root\n\nNotes: Adapted from Francesco Lafranconi's recipe in the Lu",
+  "steps": [
+   "准备波士顿摇酒器和鸡尾酒杯，预先冰杯。",
+   "在摇酒器底部依次倒入 1.5 oz No.3 伦敦干金酒、.75 oz 路萨多三重橙酒、.75 oz 接骨木花利口酒和 1 oz 鲜榨青柠汁。",
+   "加入八分满冰块，盖紧摇酒器。",
+   "用力摇晃 15 秒，直至摇酒器外壁结霜。",
+   "将鸡尾酒杯中的冰块倒掉，双重过滤酒液入杯。",
+   "切取半颗奇异果薄片，夹在杯缘装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1208",
+  "name": "The Reserved King",
+  "name_zh": "珍藏之王",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{spicy,rich,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jeff Hollinger\n\nIngredients:\n2.5 oz Glenrothes Vintage Reserve, .5 oz King's Ginger Liqueur, 3-4 dash Angostura Bitters,   Lemon Peel\n\nPreparation:\nMuddle the lemon peel and bitters?with the King’s Ginger to release the oils.? Add scotch, stir, and enjoy.",
+  "steps": [
+   "在调酒杯中放入一块柠檬皮，加入3-4 dash安高天娜苦精和.5 oz 国王姜味利口酒，用捣棒轻轻捣压柠檬皮约10秒，释放油脂",
+   "用量酒器量取2.5 oz Glenrothes 年份珍藏威士忌，倒入调酒杯中",
+   "在调酒杯中加入冰块至八分满，用吧勺轻柔搅拌约30圈，约20秒，至酒液充分冷却稀释",
+   "将鸡尾酒杯提前冰镇，然后用隔冰器将搅拌好的酒液过滤倒入杯中",
+   "取新鲜柠檬皮，在杯口上方扭转挤出皮油，擦拭杯缘后投入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "1215",
+  "name": "Ode to Kinshi",
+  "name_zh": "金狮赞歌",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{smoky,bitter,rich,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Shaher Misif\n\nIngredients:\n1.5 oz Nikka Whisky Yoichi Single Malt 15 YO, .75 oz Cocchi Americano Rosa, .5 oz Luxardo Amaro Abano, 5 dash Bittermens Xocolatl Mole Bitters\n\nPreparation:\nPlace all ingredients into a Yarai mixing glass with ice and stir. Strain into a coupe. Garnish with an apple slice.\n\nGarnish: Red Delicious Apple Slice",
+  "steps": [
+   "在Yarai调酒杯中加入半杯冰块进行预冷，然后倒掉融水。",
+   "向调酒杯中依次量取1.5 oz余市15年单一麦芽威士忌、.75 oz科奇美国玫瑰酒、.5 oz路萨朵阿巴诺苦味酒及5 dash Bittermens Xocolatl 墨西哥巧克力苦精。",
+   "加入大半杯新鲜冰块，用吧勺轻柔搅拌约30秒至酒体充分冷却融合。",
+   "将搅拌后的酒液通过朱利普滤网滤入冰过的碟形杯中。",
+   "取一片新鲜的红富士苹果切片夹在杯沿或置于杯中装饰。"
+  ]
+ },
+ {
+  "id": "1210",
+  "name": "Japonais No.3",
+  "name_zh": "日式三号",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{spicy,citrus,fruity,sweet,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Bruce Cole\nBar/Company: Japonais\nLocation: Chicago\n\nIngredients:\n1.5 oz No.3 London Dry Gin, 1 oz King's Ginger Liqueur, 1 oz Orange juice, 1 dash Simple syrup, 2  Cucumber slices, muddled, 2  Raspberries, muddled\n\nPreparation:\nMuddle two cucumber slices, two raspberries and simple syrup in a highball, add ice. Shake gin, ginger liqueur and orange juice with ice. Strain into highball gl",
+  "steps": [
+   "在高球杯中放入2片黄瓜、2个覆盆子和1 dash简易糖浆，用捣棒充分捣碎",
+   "在捣碎物上加入冰块至杯满",
+   "将1.5 oz No.3伦敦干金酒、1 oz国王姜味利口酒、1 oz橙汁倒入摇酒壶，然后加满冰块",
+   "盖紧摇酒壶，用力摇晃15秒",
+   "将摇酒壶中的酒液过滤倒入已备好的高球杯中",
+   "放入姜糖棒装饰后上桌"
+  ]
+ },
+ {
+  "id": "1220",
+  "name": "Garrison's New Fashioned",
+  "name_zh": "加里森新古典",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{sweet,rich,herbal}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n2 oz Garrison Brothers Flagship Bourbon, .5 oz Luxardo Apricot Liqueur, 2 dash Australian Bitters Company Aromatic Bitters,   Lemon Peel\n\nPreparation:\nPlace the lemon peel in an Old Fashioned glass and muddle with bitters. In a mixing glass filled with ice, add the bourbon and apricot liqueur, then strain into the glass. Garnish with cherry and orange ",
+  "steps": [
+   "在古典杯中加入2 dash澳大利亚苦精公司芳香苦精和.5 oz路萨朵杏子利口酒。",
+   "加入2 oz加里森兄弟旗舰波本威士忌。",
+   "加入大块方冰，轻柔搅拌30圈约20秒，使酒体冷却融合。",
+   "取一片柠檬皮，在杯口上方拧挤出皮油并擦拭杯缘，然后投入杯中作为装饰。",
+   "上桌。"
+  ]
+ },
+ {
+  "id": "1221",
+  "name": "Pina Del Este",
+  "name_zh": "东方松林",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{sweet,fruity,tropical,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Luxardo Amaretto di Saschira, 4  Lime wedges, 1  Pinapple wheel, .5 oz Gomme syrup, 1 float Pisco\n\nPreparation:\nPlace the lime wedges and pinapple in a tumbler glass with gomme syrup and muddle briskly, then add ice and Amaretto. Stir well and serve with a float of Pisco.\n\nGarnish: Edible flower",
+  "steps": [
+   "在古典杯中放入4个青柠角和1片菠萝轮片，加入0.5 oz糖浆，用捣棒用力捣压水果至出汁",
+   "向杯中加入冰块，然后倒入1.5 oz Luxardo Amaretto di Saschira杏仁利口酒",
+   "用吧勺充分搅拌约30秒，使酒液冷却并与果汁融合",
+   "沿吧勺背缓缓倒入皮斯科白兰地，使其漂浮在酒液表面",
+   "放上一朵可食用花作为装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1234",
+  "name": "Harms' Way",
+  "name_zh": "哈姆斯之路",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,spicy,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Taylor Wright\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, 1.25 oz Blanco Tequila, .25 oz D.O.M Benedictine, 1 dash Bittermens Xocolatl Mole Bitters\n\nPreparation:\nPour all liquid ingredients into a mixing glass and stir about 55 times for proper dilution and optimal clarity. Strain into a chilled coupe. Twist fresh lemon peel over cocktail for aroma. Garnish with a simple",
+  "steps": [
+   "准备一个混合杯（mixing glass）并加入足量冰块，同时将碟形杯放入冰箱或加冰冷却备用。",
+   "在混合杯中依次量入1 oz Luxardo Bitter Bianco、1.25 oz Blanco Tequila、.25 oz D.O.M Benedictine，并加入1 dash Bittermens Xocolatl Mole Bitters。",
+   "用吧勺在混合杯中持续搅拌约55圈（约30秒），直到酒液充分冷却并达到理想稀释度。",
+   "取出已冰镇的碟形杯，使用滤网（julep strainer）将混合杯中的酒液过滤倒入杯中。",
+   "取一片新鲜柠檬皮，在杯子上方扭转挤出皮油，然后将柠檬皮卷曲放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1241",
+  "name": "Fernet Frappe",
+  "name_zh": "菲奈特冰沙",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,herbal,spicy,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Luxardo Fernet, .5 oz King's Ginger Liqueur, 2 oz Cola, 1 wedge Lemon juice\n\nPreparation:\nPour ingredients over crushed ice into a stemmed glass, stir well and serve.\n\nGarnish: Fresh English Mint",
+  "steps": [
+   "在一个鸡尾酒杯中填满碎冰，轻轻压实。",
+   "量取1.5 oz 路萨朵菲奈特和.5 oz 国王姜味利口酒，依次倒入杯中。",
+   "将1个柠檬角的汁挤入杯中，然后倒入2 oz 可乐。",
+   "用吧勺轻柔搅拌10圈，使材料融合并降温。",
+   "取新鲜英国薄荷枝装饰，插于杯侧即上桌。"
+  ]
+ },
+ {
+  "id": "1243",
+  "name": "The Twinger",
+  "name_zh": "双姜客",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{spicy,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz King's Ginger Liqueur,  top Fever-Tree Ginger Ale, 2 dash Angostura Bitters\n\nPreparation:\nPour King's Ginger into an ice-filled collins glass. Top off with Fever-Tree Ginger Ale. Add bitters, and squeeze lime over and serve.\n\nGarnish: Lime Squeeze",
+  "steps": [
+   "取一只可林杯，加入适量冰块至八分满。",
+   "量取1.5 oz国王姜味利口酒，倒入杯中。",
+   "沿杯壁缓慢倒入芬味树姜汁汽水至杯满。",
+   "在酒液表面滴入2 dash安高天娜苦精。",
+   "取一块青柠角，在杯口上方用力挤入汁液后放入杯中，直接上桌。"
+  ]
+ },
+ {
+  "id": "1244",
+  "name": "No.3 & T",
+  "name_zh": "三号金汤力",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{citrus,refreshing,dry}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin, 1 lemon Lemon, 1 fill Tonic water\n\nPreparation:\nPour No.3 gin into a highball glass over ice cubes. Add a slice of lemon and stir. Top up with tonic water to taste.",
+  "steps": [
+   "在古典杯中加满冰块",
+   "量取1.5 oz No.3伦敦干金酒，倒入杯中",
+   "加入一片柠檬切片",
+   "用吧勺轻轻搅拌5秒",
+   "倒入汤力水至满杯",
+   "上桌享用"
+  ]
+ },
+ {
+  "id": "1247",
+  "name": "San Fran Soda",
+  "name_zh": "旧金山苏打",
+  "category": "Craft",
+  "glass_type": "Pint Glass",
+  "flavor_tags": "{citrus,refreshing,dry}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Devin Hardy\nBar/Company: House of Blues Anaheim\nLocation: Anaheim\n\nIngredients:\n1.25 oz Hophead Vodka, .5 oz Fresh Lime Juice,  splash Soda Water,  top Steam Beer\n\nPreparation:\nPour over ice in a pint glass, then fill with steam beer. Garnish with a lemon wedge and a straw.\n\nGarnish: Lemon Wedge",
+  "steps": [
+   "在品脱杯中加满冰块",
+   "量取1.25 oz Hophead伏特加和.5 oz鲜榨青柠汁，依次倒入杯中",
+   "加入少量苏打水",
+   "缓慢倒入蒸汽啤酒至满杯",
+   "用柠檬角装饰杯口，放入一根吸管"
+  ]
+ },
+ {
+  "id": "1245",
+  "name": "3 & Tree",
+  "name_zh": "三号与树",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{citrus,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin,  top Fever-Tree Tonic Water, .25 oz Maurin Quina\n\nPreparation:\nPour No.3 into ice-filled collins glass. Top off with Fever-Tree Tonic Water to just below rim of the glass. Float .25 oz. of Maurin Quina on top of cocktail. Garnish with small spoonful of fresh pomegranate seeds.\n\nGarnish: Pomegranate Seeds",
+  "steps": [
+   "在可林杯中加满冰块",
+   "量取1.5 oz No.3伦敦干金酒，倒入杯中",
+   "用Fever-Tree汤力水补满至杯口下方约1厘米处",
+   "沿吧勺背部缓慢倒入0.25 oz莫兰奎那酒，使其漂浮于表面",
+   "用小勺舀取少量新鲜石榴籽，轻放在漂浮层上作为装饰"
+  ]
+ },
+ {
+  "id": "1242",
+  "name": "Red Bud Trail",
+  "name_zh": "红芽小径",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{fruity,herbal,sweet,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Bonneville\nLocation: Austin\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .75 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Dry Vermouth, .25 oz Tempus Fugit Alessio Vermouth di Torino Rosso, 1 dash Angostura Bitters\n\nPreparation:\nPour into shaker over ice and shake well. Serve straight up in a martini glass with an orange twist.\n\nGarnish: Orange Twist\n\nNotes: Recipe Credit: Jennifer C",
+  "steps": [
+   "将马天尼杯放入冷冻室或加冰水预冷至少5分钟。",
+   "在摇酒壶中依次加入：1.5 oz No.3 伦敦干金酒、.75 oz 路萨朵桑格·莫拉科樱桃利口酒、.5 oz 干味美思、.25 oz Tempus Fugit Alessio 都灵红味美思及 1 dash 安高天娜苦精。",
+   "往摇酒壶中装满冰块。",
+   "盖紧壶盖，用力摇晃15秒，直至壶身结霜。",
+   "取出预冷的马天尼杯，将壶中酒液通过双重过滤网滤入杯中。",
+   "用橙皮在杯沿上方拧挤出油分，并投入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1250",
+  "name": "Ch?teau Montifaud on the Rocks",
+  "name_zh": "蒙蒂福城堡加冰",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{smoky,earthy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Michel\n\nIngredients:\n1.5 oz Chateau de Montifaud Cognac XO, 3  Ice Cubes\n\nPreparation:\nPour the Cognac into the glass and add ice cubes. Perceive the aromas that are released as a summer rain that reveals the secrets of the nature...",
+  "steps": [
+   "准备一只鸡尾酒杯",
+   "用量酒器量取1.5盎司蒙蒂福干邑XO",
+   "将量好的干邑倒入鸡尾酒杯中",
+   "向杯中轻轻放入3块冰块",
+   "即可上桌享用"
+  ]
+ },
+ {
+  "id": "1251",
+  "name": "Ch?teau Montifaud Pink Love",
+  "name_zh": "蒙蒂福城堡粉红之爱",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Elodie\n\nIngredients:\n.75 oz Chateau de Montifaud XO Silver, .75 oz Sugar Syrup, .75 oz Lemon Juice, 3  Raspberries,  fill Champagne\n\nPreparation:\nPour the Cognac, sugar syrup, lemon juice and 3 pressed raspberries into the shaker, then shake. Strain into the glass (using a cocktail strainer) and fill with chilled Champagne. Garnish with 3 raspberries.\n\nGarnish: 3 Raspberries",
+  "steps": [
+   "在摇酒壶中放入3颗覆盆子，用捣棒轻轻压碎",
+   "量取蒙蒂福 XO 银标干邑、糖浆和柠檬汁各0.75 oz，倒入摇酒壶",
+   "加入冰块，盖紧摇酒壶，用力摇晃15秒",
+   "使用过滤器将混合液滤入预先冰镇的鸡尾酒杯",
+   "沿杯壁缓缓倒入冰镇香槟至满杯",
+   "在杯口放上3颗新鲜覆盆子作为装饰"
+  ]
+ },
+ {
+  "id": "1256",
+  "name": "Ch?teau Montifaud Lady Touch Triple Sec",
+  "name_zh": "蒙蒂福城堡淑女之触橙味利口酒",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,herbal,sweet,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Catherine\n\nIngredients:\n1.5 oz Chateau de Montifaud Reserve Speciale Michel Vallet, .75 oz Triple Sec, 1 oz Lemon Juice, 1 oz Sugar Syrup, 8  Fresh Mint,   Ice Cubes\n\nPreparation:\nPour the ingredients in the shaker. Close and shake well until frosted. Strain into the glass. Garnish with fresh mint.",
+  "steps": [
+   "准备波士顿摇酒壶、滤网（或霍桑滤网）及一个预先冰镇的鸡尾酒杯。",
+   "在摇酒壶中分别量入1.5盎司蒙蒂福米歇尔·瓦莱特珍藏特酿干邑、0.75盎司橙味利口酒、1盎司鲜榨柠檬汁和1盎司糖浆，然后放入8片新鲜薄荷叶。",
+   "在壶中加满冰块，扣紧壶盖，用力摇晃约15秒，直至摇酒壶外壁起霜。",
+   "使用双重过滤法（通过壶口滤网和细孔滤网）将混合液滤入预冷的鸡尾酒杯中。",
+   "轻拍1-2片新鲜薄荷叶释出香气，置于酒面装饰，立即上桌。"
+  ]
+ },
+ {
+  "id": "1262",
+  "name": "Marchesa",
+  "name_zh": "女侯爵",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{bitter,sweet,herbal,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Loris Melis\n\nIngredients:\n30 ml Luxardo Maraschino Liqueur, 20 ml Bitter, 20 ml Luxardo Sangue Morlacco Cherry Liqueur, 20 ml Bourbon, 2 dash Chocolate Bitters\n\nPreparation:\nPrepare directly in an old fashioned glass.\n\nGarnish: Luxardo Cherry, Dehydrated Orange Wheel\n\nNotes: Photo credit: bargiornale.it",
+  "steps": [
+   "在古典杯中放入一大块冰或适量冰块",
+   "量取20 ml波本威士忌、30 ml路萨朵黑樱桃利口酒、20 ml路萨朵桑格·莫拉科樱桃利口酒、20 ml苦精，依次倒入杯中，再滴入2滴巧克力苦精",
+   "用吧勺轻柔搅拌约15秒，使酒液充分冷却融合",
+   "用路萨朵樱桃和脱水橙轮装饰"
+  ]
+ },
+ {
+  "id": "1261",
+  "name": "Kiss Of Persuasion",
+  "name_zh": "说服之吻",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,sweet,creamy,spicy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1 oz Luxardo Maraschino Liqueur, 1 oz Honey-Pear Liqueur, .5 oz Heavy Cream,  oz Pinch of Cardamom,  oz Dehydrated pear slice\n\nPreparation:\nPre-mix the liquors together and keep refrigerated. Serve 2 oz. neat into a small coupe glass. Float the fresh cream on top.\n\nGarnish: Cardamom\n\nNotes: *After-dinner cocktail",
+  "steps": [
+   "将1 oz路萨朵黑樱桃利口酒与1 oz蜂蜜梨利口酒混合，密封后放入冰箱冷藏备用",
+   "用吧勺轻柔搅拌30圈约20秒使冷藏混合液均匀，然后量取2 oz倒入碟形杯",
+   "量取0.5 oz重奶油，沿吧勺背部缓缓注入，使其漂浮在酒液表面形成分层",
+   "捏取一小撮豆蔻，均匀撒在奶油层上",
+   "将一片脱水梨片斜插在杯沿作为装饰"
+  ]
+ },
+ {
+  "id": "1274",
+  "name": "The Last Marasca",
+  "name_zh": "最后的马拉斯卡",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sour,herbal,nutty,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Luke Ridge\n\nIngredients:\n50 ml Gin, 20 ml Luxardo Maraschino Liqueur, 5 ml Luxardo Orgeat Syrup, 5 ml Lemon Juice, 1 dash Absinthe\n\nPreparation:\nRinse glass with absinthe. Add a Luxardo Cherry (covered in its juice) to a mixing glass with remaining ingredients. Stir until cold and slightly rose colored. Single strain, serve with cherry from mixing glass.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "用1 dash苦艾酒涮洗鸡尾酒杯，旋转挂壁后倒掉多余酒液",
+   "在调酒杯中加入金酒50 ml、路萨朵黑樱桃利口酒20 ml、路萨多杏仁糖浆5 ml、柠檬汁5 ml，并放入1颗带汁的路萨朵黑樱桃",
+   "加入适量冰块，用吧勺搅拌约30秒，至酒液充分冷却且呈现淡粉色调",
+   "将调好的酒液通过单滤网滤入已涮洗的鸡尾酒杯中",
+   "从调酒杯中取出那颗樱桃，放入杯中作为装饰后上桌"
+  ]
+ },
+ {
+  "id": "1277",
+  "name": "Wooster 53",
+  "name_zh": "伍斯特53号",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{citrus,spicy,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Diego Sanchez\nBar/Company: Cocteleria\nLocation: New York\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .75 oz Grapefruit Juice, .75 oz Ginger/Cardamom/Honey Syrup*, .25 oz Lime Juice,  float Tonic Water\n\nPreparation:\nServe in a champagne flute up to 60% full and top with tonic water up to 80% full, garnish with a grapefruit twist.\n\n*Ginger/Cardamom/Honey Syrup:\nBring about 8 cups of water t",
+  "steps": [
+   "准备摇酒器和冰过的香槟笛杯。",
+   "在摇酒器中依次量取1.5 oz No.3 伦敦干金酒、0.75 oz 西柚汁、0.75 oz 姜/豆蔻/蜂蜜糖浆和0.25 oz 青柠汁。",
+   "加入冰块，用力摇晃15秒，使材料充分融合并冷却。",
+   "将混合液通过滤网倒入冰过的香槟笛杯中。",
+   "沿杯壁缓缓注入汤力水，使其漂浮于表面。"
+  ]
+ },
+ {
+  "id": "1284",
+  "name": "The House of Duncan",
+  "name_zh": "邓肯之家",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,fruity,spicy,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Floyd\nLocation: Austin\n\nIngredients:\n1.5 oz Glenrothes Vintage Reserve, .5 oz Luxardo Sangue Morlacco Cherry Liqueur, .25 oz King's Ginger Liqueur, 1 dash Angostura Bitters\n\nPreparation:\nServe on the rocks. Garnish with a Luxardo Cherry.\n\nGarnish: Luxardo Cherry\n\nNotes: This is a Rob Roy variation.",
+  "steps": [
+   "在洛克杯中加满冰块，放置备用",
+   "在搅拌杯中依次量入1.5 oz Glenrothes 年份珍藏威士忌、.5 oz 路萨朵桑格·莫拉科樱桃利口酒、.25 oz 国王姜味利口酒和1 dash 安高天娜苦精",
+   "向搅拌杯加入半杯冰块，用吧勺轻柔搅拌30圈约20秒，直至酒液充分冷却",
+   "将搅拌好的酒液过滤倒入已备好冰块的洛克杯中",
+   "用一颗路萨朵樱桃装饰"
+  ]
+ },
+ {
+  "id": "1287",
+  "name": "Bakko & Zengo",
+  "name_zh": "巴科与禅悟",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{creamy,spicy,rich,nutty}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nick Jones\nBar/Company: Pabu\nLocation: San Francisco\n\nIngredients:\n1.5 oz Nikka Coffey Grain Whisky, .25 oz House-made Allspice Dram, .25 oz Heavy Cream, .25 oz Simple Syrup, 1  Whole Egg, 2 dash Chocolate Bitters\n\nPreparation:\nServed in a snifter with grated cinnamon.",
+  "steps": [
+   "用冰镇鸡尾酒杯，备用",
+   "在摇酒壶中依次加入1.5 oz 一甲科菲谷物威士忌、.25 oz 自制多香果利口酒、.25 oz 重奶油、.25 oz 简易糖浆、1整个鸡蛋和2滴巧克力苦精",
+   "不加冰，用力干摇15秒，使蛋液和奶油充分乳化",
+   "加入冰块，再次用力摇晃15秒至摇酒壶外壁结霜",
+   "双重过滤倒入冰镇鸡尾酒杯中",
+   "在酒液表面磨撒适量肉桂粉装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1292",
+  "name": "Northern Hemisphere (Nikka 12 Edition)",
+  "name_zh": "北半球（Nikka 12年版）",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,sour,tropical}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: John deBarry\nBar/Company: Momofuku\n\nIngredients:\n2 oz Nikka Whisky Taketsuru Pure Malt 12 YO, 1 oz English Harbour Rum, .75 oz The Genuine Curacao Liqueur Clear, .75 oz Lemon Juice, .75 oz Pineapple Juice, .75 oz Grenadine*\n\nPreparation:\nShake - pebble/crushed ice\n\nGarnish: Lemon Wheel with Umbrella\n\nNotes: *Grenadine:\nEqual parts POM 100 and granulated sugar",
+  "steps": [
+   "在摇酒壶中加入碎冰或鹅卵石冰，备用；将鸡尾酒杯冰镇备用。",
+   "向摇酒壶中依次加入2 oz Nikka Whisky Taketsuru Pure Malt 12 YO、1 oz English Harbour Rum、.75 oz The Genuine Curacao Liqueur Clear、.75 oz Lemon Juice、.75 oz Pineapple Juice和.75 oz Grenadine*。",
+   "盖上摇酒壶，用力摇晃15秒，使酒液充分冷却混合。",
+   "使用双重过滤法将酒液滤入冰镇鸡尾酒杯中。",
+   "用柠檬轮和纸伞装饰杯口，即可上桌。"
+  ]
+ },
+ {
+  "id": "1294",
+  "name": "On the Fritz",
+  "name_zh": "弗里茨故障",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,citrus,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Eric Quilty\nBar/Company: Jupiter Olympus\nLocation: San Francisco\n\nIngredients:\n1.5 oz Junipero Gin, .5 oz Chateau de Montifaud Pineau des Charentes Blanc, .75 oz Lemon Verbena Cordial*, .5 oz Lemon Juice,  top Mixwell Young Ginger Ale\n\nPreparation:\nShake all ingredients and double strain over fresh ice. Garnish with lemon verbena leaf.\n\n*Lemon Verbena Cordial:\n-- Fresh Lemon Verbena \n--",
+  "steps": [
+   "准备摇酒壶、量酒器，将鸡尾酒杯放入冰箱冰镇或加冰预冷。",
+   "用量酒器依次将1.5 oz 金酒、0.5 oz 夏朗德皮诺白葡萄酒、0.75 oz 柠檬马鞭草糖浆和0.5 oz 柠檬汁倒入摇酒壶。",
+   "在摇酒壶中加入适量冰块，盖紧壶盖，用力摇晃15秒。",
+   "取出冰好的鸡尾酒杯，将摇酒壶中的酒液通过滤网倒入杯中。",
+   "沿杯壁缓缓注入米克斯威尔嫩姜汽水至满杯，轻提吧勺稍作混合。"
+  ]
+ },
+ {
+  "id": "1295",
+  "name": "Bajo Control",
+  "name_zh": "掌控之下",
+  "category": "Craft",
+  "glass_type": "Hurricane Glass",
+  "flavor_tags": "{sweet,sour,citrus,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Enrique Sanchez\nBar/Company: The Commissary\n\nIngredients:\n2 oz BarSol Perfecto Amor (Aperitif Wine), 1 oz Dolin Dry Vermouth, .75 oz Lemon Juice, .5 oz Agave Syrup\n\nPreparation:\nShake all ingredients and double strain. Serve in a hurricane glass, add 2 oz Lager. Garnish with an orange horse-neck peel.\n\nGarnish: Orange Horse-neck Peel",
+  "steps": [
+   "准备摇酒器和飓风杯。",
+   "在摇酒器中依次加入 2 oz BarSol Perfecto Amor 开胃酒、1 oz 多林干味美思、0.75 oz 柠檬汁、0.5 oz 龙舌兰糖浆。",
+   "在摇酒器中加入冰块，盖上摇酒器，用力摇晃 15 秒。",
+   "使用双重过滤网（双重滤网）将酒液过滤后倒入飓风杯中。",
+   "在杯中沿壁缓慢倒入 2 oz 拉格啤酒，使其轻微混合。",
+   "取一片橙皮，螺旋削成长条，悬挂于杯沿作为装饰。"
+  ]
+ },
+ {
+  "id": "1300",
+  "name": "Geaux Geaux Cup",
+  "name_zh": "前进杯",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{floral,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Jazz Kitchen \nLocation: New Orleans\n\nIngredients:\n1 oz Junipero Gin, 1 oz Maurin Quina, .5 oz Fresh Lemon, .5 oz Pages Elderflower Syrup,  top Ginger Ale\n\nPreparation:\nShake all ingredients in an ice-filled cocktail shaker. Strain into a chilled serving glass. Top with a splash of ginger ale. Garnish with a cucumber slice, quartered.\n\nGarnish: Cucumber Slice\n\nNotes: Cocktail adapted f",
+  "steps": [
+   "将鸡尾酒杯放入冰箱冷却或装满冰块备用。",
+   "量取 1 oz Junipero 金酒、1 oz 莫兰奎那酒、.5 oz 新鲜柠檬汁和 .5 oz 佩吉斯接骨木花糖浆，倒入摇酒壶中。",
+   "往摇酒壶中加入冰块，盖紧壶盖，用力摇晃15秒，使酒液充分混合并冷却。",
+   "取出冰好的鸡尾酒杯，将摇酒壶中的酒液过滤倒入杯中。",
+   "沿杯壁缓缓倒入姜汁汽水至满杯顶。",
+   "杯口装饰一片黄瓜片（四分之一圆）后立即上桌。"
+  ]
+ },
+ {
+  "id": "1311",
+  "name": "3AM",
+  "name_zh": "凌晨三点",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{citrus,spicy,sweet,herbal}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Dave Guest \nLocation: San Francisco\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .75 oz H by HINE, .75 oz Luxardo Triplum (Triple Sec), .5 oz King's Ginger Liqueur, .5 oz Fresh Lime Juice\n\nPreparation:\nShake all ingredients with ice and strain into an iced up glass.\n\nGarnish: Lime Wedge, Luxardo Cherry",
+  "steps": [
+   "将所有原料（1.5 oz No.3 伦敦干金酒、.75 oz H by HINE 干邑、.75 oz 路萨多三重橙酒、.5 oz 国王姜味利口酒、.5 oz 鲜榨青柠汁）依次量取并倒入摇酒壶中。",
+   "在摇酒壶中加入冰块至八分满。",
+   "盖上摇酒壶，用力摇晃15秒。",
+   "用双重过滤网将酒液过滤到预先冰过的鸡尾酒杯中。",
+   "用青柠角和路萨多樱桃装饰杯沿或投入杯中，即可上桌。"
+  ]
+ },
+ {
+  "id": "1317",
+  "name": "The Windtalker",
+  "name_zh": "风语者",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{spicy,sweet,sour,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Hirsch Small Batch Reserve Bourbon, .75 oz Luxardo Amaretto di Saschira, .5 oz King's Ginger Liqueur, .75 oz Fresh lemon juice, .5 oz Egg white\n\nPreparation:\nShake all ingredients with ice then strain over fresh ice into an old fashioned glass.\n\nGarnish: Orange slices",
+  "steps": [
+   "将古典杯冷藏备用。准备波士顿摇酒壶、量酒器和过滤器。",
+   "在摇酒壶中依次加入1.5 oz Hirsch 小批量珍藏波本威士忌、.75 oz Luxardo Amaretto di Saschira 杏仁利口酒、.5 oz 国王姜味利口酒、.75 oz 鲜榨柠檬汁和.5 oz 蛋清。",
+   "不加冰，先用力干摇15秒，充分乳化蛋清并混合所有原料。",
+   "在摇酒壶中加入冰块，盖紧后用力摇晃20秒，直至壶身结霜。",
+   "在冷藏好的古典杯中放入一块方冰，将摇好的酒液双重过滤倒入杯中。",
+   "用一片新鲜橙片装饰杯口，即可上桌。"
+  ]
+ },
+ {
+  "id": "1318",
+  "name": "Arapa Cocktail",
+  "name_zh": "阿拉帕鸡尾酒",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{sour,citrus,herbal,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz BarSol Supremo Moste Verde Italia Pisco, .5 oz Junipero Gin, .75 oz Luxardo Triplum (Triple Sec), .5 oz Lemon juice, 1 dash Fee Bros. Rhubard Bitters\n\nPreparation:\nShake all ingredients with ice. Double strain into a chilled Martini glass. Garnish with a Luxardo Maraschino cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "将马天尼杯放入冰箱或加冰块和水冰镇备用",
+   "摇酒壶中加入冰块",
+   "依次倒入巴索至尊莫斯特佛得意大利皮斯科1.5 oz、Junipero金酒.5 oz、路萨多三重橙酒.75 oz、柠檬汁.5 oz和菲氏兄弟大黄苦精1 dash",
+   "盖紧摇酒壶，用力摇晃15秒",
+   "倒掉马天尼杯中的冰水，使用双重过滤将酒液滤入冰镇好的杯中",
+   "用一颗路萨多樱桃装饰后上桌"
+  ]
+ },
+ {
+  "id": "1322",
+  "name": "Junipero Jolly",
+  "name_zh": "杜松子欢乐",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{sour,fruity,sweet,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Carlos Yturria\nBar/Company: The Treasury\nLocation: San Francisco\n\nIngredients:\n1 oz Junipero Gin, .5 oz Lemorton Pommeau de Normandie, .75 oz House-made Green Apple Purée*, .75 oz Lemon Juice, .5 oz Honey Syrup\n\nPreparation:\nShake all ingredients. Serve over crushed ice in a collins glass. Garnish with a sage leaf.\n\n*Substitute with Perfect Puree Green Apple flavor\n\nGarnish: Sage Leaf\n\n",
+  "steps": [
+   "在可林杯中填满碎冰，备用。",
+   "用量酒器依次量取1 oz Junipero 金酒、0.5 oz 勒莫尔通诺曼底苹果酒、0.75 oz 青苹果果泥、0.75 oz 柠檬汁和0.5 oz 蜂蜜糖浆，倒入摇酒壶中。",
+   "在摇酒壶中加入冰块至八分满，盖紧壶盖。",
+   "用力摇晃约15秒，直至壶壁结霜。",
+   "取下壶盖，将酒液通过双重滤网过滤倒入备好的可林杯碎冰上。",
+   "取一片新鲜鼠尾草叶轻拍释香，插于杯口装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1319",
+  "name": "Kay Pacha Mi Pacha",
+  "name_zh": "凯帕查米帕查",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{sour,citrus,herbal,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz BarSol Supremo Moste Verde Italia Pisco, .5 oz No.3 London Dry Gin, .5 oz Luxardo Maraschino Liqueur, .5 oz Lemon juice, 2 dash Angostura Orange Bitters\n\nPreparation:\nShake all ingredients with ice. Double strain into a chilled Martini glass. Garnish with a Luxardo Maraschino cherry.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "将马天尼杯预先放入冰箱或加冰水冷却。",
+   "在摇酒壶中依次加入：1.5 oz BarSol Supremo Moste Verde Italia Pisco、.5 oz No.3 London Dry Gin、.5 oz Luxardo Maraschino Liqueur、.5 oz Lemon juice、2 dash Angostura Orange Bitters。",
+   "向摇酒壶中加入足量冰块。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "取出冰镇好的马天尼杯，使用双重过滤网将酒液滤入杯中。",
+   "放入一颗Luxardo Maraschino cherry装饰后上桌。"
+  ]
+ },
+ {
+  "id": "1333",
+  "name": "Flight to Peru",
+  "name_zh": "飞往秘鲁",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sour,citrus,fruity,bitter}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Sam Treadway\nBar/Company: Backbar\nLocation: Somerville\n\nIngredients:\n1.5 oz BarSol Selecto Italia Pisco, 1 oz Fresh Grapefruit Juice, .25 oz Simple Syrup, .25 oz Luxardo Maraschino Liqueur, 1 dash Chocolate Mole Bitters\n\nPreparation:\nShake and serve up. Garnish elaborately with a Luxardo Cherry and a grapefruit peel.\n\nGarnish: Luxardo Cherry, Grapefruit Peel",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或装满冰块进行冰杯，同时准备摇酒壶。",
+   "在摇酒壶中依次加入1.5 oz BarSol Selecto Italia 皮斯科白兰地、1 oz 鲜榨西柚汁、.25 oz 简易糖浆、.25 oz 路萨朵黑樱桃利口酒和1 dash 巧克力摩尔苦精。",
+   "向摇酒壶中加满冰块。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "取出冰好的鸡尾酒杯，将酒液经双重过滤（即滤网加滤孔）倒入杯中。",
+   "用Luxardo樱桃和西柚皮精心装饰杯缘或杯内，即刻上桌。"
+  ]
+ },
+ {
+  "id": "1331",
+  "name": "10 to 7",
+  "name_zh": "十点七分",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{sour,sweet,floral,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Gabriele Modica\nBar/Company: Farina\nLocation: San Francisco\n\nIngredients:\n1 oz No. 209 Gin, 1 oz Luxardo Maraschino Liqueur, 1 oz St. Germain, 1 oz Lemon Juice\n\nPreparation:\nShake and serve up in a martini glass with lemon peel rind.\n\nGarnish: Lemon Peel Rind",
+  "steps": [
+   "将马天尼杯放入冰柜或加冰预冷备用",
+   "在摇酒壶中依次量入1 oz 209号金酒、1 oz 路萨朵黑樱桃利口酒、1 oz 圣哲曼接骨木花利口酒和1 oz 柠檬汁",
+   "往摇酒壶中加入满杯冰块",
+   "盖紧摇酒壶，用力摇合15秒，直至壶壁结霜",
+   "取出预冷的马天尼杯，通过双重过滤网将酒液滤入杯中",
+   "取一片柠檬皮，在杯口上方扭转释放精油，擦拭杯沿后放入杯沿装饰"
+  ]
+ },
+ {
+  "id": "1334",
+  "name": "Primo Carnera",
+  "name_zh": "普里莫·卡尔内拉",
+  "category": "Craft",
+  "glass_type": "Martini",
+  "flavor_tags": "{sweet,fruity,rich,herbal}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n45 ml Luxardo Sangue Morlacco Cherry Liqueur, 15 ml Luxardo Triplum (Triple Sec), 20 ml Luxardo Liquore St. Antonio\n\nPreparation:\nShake and strain into a martini glass, spray some absinthe on the glass.\n\nGarnish: Orange Skin",
+  "steps": [
+   "取一个马天尼杯，使用喷雾瓶在杯内均匀喷上少量苦艾酒（Absinthe），备用。",
+   "用量酒器依次量取路萨朵桑格·莫拉科樱桃利口酒45毫升、路萨多三重橙酒15毫升、路萨多圣安东尼奥利口酒20毫升，倒入摇酒壶中。",
+   "向摇酒壶中加入冰块至八分满。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "将摇酒壶中的酒液通过滤冰器过滤，倒入已喷有苦艾酒的马天尼杯中。",
+   "切取一片橙皮，在杯口上方扭转挤出柑橘油后放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1338",
+  "name": "Opaka Raka",
+  "name_zh": "奥帕卡·拉卡",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{sour,sweet,citrus,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Miller\n\nIngredients:\n1.5 oz Junipero Gin, 1.5 oz Don's Mix*, .75 oz Lime Juice, .25 oz Simple Syrup, 1 dash Bittermens 'Elemakule Tiki Bitters\n\nPreparation:\nShake and strain into an ice-filled highball glass. Garnish with a lime wheel.\n\n*Don's Mix:\n-- 2 parts Grapefruit Juice\n-- 1 part Cinnamon Syrup\n\nGarnish: Lime Wheel",
+  "steps": [
+   "准备好摇酒壶、量酒器、高球杯，并在高球杯中装入冰块备用。",
+   "用量酒器依次量取1.5 oz Junipero金酒、1.5 oz唐氏混合糖浆、0.75 oz青柠汁、0.25 oz简易糖浆，并准备1 dash Bittermens 'Elemakule提基苦精。",
+   "将所有量取好的液体原料倒入摇酒壶中，并加入1 dash苦精。",
+   "往摇酒壶中加入冰块，盖紧壶盖，用力摇晃15秒左右，使酒液充分冷却和融合。",
+   "取下摇酒壶壶盖，将混合酒液通过滤网倒入已加好冰块的高球杯中。",
+   "在杯口边缘放置一片青柠轮作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1337",
+  "name": "Neko Colada",
+  "name_zh": "猫猫椰林飘香",
+  "category": "Craft",
+  "glass_type": "Tiki Cat Glass",
+  "flavor_tags": "{creamy,sweet,fruity,tropical,nutty}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Paul Taylor\nBar/Company: Cherry Blossom PUB\nLocation: Washington DC\n\nIngredients:\n1 oz Miso washed White Rhum Agricole, 1 oz Cocchi Vermouth di Torino, .75 oz Falernum, .75 oz Coconut Cream, .25 oz Luxardo Amaretto di Saschira, .75 oz Lime, .5 oz Mandarin Orange\n\nPreparation:\nShake and strain into a tiki cat filled with crushed ice.\n\nGarnish: Pink Bendy Straw",
+  "steps": [
+   "准备一个提基杯，填入碎冰至满；取摇酒壶备用。",
+   "依次向摇酒壶中量取并倒入：味噌洗浸白朗姆酒 1 oz、科奇都灵味美思 1 oz、法勒诺姆糖浆 0.75 oz、椰浆 0.75 oz、Luxardo Amaretto di Saschira 杏仁利口酒 0.25 oz、青柠汁 0.75 oz、柑橘汁 0.5 oz。",
+   "向摇酒壶中加入适量冰块，盖紧壶盖，用力摇晃15秒。",
+   "使用双重过滤，将摇好的酒液滤入已填满碎冰的提基杯中。",
+   "插入一根粉红色弯吸管，即可上桌。"
+  ]
+ },
+ {
+  "id": "1339",
+  "name": "Chingerito",
+  "name_zh": "钦格里托",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,sour,spicy,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Johel Huaman Barbosa & Christian Hurtado\nBar/Company: NEAT\nLocation: Westport\n\nIngredients:\n2 oz BarSol Primero Quebranta Pisco, 1.5 oz Grape juice, 1 oz BarSol Perfecto Amor (Aperitif Wine), 1 oz Fresh pomegranate juice, .75 oz Cinnamon syrup, .75 oz Fresh lime juice, 4  Grapes\n\nPreparation:\nShake and strain into ice filled glass.\n\nNotes: Served at the 7 Pisco Brands: 14 Cocktails",
+  "steps": [
+   "准备摇酒壶、量酒器和鸡尾酒杯，在鸡尾酒杯中加满冰块备用。",
+   "用量酒器依次量取2 oz BarSol Primero Quebranta 皮斯科白兰地、1.5 oz 葡萄汁、1 oz BarSol Perfecto Amor 开胃酒、1 oz 鲜榨石榴汁、.75 oz 肉桂糖浆、.75 oz 鲜榨青柠汁，全部倒入摇酒壶中。",
+   "向摇酒壶中加入适量冰块。",
+   "盖上摇酒壶，用力摇晃15秒，使酒液充分混合并冷却。",
+   "取下摇酒壶盖子，将酒液通过滤网倒入已加冰的鸡尾酒杯中。",
+   "用4颗葡萄作为装饰放置在杯沿或酒液中。"
+  ]
+ },
+ {
+  "id": "1360",
+  "name": "Windtalker",
+  "name_zh": "风语者",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{sweet,sour,spicy,nutty}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz Hirsch Small Batch Reserve Bourbon, .75 oz Luxardo Amaretto di Saschira, .5 oz King's Ginger Liqueur, .75 oz Fresh Lemon Juice, .5 oz Egg White\n\nPreparation:\nShake ingredients with ice until well combined. Strain into a chilled tumbler or large rocks glass over ice sphere or large ice cubes. Garnish with orange peel (or slice) and Luxardo Original Maraschino Cherries on a pick.",
+  "steps": [
+   "准备摇酒器和古典杯，在古典杯中放入一颗大冰球或大冰块备用。",
+   "在摇酒器中依次加入1.5 oz Hirsch小批量珍藏波本威士忌、0.75 oz Luxardo Amaretto di Saschira杏仁利口酒、0.5 oz国王姜味利口酒、0.75 oz鲜榨柠檬汁和0.5 oz蛋清。",
+   "在摇酒器内加入适量冰块，盖紧后用力摇晃15秒，直至酒液充分融合且蛋清起泡。",
+   "通过滤网将摇好的酒液过滤倒入已备好冰球的古典杯中。",
+   "取一片橙皮在杯口上方扭挤油脂后放入杯中，并用酒签串上Luxardo原装马拉斯奇诺樱桃架于杯沿装饰。"
+  ]
+ },
+ {
+  "id": "1368",
+  "name": "Dutch Stories",
+  "name_zh": "荷兰故事",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,herbal,sour}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Genevieve Gin, .75 oz Luxardo Apricot Liqueur, .25 oz Luxardo Maraschino Liqueur, .5 oz Fresh lemon juice, 1 Tbsp Gooseberry Jam\n\nPreparation:\nShake the ingredients with ice, then strain into a chilled cocktail glass.\n\nGarnish: Physalis(aka goose berry)",
+  "steps": [
+   "准备调酒摇酒器并提前将鸡尾酒杯放入冰箱或加冰预冷。",
+   "向摇酒器中依次加入1.5 oz 吉纳维芙金酒、0.75 oz 路萨朵杏子利口酒、0.25 oz 路萨朵黑樱桃利口酒、0.5 oz 鲜榨柠檬汁和1汤匙醋栗果酱。",
+   "向摇酒器中加满冰块，盖紧摇酒器。",
+   "用力摇晃摇酒器约15秒，直至摇酒器外壁明显结霜。",
+   "取出预冷的鸡尾酒杯，将摇酒器中的酒液通过隔冰器过滤倒入杯中。",
+   "用一颗醋栗（姑娘果）装饰杯沿，即可上桌。"
+  ]
+ },
+ {
+  "id": "1372",
+  "name": "The Asterisk",
+  "name_zh": "星号",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{herbal,sour,sweet,fruity}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Douglas Ford\nBar/Company: Cold-Glass.com\n\nIngredients:\n.75 oz Brandy, .75 oz Green Chartreuse, .75 oz Luxardo Maraschino Liqueur, .75 oz Lemon Juice\n\nPreparation:\nShake until very cold; double strain into a chilled cocktail glass. No garnish.",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰冷却，使其冰镇备用。",
+   "依次将0.75 oz白兰地、0.75 oz绿查特酒、0.75 oz路萨朵黑樱桃利口酒和0.75 oz柠檬汁倒入摇酒壶中。",
+   "加入适量冰块，用力摇晃15秒，直至酒液充分冷却。",
+   "取出冰镇鸡尾酒杯，用双重过滤网将摇匀的酒液滤入杯中。",
+   "直接上桌，无需任何装饰。"
+  ]
+ },
+ {
+  "id": "1378",
+  "name": "Boomin' Granny",
+  "name_zh": "活力奶奶",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{fruity,sweet,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jillian Vose\nBar/Company: Death & Co.\nLocation: New York\n\nIngredients:\n1.5 oz H by HINE, 1 oz Granny Smith Apple Juice, .5 oz Fresh Lime Juice, .5 oz Acacia Honey Syrup,  top Sparkling Wine\n\nPreparation:\nShake with ice and fine strain into a champagne flute. Top with sparkling wine and garnish with Granny Smith Apple fan.\n\nGarnish: Granny Smith Apple Fan",
+  "steps": [
+   "准备香槟笛杯与摇酒器。",
+   "在摇酒器中加入冰块。",
+   "量取H by HINE干邑1.5 oz、青苹果汁1 oz、鲜榨青柠汁0.5 oz、金合欢蜂蜜糖浆0.5 oz，依次倒入摇酒器中。",
+   "盖上摇酒器，用力摇晃15秒。",
+   "通过细滤网将酒液精细过滤倒入香槟笛杯中。",
+   "沿杯壁缓慢倒入起泡酒至满杯。",
+   "在杯口装饰青苹果扇，即可上桌。"
+  ]
+ },
+ {
+  "id": "1376",
+  "name": "Cherries St. James",
+  "name_zh": "圣詹姆斯樱桃",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{fruity,sweet,floral,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin, .25 oz Lemon Juice, .25 oz Pages Elderflower Syrup, .25 oz Luxardo Sangue Morlacco Cherry Liqueur, .25 oz Luxardo Maraschino Liqueur\n\nPreparation:\nShake well with lots of ice. Strain into cocktail glass.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "准备好摇酒器、量酒器、鸡尾酒杯和滤网。",
+   "向摇酒器中依次量入：1.5 oz No.3 伦敦干金酒、0.25 oz 柠檬汁、0.25 oz 佩吉斯接骨木花糖浆、0.25 oz 路萨朵桑格·莫拉科樱桃利口酒、0.25 oz 路萨朵黑樱桃利口酒。",
+   "在摇酒器中加满冰块。",
+   "盖紧摇酒器，用力摇晃15秒，充分冷却混合。",
+   "使用滤网将摇好的酒液滤入冰过的鸡尾酒杯中。",
+   "以一颗路萨朵樱桃放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1375",
+  "name": "Blue 88",
+  "name_zh": "蓝色88",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{floral,sweet,herbal,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin, .25 oz Lemon Juice, .25 oz Pages Elderflower Syrup, .25 oz Tempus Fugit Liqueur de Violettes, .25 oz Luxardo Maraschino Liqueur\n\nPreparation:\nShake well with lots of ice. Strain into cocktail glass.\n\nGarnish: Luxardo Cherry",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰冷却备用。",
+   "在摇酒壶中加入大量冰块。",
+   "依次量取1.5 oz No.3 伦敦干金酒、0.25 oz 柠檬汁、0.25 oz 佩吉斯接骨木花糖浆、0.25 oz Tempus Fugit紫罗兰利口酒、0.25 oz 路萨朵黑樱桃利口酒，倒入摇酒壶。",
+   "盖上摇酒壶，用力摇晃15秒，直至壶身结霜。",
+   "将摇好的酒液通过滤网倒入冰过的鸡尾酒杯。",
+   "以一颗路萨朵樱桃装饰后上桌。"
+  ]
+ },
+ {
+  "id": "1382",
+  "name": "Yawkey Way",
+  "name_zh": "约基路",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sweet,citrus,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick\nLocation: San Francisco\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .5 oz Smith & Cross, .5 oz Strawberry juice, .5 oz Black tea syrup, .5 oz Lemon juice, 2 dashes Orange bitters\n\nPreparation:\nShake with ice and strain into an ice-filled collins glass.",
+  "steps": [
+   "预先冷藏鸡尾酒杯，并将摇酒壶、量酒器准备好。",
+   "在摇酒壶中依次加入No.3伦敦干金酒1.5 oz、史密斯与克罗斯朗姆酒.5 oz、草莓汁.5 oz、红茶糖浆.5 oz、柠檬汁.5 oz、橙味苦精2 dashes。",
+   "将冰块加满摇酒壶。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "双重过滤至预冷的鸡尾酒杯中。"
+  ]
+ },
+ {
+  "id": "1389",
+  "name": "French 33",
+  "name_zh": "法国33",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{sour,citrus,refreshing,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz No.3 London Dry Gin, .75 oz Simple syrup, .75 oz Lime juice\n\nPreparation:\nShake with ice, strain into flute, top with sparkling rose and a grapefruit twist.\n\nGarnish: Grapefruit twist",
+  "steps": [
+   "在摇酒器中加入适量冰块。",
+   "依次量取1.5盎司 No.3 伦敦干金酒、0.75盎司简易糖浆和0.75盎司青柠汁，倒入摇酒器。",
+   "盖上摇酒器，用力摇晃15秒。",
+   "将摇好的酒液通过滤网滤入香槟笛杯中。",
+   "沿杯壁缓缓注入起泡桃红葡萄酒至满杯。",
+   "以葡萄柚皮条装饰杯口，即可上桌。"
+  ]
+ },
+ {
+  "id": "1391",
+  "name": "The Seniorita",
+  "name_zh": "小淑女",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{creamy,sweet,citrus,tropical,spicy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.5 oz The Genuine Curacao Liqueur Orange, .5 oz Lime Juice, 1.5 oz Thai Coconut Milk, 2 dash Angostura Bitters, 1 float Gosslings 151 Rum\n\nPreparation:\nShake with ice. Strain into rocks glass and top with crushed ice. Float 1 oz. of Gosslings 151 rum on top.  Garnish with mint and Luxardo Maraschino Cherries.\n\nGarnish: Luxardo Cherries, Mint Sprig\n\nNotes: *Ice: Crushed & Bar ice",
+  "steps": [
+   "准备摇酒壶，加入适量块冰。",
+   "用量酒器量取真橙库拉索利口酒1.5 oz、青柠汁0.5 oz、泰式椰奶1.5 oz，滴入安高天娜苦精2 dash，依次倒入摇酒壶中。",
+   "紧密盖好摇酒壶，用力摇晃约15秒，直至壶身充分结霜。",
+   "在古典杯中填满碎冰，然后用隔冰器将摇酒壶中的混合酒液滤入杯中。",
+   "沿吧勺背面向酒面缓缓倒入高斯林151朗姆酒1 oz，形成浮层。",
+   "用一株新鲜薄荷和两颗路萨朵马拉斯奇诺樱桃装饰杯口及杯内即可。"
+  ]
+ },
+ {
+  "id": "1395",
+  "name": "Mauritius Sour",
+  "name_zh": "毛里求斯酸酒",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{sour,sweet,bitter,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n.75 oz Pink Pigeon Rum, .75 oz Hirsch Small Batch Reserve Bourbon, .5 oz Angostura Bitters, .75 oz Lemon Juice, .75 oz Simple Syrup\n\nPreparation:\nShake, and fine strain into a chilled coupe, and garnish with a Luxardo Cherry.\n\nGarnish: Luxardo Cherry\n\nNotes: Something light and refreshing for all palates while still allowing the rum to shine through. The perfect balance of sweet and s",
+  "steps": [
+   "将碟形杯放入冰箱冷藏或加冰预冷。",
+   "在摇酒壶中依次加入 0.75 oz 柠檬汁、0.75 oz 简易糖浆、0.5 oz 安高天娜苦精、0.75 oz Pink Pigeon 朗姆酒和 0.75 oz Hirsch 小批量珍藏波本威士忌。",
+   "向摇酒壶中加满冰块。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "使用细孔过滤器将酒液双重滤入已冷却的碟形杯。",
+   "放入一颗 Luxardo 樱桃装饰。"
+  ]
+ },
+ {
+  "id": "1398",
+  "name": "Hippi Hill",
+  "name_zh": "嬉皮山",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{sweet,spicy,citrus,fruity,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Karri Cormican\nBar/Company: Comstock Saloon\nLocation: San Francisco\n\nIngredients:\n1.5 oz Hophead Vodka, .75 oz King's Ginger Liqueur, .5 oz Lime Juice, .5 oz Cranberry Juice\n\nPreparation:\nShake, fine strain into chilled coupe. Garnish with lime wheel.\n\nGarnish: Lime Wheel\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷，备好摇酒器、过滤器及双重滤网。",
+   "在摇酒器中加入1.5 oz Hophead伏特加、0.75 oz国王姜味利口酒、0.5 oz青柠汁和0.5 oz蔓越莓汁。",
+   "往摇酒器中加满冰块，盖严摇酒壶。",
+   "用力摇晃约15秒，直至摇酒壶外壁结霜。",
+   "取出预冷的碟形杯，将酒液通过双重滤网精细过滤倒入杯中。",
+   "用青柠轮装饰杯沿，即可上桌。"
+  ]
+ },
+ {
+  "id": "1394",
+  "name": "Flip the Bird",
+  "name_zh": "比中指",
+  "category": "Craft",
+  "glass_type": "Port Glass",
+  "flavor_tags": "{creamy,sweet,rich,bitter}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kate Grutman\nLocation: Los Angeles\n\nIngredients:\n1.5 oz Pink Pigeon Rum, .75 oz Simple syrup, .75 oz Cream, .5 oz Punt e Mes, 1  Egg yolk\n\nPreparation:\nShake without ice, to whip and emulsify ingredients until frothy. Add ice to shaker and shake vigorously. Strain into port glass or small fluted glass. Garnish with shaved cinnamon or nutmeg.\n\nGarnish: Cinnamon",
+  "steps": [
+   "准备摇酒壶、量酒器、波特酒杯，将所有原料（Pink Pigeon 朗姆酒、简易糖浆、奶油、潘特美思、蛋黄）准备好。",
+   "在摇酒壶中，量入 1.5 oz Pink Pigeon 朗姆酒、0.75 oz 简易糖浆、0.75 oz 奶油、0.5 oz 潘特美思，并打入 1 个蛋黄。",
+   "先不加冰，扣紧摇酒壶，用力摇晃 30 秒，直至壶中液体乳化、变得轻盈起沫。",
+   "打开摇酒壶，加入大半壶冰块，再次扣紧，用力摇晃 15 秒，使酒体迅速冷却。",
+   "将摇好的酒液经滤网过滤，倒入冰过的波特酒杯中。",
+   "在酒面撒上薄薄一层肉桂粉装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1402",
+  "name": "King's Medicine",
+  "name_zh": "国王灵药",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{spicy,sour,bitter,sweet,smoky}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Blackbird\nLocation: San Francisco\n\nIngredients:\n1.5 oz King's Ginger Liqueur, .75 oz Lemon Juice, .5 oz Luxardo Fernet, .25 oz BenRiach Curiositas Single Malt 10 YO\n\nPreparation:\nShake, strain into a chilled coupe. Garnish with lemon twist.\n\nGarnish: Lemon Twist\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "将碟形杯放入冰箱或加冰镇杯，使其充分冷却。",
+   "在摇酒壶中依次加入1.5 oz 国王姜味利口酒、.75 oz 柠檬汁、.5 oz 路萨朵菲奈特和.25 oz BenRiach Curiositas 10年单一麦芽威士忌。",
+   "向摇酒壶中加入冰块至八分满。",
+   "扣紧壶盖，用力摇晃15秒，直到壶体起雾变冷。",
+   "取出冰镇好的碟形杯，将摇酒壶中的酒液通过双重滤网过滤倒入杯中。",
+   "取一片柠檬皮，在杯口上方扭转挤压释放芳香油，然后将皮卷放入酒液作为装饰。"
+  ]
+ },
+ {
+  "id": "1404",
+  "name": "Fortune & Glory",
+  "name_zh": "财富与荣耀",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{sour,sweet,nutty,spicy,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Rickhouse\nLocation: San Francisco\n\nIngredients:\n1.5 oz Chinaco Reposado Tequila, 1 oz Lime Juice, .5 oz H by HINE, .5 oz Small Hand Foods Orgeat, .5 oz Falernum, 2 dash Mole Bitters\n\nPreparation:\nShake, strain into a chilled coupe. Garnish with lime wheel.\n\nGarnish: Lime Wheel\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "将碟形杯放入冰箱或加满冰块冷却杯身。",
+   "在摇酒壶中依次加入1.5 oz奇纳科陈酿龙舌兰酒、1 oz青柠汁、0.5 oz H by HINE干邑、0.5 oz Small Hand Foods杏仁糖浆、0.5 oz法勒诺姆糖浆和2 dashes莫莱苦精。",
+   "摇酒壶加满冰块，盖紧后用力摇晃15秒。",
+   "取出冰好的碟形杯，倒掉冰水（若有），将摇酒壶中的酒液通过滤网滤入杯中。",
+   "在杯沿放上一片青柠轮装饰，立即上桌。"
+  ]
+ },
+ {
+  "id": "1409",
+  "name": "Drink Lab #16",
+  "name_zh": "饮品实验室 #16",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{sweet,nutty,fruity,sour}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Zachary Pearson\n\nIngredients:\n2 oz Brandy, .75 oz Orgeat, .75 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Lemon Juice, 10 drops Bittermens Burlesque Bitters\n\nPreparation:\nShake, strain, lemon twist garnish.\n\nGarnish: Lemon Twist",
+  "steps": [
+   "准备摇酒器，加入冰块，并将鸡尾酒杯放入冰箱或加冰预冷。",
+   "在摇酒器中依次量取并加入：2 oz 白兰地、.75 oz 杏仁糖浆、.75 oz 路萨朵桑格·莫拉科樱桃利口酒、.5 oz 柠檬汁和10滴 Bittermens 滑稽苦精。",
+   "盖紧摇酒器，用力摇晃15秒，使酒液充分混合冷却。",
+   "取出预冷的鸡尾酒杯，用滤网将摇酒器中的酒液过滤倒入杯中。",
+   "取一片柠檬皮，在杯口上方扭转挤出油脂，然后放入杯中装饰，立即上桌。"
+  ]
+ },
+ {
+  "id": "1410",
+  "name": "Grey Anchor",
+  "name_zh": "灰锚",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{floral,citrus,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jason Westplate\n\nIngredients:\n2 oz Hophead Vodka, .75 oz Lime Juice, .5 oz St. Germaine Elderflower Liqueur, .25 oz Luxardo Maraschino Liqueur, 5 drops Bittercube Door County Hop Bitters\n\nPreparation:\nShake, strain, up, garnish.\n\nGarnish: Lime Peel Twist",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰冷却备用",
+   "在摇酒壶中，依次量取并加入2 oz Hophead 伏特加、0.75 oz 青柠汁、0.5 oz 圣哲曼接骨木花利口酒、0.25 oz 路萨朵黑樱桃利口酒，最后滴入5滴 Bittercube 门县啤酒花苦精",
+   "向摇酒壶中加满冰块，盖紧后用力摇晃15秒，使酒液充分融合并冷却",
+   "取出冰过的鸡尾酒杯，将摇好的酒液通过双重过滤网倒入杯中",
+   "取一片青柠皮，在杯口上方扭转以释放精油，然后投入杯沿或酒面作为装饰"
+  ]
+ },
+ {
+  "id": "1412",
+  "name": "The Red Anchor",
+  "name_zh": "红锚",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{citrus,bitter,herbal,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n1.75 oz Junipero Gin, .75 oz Lemon Juice, .5 oz Grapefruit Juice, .5 oz Tempus Fugit Kina L'Aero d'Or, .25 oz Ginger Syrup, .25 oz Simple Syrup (1.5 : 1)\n\nPreparation:\nShake. Serve in small rocks glass with no ice. Grapefruit slice to garnish.\n\nGarnish: Grapefruit Slice",
+  "steps": [
+   "准备摇酒壶和一只古典杯。",
+   "在摇酒壶中依次量取加入 1.75 oz Junipero 金酒、.75 oz 柠檬汁、.5 oz 西柚汁、.5 oz Tempus Fugit Kina L'Aero d'Or 开胃酒、.25 oz 姜汁糖浆、.25 oz 简易糖浆 (1.5 : 1)。",
+   "向摇酒壶中加入适量冰块。",
+   "盖紧摇酒壶，用力摇晃15秒。",
+   "将酒液通过双重过滤网倒入古典杯，不加冰。",
+   "在杯沿或酒液表面放上一片西柚片作装饰。"
+  ]
+ },
+ {
+  "id": "1419",
+  "name": "A Bloody Shame",
+  "name_zh": "血色遗憾",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,sweet,citrus,herbal}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz Vodka, .5 oz Luxardo Amaretto di Saschira, .75 oz Blood Orange Vanilla Mint Puree*, .75 oz Lime Juice\n\nPreparation:\nShaken and strained into a large coupe. Garnish with a dehydrated lime wheel soaked in Angostura Bitters.\n\n*Blood Orange Vanilla Mint Puree:\n-- 1 container Boiron Blood Orange Puree (34 oz.)\n",
+  "steps": [
+   "准备好摇酒器、过滤器和碟形杯，将碟形杯提前冰镇。",
+   "在摇酒器中依次量入伏特加 1.5 oz、Luxardo Amaretto di Saschira 杏仁利口酒 .5 oz、血橙香草薄荷果泥 .75 oz、青柠汁 .75 oz。",
+   "往摇酒器中加满冰块，盖紧后用力摇晃15秒，使酒液充分冷却与融合。",
+   "将摇酒器中的酒液通过过滤器倒入已冰镇的碟形杯中，完成出品。"
+  ]
+ },
+ {
+  "id": "1425",
+  "name": "Thyme for Bed",
+  "name_zh": "就寝时光",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{herbal,sour,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Lisa Brier\nBar/Company: Skyfall Lounge\nLocation: Las Vegas\n\nIngredients:\n1.5 oz Chamucos Blanco Tequila, .5 oz Luxardo Sangue Morlacco Cherry Liqueur, .5 oz Thyme Simple Syrup, .5 oz Lime Juice\n\nPreparation:\nShaken.\n\nGarnish: Thyme Sprig",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷备用",
+   "在摇酒壶中依次加入：1.5 oz 查穆科斯银标龙舌兰、.5 oz 路萨朵桑格·莫拉科樱桃利口酒、.5 oz 百里香简易糖浆、.5 oz 青柠汁",
+   "加入足量冰块至摇酒壶八分满",
+   "盖紧壶盖，用力摇晃15秒",
+   "弃掉碟形杯中的冰水，将酒液双重过滤倒入杯中",
+   "夹取一枝新鲜百里香轻拍后架于杯沿装饰"
+  ]
+ },
+ {
+  "id": "1424",
+  "name": "Nectar of the Amazon",
+  "name_zh": "亚马逊花蜜",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{fruity,creamy,sweet,tropical}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Matt Orth\nBar/Company: LARK on the Park\nLocation: Dallas\n\nIngredients:\n2 oz Ypioca Cachaca Prata*, 1 oz Passion fruit juice, 1 oz Condensed milk\n\nPreparation:\nShaken, poured over fresh ice in highball. Garnish with macadamia nut. Coconut shaved rim.\n\nGarnish: Macadamia nut\n\nNotes: *Kiwi-infused Ypioca Cachaca Prata",
+  "steps": [
+   "用椰子碎沾湿高球杯边缘，制作椰丝杯边，备用",
+   "在摇酒壶中依次加入2 oz 伊皮奥卡银卡莎萨、1 oz 百香果汁和1 oz 炼乳，然后加冰至八分满",
+   "盖紧摇壶，用力摇晃15秒，使材料充分融合并冷却",
+   "在备好的高球杯中放入新鲜冰块",
+   "将摇壶中的酒液通过双重滤网滤入高球杯中",
+   "在杯口放上一颗澳洲坚果作装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1422",
+  "name": "You Go Glen Coco",
+  "name_zh": "加油格伦可可",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{spicy,nutty,creamy,sweet}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Crystal Chasse\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.25 oz Old Potrero Straight Rye Whiskey (Toasted Coconut Infused)*, .5 oz King's Ginger Liqueur, 1.25 oz Turmeric Coconut Cream**\n\nPreparation:\nShaken slightly. Served over shaved ice in an old fashioned glass. Garnished with turmeric toasted coconut flakes.\n\n*Toasted Coconut Infused Old Potrero\n-- 750ml Old ",
+  "steps": [
+   "在古典杯中加满冰块，备用",
+   "在摇酒壶中依次加入1.25 oz 烤椰子浸渍老波特罗黑麦威士忌、0.5 oz 国王姜味利口酒和1.25 oz 姜黄椰子奶油",
+   "向摇酒壶中加入冰块",
+   "盖上摇酒壶，用力摇晃15秒，使酒液充分混合并冷却",
+   "使用双重过滤网将酒液滤入已备好的古典杯中"
+  ]
+ },
+ {
+  "id": "1429",
+  "name": "Tea & Sympathy",
+  "name_zh": "茶与慰藉",
+  "category": "Craft",
+  "glass_type": "Mug",
+  "flavor_tags": "{spicy,herbal,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Andrew Kalini\nBar/Company: Highlands\nLocation: New York\n\nIngredients:\n1 oz Avua Amburana Cacha?a, 1 oz King's Ginger Liqueur, .5 oz Fresh Squeezed Lemon Juice, 1 bag Chai Tea\n\nPreparation:\nSoak 1 chai tea bag in half mug of hot water for 30 seconds, remove the tea bag, add all the ingredients, add more hot water. \n\nLemon wheel stuffed with 4-5 cloves for garnish.\n\nGarnish: Lemon Wheel\n\n",
+  "steps": [
+   "在马克杯中注入半杯热水，放入一袋印度奶茶茶包，浸泡30秒。",
+   "取出茶包并丢弃。",
+   "量取1盎司阿武阿安布拉纳卡莎萨、1盎司国王姜味利口酒和0.5盎司鲜榨柠檬汁，依次倒入马克杯中。",
+   "向杯中注入更多热水，至八分满。",
+   "用吧勺轻柔搅拌10圈，使酒液与茶汤充分融合。",
+   "取一柠檬轮，插上4-5颗丁香，卡在杯口装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1432",
+  "name": "Mauritian Buck",
+  "name_zh": "毛里求斯巴克",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{fruity,refreshing,sweet,herbal}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Ingredients:\n40 ml Pink Pigeon Rum, 40 ml Pressed apple juice,   Ginger ale,   Absinthe,   Lemon zest\n\nPreparation:\nSpray a rocks glass with absinthe, build all other ingredients over cubed ice, garnish with a lemon wheel.\n\nGarnish: Lemon wheel",
+  "steps": [
+   "在古典杯内壁喷一层苦艾酒喷雾，均匀覆盖杯底和杯壁",
+   "将古典杯装满方冰",
+   "量取40 ml Pink Pigeon朗姆酒和40 ml压榨苹果汁，依次倒入杯中",
+   "缓慢注入姜汁汽水至近满，轻微吧勺提拉2-3下融合",
+   "取一片柠檬轮夹于杯沿装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1431",
+  "name": "The Callas Cocktail",
+  "name_zh": "卡拉斯鸡尾酒",
+  "category": "Craft",
+  "glass_type": "Champagne Flute",
+  "flavor_tags": "{bitter,floral,sweet,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Josh Bearden\nLocation: Houston\n\nIngredients:\n1 oz Luxardo Bitter Bianco, .75 oz No.3 London Dry Gin, 1 bsp Pomegranate Cordial*, 1.25 oz Brachetto, 1  Sugar Cube, 8 dash Tempus Fugit Abbott's Bitters\n\nPreparation:\nSoak cube in 8 dashes Abbott's Bitter. Drop sugar cube into bottom of flute glass. Stir, Luxardo, gin, and pomegranate cordial. Strain into flute glass. Top with Brachetto. Ga",
+  "steps": [
+   "在调酒杯底部放入1颗方糖，滴入8 dash Tempus Fugit Abbott's 苦精，用捣棒将方糖完全捣碎并与苦精融合",
+   "向调酒杯中加入1 oz Luxardo 白色苦酒、.75 oz No.3 伦敦干金酒和1 bsp 石榴浓缩糖浆，然后加入冰块至八分满",
+   "用吧勺轻柔搅拌30圈约20秒，使材料充分冷却并融合",
+   "将调酒杯中的酒液通过滤网过滤倒入冰过的香槟笛杯中",
+   "沿杯壁缓慢注入1.25 oz 布拉凯多葡萄酒，使其自然融入酒液，无需搅拌"
+  ]
+ },
+ {
+  "id": "1441",
+  "name": "Clear Intentions",
+  "name_zh": "清晰意图",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{bitter,sweet,nutty,creamy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Elaine Collum\nLocation: Houston\n\nIngredients:\n1.5 oz Luxardo Bitter Bianco, .5 oz Krogstad Aquavit, 1 bsp Luxardo Apricot Liqueur, 1 dash Orange Cream Citrate, 1.25 oz Almond Cream Soda\n\nPreparation:\nStir all ingredients over cubed ice and then strain over large rock while incorporating the cream soda. Garnish with Italian baking spice infused olive and cherry.\n\nGarnish: Infused Olive &",
+  "steps": [
+   "在可林杯中放入一块大方冰，备用。",
+   "在调酒杯中依次量入1.5 oz Luxardo白色苦酒、0.5 oz Krogstad阿夸维特、1吧勺路萨朵杏子利口酒和1滴橙味奶油柠檬酸盐。",
+   "向调酒杯中加入立方冰块，用吧勺搅拌30圈约20秒，直至液体充分冷却。",
+   "将搅拌好的酒液通过滤冰器滤入已备好大方冰的可林杯中。",
+   "沿杯壁缓慢注入1.25 oz杏仁奶油苏打，然后轻轻提拉吧勺一圈使其融合。",
+   "用浸泡过意大利烘焙香料的橄榄和樱桃装饰杯沿，即可上桌。"
+  ]
+ },
+ {
+  "id": "1440",
+  "name": "Temple of the Moon",
+  "name_zh": "月之圣殿",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{herbal,bitter,floral,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nandini Khaund\nBar/Company: The Violet Hour\nLocation: Chicago\n\nIngredients:\n1 oz Junipero Gin, 1 oz BarSol Primero Quebranta Pisco, 1 oz Amaro Sibilla, .25 oz Simple syrup,  rinse St. George Absinthe, 3 drops Fee Brothers Orange Flower Water\n\nPreparation:\nStir all ingredients except for Absinthe and Orange Flower. Strain over a chunk/sphere of ice in an old fashioned glass. Garnish with",
+  "steps": [
+   "在古典杯中放入一大块冰球或方冰，倒入少许苦艾酒，旋转杯壁使其均匀附着，然后倒出多余的苦艾酒",
+   "在搅拌杯中加入 Junipero 金酒 1 oz、BarSol Primero Quebranta 皮斯科 1 oz、Amaro Sibilla 1 oz 和简易糖浆 0.25 oz",
+   "加入冰块至搅拌杯八分满，用吧勺轻柔搅拌约30圈（约20秒），直至酒液充分冷却",
+   "将搅拌好的酒液通过滤冰器滤入已处理好的古典杯中",
+   "在酒液表面滴入3滴 Fee Brothers 橙花水",
+   "取一枝新鲜薄荷，手掌轻拍后插入杯中作为装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1447",
+  "name": "Sade's Taboo",
+  "name_zh": "萨德的禁忌",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jessica Gonzalez\nBar/Company: Death & Co.\nLocation: New York\n\nIngredients:\n2 oz H by HINE, .75 oz Cocchi Americano, .75 oz Dolin Rouge Vermouth, 1 dash Bittermens Hopped Grapefruit Bitters\n\nPreparation:\nStir all the ingredients over ice, then strain into a coupe. No garnish.",
+  "steps": [
+   "在混合杯中加入冰块至满杯。",
+   "依次量取2盎司H by HINE干邑、0.75盎司科奇阿美利加诺、0.75盎司Dolin红味美思和1 dash Bittermens酒花葡萄柚苦精，倒入混合杯中。",
+   "用吧勺搅拌约30秒，直至酒液充分冷却。",
+   "将酒液通过滤网过滤，倒入冰镇的碟形杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1449",
+  "name": "Piedra de sol",
+  "name_zh": "太阳石",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{smoky,bitter,herbal,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Graham Hunter Gregg\nBar/Company: Expatriate\nLocation: Portland\n\nIngredients:\n1.5 oz Mezcal, .75 oz Montenegro Amaro Liquore Italiano, .75 oz Calisaya Liqueur, 2 dash Regans' Orange Bitters No. 6\n\nPreparation:\nStir and garnish lemon peel.\n\nGarnish: Lemon Peel",
+  "steps": [
+   "准备 mixing glass、吧勺、滤网，并将鸡尾酒杯预冷（放入冰块或冷冻）",
+   "在 mixing glass 中依次量入 1.5 oz 梅斯卡尔酒、0.75 oz Montenegro 意大利阿马罗利口酒、0.75 oz Calisaya 利口酒、2 dash Regans' 6号橙味苦精",
+   "加入足量冰块，用吧勺搅拌约30圈（约30秒），直至酒液充分冷却",
+   "使用滤网将混合酒液过滤倒入预冷的鸡尾酒杯中",
+   "切取一条柠檬皮，扭拧释油后放入杯中装饰，即可上桌"
+  ]
+ },
+ {
+  "id": "1457",
+  "name": "Divine Aspect",
+  "name_zh": "神圣之相",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,sweet,herbal,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Land and Water Co.\n\nIngredients:\n1 oz No.3 London Dry Gin, 1 oz Apple-infused Wild Turkey Bourbon 101, 1 oz Luxardo Apricot Liqueur\n\nPreparation:\nStir and strain up into cocktail glass.\n\nGarnish: Lemon peel",
+  "steps": [
+   "将碟形杯放入冰箱冰镇备用，同时准备调酒杯、吧勺和滤网。",
+   "在调酒杯中依次加入1 oz No.3伦敦干金酒、1 oz苹果浸渍Wild Turkey 101波本威士忌和1 oz路萨朵杏子利口酒。",
+   "加入大量冰块，用吧勺轻柔搅拌约30秒，直至酒体充分冷却且略微稀释。",
+   "取出冰镇好的碟形杯，将搅拌完成的酒液通过滤网过滤倒入杯中。",
+   "用柠檬皮在杯口上方扭转挤压释放油脂，并在杯沿擦拭后投入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1456",
+  "name": "Coos Bay",
+  "name_zh": "库斯湾",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{smoky,earthy,herbal,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick\nBar/Company: Bon Vivants\n\nIngredients:\n1.5 oz Nikka Whisky Taketsuru Pure Malt 12 YO, .5 oz Etter Zuger Kirsch, .5 oz Doug Fir Riesling Syrup*, 15 dash Kombu tincture**\n\nPreparation:\nStir and strain over ice.\n\nGarnish: Seaweed\n\nNotes: *Steep 3 Doug Fir Tip Tea bags in 750 ml riesling for 2 hours. Add 500 m\n\n**Soak seaweed in vodka to taste",
+  "steps": [
+   "在古典杯中放入大块方冰备用",
+   "在搅拌杯中依次量入1.5 oz Nikka竹鹤12年纯麦威士忌、0.5 oz Etter Zuger樱桃白兰地、0.5 oz 道格拉斯冷杉雷司令糖浆和15 dash昆布酊剂",
+   "加入搅拌冰，用吧勺轻柔搅拌30圈约20秒至充分冷却融合",
+   "使用滤网将酒液滤入已备好冰块的古典杯中",
+   "取一片海藻装饰，搭于杯沿或浸入酒中"
+  ]
+ },
+ {
+  "id": "1458",
+  "name": "Above My Pay Grade",
+  "name_zh": "超出薪资等级",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{bitter,herbal,citrus,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz Semper Fi White Whiskey, .75 oz Chateau de Montifaud Pineau des Charentes Rose, .75 oz Tempus Fugit Gran Classico Bitter, 3 dash House-made Citrus Bitters\n\nPreparation:\nStir and strain.\n\nGarnish: Orange Twist\n\nNotes: Aged in used Salt Washed Bourbon Barrel for 4 months. Can also be made to order without ba",
+  "steps": [
+   "在调和杯中加入饱满的冰块，至八分满",
+   "依次量取 1.5 oz Semper Fi 白威士忌、.75 oz 蒙蒂福城堡夏朗德皮诺桃红葡萄酒、.75 oz 坦帕斯·福吉特格兰经典苦精和 3 dash 自制柑橘苦精，倒入调和杯中",
+   "用吧勺轻柔搅拌约30圈（约20秒），使酒液充分冷却融合",
+   "将过滤器扣在调和杯口，将酒液滤入预先冰过的碟形杯中",
+   "取一片橙皮，在杯口上方扭转释放油脂后投入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "1460",
+  "name": "Sloe & Steady",
+  "name_zh": "黑刺李与稳健",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{fruity,sweet,earthy,savory}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz C. Drouin Calvados Selection, .75 oz Spirit Works Sloe Gin, .5 oz Bonal, 4 drops Black Salt Tincture\n\nPreparation:\nStir for about 20 seconds with ice and then Strain into a chilled Nick & Nora glass.\n\nGarnish: Orange Peel",
+  "steps": [
+   "将尼克诺拉杯放入冰箱或加冰预冷备用。",
+   "在搅拌杯中依次量入1.5 oz C. Drouin 精选卡尔瓦多斯、0.75 oz Spirit Works 黑刺李金酒、0.5 oz 博纳尔和4滴黑盐酊剂。",
+   "向搅拌杯中加入冰块，然后用吧勺轻柔搅拌30圈约20秒。",
+   "取出预冷的尼克诺拉杯，用滤冰器将搅拌好的酒液过滤倒入杯中。",
+   "取一片橙皮，在杯上方挤压扭转出油脂后放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1454",
+  "name": "In HINEsight",
+  "name_zh": "后见之明",
+  "category": "Craft",
+  "glass_type": "Old Fashioned Glass",
+  "flavor_tags": "{bitter,sweet,herbal,fruity}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz H by HINE, 1 oz Luxardo Bitter, .5 oz Quady Muscat Wine\n\nPreparation:\nStir and strain into an old fashioned glass. Large ice cube.\n\nGarnish: Orange Peel\n\nNotes: Aged for 3 months in a used Rye Barrel that previously held a cocktail with Tequila and All Spice. Can also be made to order without barrel aging ",
+  "steps": [
+   "准备搅拌杯、吧勺、过滤器和一个古典杯，古典杯中提前放入一大块老冰。",
+   "向搅拌杯中倒入1.5 oz H by HINE干邑、1 oz Luxardo比特酒和0.5 oz Quady麝香葡萄酒。",
+   "加入足量冰块，用吧勺轻柔搅拌30秒，直至混合液充分冷却。",
+   "盖上过滤器，将混合液过滤倒入已放好大冰块的古典杯中。",
+   "取一片橙皮，在杯口上方拧压释放油脂，擦一圈杯沿后放入杯中装饰。"
+  ]
+ },
+ {
+  "id": "1466",
+  "name": "Abrazo Latino",
+  "name_zh": "拉丁拥抱",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{herbal,citrus,bitter,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Chinaco Reposado Tequila, .75 oz Luxardo Amaro Abano, .75 oz Luxardo Triplum (Triple Sec)\n\nPreparation:\nStir ingredients in a mixing glass filled with ice then strain into a chilled cocktail coupe.\n\nGarnish: Torched rosemary sprig",
+  "steps": [
+   "将碟形杯放入冰箱或加冰冷却，同时在调酒杯中加入半杯冰块。",
+   "依次向调酒杯中量取并倒入1.5 oz奇纳科陈酿龙舌兰酒、0.75 oz路萨朵阿巴诺苦味酒和0.75 oz路萨多三重橙酒。",
+   "用吧勺轻柔搅拌30圈约30秒，直至酒液充分冷却融合。",
+   "取出冰好的碟形杯，用滤网将酒液过滤倒入杯中。",
+   "用喷枪轻烤一枝迷迭香至散发香气，斜搭于杯沿装饰后上桌。"
+  ]
+ },
+ {
+  "id": "1468",
+  "name": "The Awen",
+  "name_zh": "阿文",
+  "category": "Craft",
+  "glass_type": "Rocks Glass",
+  "flavor_tags": "{herbal,fruity,sweet,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz Pot still-style Irish Whiskey, .5 oz Luxardo Maraschino Liqueur, 1 oz Cocchi Americano, 1 dash Orange Bitters\n\nPreparation:\nStir ingredients in glass over an ice sphere.\n\nGarnish: Star Anise, Sliced Fig",
+  "steps": [
+   "在古典杯中放入一颗大冰球。",
+   "依次量取1.5 oz 壶式蒸馏爱尔兰威士忌、.5 oz 路萨朵黑樱桃利口酒、1 oz 科奇阿美利加诺和1 dash 橙味苦精，倒入杯中。",
+   "用吧勺轻柔搅拌30圈约30秒，使酒液均匀冷却并融合。",
+   "以一颗八角和一片无花果切片装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1467",
+  "name": "Peruvian Wish (Adapted)",
+  "name_zh": "秘鲁之愿（改编）",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,fruity,sweet,bitter}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1.5 oz BarSol Pisco, .75 oz Luxardo Amaro Abano, .75 oz Luxardo Maraschino Liqueur\n\nPreparation:\nStir ingredients in a mixing glass over an ice sphere(if available) then strain and serve into a chilled cocktail glass filled with the same ice sphere. Garnish with lemon balm and grapefruit peel.\n\nGarnish: Grapefruit peel",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰预冷，并在调酒杯中放入一颗大冰球",
+   "向调酒杯中依次倒入1.5 oz BarSol Pisco",
+   "加入.75 oz Luxardo Amaro Abano",
+   "加入.75 oz Luxardo Maraschino Liqueur",
+   "用吧勺轻柔搅拌约30圈（约20秒），直至酒液充分冷却",
+   "将搅拌好的酒液过滤倒入预冷的鸡尾酒杯中，可放入同一颗冰球",
+   "取一片葡萄柚皮扭转释放精油后投入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "1462",
+  "name": "Mayahuel's Revenge",
+  "name_zh": "玛雅韦尔的复仇",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{herbal,fruity,sweet,earthy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Brian Means\nBar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz Chinaco Blanco Tequila, 1 oz Vermut Vermouth, .5 oz Giffard Banane du Brésil, 3 dash Bittercube Jamaican #2 Bitters\n\nPreparation:\nStir in a mixing glass to chill down and serve up in a coupe with a lemon zest garnish.\n\nGarnish: Lemon Zest\n\nNotes: * Mixture is barrel aged for 5 months in a used Bourbon Barr",
+  "steps": [
+   "在混合杯中加满冰块，依次倒入1.5 oz Chinaco 银标龙舌兰酒、1 oz Vermut 味美思、.5 oz 吉发巴西香蕉利口酒，并滴入3 dash Bittercube 牙买加2号苦精。",
+   "用吧匙轻柔搅拌30圈约20秒，直至酒液充分冷却、混合均匀。",
+   "将碟形杯提前冰镇，倒掉冰水，架好隔冰滤网，将混合酒液滤入杯中。",
+   "取一片柠檬皮，在杯口上方拧出油脂后，将柠檬皮放入杯中作为装饰。"
+  ]
+ },
+ {
+  "id": "1469",
+  "name": "Nikka's Golden Cherry",
+  "name_zh": "一甲黄金樱桃",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{fruity,sweet,herbal,creamy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Torrence Swain\nLocation: Washington DC\n\nIngredients:\n2 oz Nikka Coffey Grain Whisky, .5 oz Luxardo Maraschino Liqueur, .75 oz Dry Vermouth Infusion*, 2 dash Bittermens Burlesque Bitters,  top Lemon Foam**\n\nPreparation:\nStir ingredients over cracked ice. With a julep strainer, pour into a chilled cocktail glass. Once poured, top with lemon foam.\n\n*Dry Vermouth Infusion:\n-- 1.5 oz Togaras",
+  "steps": [
+   "将鸡尾酒杯提前放入冰柜或加冰搅拌冷却，备用",
+   "在摇酒壶中依次量取：2 oz 一甲科菲谷物威士忌、.5 oz 路萨朵黑樱桃利口酒、.75 oz 干味美思浸渍液、2 dash Bittermens 滑稽戏苦精",
+   "向摇酒壶中加入足量冰块，盖紧后用力摇晃15秒",
+   "取出冰镇好的鸡尾酒杯，将摇酒壶中的酒液经双重过滤网（霍桑滤网加细孔滤网）倒入杯中",
+   "在酒液表面轻轻铺上柠檬泡沫，即可上桌"
+  ]
+ },
+ {
+  "id": "1481",
+  "name": "El Cortez",
+  "name_zh": "埃尔科尔特斯",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,citrus,sweet,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Francesco Lafranconi\n\nIngredients:\n1 oz Luxardo Apricot Liqueur, 1.5 oz Chinaco Reposado Tequila, 2 oz Dry Riesling\n\nPreparation:\nStir the first two ingredients with ice, then strain into a chilled wine glass. Top with chilled wine, stir and serve.\n\nGarnish: Grapfruit peel",
+  "steps": [
+   "将鸡尾酒杯提前冰镇备用。",
+   "在调酒杯中量取路萨朵杏子利口酒1 oz和奇纳科陈酿龙舌兰酒1.5 oz。",
+   "加入冰块，用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却。",
+   "通过滤网将混合酒液过滤倒入冰镇鸡尾酒杯中。",
+   "倒入冷藏的干型雷司令2 oz，用吧勺轻轻搅拌数次使其融合。",
+   "取西柚皮扭挤后放入杯中作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1490",
+  "name": "Lonesome George",
+  "name_zh": "孤独乔治",
+  "category": "Craft",
+  "glass_type": "Wine Glass",
+  "flavor_tags": "{fruity,sweet,nutty,earthy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jacques\nBar/Company: The Forgery\nLocation: San Francisco\n\nIngredients:\n1.25 oz Apricot-Infused H by HINE, 1 oz Napoleon Amontillado, .25 oz Mandarine Napoléon, .5 oz Lazzaroni Amaro\n\nPreparation:\nStir with Ice and strain into a small wine glass.\n\nGarnish: Orange Twist and Discard",
+  "steps": [
+   "在搅拌杯中加满冰块，准备葡萄酒杯。",
+   "量取杏子浸渍H by HINE干邑1.25 oz、拿破仑阿蒙蒂亚多雪莉酒1 oz、拿破仑柑橘利口酒0.25 oz、Lazzaroni阿马罗0.5 oz，依次倒入搅拌杯中。",
+   "用吧勺轻柔搅拌30圈约20秒，直至酒液充分冷却。",
+   "将滤网置于葡萄酒杯上，把混合酒液过滤倒入杯中。",
+   "取一片橙皮扭转释放油脂，在杯沿擦拭一圈后丢弃。"
+  ]
+ },
+ {
+  "id": "1492",
+  "name": "B-String",
+  "name_zh": "B弦",
+  "category": "Craft",
+  "glass_type": "Coupe",
+  "flavor_tags": "{fruity,sweet,nutty,rich}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Dirty Habit\nLocation: San Francisco\n\nIngredients:\n1.5 oz H by HINE, 1 oz Lustau Amontillado Sherry, .5 oz Giffard Banane du Brésil, 3 dash House-made Roasted Banana Bitters (or Bittermens Tiki Bitters)\n\nPreparation:\nStir with ice for about 20 seconds and then strain into a chilled cocktail coupe.\n\nGarnish: Banana Chip\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball",
+  "steps": [
+   "将碟形杯放入冰箱或加冰预冷。",
+   "在调酒杯中依次加入 1.5 oz H by HINE 干邑、1 oz 卢斯托阿蒙蒂亚多雪莉酒、.5 oz 吉发巴西香蕉利口酒和 3 dash 苦精。",
+   "向调酒杯中加入冰块至八分满。",
+   "用吧勺轻柔搅拌 20 秒，使酒液充分冷却融合。",
+   "将搅拌好的酒液通过滤网倒入预冷的碟形杯中。",
+   "放上一片香蕉片作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1498",
+  "name": "Scotch Joplin",
+  "name_zh": "苏格兰乔普林",
+  "category": "Craft",
+  "glass_type": "Nick & Nora",
+  "flavor_tags": "{smoky,bitter,citrus,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Hideout at Dalva\nLocation: San Francisco\n\nIngredients:\n2 oz Ardbeg Ten, .75 oz Luxardo Aperitivo, .5 oz The Genuine Curacao Liqueur Orange, 5 dash Orange Bitters\n\nPreparation:\nStir, strain into a chilled Nick and Nora glass. Garnish with lemon twist.\n\nGarnish: Lemon Twist\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "准备一个混合杯和吧勺，将尼克诺拉杯放入冰箱或加冰预冷。",
+   "在混合杯中依次加入2 oz阿贝十年威士忌、.75 oz路萨朵开胃酒、.5 oz真橙库拉索利口酒和5 dash橙味苦精。",
+   "向混合杯中加入冰块至七分满。",
+   "用吧勺沿杯壁稳定搅拌30秒，使酒液充分冷却并融合。",
+   "取出预冷的尼克诺拉杯，用滤网将混合液过滤倒入杯中。",
+   "切取一条柠檬皮，在杯口上方扭转释放油脂后，将其挂在杯沿装饰。"
+  ]
+ },
+ {
+  "id": "1499",
+  "name": "Virgil St.",
+  "name_zh": "维吉尔街",
+  "category": "Craft",
+  "glass_type": "Double Rocks Glass",
+  "flavor_tags": "{smoky,herbal,bitter,spicy}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Trick Dog\nLocation: San Francisco\n\nIngredients:\n1 oz Mezcal, .75 oz Tempus Fugit Alessio Vermouth di Torino Rosso, .5 oz Old Tom Gin, .5 oz Tempus Fugit Kina L'Aero d'Or, 1 dash Duplais Swiss Absinthe Verte\n\nPreparation:\nStir, strain into absinthe rinsed double rocks glass over big cube. Garnish with lemon peel.\n\nGarnish: Lemon Peel\n\nNotes: Featured on Speed Rack 2015 SF Speed City Ta",
+  "steps": [
+   "取一个双料古典杯，倒入1 dash杜普莱瑞士绿苦艾酒，旋转杯身使其均匀附着内壁，倒掉多余的苦艾酒，然后放入一大块冰",
+   "在调酒杯中依次加入1盎司梅斯卡尔酒、0.75盎司Tempus Fugit Alessio都灵红味美思、0.5盎司金酒和0.5盎司Tempus Fugit Kina L'Aero d'Or开胃酒",
+   "向调酒杯中加入冰块，用吧勺轻柔搅拌约30圈（约20秒），直至酒液充分冷却",
+   "使用滤网将搅匀的酒液过滤倒入已准备好的古典杯中",
+   "切取一片柠檬皮，在杯口上方挤压拧出皮油，然后将柠檬皮放入杯中作为装饰"
+  ]
+ },
+ {
+  "id": "1496",
+  "name": "International Mistress",
+  "name_zh": "国际情人",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{sour,sweet,smoky,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: MAVEN\nLocation: San Francisco\n\nIngredients:\n1.5 oz Amaro Nonino Quintessentia, .75 oz Lemon Juice, .5 oz Mezcal, .5 oz Small Hand Foods Orgeat, 2 oz Soda Water\n\nPreparation:\nStir, fine strain into a collins glass over ice. Top with soda. Garnish with grapefruit peel.\n\nGarnish: Grapefruit Peel\n\nNotes: Featured on Speed Rack 2015 SF Speed City Takeover Baseball Card.",
+  "steps": [
+   "在可林杯中加满冰块，备用",
+   "在调酒杯中依次量入1.5 oz 阿马罗、0.75 oz 柠檬汁、0.5 oz 梅斯卡尔酒和0.5 oz 杏仁糖浆",
+   "向调酒杯中加入冰块，用吧勺搅拌约30秒至充分冷却融合",
+   "使用细孔滤网将酒液精细过滤至已备好的可林杯中",
+   "沿杯壁缓缓注入2 oz 苏打水，轻微提拉吧勺融合",
+   "取一块葡萄柚皮，在杯口上方扭转挤压释放油脂后投入杯中装饰"
+  ]
+ },
+ {
+  "id": "1504",
+  "name": "Cullerton Street",
+  "name_zh": "卡勒顿街",
+  "category": "Craft",
+  "glass_type": "Double Rocks Glass",
+  "flavor_tags": "{earthy,herbal,sweet,dry}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Julia Momose\nBar/Company: GreenRiver\nLocation: Chicago\n\nIngredients:\n2 oz Barley Tea-Infused Nikka Coffey Grain Whisky*, .25 oz Verjus Blanc, .25 oz Kummel Liqueur, .75 oz Pineau des Charentes, 1 tsp Demerara Sugar Syrup\n\nPreparation:\nStir. Add ice cube.\n\n*Barley Tea-Infused Nikka Coffey Grain Whiskey:\n-- 10 g. Barley Tea (1 package)\n-- 750 mls. Nikka Coffey Grain Whisky\nIn a cambro, em",
+  "steps": [
+   "准备一个双料古典杯和一个混合杯。",
+   "在混合杯中依次加入2 oz 大麦茶浸渍一甲科菲谷物威士忌、0.25 oz 白酸葡萄汁、0.25 oz 库美尔利口酒、0.75 oz 夏朗德皮诺酒和1 tsp 德麦拉拉蔗糖糖浆。",
+   "在混合杯中加入足量冰块，用吧勺轻柔搅拌30秒，使酒液充分冷却融合。",
+   "在双料古典杯中放入一块大冰，将混合好的酒液过滤倒入杯中。",
+   "无需装饰，直接上桌。"
+  ]
+ },
+ {
+  "id": "1508",
+  "name": "Swedish Nightingale",
+  "name_zh": "瑞典夜莺",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{herbal,fruity,smoky,bitter}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Morgan Schick\nBar/Company: Jupiter Olympus\nLocation: San Francisco\n\nIngredients:\n1.5 oz No.3 London Dry Gin, .5 oz Maurin Quina, .25 oz Pineapple Gomme Syrup, 1 bsp Peated Kola Nut Tincture, 2 dash Angostura Bitters\n\nPreparation:\nStir. Strain. Lemon peel garnish.\n\nGarnish: Lemon Peel",
+  "steps": [
+   "在搅拌杯中加入适量冰块",
+   "依次量取1.5 oz No.3 伦敦干金酒、.5 oz 莫兰奎那酒、.25 oz 菠萝树胶糖浆、1 bsp 泥煤可乐果酊剂和2 dash 安高天娜苦精倒入搅拌杯",
+   "用吧勺轻柔搅拌30圈约20秒，充分冷却融合",
+   "将鸡尾酒杯提前冰杯后，把搅拌好的酒液过滤倒入杯中",
+   "取一片柠檬皮，在杯口上方拧皮释放油脂后，将皮卷入杯内装饰"
+  ]
+ },
+ {
+  "id": "1414",
+  "name": "Last Samurai",
+  "name_zh": "最后的武士",
+  "category": "Craft",
+  "glass_type": "Cocktail Glass",
+  "flavor_tags": "{sweet,herbal,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nate Matson\nBar/Company: Mizu Izakaya\nLocation: Denver\n\nIngredients:\n1 oz Vodka, 1 oz Gin, 1 oz Luxardo Maraschino Liqueur, .5 oz Cointreau\n\nPreparation:\nShake. Serve up. Garnish with lime wheel.\n\nGarnish: Lime Wheel",
+  "steps": [
+   "准备好波士顿摇酒器、量酒器、鸡尾酒杯及青柠轮。",
+   "在摇酒器中依次加入1 oz伏特加、1 oz金酒、1 oz路萨朵黑樱桃利口酒和0.5 oz君度。",
+   "加入冰块至摇酒器八成满，紧密封盖后用力摇晃15秒，使酒液充分冷却融合。",
+   "打开摇酒器，使用霍桑滤网将酒液双重过滤倒入冰过的鸡尾酒杯。",
+   "在杯沿插上一片青柠轮作为装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1509",
+  "name": "Nigamono",
+  "name_zh": "Nigamono",
+  "category": "Craft",
+  "glass_type": "Double Old Fashioned Glass",
+  "flavor_tags": "{bitter,herbal,earthy,rich}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: John deBarry \nBar/Company: Momofuku\n\nIngredients:\n2 oz Nikka Coffey Grain Whisky, .75 oz Maurin Quina, .75 oz Luxardo Amaro Abano\n\nPreparation:\nStir. Use large ice cube.\n\nGarnish: Luxardo Cherries",
+  "steps": [
+   "准备双料古典杯，放入一大块方形冰块备用。",
+   "在搅拌杯中依次量取：2 oz 一甲科菲谷物威士忌、0.75 oz 莫兰奎那酒、0.75 oz 路萨朵阿巴诺苦味酒。",
+   "向搅拌杯中加入足量冰块，用吧勺轻柔搅拌约30秒，直至充分冷却和稀释。",
+   "使用滤网将酒液过滤倒入已备好的双料古典杯中。",
+   "用两颗路萨朵樱桃装饰后上桌。"
+  ]
+ },
+ {
+  "id": "1513",
+  "name": "The Boys of Summer Cup",
+  "name_zh": "夏日男孩杯",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{citrus,herbal,sweet,spicy}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Alex Smith\nBar/Company: Novela\nLocation: San Francisco\n\nIngredients:\n1 oz No.3 London Dry Gin, 1 oz Dolin Rouge Vermouth, .5 oz The Genuine Curacao Liqueur Orange, .5 oz King's Ginger Liqueur, .25 oz Chareau Liqueur, .5 oz Fresh Lemon Juice,  top Fever-Tree Bitter Lemon\n\nPreparation:\nTop with Fever-Tree Bitter Lemon. Build in a collins glass full of ice cubes and garnish with a lemon wh",
+  "steps": [
+   "准备一只可林杯，加满冰块。",
+   "依次量取并倒入1 oz No.3 伦敦干金酒、1 oz Dolin 红味美思、.5 oz 真橙库拉索利口酒、.5 oz 国王姜味利口酒、.25 oz 夏洛利口酒及.5 oz 鲜榨柠檬汁。",
+   "用吧勺轻柔搅拌10秒，使液体初步融合。",
+   "沿杯壁缓缓注入Fever-Tree苦柠檬水至杯口，轻提吧勺使气泡均匀。",
+   "杯口放置柠檬轮，插入薄荷枝装饰，即可上桌。"
+  ]
+ },
+ {
+  "id": "1520",
+  "name": "Fiery Clydesdale",
+  "name_zh": "炽热克莱兹代尔",
+  "category": "Craft",
+  "glass_type": "Highball Glass",
+  "flavor_tags": "{spicy,citrus,fruity,refreshing}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Lucia Stucki\nBar/Company: Mora Bar & Kitchen\nLocation: United Kingdom\n\nIngredients:\n1.5 oz Pusser's Blue Label Rum?, .5 oz King's Ginger Liqueur, .5 oz Ginger Syrup, .25 oz Lime Juice,  top Homemade Pink Grapefruit Soda\n\nPreparation:\nWet shake all ingredients except grapefruit soda, pour over ice and top with grapefruit soda. Rim glass with grapefruit demerara. Add dehydrated grapefruit",
+  "steps": [
+   "准备摇酒壶，加入半壶冰块。",
+   "量取1.5 oz帕瑟蓝标朗姆酒、.5 oz国王姜味利口酒、.5 oz姜汁糖浆和.25 oz青柠汁，依次倒入摇酒壶中。",
+   "盖紧摇酒壶，用力摇晃15秒，使酒液充分混合并冷却。",
+   "在高球杯中加满冰块。",
+   "将摇好的酒液通过滤网倒入高球杯中。",
+   "缓缓注入自制粉红葡萄柚苏打至杯满，轻柔搅拌1-2圈融合。"
+  ]
+ },
+ {
+  "id": "1521",
+  "name": "Mister Gingy",
+  "name_zh": "姜先生",
+  "category": "Craft",
+  "glass_type": "Collins",
+  "flavor_tags": "{spicy,fruity,citrus,sweet}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bar/Company: Honeycut\nLocation: Los Angeles\n\nIngredients:\n1 oz King's Ginger Liqueur, 1 oz Glenrothes Vintage Reserve, .75 oz Pineapple Gum, .75 oz Lemon Juice, 2 dash Angostura Bitters\n\nPreparation:\nWhip / Dump / Crushed\n\nGarnish: Mint Sprig, Pineapple Wedge",
+  "steps": [
+   "在可林杯中装满碎冰，备用。",
+   "在摇酒壶中依次加入1 oz 国王姜味利口酒、1 oz Glenrothes 年份珍藏威士忌、.75 oz 菠萝胶、.75 oz 柠檬汁和2 dash 安高天娜苦精。",
+   "向摇酒壶中加入冰块，盖紧壶盖，用力摇晃约15秒。",
+   "将摇酒壶中的酒液和冰块一起倒入装有碎冰的可林杯中。",
+   "用薄荷枝和菠萝角装饰杯口即可上桌。"
+  ]
+ },
+ {
+  "id": "1525",
+  "name": "Classic Lolita",
+  "name_zh": "经典洛丽塔",
+  "category": "Craft",
+  "glass_type": "Crystal Rocks",
+  "flavor_tags": "{sweet,earthy,citrus}",
+  "abv_level": "high",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Nick Jones\nBar/Company: Pabu\nLocation: San Francisco\n\nIngredients:\n2 oz Nikka Whisky Taketsuru, .5 oz Okinawa sugar, .5 oz Soda, 2 dash Orange Bitters, 2 dash Old Fashioned Bitters\n\nPreparation:\nMuddle Okinawa sugar with bitters. Add whisky and stir. Top with soda.\n\nGarnish: Orange Peel\n\nNotes: Classic Lolita is inspired by an Old Fashioned, substituting Nikka Japanese Whisky and the ad",
+  "steps": [
+   "在水晶古典杯中放入大块方冰，搅拌预冷杯体后倒掉融水（或直接用冰）",
+   "倒入冲绳糖 .5 oz、橙味苦精 2 dash 和古典苦精 2 dash",
+   "量取并加入 Nikka 威士忌 竹鹤 2 oz",
+   "用吧勺轻柔搅拌约20圈，使糖和苦精融合，约15秒",
+   "沿杯壁缓缓倒入苏打水 .5 oz",
+   "再次轻搅2-3圈使上层融合即可上桌"
+  ]
+ },
+ {
+  "id": "1533",
+  "name": "Plum Loco",
+  "name_zh": "疯狂梅子",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{fruity,sour,sweet,citrus}",
+  "abv_level": "medium",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: KJ Williams\nLocation: New York\n\nIngredients:\n1.5 oz Luxardo Slivovitz, .5 oz Junipero Gin, .75 oz Grapefruit Juice, .5 oz Coco KJ (House-made Coco Lopez), .25 oz Luxardo Limoncello, 1 dash Angostura Bitters",
+  "steps": [
+   "将鸡尾酒杯放入冰箱或加冰水冰镇备用。",
+   "在摇酒壶中依次加入1.5 oz Luxardo 斯利沃维茨李子白兰地、0.5 oz Junipero 金酒、0.75 oz 西柚汁、0.5 oz Coco KJ 自制椰浆、0.25 oz 路萨多柠檬切罗酒和1 dash 安高天娜苦精。",
+   "向摇酒壶中加入冰块，盖上壶盖，用力摇晃15秒。",
+   "取出冰镇好的鸡尾酒杯，倒掉冰水，将酒液经双重过滤网滤入杯中。"
+  ]
+ },
+ {
+  "id": "1550",
+  "name": "T&T",
+  "name_zh": "T&T",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,citrus,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Kevin Diedrich\nLocation: San Francisco\n\nIngredients:\n1.5 oz Chinaco Reposado Tequila, .5 oz Luxardo Aperitivo, 3 oz Fever-Tree Tonic Water",
+  "steps": [
+   "将鸡尾酒杯放入冷冻室或加冰冰镇备用",
+   "在调酒杯中加入冰块，量入1.5 oz 奇纳科陈酿龙舌兰酒和.5 oz 路萨朵开胃酒",
+   "用吧勺轻柔搅拌30圈约20秒，使酒液充分冷却并融合",
+   "取出冰镇好的鸡尾酒杯，将混合酒液过滤倒入杯中",
+   "沿杯壁缓缓倒入3 oz Fever-Tree 汤力水，用吧勺轻轻提拉2-3次以使气泡均匀上升"
+  ]
+ },
+ {
+  "id": "1567",
+  "name": "The Dry Cruise",
+  "name_zh": "干爽巡航",
+  "category": "Craft",
+  "glass_type": "",
+  "flavor_tags": "{bitter,citrus,sweet,refreshing}",
+  "abv_level": "low",
+  "is_alcoholic": "True",
+  "occasion_vibe": "",
+  "instructions_en": "Bartender: Jacyara de Oliveira\nBar/Company: Rob Roy, The Hideout\nLocation: Seattle\n\nIngredients:\n1 oz Luxardo Bitter Bianco, 1 oz Lustau Oloroso Sherry, .25 oz St. Germain, .75 oz Lemon Juice, .5 oz Honey Syrup,  top Sparkling Wine\n\nGarnish: Edible Flower, Straw",
+  "steps": [
+   "将鸡尾酒杯放入冰箱冷藏或加冰预冷备用。",
+   "在摇酒壶中依次加入 Luxardo 白色苦酒 1 oz、Lustau 欧洛罗索雪利酒 1 oz、圣哲曼接骨木花利口酒 .25 oz、柠檬汁 .75 oz、蜂蜜糖浆 .5 oz。",
+   "加入冰块，盖上摇酒壶，用力摇晃15秒。",
+   "取出冰好的鸡尾酒杯，将摇好的酒液通过双重滤网过滤倒入杯中。",
+   "缓慢倒入起泡酒至满杯，轻轻提拉吧勺融合。",
+   "在酒面点缀可食用花，插入吸管后立即上桌。"
+  ]
+ }
+]

@@ -10,7 +10,7 @@ photo_area — orientation_mode: "auto"
 
   横版图片 (width > height)
     占据卡片顶部，高度 = min(photo_h/photo_w × canvas_w/canvas_h, landscape.h_max)
-    前端公式：h_frac = Math.min(img.height/img.width * (1080/1440), landscape.h_max)
+    前端公式：h_frac = Math.min(img.height/img.width * (750/1000), landscape.h_max)
     无模糊，轻叠层，底部渐变淡入背景
 
   竖版/方形图片 (width ≤ height)
@@ -27,9 +27,9 @@ photo_area — orientation_mode: "auto"
 
 字体坐标系（同 v2）
 ────────────────────
-pos_x / pos_y：归一化 0-1，乘以 1080 / 1440 得像素坐标
-font_size：以 1440px 高度为基准；前端 actualSize = font_size * (canvasH / 1440)
-letter_spacing：px，基准 1440px；0 = 无额外间距
+pos_x / pos_y：归一化 0-1，乘以 750 / 1000 得像素坐标
+font_size：以 1000px 高度为基准；前端 actualSize = font_size * (canvasH / 1000)
+letter_spacing：px，基准 1000px；0 = 无额外间距
 line_height：行高倍数
 opacity：层透明度 0-1，独立于 color
 draggable：false 的层不渲染拖拽手柄，不接受 text_overrides
@@ -38,7 +38,7 @@ draggable：false 的层不渲染拖拽手柄，不接受 text_overrides
 import random
 from typing import Optional
 
-CANVAS = {"width": 1080, "height": 1440}
+CANVAS = {"width": 750, "height": 1000}
 
 # ── 字体角色表 ─────────────────────────────────────────────────────────────────
 

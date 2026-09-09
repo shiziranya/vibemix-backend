@@ -3,10 +3,12 @@ from __future__ import annotations
 豆包 LLM 服务：封装推荐调用。
 包含超时降级、JSON 解析失败重试、限流退避等容错逻辑。
 
-普通接口：单次调用完成选酒 + 原料 + 步骤。
+普通接口：根据模式调用
+  - classic: 仅选酒 + 文案（ingredients/steps 使用数据库配方）
+  - original: 选酒 + 文案 + 自定义原料 + 调制步骤
 流式接口：两阶段调用
   Phase 1 (约 5-8s)：选酒 + 文案（selected_id / reason / poetic_copy / mood_caption / tweaks）
-  Phase 2 (约 10s)：原料清单 + 调制步骤（聚焦，max_tokens 更小）
+  Phase 2 (约 10s，仅 original 模式)：原料清单 + 调制步骤（聚焦，max_tokens 更小）
 两种模式：classic（经典）/ original（原创特调）。
 """
 import json
@@ -23,25 +25,37 @@ logger = logging.getLogger(__name__)
 # ------------------------------------------------------------------ #
 # Single-call prompts  (used by non-streaming recommend())
 # ------------------------------------------------------------------ #
-CLASSIC_SYSTEM_PROMPT = """你是专业调酒师助手。根据用户需求和候选配方，选出最合适的鸡尾酒，生成推荐文案、原料清单和分步调制指引。严格按以下 JSON Schema 输出，不输出额外文字。
 
-【经典模式（classic）】仅可对原料用量小幅微调（±20%），不得替换或增减原料种类。
+# 复用的文案风格模块
+_VOICE = """【文案风格：说人话，做嘴替】
+你不是端着的酒单文案，是那个秒懂用户此刻情绪的朋友。用户喝的不是酒，是那口情绪（班味/emo/报复性放松/不想说话）。先接住情绪，再递酒。
+1. 先共情再推酒：读出用户那句话的潜台词（"想喝热带的"=想逃工位，"来杯烈的"=今天遭老罪了），写到用户直呼"这不就是我嘴替"。
+2. 反矫情反鸡汤：拉黑"值得的夜晚""温柔的风""把阳光装进杯子里"这类塑料诗意，要真诚、具体、带自嘲和幽默。
+3. 有网感但别硬凑梗：可用当下语感（松弛感/电子/续命/破防/i人e人/momo…），一次最多点一两个且必须贴题，宁可不用也别尬。
+4. 短句有节奏、情绪直给，别写成产品说明书；每次换句式，别套同一个万能模板。
+5. 底线：不低俗、不阴阳用户、不贩卖焦虑；网感是外壳，真诚和好喝是内核。
+各字段怎么写：
+- reason：2-3句，先点破用户情绪/潜台词，再自然带出为什么是这杯（度数/口味/家里有没有料），像朋友递酒时唠嗑，有温度也有点欠。
+- poetic_copy：1句能直接发朋友圈的态度slogan，短、有记忆点、反矫情，别写古诗。
+- mood_caption：一句自然地描述用户情绪和这杯酒的关系，口语化、有画面感，不要套用"今晚精神状态"或"今日状态"这种格式化开头。
+- 命名：原创特调的 cocktail_name_zh 要起个有梗、能截图分享的名字（语感示例：电子布洛芬/勿扰模式/工位度假计划/已读乱回），别平庸直译；经典模式名字必须与候选列表完全一致、不得改名，把火力全压在文案上。
+风格示例（学语气即可，严禁照抄，按真实输入重新创作）：
+· 被领导骂了想喝烈的 → 名"电子布洛芬"｜reason"被骂这事儿酒解决不了，但能帮你先泡一泡。柜里的威士忌打底，两滴苦精上强度，烈到你顾不上白天那档子事，喝完早点睡明天还是体面打工人"｜poetic_copy"解决不了领导，先解决这杯"｜mood_caption"想原地失忆的时候，就得来这么一杯猛的"
+· 周五想喝甜的犒劳自己 → reason"熬到周五你配拥有一整个甜，度数不高、柜里现成料就能凑齐，坐下就喝，当给自己提前发的年终奖"｜poetic_copy"这周唯一达成的KPI：对自己好一点"｜mood_caption"报复性快乐就整杯甜的，不解释\""""
 
+CLASSIC_SYSTEM_PROMPT = """你是懂调酒、更懂人的调酒师助手。根据用户需求和候选配方，选出最合适的鸡尾酒并生成推荐文案。严格按以下 JSON Schema 输出，不输出额外文字。
+【经典模式（classic）】选择经典配方，无需生成原料清单和调制步骤（系统将使用数据库中的标准配方）；鸡尾酒英文名/中文名必须与候选列表完全一致、不得改名，文案要写出彩。
+""" + _VOICE + """
 JSON Schema:
-{"selected_id":<int>,"cocktail_name":<string,英文名与候选列表一致>,"cocktail_name_zh":<string,中文名与候选列表一致>,"reason":<string,2-3句，围绕用户情绪说明契合点，有温度感>,"poetic_copy":<string,1句诗意文案如"苦中带甜，像某个值得的夜晚">,"mood_caption":<string,融入用户心情如"今晚的心情是微醺，所以调了这杯Negroni">,"tweaks":null,"prototype_name":null,"prototype_name_zh":null,"ingredients":[{"name_zh":<string,原料中文名，必须与配方原料列表中该原料名称完全一致，一字不差>,"measure_raw":<string,精确用量如"45ml">,"note":<string|null>}],"steps":[{"order":<int,从1开始>,"text":<string,精确操作，量化时间>,"duration_hint":<string|null>}]}
-
+{"selected_id":<int>,"cocktail_name":<string,英文名与候选列表一致>,"cocktail_name_zh":<string,中文名与候选列表一致>,"reason":<string,2-3句，先点破情绪再带出契合点，有温度有网感>,"poetic_copy":<string,1句态度slogan，短、反矫情>,"mood_caption":<string,一句说穿精神状态，句式别每次一样>,"tweaks":null,"prototype_name":null,"prototype_name_zh":null}
 原料状态：[✓已有]=用户已有直接用 | [便利店]=随时可得 | [需采购]=需专门购买
-选择原则：满足口味偏好的前提下，优先[✓已有]最多、[需采购]最少的配方。
-原料规则：列出全部原料，不得增减原料种类；name_zh必须与候选配方原料列表中该原料的名称完全一致、一字不差（系统依赖此名称识别用户酒柜，任何同义词/简写/大小写变体都会导致识别失败）；[✓已有]的note填null；[需采购]的note注明可用的已有替代品；用量精确（写"45ml"非"适量"）。
-步骤规则：3-7步，每步一件事；覆盖器具准备→量取→混合→摇匀→过滤→装饰；有时间要求的必须量化（"用力摇晃15秒"）。"""
+选择原则：满足口味偏好的前提下，优先[✓已有]最多、[需采购]最少的配方。"""
 
-ORIGINAL_SYSTEM_PROMPT = """你是富有创意的专业调酒师。根据用户需求和候选配方，选原型进行大胆二次创作，带来惊喜与情绪价值。严格按以下 JSON Schema 输出，不输出额外文字。
-
-【原创模式（original）】以候选配方为原型，可替换原料、调整用量、增加1-2种新原料（香料/草本/苦精等）。酸甜比基础约2:1:1（基酒:酸:甜），摇制15秒约稀释10-15%，注重口感层次（骨架+平衡+修饰）。
-
+ORIGINAL_SYSTEM_PROMPT = """你是富有创意、又极其懂人的调酒师。根据用户需求和候选配方，选原型进行大胆二次创作，带来惊喜与情绪价值。严格按以下 JSON Schema 输出，不输出额外文字。
+【原创模式（original）】以候选配方为原型，可替换原料、调整用量、增加1-2种新原料（香料/草本/苦精等）。酸甜比基础约2:1:1（基酒:酸:甜），摇制15秒约稀释10-15%，注重口感层次（骨架+平衡+修饰）。你要给这杯特调起一个有梗、能截图分享的名字。
+""" + _VOICE + """
 JSON Schema:
-{"selected_id":<int,原型配方id>,"cocktail_name":<string,特调英文名，可创意命名>,"cocktail_name_zh":<string,特调中文名，有个性>,"prototype_name":<string,原型英文名>,"prototype_name_zh":<string,原型中文名>,"reason":<string,2-4句，围绕用户情绪描述契合感和创意改动带来的独特体验>,"poetic_copy":<string,1句诗意文案，有独特个性>,"mood_caption":<string,融入用户心情和特调特点>,"tweaks":[{"content":<string,自然语言描述改动内容，如"以青柠汁替代柠檬汁">,"reason":<string,改动原因，调酒师视角>,"effect":<string,对口感或风味的具体影响，用户感知视角>}],"ingredients":[{"name_zh":<string,原料中文名，保留原料必须与配方列表名称完全一致（一字不差），新增/替换原料若在用户酒柜中存在则使用酒柜中的名称>,"measure_raw":<string,精确用量>,"note":<string|null>}],"steps":[{"order":<int,从1开始>,"text":<string,精确操作，量化时间>,"duration_hint":<string|null>}]}
-
+{"selected_id":<int,原型配方id>,"cocktail_name":<string,特调英文名，简洁有格调可创意命名>,"cocktail_name_zh":<string,特调中文名，有梗有记忆点能截图分享，呼应用户情绪>,"prototype_name":<string,原型英文名>,"prototype_name_zh":<string,原型中文名>,"reason":<string,2-4句，先点破情绪再描述契合感与创意改动带来的独特体验>,"poetic_copy":<string,1句态度slogan，短、有记忆点、反矫情>,"mood_caption":<string,一句说穿精神状态并带出特调特点，句式别每次一样>,"tweaks":[{"content":<string,自然语言描述改动，如"以青柠汁替代柠檬汁">,"reason":<string,改动原因，调酒师视角>,"effect":<string,对口感或风味的影响，用户感知视角，可口语有画面感>}],"ingredients":[{"name_zh":<string,原料中文名，保留原料必须与配方列表名称完全一致（一字不差），新增/替换原料若在用户酒柜中存在则使用酒柜中的名称>,"measure_raw":<string,精确用量>,"note":<string|null>}],"steps":[{"order":<int,从1开始>,"text":<string,精确操作，量化时间>,"duration_hint":<string|null>}]}
 原料状态：[✓已有]=已有 | [便利店]=可得 | [需采购]=需购买
 选择原则：选最契合情绪、有改造潜力的原型，兼顾[✓已有]数量。
 原料规则：列出改造后全部原料；保留原料的name_zh必须与配方原料列表中名称完全一致、一字不差（系统依赖此名称识别用户酒柜）；新增/替换的原料若在用户已有原料（酒柜）列表中有对应品类，name_zh必须使用酒柜列表中该原料的名称；用量精确；[需采购]原料的note注明可用的已有替代品。
@@ -52,26 +66,21 @@ JSON Schema:
 # Phase 1: cocktail selection + text copy  (max_tokens ~500, fast)
 # Phase 2: ingredients + steps             (max_tokens ~800, focused)
 # ------------------------------------------------------------------ #
-SELECTION_SYSTEM_PROMPT = """你是专业调酒师助手。从候选配方中选出最合适的鸡尾酒并生成推荐文案。严格按JSON Schema输出，不输出额外文字。
-
-经典模式（classic）：仅可小幅微调用量（±20%），不替换或增减原料。
-原创模式（original）：可替换原料、调整用量、增加1-2种新原料，注重酸甜平衡（基础比2:1:1）。
-
+SELECTION_SYSTEM_PROMPT = """你是懂调酒、更懂人的调酒师助手。从候选配方中选出最合适的鸡尾酒并生成推荐文案。严格按JSON Schema输出，不输出额外文字。
+经典模式（classic）：仅可小幅微调用量（±20%），不替换或增减原料；鸡尾酒英文名/中文名必须与候选列表完全一致、不得改名。
+原创模式（original）：可替换原料、调整用量、增加1-2种新原料，注重酸甜平衡（基础比2:1:1）；给特调起个有梗、能截图分享的名字。
+""" + _VOICE + """
 JSON Schema（classic）:
-{"selected_id":<int>,"cocktail_name":<string,与候选列表一致>,"cocktail_name_zh":<string,与候选列表一致>,"reason":<string,2-3句，围绕用户情绪，有温度感>,"poetic_copy":<string,1句诗意文案>,"mood_caption":<string,融入用户心情>,"tweaks":null,"prototype_name":null,"prototype_name_zh":null}
-
+{"selected_id":,"cocktail_name":,"cocktail_name_zh":,"reason":,"poetic_copy":,"mood_caption":,"tweaks":null,"prototype_name":null,"prototype_name_zh":null}
 JSON Schema（original，需同时填写tweaks/prototype_name/prototype_name_zh）:
-{"selected_id":<int>,"cocktail_name":<string,可创意命名>,"cocktail_name_zh":<string,有个性>,"reason":<string,2-4句，围绕用户情绪>,"poetic_copy":<string,1句>,"mood_caption":<string>,"tweaks":[{"content":<string,自然语言描述改动内容，如"以青柠汁替代柠檬汁">,"reason":<string,改动原因，调酒师视角>,"effect":<string,对口感或风味的具体影响，用户感知视角>}],"prototype_name":<string>,"prototype_name_zh":<string>}
-
+{"selected_id":,"cocktail_name":,"cocktail_name_zh":,"reason":,"poetic_copy":,"mood_caption":,"tweaks":[{"content":,"reason":,"effect":}],"prototype_name":,"prototype_name_zh":}
 选择原则：满足口味偏好，优先[✓已有]多、[需采购]少的配方。原料状态：[✓已有]=已有 | [便利店]=可得 | [需采购]=需购买"""
 
 DETAIL_SYSTEM_PROMPT = """你是专业调酒师助手。根据选定配方和改动方案，生成精确的原料清单和分步调制指引。严格按JSON Schema输出，不输出额外文字。
-
 JSON Schema:
-{"ingredients":[{"name_zh":<string,原料中文名，必须与配方原料列表中该原料名称完全一致，一字不差>,"measure_raw":<string,精确如"45ml">,"note":<string|null>}],"steps":[{"order":<int,从1开始>,"text":<string,精确操作，量化时间>,"duration_hint":<string|null>}]}
-
+{"ingredients":[{"name_zh":,"measure_raw":,"note":}],"steps":[{"order":,"text":,"duration_hint":}]}
 原料规则：列出全部原料；name_zh必须与配方原料列表中该原料名称完全一致、一字不差（尤其是[✓已有]标注的原料，系统依赖此名称识别用户酒柜，任何同义词/简写/变体都会导致酒柜识别失败）；原创模式新增/替换的原料若在用户已有原料（酒柜）列表中存在，name_zh必须使用酒柜列表中对应的名称；经典模式不增减原料种类；用量精确（写"45ml"非"适量"）；[需采购]原料note注明可用的已有替代品；[✓已有]原料note填null。
-步骤规则：3-7步每步一件事；覆盖器具准备→量取→混合→摇匀→过滤→装饰；有时间要求的必须量化（"用力摇晃15秒"）。"""
+步骤规则：3-7步每步一件事；覆盖器具准备→量取→混合→摇匀→过滤→装饰；有时间要求的必须量化（"用力摇晃15秒"）。步骤文本以清晰可执行为第一优先，可略带利落的口吻，但不堆砌网络梗、不喧宾夺主。"""
 
 
 @dataclass
@@ -160,15 +169,26 @@ class LLMService:
         user_prefs: dict,
         owned_labels: list[str] | None = None,
     ) -> LLMResult:
-        """One LLM call: select cocktail + generate ingredient list + steps."""
+        """One LLM call: select cocktail + generate content.
+        
+        - classic mode: select + text copy only (ingredients/steps from DB)
+        - original mode: select + text copy + custom ingredients + steps
+        """
         if not candidates:
             raise ValueError("candidates list is empty")
 
         recipe_type = user_prefs.get("recipe_type", "classic")
-        system_prompt = ORIGINAL_SYSTEM_PROMPT if recipe_type == "original" else CLASSIC_SYSTEM_PROMPT
-        prompt = self._build_prompt(candidates, user_prefs, owned_labels or [])
         candidate_ids = {c["id"] for c in candidates}
         fallback = self._fallback_result(candidates, user_prefs)
+        
+        # Classic mode: only select cocktail + generate text copy
+        if recipe_type == "classic":
+            system_prompt = CLASSIC_SYSTEM_PROMPT
+            prompt = self._build_selection_prompt(candidates, user_prefs, owned_labels or [])
+        else:
+            # Original mode: full generation (select + ingredients + steps)
+            system_prompt = ORIGINAL_SYSTEM_PROMPT
+            prompt = self._build_prompt(candidates, user_prefs, owned_labels or [])
 
         for attempt in range(3):
             try:
@@ -230,6 +250,66 @@ class LLMService:
         if start != -1 and end != -1:
             text = text[start:end + 1]
         return json.loads(text)
+
+    def select_cocktail(
+        self,
+        candidates: list[dict],
+        user_prefs: dict,
+        owned_labels: list[str] | None = None,
+    ) -> dict:
+        """仅执行选酒 + 文案生成。不生成原料和步骤。
+
+        适用于：
+        - classic 模式的独立选酒（使用数据库配方）
+        - 流式接口的 Phase 1
+        
+        返回 sel_raw dict，包含 selected_id / reason / poetic_copy /
+        mood_caption / cocktail_name / cocktail_name_zh。
+        """
+        if not candidates:
+            raise ValueError("candidates list is empty")
+
+        fallback = self._fallback_result(candidates, user_prefs)
+        owned = owned_labels or []
+        prompt = self._build_selection_prompt(candidates, user_prefs, owned)
+        candidate_ids = {c["id"] for c in candidates}
+
+        try:
+            kwargs: dict = {
+                "model": self._model(),
+                "messages": [
+                    {"role": "system", "content": SELECTION_SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+                "temperature": 0.7,
+                "max_tokens": self._max_tokens(500),
+            }
+            if self._supports_json_mode():
+                kwargs["response_format"] = {"type": "json_object"}
+            kwargs.update(self._extra_call_kwargs())
+            resp = self.client.chat.completions.create(**kwargs)
+            raw = self._extract_json(resp.choices[0].message.content or "{}")
+            logger.info("select_cocktail done: selected_id=%s", raw.get("selected_id"))
+
+            selected_id = int(raw.get("selected_id") or fallback.selected_id)
+            if selected_id not in candidate_ids:
+                selected_id = fallback.selected_id
+                raw["selected_id"] = selected_id
+            return raw
+
+        except Exception as e:
+            logger.error("select_cocktail LLM error: %s", e)
+            return {
+                "selected_id": fallback.selected_id,
+                "cocktail_name": fallback.cocktail_name,
+                "cocktail_name_zh": fallback.cocktail_name_zh,
+                "reason": fallback.reason,
+                "poetic_copy": fallback.poetic_copy,
+                "mood_caption": fallback.mood_caption,
+                "tweaks": None,
+                "prototype_name": None,
+                "prototype_name_zh": None,
+            }
 
     def stream_two_phase(
         self,
@@ -301,7 +381,15 @@ class LLMService:
 
         yield "selection", sel_raw
 
-        # ── Phase 2: ingredients + steps ────────────────────────────── #
+        # ── Phase 2: ingredients + steps (original mode only) ────────── #
+        if recipe_type == "classic":
+            # Classic mode: use DB recipe, no LLM call for ingredients/steps
+            logger.info("Classic mode: skipping Phase 2, will use DB recipe")
+            yield "ingredients", []
+            yield "steps", []
+            return
+        
+        # Original mode: generate custom ingredients + steps
         selected_candidate = next(
             (c for c in candidates if c["id"] == selected_id), candidates[0]
         )
@@ -411,14 +499,22 @@ class LLMService:
         )
 
     def _fallback_result(self, candidates: list[dict], user_prefs: dict) -> LLMResult:
+        """Generate fallback result when LLM is unavailable.
+        
+        - ingredients: always empty (system will use DB recipe)
+        - steps: generic steps for original mode; empty for classic mode
+        """
         best = min(candidates, key=lambda c: c.get("missing_count", 0))
         mood = user_prefs.get("mood_tags", [])
         mood_str = "、".join(mood) if mood else "微醺"
         name_zh = best.get("name_zh") or best.get("name", "这杯鸡尾酒")
         name_en = best.get("name", "")
         db_ings: list[dict] = best.get("ingredient_list", [])
+        recipe_type = user_prefs.get("recipe_type", "classic")
 
-        steps = self._build_fallback_steps(name_zh, db_ings)
+        # Classic mode: empty steps (use DB recipe)
+        # Original mode: generic steps as fallback
+        steps = [] if recipe_type == "classic" else self._build_fallback_steps(name_zh, db_ings)
 
         return LLMResult(
             selected_id=best["id"],
@@ -430,14 +526,14 @@ class LLMService:
             prototype_name=None,
             prototype_name_zh=None,
             tweaks=None,
-            ingredients=[],   # triggers DB fallback in recommend_service
+            ingredients=[],   # always empty - system will use DB recipe
             steps=steps,
         )
 
     def _build_fallback_steps(self, name: str, db_ings: list[dict]) -> list[dict]:
         """Generate minimal generic steps when LLM is unavailable."""
         ing_labels = [
-            f"{i['name_zh']}({i['measure_raw']})" if i.get("measure_raw") else i["name_zh"]
+            f"{i['name_zh']}({i.get('measure_normalized') or i.get('measure_raw') or '适量'})"
             for i in db_ings
             if i.get("name_zh")
         ]
@@ -448,7 +544,8 @@ class LLMService:
         ]
         for ing in db_ings:
             label = ing.get("name_zh", "")
-            measure = ing.get("measure_raw", "")
+            # 优先使用归一化用量
+            measure = ing.get("measure_normalized") or ing.get("measure_raw", "")
             if label:
                 step_texts.append(
                     f"用量杯量取 {measure} {label}，倒入摇酒壶".strip() if measure else f"将 {label} 倒入摇酒壶"
@@ -517,9 +614,11 @@ class LLMService:
         ing_lines = []
         for ing in db_ings:
             marker = self._STATUS_MARKER.get(ing.get("llm_status", "missing"), "需采购")
+            # 优先使用归一化用量，避免LLM输出oz等非标准单位
+            measure = ing.get("measure_normalized") or ing.get("measure_raw") or "适量"
             ing_lines.append(
                 f"  - {ing.get('name_zh') or ''}"
-                f"({ing.get('measure_raw') or '适量'})[{marker}]"
+                f"({measure})[{marker}]"
             )
 
         tweak_section = ""
@@ -555,7 +654,8 @@ class LLMService:
             for ing in db_ings:
                 marker = self._STATUS_MARKER.get(ing.get("llm_status", "missing"), "需采购")
                 name = ing.get("name_zh") or ""
-                measure = ing.get("measure_raw") or "适量"
+                # 优先使用归一化用量，避免LLM输出oz等非标准单位
+                measure = ing.get("measure_normalized") or ing.get("measure_raw") or "适量"
                 ing_parts.append(f"{name}({measure})[{marker}]")
             ing_str = "、".join(ing_parts) or "（原料信息缺失）"
             hist_tag = " [历史推荐]" if c.get("is_previously_recommended") else ""

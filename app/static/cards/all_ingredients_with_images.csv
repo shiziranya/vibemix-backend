@@ -1,0 +1,774 @@
+﻿id,name,en,category,local_image,image_source,white_ratio,status
+101,黑麦威士忌,rye whiskey,base_spirit,images/101_rye_whiskey.png,cocktaildb,1.000,ok
+102,田纳西威士忌,Tennessee whiskey,base_spirit,images/102_Tennessee_whiskey.png,cocktaildb,0.914,ok
+114,保税黑麦威士忌,bonded rye whiskey,base_spirit,images/114_bonded_rye_whiskey.png,cocktaildb,1.000,ok
+132,黑核桃波本威士忌,bourbon whiskey,base_spirit,images/132_bourbon_whiskey.png,cocktaildb,0.995,ok
+138,金酒,gin,base_spirit,images/138_gin.png,cocktaildb,0.974,ok
+139,高浓度烈酒,high proof neutral spirit,base_spirit,images/139_high_proof_neutral_spirit.png,cocktaildb,1.000,ok
+145,麦芽威士忌,malt whiskey,base_spirit,images/145_malt_whiskey.png,cocktaildb,1.000,ok
+173,日本威士忌,Japanese whisky,base_spirit,images/173_Japanese_whisky.png,cocktaildb,1.000,ok
+175,谷物酒精,grain alcohol,base_spirit,images/175_grain_alcohol.png,cocktaildb,1.000,ok
+182,波本威士忌,Bourbon whiskey,base_spirit,images/182_Bourbon_whiskey.png,csv,0.995,ok
+185,荷兰金酒,Genever,base_spirit,images/185_Genever.png,cocktaildb,0.974,ok
+188,卡莎萨,Cachaca,base_spirit,images/188_Cachaca.png,cocktaildb,1.000,ok
+191,高浓度朗姆酒,overproof rum,base_spirit,images/191_overproof_rum.png,csv,0.987,ok
+197,调和威士忌,blended whiskey,base_spirit,images/197_blended_whiskey.png,csv,1.000,ok
+215,覆盆子味伏特加,raspberry vodka,base_spirit,images/215_raspberry_vodka.png,cocktaildb,1.000,ok
+237,美国单一麦芽威士忌,American single malt whiskey,base_spirit,images/237_American_single_malt_whiskey.png,cocktaildb,1.000,ok
+241,陈酿龙舌兰,anejo tequila,base_spirit,images/241_anejo_tequila.png,cocktaildb,0.978,ok
+259,鹅肝浸雪利白兰地,sherry brandy,base_spirit,images/259_sherry_brandy.png,cocktaildb,0.964,ok
+26,皮斯科,Pisco,base_spirit,images/26_Pisco.png,cocktaildb,0.981,ok
+263,燕麦浸泡伏特加,vodka,base_spirit,images/263_vodka.png,cocktaildb,0.937,ok
+270,白朗姆酒,white rum,base_spirit,images/270_white_rum.png,cocktaildb,1.000,ok
+279,柠檬味伏特加,lemon vodka,base_spirit,images/279_lemon_vodka.png,cocktaildb,1.000,ok
+287,牙买加朗姆酒,Jamaican rum,base_spirit,images/287_Jamaican_rum.png,cocktaildb,1.000,ok
+291,玉米威士忌,corn whiskey,base_spirit,images/291_corn_whiskey.png,cocktaildb,0.995,ok
+294,水果白兰地,fruit brandy,base_spirit,images/294_fruit_brandy.png,cocktaildb,0.964,ok
+297,香草味伏特加,vanilla vodka,base_spirit,images/297_vanilla_vodka.png,cocktaildb,0.983,ok
+309,金朗姆酒,gold rum,base_spirit,images/309_gold_rum.png,csv,1.000,ok
+310,无花果浸渍苹果白兰地,apple brandy,base_spirit,images/310_apple_brandy.png,cocktaildb,1.000,ok
+314,伦敦干金,London dry gin,base_spirit,images/314_London_dry_gin.png,csv,0.974,ok
+318,陈年朗姆酒,aged rum,base_spirit,images/318_aged_rum.png,csv,0.970,ok
+319,姜,Ginger,base_spirit,images/319_Ginger.png,csv,1.000,ok
+325,苹果白兰地,apple brandy,base_spirit,images/325_apple_brandy.png,csv,1.000,ok
+34,青柠味伏特加,lime vodka,base_spirit,images/34_lime_vodka.png,cocktaildb,0.988,ok
+342,威士忌,whiskey,base_spirit,images/342_whiskey.png,cocktaildb,1.000,ok
+346,白威士忌,white whiskey,base_spirit,images/346_white_whiskey.png,cocktaildb,1.000,ok
+359,调和苏格兰威士忌,blended Scotch whisky,base_spirit,images/359_blended_Scotch_whisky.png,csv,1.000,ok
+361,高酒精度朗姆酒,overproof rum,base_spirit,images/361_overproof_rum.png,cocktaildb,0.987,ok
+366,干邑白兰地,Cognac,base_spirit,images/366_Cognac.png,csv,0.921,ok
+375,皮斯科酒,Pisco,base_spirit,images/375_Pisco.png,cocktaildb,0.981,ok
+381,加拿大威士忌,Canadian whisky,base_spirit,images/381_Canadian_whisky.png,cocktaildb,1.000,ok
+386,单一麦芽威士忌,single malt whisky,base_spirit,images/386_single_malt_whisky.png,cocktaildb,1.000,ok
+387,黑朗姆酒,dark rum,base_spirit,images/387_dark_rum.png,csv,1.000,ok
+391,李子白兰地,plum brandy,base_spirit,images/391_plum_brandy.png,cocktaildb,0.964,ok
+392,根茎浸泡伏特加,vodka,base_spirit,images/392_vodka.png,cocktaildb,0.937,ok
+421,调和麦芽威士忌,blended malt whisky,base_spirit,images/421_blended_malt_whisky.png,cocktaildb,1.000,ok
+437,龙舌兰酒,tequila,base_spirit,images/437_tequila.png,cocktaildb,0.978,ok
+438,南瓜伏特加,vodka,base_spirit,images/438_vodka.png,cocktaildb,0.937,ok
+443,苹果威士忌,apple whiskey,base_spirit,images/443_apple_whiskey.png,cocktaildb,1.000,ok
+448,菠萝浸泡梅斯卡尔,mezcal,base_spirit,images/448_mezcal.png,cocktaildb,1.000,ok
+450,黑糖朗姆酒,blackstrap rum,base_spirit,images/450_blackstrap_rum.png,cocktaildb,1.000,ok
+459,卡莎萨酒,Cachaca,base_spirit,images/459_Cachaca.png,cocktaildb,1.000,ok
+462,普利茅斯金酒,Plymouth gin,base_spirit,images/462_Plymouth_gin.png,cocktaildb,0.974,ok
+479,苹果肉桂浸泡伏特加,vodka,base_spirit,images/479_vodka.png,cocktaildb,0.937,ok
+5,芒果朗姆酒,mango rum,base_spirit,images/5_mango_rum.png,cocktaildb,1.000,ok
+517,咖啡浸泡伏特加,coffee vodka,base_spirit,images/517_coffee_vodka.png,cocktaildb,0.937,ok
+518,风味金酒,flavored gin,base_spirit,images/518_flavored_gin.png,cocktaildb,0.974,ok
+521,樱桃伏特加,cherry vodka,base_spirit,images/521_cherry_vodka.png,cocktaildb,0.937,ok
+5272,野火鸡,Wild Turkey bourbon,base_spirit,images/5272_Wild_Turkey_bourbon.png,cocktaildb,0.977,ok
+5273,苹果杰克,Applejack,base_spirit,images/5273_Applejack.png,csv,1.000,ok
+5274,皇冠,Crown Royal,base_spirit,images/5274_Crown_Royal.png,csv,1.000,ok
+5276,Everclear,Everclear,base_spirit,images/5276_Everclear.png,csv,1.000,ok
+5280,杰克丹尼,Jack Daniels,base_spirit,images/5280_Jack_Daniels.png,csv,0.914,ok
+5288,卡莎萨,Cachaca,base_spirit,images/5288_Cachaca.png,csv,1.000,ok
+5289,皮斯科,Pisco,base_spirit,images/5289_Pisco.png,cocktaildb,0.981,ok
+5291,Calvados 苹果白兰地,Calvados apple brandy,base_spirit,images/5291_Calvados_apple_brandy.png,cocktaildb,1.000,ok
+5294,Bols Genever 荷兰金酒,Bols Genever,base_spirit,images/5294_Bols_Genever.png,cocktaildb,0.974,ok
+534,果味伏特加,fruit vodka,base_spirit,images/534_fruit_vodka.png,csv,0.974,ok
+543,香料朗姆酒,spiced rum,base_spirit,images/543_spiced_rum.png,cocktaildb,0.980,ok
+55,椰子朗姆酒,coconut rum,base_spirit,images/55_coconut_rum.png,cocktaildb,1.000,ok
+567,淡陈年朗姆酒,aged rum,base_spirit,images/567_aged_rum.png,cocktaildb,1.000,ok
+57,姜饼风味烈酒,gingerbread spirit,base_spirit,images/57_gingerbread_spirit.png,cocktaildb,0.964,ok
+588,蜂蜜金酒,honey gin,base_spirit,images/588_honey_gin.png,cocktaildb,0.974,ok
+597,巴西朗姆酒,Brazilian rum,base_spirit,images/597_Brazilian_rum.png,cocktaildb,1.000,ok
+604,朗姆酒,rum,base_spirit,images/604_rum.png,cocktaildb,1.000,ok
+607,阿夸维特,Aquavit,base_spirit,images/607_Aquavit.png,cocktaildb,0.986,ok
+616,陈年龙舌兰酒,anejo tequila,base_spirit,images/616_anejo_tequila.png,cocktaildb,0.978,ok
+624,粉红朗姆酒,pink rum,base_spirit,images/624_pink_rum.png,cocktaildb,1.000,ok
+626,谷物威士忌,grain whiskey,base_spirit,images/626_grain_whiskey.png,cocktaildb,1.000,ok
+628,艾雷岛威士忌,Islay whisky,base_spirit,images/628_Islay_whisky.png,cocktaildb,1.000,ok
+630,伏特加,vodka,base_spirit,images/630_vodka.png,csv,1.000,ok
+633,梅斯卡尔酒,mezcal,base_spirit,images/633_mezcal.png,cocktaildb,1.000,ok
+662,椰子浸泡黑麦威士忌,rye whiskey,base_spirit,images/662_rye_whiskey.png,cocktaildb,1.000,ok
+679,爱尔兰威士忌,Irish whiskey,base_spirit,images/679_Irish_whiskey.png,csv,0.954,ok
+687,大黄浸渍金酒,gin,base_spirit,images/687_gin.png,cocktaildb,0.974,ok
+689,陈酿龙舌兰酒,anejo tequila,base_spirit,images/689_anejo_tequila.png,cocktaildb,0.978,ok
+69,梨味伏特加,pear vodka,base_spirit,images/69_pear_vodka.png,cocktaildb,0.937,ok
+692,菠萝朗姆酒,pineapple rum,base_spirit,images/692_pineapple_rum.png,cocktaildb,1.000,ok
+701,雪利白兰地,sherry brandy,base_spirit,images/701_sherry_brandy.png,cocktaildb,0.975,ok
+705,伦敦干金酒,London dry gin,base_spirit,images/705_London_dry_gin.png,cocktaildb,0.974,ok
+724,南瓜浸泡威士忌,whiskey,base_spirit,images/724_whiskey.png,cocktaildb,1.000,ok
+728,农业朗姆酒,rhum agricole,base_spirit,images/728_rhum_agricole.png,cocktaildb,1.000,ok
+737,白兰地,brandy,base_spirit,images/737_brandy.png,csv,0.964,ok
+739,苏格兰威士忌,Scotch whisky,base_spirit,images/739_Scotch_whisky.png,cocktaildb,1.000,ok
+754,皮斯科白兰地,Pisco brandy,base_spirit,images/754_Pisco_brandy.png,cocktaildb,0.981,ok
+762,陈年龙舌兰,anejo tequila,base_spirit,images/762_anejo_tequila.png,cocktaildb,0.978,ok
+774,马德拉桶威士忌,whisky,base_spirit,images/774_whisky.png,cocktaildb,1.000,ok
+789,白龙舌兰,blanco tequila,base_spirit,images/789_blanco_tequila.png,cocktaildb,0.978,ok
+803,柠檬味朗姆酒,lemon rum,base_spirit,images/803_lemon_rum.png,csv,1.000,ok
+818,梨子白兰地,pear brandy,base_spirit,images/818_pear_brandy.png,cocktaildb,0.964,ok
+86,艾雷岛单一麦芽威士忌,Islay single malt whisky,base_spirit,images/86_Islay_single_malt_whisky.png,cocktaildb,1.000,ok
+112,鲜奶油,fresh cream,dairy,images/112_fresh_cream.png,cocktaildb,0.893,ok
+118,重奶油,heavy cream,dairy,images/118_heavy_cream.png,csv,1.000,ok
+151,酸奶,yogurt,dairy,images/151_yogurt.png,cocktaildb,1.000,ok
+181,姜黄椰奶,turmeric coconut milk,dairy,images/181_turmeric_coconut_milk.png,cocktaildb,1.000,ok
+205,香草冰淇淋,vanilla ice cream,dairy,images/205_vanilla_ice_cream.png,cocktaildb,1.000,ok
+243,奶粉,milk powder,dairy,images/placeholders/dairy.png,placeholder,1.000,no_image
+354,奶油,cream,dairy,images/354_cream.png,cocktaildb,0.893,ok
+356,奶泡,milk foam,dairy,images/356_milk_foam.png,cocktaildb,0.970,ok
+362,澄清牛奶,clarified milk,dairy,images/362_clarified_milk.png,cocktaildb,0.970,ok
+403,淡奶油,light cream,dairy,images/403_light_cream.png,cocktaildb,0.904,ok
+407,牛奶,milk,dairy,images/407_milk.png,cocktaildb,0.970,ok
+440,椰奶,coconut milk,dairy,images/440_coconut_milk.png,cocktaildb,1.000,ok
+49,甜炼椰奶,sweetened condensed coconut milk,dairy,images/49_sweetened_condensed_coconut_milk.png,cocktaildb,1.000,ok
+496,椰子奶油,coconut cream,dairy,images/496_coconut_cream.png,cocktaildb,1.000,ok
+620,杏仁奶,almond milk,dairy,images/placeholders/dairy.png,placeholder,1.000,no_image
+719,巴氏杀菌蛋清,pasteurized egg white,dairy,images/719_pasteurized_egg_white.png,cocktaildb,1.000,ok
+731,蛋黄,egg yolk,dairy,images/731_egg_yolk.png,csv,1.000,ok
+732,高脂奶油,heavy cream,dairy,images/732_heavy_cream.png,cocktaildb,1.000,ok
+736,鸡蛋,egg,dairy,images/736_egg.png,csv,1.000,ok
+812,炼乳,condensed milk,dairy,images/812_condensed_milk.png,cocktaildb,1.000,ok
+130,芹菜杆,celery stalk,garnish,images/130_celery_stalk.png,cocktaildb,1.000,ok
+137,肉桂粉,cinnamon powder,garnish,images/137_cinnamon_powder.png,cocktaildb,1.000,ok
+156,多香果,allspice,garnish,images/156_allspice.png,cocktaildb,1.000,ok
+161,甘草根,licorice root,garnish,images/161_licorice_root.png,image_search,1.000,ok
+184,豆蔻粉,cardamom powder,garnish,images/184_cardamom_powder.png,image_search,1.000,ok
+186,新鲜薄荷,fresh mint,garnish,images/186_fresh_mint.png,cocktaildb,0.999,ok
+192,黑樱桃,black cherry,garnish,images/192_black_cherry.png,cocktaildb,1.000,ok
+195,香草粉,vanilla powder,garnish,images/195_vanilla_powder.png,bing,0.908,ok
+196,香蕉,banana,garnish,images/196_banana.png,cocktaildb,0.981,ok
+200,罗勒枝,basil sprig,garnish,images/200_basil_sprig.png,cocktaildb,0.986,ok
+202,肉桂,cinnamon,garnish,images/202_cinnamon.png,cocktaildb,1.000,ok
+208,青苹果,green apple,garnish,images/208_green_apple.png,cocktaildb,0.998,ok
+216,柠檬皮,lemon peel,garnish,images/216_lemon_peel.png,cocktaildb,1.000,ok
+227,柠檬皮屑,lemon zest,garnish,images/227_lemon_zest.png,cocktaildb,1.000,ok
+228,辣椒盐,chili salt,garnish,images/228_chili_salt.png,cocktaildb,1.000,ok
+230,罗勒叶,basil leaf,garnish,images/230_basil_leaf.png,cocktaildb,0.986,ok
+235,新鲜覆盆子,fresh raspberry,garnish,images/placeholders/garnish.png,placeholder,0.996,no_image
+238,柠檬片,lemon slice,garnish,images/238_lemon_slice.png,cocktaildb,0.992,ok
+245,柑橘片,citrus slice,garnish,images/245_citrus_slice.png,cocktaildb,1.000,ok
+256,无花果,fig,garnish,images/256_fig.png,bing,1.000,ok
+261,薰衣草,lavender,garnish,images/261_lavender.png,cocktaildb,0.972,ok
+266,蔓越莓,cranberry,garnish,images/266_cranberry.png,cocktaildb,1.000,ok
+28,血橙,blood orange,garnish,images/28_blood_orange.png,cocktaildb,1.000,ok
+284,盐,salt,garnish,images/284_salt.png,cocktaildb,1.000,ok
+290,水果,fruit,garnish,images/290_fruit.png,csv,1.000,ok
+303,柚子,pomelo,garnish,images/303_pomelo.png,bing,1.000,ok
+307,康科德葡萄,concord grape,garnish,images/307_concord_grape.png,cocktaildb,1.000,ok
+308,八角,star anise,garnish,images/placeholders/garnish.png,placeholder,1.000,no_image
+311,新鲜百里香,fresh thyme,garnish,images/311_fresh_thyme.png,cocktaildb,1.000,ok
+316,香料,spices,garnish,images/316_spices.png,cocktaildb,1.000,ok
+32,红甜椒块,red bell pepper chunk,garnish,images/32_red_bell_pepper_chunk.png,image_search,1.000,ok
+327,胡萝卜,carrot,garnish,images/327_carrot.png,cocktaildb,1.000,ok
+333,小辣椒,small chili,garnish,images/placeholders/garnish.png,placeholder,1.000,no_image
+335,姜皮,ginger peel,garnish,images/335_ginger_peel.png,cocktaildb,1.000,ok
+349,芹菜盐,celery salt,garnish,images/349_celery_salt.png,cocktaildb,1.000,ok
+350,黄瓜,cucumber,garnish,images/350_cucumber.png,cocktaildb,1.000,ok
+353,菠萝轮,pineapple wheel,garnish,images/353_pineapple_wheel.png,cocktaildb,0.978,ok
+357,葡萄柚皮,grapefruit peel,garnish,images/357_grapefruit_peel.png,bing,1.000,ok
+37,黑胡椒粒,black peppercorns,garnish,images/37_black_peppercorns.png,cocktaildb,1.000,ok
+380,桃片,peach slice,garnish,images/380_peach_slice.png,bing,1.000,ok
+393,莓果,berries,garnish,images/393_berries.png,cocktaildb,1.000,ok
+395,海盐,sea salt,garnish,images/395_sea_salt.png,cocktaildb,1.000,ok
+396,鼠尾草叶,sage leaf,garnish,images/placeholders/garnish.png,placeholder,1.000,no_image
+416,蒜瓣,garlic clove,garnish,images/416_garlic_clove.png,cocktaildb,1.000,ok
+419,刺山柑,capers,garnish,images/placeholders/garnish.png,placeholder,0.939,no_image
+432,西瓜,watermelon,garnish,images/432_watermelon.png,cocktaildb,0.934,ok
+436,橙子,orange,garnish,images/436_orange.png,cocktaildb,1.000,ok
+439,玫瑰,rose,garnish,images/439_rose.png,cocktaildb,0.972,ok
+458,脱水梨片,dehydrated pear slice,garnish,images/placeholders/garnish.png,placeholder,0.000,no_image
+470,苹果,apple,garnish,images/470_apple.png,cocktaildb,0.998,ok
+474,整粒黑胡椒,whole black peppercorns,garnish,images/474_whole_black_peppercorns.png,cocktaildb,1.000,ok
+482,李子片,plum slice,garnish,images/placeholders/garnish.png,placeholder,1.000,no_image
+500,迷迭香,rosemary,garnish,images/500_rosemary.png,cocktaildb,1.000,ok
+510,腌秋葵,pickled okra,garnish,images/placeholders/garnish.png,placeholder,0.994,no_image
+527,覆盆子,raspberry,garnish,images/527_raspberry.png,bing,1.000,ok
+530,莳萝,dill,garnish,images/placeholders/garnish.png,placeholder,0.996,no_image
+541,青柠角,lime wedge,garnish,images/541_lime_wedge.png,cocktaildb,1.000,ok
+56,橙片,orange slice,garnish,images/56_orange_slice.png,cocktaildb,1.000,ok
+566,橙皮,orange peel,garnish,images/566_orange_peel.png,cocktaildb,0.989,ok
+579,薄荷叶,mint leaf,garnish,images/579_mint_leaf.png,cocktaildb,0.999,ok
+590,新鲜蔓越莓,fresh cranberry,garnish,images/590_fresh_cranberry.png,cocktaildb,1.000,ok
+596,菠萝块,pineapple chunk,garnish,images/596_pineapple_chunk.png,cocktaildb,0.978,ok
+615,樱桃,cherry,garnish,images/615_cherry.png,cocktaildb,1.000,ok
+62,荔枝,lychee,garnish,images/62_lychee.png,image_search,1.000,ok
+629,金桔,kumquat,garnish,images/629_kumquat.png,bing,1.000,ok
+632,新鲜罗勒叶,fresh basil leaf,garnish,images/632_fresh_basil_leaf.png,cocktaildb,0.986,ok
+636,橄榄,olive,garnish,images/636_olive.png,cocktaildb,1.000,ok
+64,墨西哥辣椒酿橄榄,jalapeno stuffed olive,garnish,images/64_jalapeno_stuffed_olive.png,cocktaildb,1.000,ok
+642,泰椒,thai chili,garnish,images/placeholders/garnish.png,placeholder,0.989,no_image
+648,青柠,lime,garnish,images/648_lime.png,cocktaildb,1.000,ok
+649,葡萄柚,grapefruit,garnish,images/649_grapefruit.png,bing,1.000,ok
+668,柠檬,lemon,garnish,images/668_lemon.png,cocktaildb,0.992,ok
+677,樱桃番茄,cherry tomato,garnish,images/placeholders/garnish.png,placeholder,1.000,no_image
+680,黄瓜片,cucumber slice,garnish,images/680_cucumber_slice.png,cocktaildb,1.000,ok
+682,红盐,red salt,garnish,images/682_red_salt.png,cocktaildb,1.000,ok
+686,胡椒,pepper,garnish,images/686_pepper.png,cocktaildb,1.000,ok
+694,茴香,fennel,garnish,images/placeholders/garnish.png,placeholder,0.460,no_image
+704,龙蒿叶,tarragon leaf,garnish,images/placeholders/garnish.png,placeholder,0.000,no_image
+708,肉豆蔻,nutmeg,garnish,images/708_nutmeg.png,cocktaildb,1.000,ok
+717,粉红胡椒,pink peppercorn,garnish,images/717_pink_peppercorn.png,cocktaildb,1.000,ok
+723,胡椒粒,peppercorns,garnish,images/723_peppercorns.png,cocktaildb,1.000,ok
+73,马拉斯奇诺樱桃,maraschino cherry,garnish,images/73_maraschino_cherry.png,cocktaildb,1.000,ok
+733,柑橘水果,citrus fruit,garnish,images/733_citrus_fruit.png,cocktaildb,1.000,ok
+742,草莓,strawberry,garnish,images/742_strawberry.png,cocktaildb,1.000,ok
+747,新鲜鼠尾草,fresh sage,garnish,images/placeholders/garnish.png,placeholder,0.996,no_image
+755,姜片,ginger slice,garnish,images/755_ginger_slice.png,cocktaildb,1.000,ok
+759,蜜饯姜,candied ginger,garnish,images/759_candied_ginger.png,cocktaildb,1.000,ok
+765,柠檬皮丝,lemon peel twist,garnish,images/765_lemon_peel_twist.png,cocktaildb,1.000,ok
+767,肉桂棒,cinnamon stick,garnish,images/767_cinnamon_stick.png,cocktaildb,1.000,ok
+77,黄瓜条,cucumber stick,garnish,images/77_cucumber_stick.png,cocktaildb,1.000,ok
+770,百里香,thyme,garnish,images/770_thyme.png,cocktaildb,1.000,ok
+772,香菜,cilantro,garnish,images/772_cilantro.png,bing,1.000,ok
+775,装饰,garnish,garnish,images/775_garnish.png,cocktaildb,1.000,ok
+780,刨屑,shavings,garnish,images/placeholders/garnish.png,placeholder,,not_found
+785,鸡尾酒洋葱,cocktail onion,garnish,images/placeholders/garnish.png,placeholder,0.132,no_image
+788,烤樱桃,roasted cherry,garnish,images/788_roasted_cherry.png,cocktaildb,1.000,ok
+808,薄荷枝,mint sprig,garnish,images/808_mint_sprig.png,cocktaildb,0.999,ok
+81,香草,herbs,garnish,images/81_herbs.png,cocktaildb,0.986,ok
+83,葡萄,grapes,garnish,images/83_grapes.png,cocktaildb,1.000,ok
+96,薄荷,mint,garnish,images/96_mint.png,cocktaildb,0.999,ok
+97,百香果,passion fruit,garnish,images/97_passion_fruit.png,image_search,1.000,ok
+127,西柚汁,grapefruit juice,juice,images/127_grapefruit_juice.png,csv,1.000,ok
+135,葡萄柚汁,grapefruit juice,juice,images/135_grapefruit_juice.png,cocktaildb,1.000,ok
+23,大黄汁,rhubarb juice,juice,images/placeholders/juice.png,placeholder,0.067,no_image
+25,未过滤苹果汁,unfiltered apple juice,juice,images/25_unfiltered_apple_juice.png,cocktaildb,1.000,ok
+255,黄瓜汁,cucumber juice,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+274,柚子汁,yuzu juice,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+277,桃汁,peach juice,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+288,百香果汁,passion fruit juice,juice,images/placeholders/juice.png,placeholder,0.079,no_image
+329,椰子水,coconut water,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+360,橄榄汁,olive brine juice,juice,images/360_olive_brine_juice.png,cocktaildb,1.000,ok
+370,番茄汁,tomato juice,juice,images/370_tomato_juice.png,cocktaildb,0.930,ok
+38,菠萝汁,pineapple juice,juice,images/38_pineapple_juice.png,cocktaildb,1.000,ok
+390,苹果汁,apple juice,juice,images/390_apple_juice.png,csv,1.000,ok
+408,葡萄汁,grape juice,juice,images/408_grape_juice.png,csv,1.000,ok
+426,果汁,fruit juice,juice,images/placeholders/juice.png,placeholder,0.993,no_image
+43,西瓜汁,watermelon juice,juice,images/43_watermelon_juice.png,image_search,0.000,ok
+445,胡萝卜汁,carrot juice,juice,images/445_carrot_juice.png,cocktaildb,1.000,ok
+455,草莓果汁,strawberry puree,juice,images/placeholders/juice.png,placeholder,0.578,no_image
+473,青柠汁,lime juice,juice,images/473_lime_juice.png,cocktaildb,0.996,ok
+497,酸樱桃汁,sour cherry juice,juice,images/placeholders/juice.png,placeholder,0.163,no_image
+504,血橙汁,blood orange juice,juice,images/placeholders/juice.png,placeholder,0.838,no_image
+508,石榴汁,pomegranate juice,juice,images/508_pomegranate_juice.png,bing,1.000,ok
+532,柠檬汁,lemon juice,juice,images/532_lemon_juice.png,cocktaildb,0.974,ok
+564,哈密瓜果汁,cantaloupe juice,juice,images/placeholders/juice.png,placeholder,0.888,no_image
+595,鲜榨青柠汁,fresh lime juice,juice,images/595_fresh_lime_juice.png,cocktaildb,0.996,ok
+606,草莓汁,strawberry juice,juice,images/placeholders/juice.png,placeholder,0.990,no_image
+61,金桔汁,kumquat juice,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+646,樱桃汁,cherry juice,juice,images/646_cherry_juice.png,csv,1.000,ok
+65,橙汁,orange juice,juice,images/65_orange_juice.png,cocktaildb,0.994,ok
+678,粉红柠檬水,pink lemonade,juice,images/678_pink_lemonade.png,cocktaildb,0.991,ok
+68,蔓越莓汁,cranberry juice,juice,images/68_cranberry_juice.png,csv,1.000,ok
+691,鲜榨菠萝汁,fresh pineapple juice,juice,images/691_fresh_pineapple_juice.png,cocktaildb,1.000,ok
+749,血腥玛丽混合汁,bloody mary mix,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+761,百香果果泥,passion fruit puree,juice,images/placeholders/juice.png,placeholder,0.000,no_image
+776,芒果汁,mango juice,juice,images/placeholders/juice.png,placeholder,1.000,no_image
+782,青葡萄汁,green grape juice,juice,images/placeholders/juice.png,placeholder,0.997,no_image
+85,荔枝汁,lychee juice,juice,images/placeholders/juice.png,placeholder,,not_found
+87,混合果汁,mixed fruit juice,juice,images/87_mixed_fruit_juice.png,cocktaildb,1.000,ok
+10,草莓利口酒,strawberry liqueur,liqueur,images/10_strawberry_liqueur.png,image_search,0.999,ok
+105,桃子洋甘菊味甜味美思,peach chamomile sweet vermouth,liqueur,images/105_peach_chamomile_sweet_vermouth.png,cocktaildb,0.930,ok
+108,核桃利口酒,walnut liqueur,liqueur,images/108_walnut_liqueur.png,image_search,0.909,ok
+12,香草利口酒,vanilla liqueur,liqueur,images/12_vanilla_liqueur.png,image_search,0.987,ok
+120,美式开胃酒,American aperitif,liqueur,images/120_American_aperitif.png,cocktaildb,0.979,ok
+122,辣椒浸泡苦味开胃酒,chili infused bitters,liqueur,images/122_chili_infused_bitters.png,image_search,1.000,ok
+124,茴香利口酒,anise liqueur,liqueur,images/124_anise_liqueur.png,cocktaildb,1.000,ok
+125,杏子白兰地,apricot brandy,liqueur,images/125_apricot_brandy.png,cocktaildb,0.993,ok
+128,樱桃利口酒,cherry liqueur,liqueur,images/128_cherry_liqueur.png,csv,0.978,ok
+131,柑橘利口酒,orange liqueur,liqueur,images/131_orange_liqueur.png,cocktaildb,1.000,ok
+134,甜味美思,sweet vermouth,liqueur,images/134_sweet_vermouth.png,cocktaildb,0.930,ok
+136,金鸡纳利口酒,quinquina liqueur,liqueur,images/136_quinquina_liqueur.png,cocktaildb,0.979,ok
+143,巧克力利口酒,chocolate liqueur,liqueur,images/143_chocolate_liqueur.png,csv,0.988,ok
+148,黑莓利口酒,blackberry liqueur,liqueur,images/148_blackberry_liqueur.png,csv,0.976,ok
+152,覆盆子利口酒,raspberry liqueur,liqueur,images/152_raspberry_liqueur.png,csv,0.849,ok
+153,深色可可利口酒,dark creme de cacao,liqueur,images/153_dark_creme_de_cacao.png,cocktaildb,0.999,ok
+154,黄查特利口酒,Yellow Chartreuse,liqueur,images/154_Yellow_Chartreuse.png,cocktaildb,1.000,ok
+155,利莱玫瑰,Lillet Rose,liqueur,images/155_Lillet_Rose.png,image_search,0.925,ok
+157,味美思,vermouth,liqueur,images/157_vermouth.png,cocktaildb,0.990,ok
+168,香料利口酒,spice liqueur,liqueur,images/168_spice_liqueur.png,image_search,0.000,ok
+177,西瓜利口酒,watermelon liqueur,liqueur,images/177_watermelon_liqueur.png,image_search,1.000,ok
+193,西柚利口酒,grapefruit liqueur,liqueur,images/193_grapefruit_liqueur.png,image_search,1.000,ok
+201,红味美思,sweet red vermouth,liqueur,images/201_sweet_red_vermouth.png,cocktaildb,0.930,ok
+203,榛子利口酒,hazelnut liqueur Frangelico,liqueur,images/203_hazelnut_liqueur_Frangelico.png,csv,1.000,ok
+204,松子利口酒,pine nut liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.981,no_image
+207,蜂蜜利口酒,honey liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.961,no_image
+22,橙味利口酒,orange liqueur,liqueur,images/22_orange_liqueur.png,cocktaildb,1.000,ok
+252,樱桃白兰地利口酒,cherry brandy liqueur,liqueur,images/252_cherry_brandy_liqueur.png,csv,0.962,ok
+253,杏仁利口酒,amaretto almond liqueur,liqueur,images/253_amaretto_almond_liqueur.png,csv,0.910,ok
+254,金鸡纳酒,quinquina,liqueur,images/254_quinquina.png,cocktaildb,0.979,ok
+258,奶油利口酒,cream liqueur,liqueur,images/258_cream_liqueur.png,csv,0.913,ok
+260,百香果利口酒,passion fruit liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.978,no_image
+272,辣椒利口酒,chili pepper liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.810,no_image
+276,杜本内红开胃酒,Dubonnet Rouge aperitif,liqueur,images/276_Dubonnet_Rouge_aperitif.png,cocktaildb,0.974,ok
+285,梨味利口酒,pear liqueur,liqueur,images/285_pear_liqueur.png,bing,0.944,ok
+289,姜味利口酒,ginger liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+29,多香果利口酒,allspice dram liqueur,liqueur,images/29_allspice_dram_liqueur.png,image_search,0.944,ok
+299,黑樱桃利口酒,black cherry liqueur,liqueur,images/299_black_cherry_liqueur.png,cocktaildb,0.978,ok
+3,肉桂白兰地,cinnamon brandy,liqueur,images/3_cinnamon_brandy.png,cocktaildb,1.000,ok
+324,石榴利口酒,pomegranate liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+334,蜂蜜梨利口酒,honey pear liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.961,no_image
+343,猕猴桃利口酒,kiwi liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+344,其他利口酒,liqueur,liqueur,images/344_liqueur.png,cocktaildb,1.000,ok
+365,利口酒,liqueur,liqueur,images/365_liqueur.png,cocktaildb,1.000,ok
+371,桃味利口酒,peach schnapps,liqueur,images/371_peach_schnapps.png,cocktaildb,1.000,ok
+379,蓝橙利口酒,blue curacao,liqueur,images/379_blue_curacao.png,cocktaildb,1.000,ok
+383,草本开胃利口酒,herbal aperitif liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+399,薄荷利口酒,creme de menthe,liqueur,images/399_creme_de_menthe.png,csv,0.924,ok
+40,白味美思,dry vermouth,liqueur,images/40_dry_vermouth.png,cocktaildb,1.000,ok
+409,本笃会利口酒,Benedictine,liqueur,images/409_Benedictine.png,cocktaildb,1.000,ok
+415,黑加仑利口酒,creme de cassis blackcurrant liqueur,liqueur,images/415_creme_de_cassis_blackcurrant_liqueur.png,csv,1.000,ok
+423,安乔辣椒利口酒,ancho chili liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.000,no_image
+425,苦艾酒,absinthe,liqueur,images/425_absinthe.png,cocktaildb,1.000,ok
+44,枸杞利口酒,goji berry liqueur,liqueur,images/44_goji_berry_liqueur.png,image_search,1.000,ok
+463,水果利口酒,fruit liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.993,no_image
+466,肉桂利口酒,cinnamon liqueur,liqueur,images/466_cinnamon_liqueur.png,csv,0.981,ok
+47,香蕉利口酒,banana liqueur,liqueur,images/47_banana_liqueur.png,csv,0.998,ok
+471,开胃利口酒,aperitif liqueur,liqueur,images/471_aperitif_liqueur.png,cocktaildb,1.000,ok
+472,咖啡利口酒,coffee liqueur,liqueur,images/472_coffee_liqueur.png,csv,1.000,ok
+477,苦味开胃酒,bitter aperitif,liqueur,images/477_bitter_aperitif.png,cocktaildb,0.937,ok
+481,奶油糖果利口酒,butterscotch schnapps,liqueur,images/481_butterscotch_schnapps.png,cocktaildb,1.000,ok
+488,黑甘草利口酒,black licorice liqueur sambuca,liqueur,images/488_black_licorice_liqueur_sambuca.png,csv,0.986,ok
+509,苦味利口酒,bitter liqueur,liqueur,images/509_bitter_liqueur.png,cocktaildb,0.937,ok
+511,蜜瓜利口酒,melon liqueur,liqueur,images/511_melon_liqueur.png,cocktaildb,0.987,ok
+514,香草柑橘利口酒,vanilla citrus liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.908,no_image
+516,柠檬利口酒,lemon liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.977,no_image
+519,杏子白兰地利口酒,apricot brandy liqueur,liqueur,images/519_apricot_brandy_liqueur.png,csv,0.993,ok
+5250,绿查特,Green Chartreuse,liqueur,images/5250_Green_Chartreuse.png,csv,0.971,ok
+5251,卡鲁瓦,Kahlua coffee liqueur,liqueur,images/5251_Kahlua_coffee_liqueur.png,csv,1.000,ok
+5252,百利甜,Baileys Irish Cream,liqueur,images/5252_Baileys_Irish_Cream.png,csv,0.913,ok
+5253,本尼迪克特,Benedictine,liqueur,images/5253_Benedictine.png,cocktaildb,1.000,ok
+5254,金巴利,Campari,liqueur,images/5254_Campari.png,csv,0.937,ok
+5256,苦艾酒,Absinthe,liqueur,images/5256_Absinthe.png,csv,1.000,ok
+5257,君度,Cointreau,liqueur,images/5257_Cointreau.png,csv,1.000,ok
+5258,柑曼怡,Grand Marnier,liqueur,images/5258_Grand_Marnier.png,csv,1.000,ok
+5259,蓝库拉索,Blue Curacao,liqueur,images/5259_Blue_Curacao.png,csv,1.000,ok
+5260,利莱白,Lillet Blanc,liqueur,images/5260_Lillet_Blanc.png,cocktaildb,0.979,ok
+5261,圣哲曼,St-Germain elderflower liqueur,liqueur,images/5261_St_Germain_elderflower_liqueur.png,cocktaildb,0.945,ok
+5262,阿佩罗,Aperol,liqueur,images/5262_Aperol.png,csv,1.000,ok
+5267,马利宝朗姆酒,Malibu coconut rum,liqueur,images/5267_Malibu_coconut_rum.png,cocktaildb,0.977,ok
+5269,科奇美利坚,Cocchi Americano,liqueur,images/5269_Cocchi_Americano.png,cocktaildb,0.979,ok
+5271,庞特艾美斯,Punt e Mes vermouth,liqueur,images/5271_Punt_e_Mes_vermouth.png,cocktaildb,0.930,ok
+5275,金箔利口酒,Goldschlager,liqueur,images/5275_Goldschlager.png,csv,1.000,ok
+5277,蜜多利,Midori melon liqueur,liqueur,images/5277_Midori_melon_liqueur.png,cocktaildb,0.987,ok
+5278,野格,Jagermeister,liqueur,images/5278_Jagermeister.png,cocktaildb,0.989,ok
+5279,杜本内红,Dubonnet Rouge,liqueur,images/5279_Dubonnet_Rouge.png,csv,0.974,ok
+5282,杜林标,Drambuie,liqueur,images/5282_Drambuie.png,cocktaildb,1.000,ok
+5284,西纳,Cynar,liqueur,images/5284_Cynar.png,cocktaildb,1.000,ok
+5286,黑刺李金酒,Sloe Gin,liqueur,images/5286_Sloe_Gin.png,cocktaildb,0.969,ok
+5287,南方安逸,Southern Comfort,liqueur,images/5287_Southern_Comfort.png,cocktaildb,0.918,ok
+5293,Carpano Antica 味美思,Carpano Antica sweet vermouth,liqueur,images/5293_Carpano_Antica_sweet_vermouth.png,cocktaildb,0.930,ok
+544,椰子利口酒,coconut liqueur,liqueur,images/544_coconut_liqueur.png,csv,1.000,ok
+550,苹果利口酒,apple liqueur,liqueur,images/550_apple_liqueur.png,cocktaildb,0.987,ok
+561,蛋黄利口酒,advocaat egg liqueur,liqueur,images/561_advocaat_egg_liqueur.png,csv,0.990,ok
+569,蜂蜜茴香利口酒,honey anise liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.961,no_image
+577,马拉斯奇诺利口酒,maraschino liqueur,liqueur,images/577_maraschino_liqueur.png,cocktaildb,1.000,ok
+578,黄李利口酒,yellow plum liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.000,no_image
+585,当酒,Danish liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.015,no_image
+608,核果利口酒,stone fruit liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.835,no_image
+613,阿玛罗苦酒,Amaro,liqueur,images/613_Amaro.png,cocktaildb,1.000,ok
+625,苦艾,wormwood absinthe,liqueur,images/625_wormwood_absinthe.png,cocktaildb,1.000,ok
+63,干味美思,dry vermouth,liqueur,images/63_dry_vermouth.png,csv,1.000,ok
+655,爱尔兰奶油利口酒,Irish cream liqueur,liqueur,images/655_Irish_cream_liqueur.png,cocktaildb,0.913,ok
+658,草本利口酒,herbal liqueur,liqueur,images/658_herbal_liqueur.png,csv,0.999,ok
+664,黑刺李金酒,sloe gin,liqueur,images/664_sloe_gin.png,cocktaildb,0.969,ok
+673,樱桃白兰地,cherry brandy,liqueur,images/673_cherry_brandy.png,cocktaildb,0.962,ok
+690,紫罗兰利口酒,violet liqueur creme de violette,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+695,罂粟利口酒,poppy liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+7,苹果开胃酒,apple aperitif,liqueur,images/7_apple_aperitif.png,cocktaildb,0.987,ok
+70,草药苦味利口酒,herbal bitter liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.002,no_image
+702,干橙味库拉索,dry orange curacao,liqueur,images/702_dry_orange_curacao.png,cocktaildb,1.000,ok
+706,蓝莓利口酒,blueberry liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.636,no_image
+711,利莱白开胃酒,Lillet Blanc aperitif,liqueur,images/711_Lillet_Blanc_aperitif.png,cocktaildb,0.979,ok
+72,阿玛罗,Amaro,liqueur,images/72_Amaro.png,cocktaildb,1.000,ok
+743,可可利口酒,creme de cacao,liqueur,images/743_creme_de_cacao.png,csv,0.990,ok
+75,桃子白兰地,peach brandy,liqueur,images/75_peach_brandy.png,cocktaildb,0.993,ok
+763,杏子利口酒,apricot liqueur,liqueur,images/763_apricot_liqueur.png,cocktaildb,0.993,ok
+778,草药利口酒,herbal liqueur,liqueur,images/placeholders/liqueur.png,placeholder,0.909,no_image
+781,接骨木花利口酒,elderflower liqueur,liqueur,images/781_elderflower_liqueur.png,cocktaildb,1.000,ok
+791,桃子利口酒,peach liqueur,liqueur,images/791_peach_liqueur.png,cocktaildb,1.000,ok
+804,酸奶利口酒,yogurt liqueur,liqueur,images/placeholders/liqueur.png,placeholder,1.000,no_image
+814,蜜桃利口酒,peach liqueur,liqueur,images/814_peach_liqueur.png,cocktaildb,1.000,ok
+95,卡达玛罗,Amaro liqueur,liqueur,images/95_Amaro_liqueur.png,cocktaildb,1.000,ok
+100,桶陈苦精,barrel aged bitters,mixer,images/100_barrel_aged_bitters.png,cocktaildb,1.000,ok
+115,提基苦精,tiki bitters,mixer,images/115_tiki_bitters.png,cocktaildb,1.000,ok
+141,桃子苦精,peach bitters,mixer,images/141_peach_bitters.png,cocktaildb,1.000,ok
+159,辣味苦精,spicy bitters,mixer,images/159_spicy_bitters.png,cocktaildb,1.000,ok
+163,苹果派苦精,apple pie bitters,mixer,images/163_apple_pie_bitters.png,cocktaildb,1.000,ok
+165,肉桂苦精,cinnamon bitters,mixer,images/165_cinnamon_bitters.png,cocktaildb,1.000,ok
+170,香菜酊剂,cilantro tincture,mixer,images/placeholders/mixer.png,placeholder,1.000,no_image
+174,蔓越莓苦精,cranberry bitters,mixer,images/174_cranberry_bitters.png,cocktaildb,1.000,ok
+212,苦精,bitters,mixer,images/212_bitters.png,csv,1.000,ok
+214,大黄苦精,rhubarb bitters,mixer,images/214_rhubarb_bitters.png,cocktaildb,1.000,ok
+221,巧克力苦精,chocolate bitters,mixer,images/221_chocolate_bitters.png,cocktaildb,1.000,ok
+232,香草苦精,vanilla bitters,mixer,images/232_vanilla_bitters.png,cocktaildb,1.000,ok
+257,安哥斯图拉苦精,angostura bitters,mixer,images/257_angostura_bitters.png,cocktaildb,0.982,ok
+282,薰衣草苦精,lavender bitters,mixer,images/282_lavender_bitters.png,cocktaildb,1.000,ok
+298,酸甜混合汁,sweet and sour mix,mixer,images/298_sweet_and_sour_mix.png,cocktaildb,1.000,ok
+345,安高天娜苦精,angostura bitters,mixer,images/345_angostura_bitters.png,cocktaildb,0.982,ok
+363,葡萄柚啤酒花苦精,grapefruit hops bitters,mixer,images/363_grapefruit_hops_bitters.png,cocktaildb,1.000,ok
+376,烤苹果苦精,baked apple bitters,mixer,images/376_baked_apple_bitters.png,cocktaildb,1.000,ok
+377,酸味混合液,sour mix,mixer,images/377_sour_mix.png,cocktaildb,1.000,ok
+382,黑盐酊剂,black salt tincture,mixer,images/placeholders/mixer.png,placeholder,0.010,no_image
+384,柠檬苦精,lemon bitters,mixer,images/384_lemon_bitters.png,cocktaildb,1.000,ok
+385,薰衣草香料苦精,lavender spice bitters,mixer,images/385_lavender_spice_bitters.png,cocktaildb,1.000,ok
+39,苹果苦精,apple bitters,mixer,images/39_apple_bitters.png,cocktaildb,1.000,ok
+4,橙味奶油苦精,orange cream bitters,mixer,images/4_orange_cream_bitters.png,cocktaildb,0.910,ok
+431,威士忌桶陈苦精,whiskey barrel aged bitters,mixer,images/431_whiskey_barrel_aged_bitters.png,cocktaildb,1.000,ok
+434,薄荷苦精,mint bitters,mixer,images/434_mint_bitters.png,cocktaildb,1.000,ok
+454,黑胡桃苦精,black walnut bitters,mixer,images/454_black_walnut_bitters.png,cocktaildb,1.000,ok
+460,松露酊剂,truffle tincture,mixer,images/placeholders/mixer.png,placeholder,1.000,no_image
+475,柑橘苦精,citrus bitters,mixer,images/475_citrus_bitters.png,cocktaildb,0.910,ok
+478,五香苦精,five spice bitters,mixer,images/478_five_spice_bitters.png,cocktaildb,1.000,ok
+480,迈泰混合液,mai tai mix,mixer,images/placeholders/mixer.png,placeholder,0.076,no_image
+486,青柠酊剂,lime tincture,mixer,images/placeholders/mixer.png,placeholder,0.144,no_image
+499,金酒桶陈橙味苦精,gin barrel aged orange bitters,mixer,images/499_gin_barrel_aged_orange_bitters.png,cocktaildb,0.910,ok
+502,苦精酊剂,bitters tincture,mixer,images/502_bitters_tincture.png,cocktaildb,1.000,ok
+520,橙味苦精,orange bitters,mixer,images/520_orange_bitters.png,cocktaildb,0.910,ok
+5255,佩乔苦精,Peychaud's Bitters,mixer,images/placeholders/mixer.png,placeholder,0.049,no_image
+568,梨味苦精,pear bitters,mixer,images/568_pear_bitters.png,cocktaildb,1.000,ok
+601,柠檬芹菜苦精,lemon celery bitters,mixer,images/601_lemon_celery_bitters.png,cocktaildb,1.000,ok
+602,茴香苦精,fennel bitters,mixer,images/602_fennel_bitters.png,cocktaildb,1.000,ok
+635,阿兹特克巧克力苦精,aztec chocolate bitters,mixer,images/635_aztec_chocolate_bitters.png,cocktaildb,1.000,ok
+669,石榴苦精,pomegranate bitters,mixer,images/669_pomegranate_bitters.png,cocktaildb,1.000,ok
+671,巧克力辣味苦精,chocolate chili bitters,mixer,images/671_chocolate_chili_bitters.png,cocktaildb,1.000,ok
+683,古典苦精,old fashioned bitters,mixer,images/683_old_fashioned_bitters.png,cocktaildb,0.982,ok
+697,芳香苦精,aromatic bitters,mixer,images/697_aromatic_bitters.png,cocktaildb,0.982,ok
+700,啤酒花苦精,hops bitters,mixer,images/700_hops_bitters.png,cocktaildb,1.000,ok
+741,哈瓦那辣椒酊剂,habanero tincture,mixer,images/placeholders/mixer.png,placeholder,0.554,no_image
+748,青柠苦精,lime bitters,mixer,images/748_lime_bitters.png,cocktaildb,1.000,ok
+756,芹菜苦精,celery bitters,mixer,images/756_celery_bitters.png,cocktaildb,1.000,ok
+758,樱桃苦精,cherry bitters,mixer,images/758_cherry_bitters.png,cocktaildb,1.000,ok
+771,威士忌苦精,whiskey bitters,mixer,images/771_whiskey_bitters.png,cocktaildb,1.000,ok
+783,葡萄柚苦精,grapefruit bitters,mixer,images/783_grapefruit_bitters.png,cocktaildb,1.000,ok
+787,浸泡苦精,infused bitters,mixer,images/787_infused_bitters.png,cocktaildb,1.000,ok
+794,自制苦精,homemade bitters,mixer,images/794_homemade_bitters.png,cocktaildb,1.000,ok
+80,酸甜汁,sweet and sour mix,mixer,images/80_sweet_and_sour_mix.png,cocktaildb,1.000,ok
+809,香蕉苦精,banana bitters,mixer,images/809_banana_bitters.png,cocktaildb,1.000,ok
+1,橙味果冻,orange jelly,other,images/1_orange_jelly.png,image_search,0.000,ok
+103,路易波士茶,rooibos tea,other,images/103_rooibos_tea.png,bing,1.000,ok
+104,梨鼠尾草泡沫,pear sage foam,other,images/104_pear_sage_foam.png,image_search,1.000,ok
+106,水果宾治,fruit punch,other,images/106_fruit_punch.png,csv,1.000,ok
+109,茶,tea,other,images/109_tea.png,cocktaildb,0.938,ok
+110,辣酱,hot sauce,other,images/110_hot_sauce.png,cocktaildb,0.943,ok
+113,醋栗果酱,currant jam,other,images/placeholders/other.png,placeholder,0.164,no_image
+121,摩卡咖啡,mocha coffee,other,images/121_mocha_coffee.png,cocktaildb,1.000,ok
+123,冰茶,iced tea,other,images/123_iced_tea.png,cocktaildb,0.938,ok
+13,黑胡椒香醋饮,black pepper balsamic shrub,other,images/13_black_pepper_balsamic_shrub.png,image_search,1.000,ok
+140,荔枝果泥,lychee puree,other,images/placeholders/other.png,placeholder,,not_found
+142,仙人掌果泥,prickly pear puree,other,images/placeholders/other.png,placeholder,0.010,no_image
+160,黄油,butter,other,images/160_butter.png,cocktaildb,1.000,ok
+164,白桃果泥,white peach puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+167,胡萝卜生命之水,carrot eau de vie,other,images/placeholders/other.png,placeholder,0.927,no_image
+17,芹菜灌木,celery shrub,other,images/placeholders/other.png,placeholder,1.000,no_image
+178,菠萝胶,pineapple gum,other,images/178_pineapple_gum.png,image_search,1.000,ok
+179,加州罂粟油,california poppy oil,other,images/placeholders/other.png,placeholder,0.097,no_image
+187,柠檬酸溶液,citric acid solution,other,images/placeholders/other.png,placeholder,0.074,no_image
+189,香料混合物,spice mix,other,images/189_spice_mix.png,cocktaildb,1.000,ok
+190,豆奶咖啡泡沫,soy milk coffee foam,other,images/placeholders/other.png,placeholder,0.872,no_image
+21,糖粉,powdered sugar,other,images/21_powdered_sugar.png,cocktaildb,0.832,ok
+211,杏仁提取物,almond extract,other,images/211_almond_extract.png,cocktaildb,1.000,ok
+217,蛋清,egg white,other,images/217_egg_white.png,cocktaildb,1.000,ok
+219,热水,hot water,other,images/219_hot_water.png,cocktaildb,0.994,ok
+224,普洱茶,pu-erh tea,other,images/224_pu_erh_tea.png,cocktaildb,0.938,ok
+234,水果醋饮,fruit shrub,other,images/placeholders/other.png,placeholder,0.993,no_image
+239,羽衣甘蓝,kale,other,images/placeholders/other.png,placeholder,0.003,no_image
+24,雪莉醋,sherry vinegar,other,images/24_sherry_vinegar.png,image_search,1.000,ok
+240,辣椒酱,chili sauce,other,images/240_chili_sauce.png,cocktaildb,0.943,ok
+242,甜菜百里香浓缩汁,beet thyme concentrate,other,images/placeholders/other.png,placeholder,1.000,no_image
+244,柠檬水,lemonade,other,images/244_lemonade.png,cocktaildb,0.991,ok
+248,香料南瓜泥,spiced pumpkin puree,other,images/placeholders/other.png,placeholder,,not_found
+251,橙子雪葩,orange sorbet,other,images/placeholders/other.png,placeholder,0.868,no_image
+265,草莓黑胡椒醋,strawberry black pepper vinegar,other,images/placeholders/other.png,placeholder,0.990,no_image
+271,香料苹果醋饮,spiced apple cider vinegar,other,images/placeholders/other.png,placeholder,1.000,no_image
+273,海盐酊剂,sea salt tincture,other,images/placeholders/other.png,placeholder,0.334,no_image
+281,柠檬酸味剂,lemon acid,other,images/placeholders/other.png,placeholder,0.977,no_image
+283,茉莉绿茶,jasmine green tea,other,images/283_jasmine_green_tea.png,cocktaildb,0.938,ok
+286,丁香酊剂,clove tincture,other,images/placeholders/other.png,placeholder,0.636,no_image
+296,柠檬凝乳,lemon curd,other,images/placeholders/other.png,placeholder,0.977,no_image
+30,姜根,ginger root,other,images/30_ginger_root.png,cocktaildb,1.000,ok
+301,红糖块,brown sugar cube,other,images/301_brown_sugar_cube.png,cocktaildb,1.000,ok
+31,糖,sugar,other,images/31_sugar.png,cocktaildb,0.981,ok
+313,可乐果酊剂,kola nut tincture,other,images/placeholders/other.png,placeholder,0.932,no_image
+323,核桃油,walnut oil,other,images/placeholders/other.png,placeholder,1.000,no_image
+326,水,water,other,images/326_water.png,cocktaildb,0.994,ok
+33,橙子果酱,orange marmalade,other,images/33_orange_marmalade.png,image_search,0.358,ok
+331,香料南瓜酱,spiced pumpkin sauce,other,images/placeholders/other.png,placeholder,,not_found
+332,海带酊剂,kelp tincture,other,images/placeholders/other.png,placeholder,1.000,no_image
+341,德梅拉拉糖,demerara sugar,other,images/341_demerara_sugar.png,csv,1.000,ok
+347,柠檬味果冻,lemon jelly,other,images/placeholders/other.png,placeholder,0.977,no_image
+351,盐酊剂,salt tincture,other,images/placeholders/other.png,placeholder,0.067,no_image
+355,矿泉水,mineral water,other,images/355_mineral_water.png,cocktaildb,0.994,ok
+358,柠檬酸,citric acid,other,images/placeholders/other.png,placeholder,0.974,no_image
+36,血橙香草薄荷泥,blood orange vanilla mint puree,other,images/36_blood_orange_vanilla_mint_puree.png,image_search,0.000,ok
+364,冷萃咖啡,cold brew coffee,other,images/364_cold_brew_coffee.png,cocktaildb,1.000,ok
+378,香料黄油,spiced butter,other,images/378_spiced_butter.png,cocktaildb,1.000,ok
+398,烟熏麦芽,smoked malt,other,images/placeholders/other.png,placeholder,0.011,no_image
+404,薄荷茶,mint tea,other,images/404_mint_tea.png,cocktaildb,0.938,ok
+41,冲绳黑糖,okinawa brown sugar,other,images/41_okinawa_brown_sugar.png,cocktaildb,1.000,ok
+412,菠萝雪葩,pineapple sorbet,other,images/placeholders/other.png,placeholder,1.000,no_image
+413,柠檬泡沫,lemon foam,other,images/placeholders/other.png,placeholder,0.977,no_image
+42,活性炭,activated charcoal,other,images/placeholders/other.png,placeholder,1.000,no_image
+420,西柚雪葩,grapefruit sorbet,other,images/placeholders/other.png,placeholder,1.000,no_image
+422,黑巧克力,dark chocolate,other,images/422_dark_chocolate.png,cocktaildb,1.000,ok
+427,其他,other,other,images/placeholders/other.png,placeholder,0.998,no_image
+433,苹果水,apple water,other,images/placeholders/other.png,placeholder,0.970,no_image
+446,可可粉,cocoa powder,other,images/446_cocoa_powder.png,csv,1.000,ok
+45,茶泡沫,tea foam,other,images/45_tea_foam.png,image_search,0.005,ok
+452,香草盐喷雾,vanilla salt spray,other,images/placeholders/other.png,placeholder,0.908,no_image
+46,黄油浸白兰地,butter infused brandy,other,images/46_butter_infused_brandy.png,cocktaildb,0.964,ok
+469,可可豆,cocoa bean,other,images/placeholders/other.png,placeholder,0.296,no_image
+485,橙花水,orange blossom water,other,images/placeholders/other.png,placeholder,0.868,no_image
+491,莫莱酱,mole sauce,other,images/placeholders/other.png,placeholder,1.000,no_image
+498,杏仁香精,almond essence,other,images/498_almond_essence.png,cocktaildb,1.000,ok
+50,酊剂,tincture,other,images/placeholders/other.png,placeholder,,not_found
+503,热咖啡,hot coffee,other,images/503_hot_coffee.png,cocktaildb,1.000,ok
+512,烟草精华,tobacco essence,other,images/placeholders/other.png,placeholder,0.102,no_image
+515,肉桂酊剂,cinnamon tincture,other,images/placeholders/other.png,placeholder,0.910,no_image
+522,伍斯特酱,worcestershire sauce,other,images/522_worcestershire_sauce.png,cocktaildb,1.000,ok
+525,青柠酸味剂,lime acid,other,images/525_lime_acid.png,bing,1.000,ok
+531,青苹果果泥,green apple puree,other,images/placeholders/other.png,placeholder,0.997,no_image
+535,杏子果泥,apricot puree,other,images/placeholders/other.png,placeholder,0.988,no_image
+536,甜青柠汁,sweet lime juice,other,images/536_sweet_lime_juice.png,cocktaildb,0.996,ok
+537,印度奶茶,chai tea,other,images/537_chai_tea.png,cocktaildb,0.938,ok
+538,桃泥,peach puree,other,images/538_peach_puree.png,bing,1.000,ok
+539,冷水,cold water,other,images/539_cold_water.png,cocktaildb,0.994,ok
+54,麦芽饮料,malt beverage,other,images/placeholders/other.png,placeholder,0.460,no_image
+542,白桃泥,white peach puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+545,烈酒,spirit,other,images/545_spirit.png,csv,1.000,ok
+546,西柚醋,grapefruit vinegar,other,images/placeholders/other.png,placeholder,0.992,no_image
+548,杏子果浆,apricot puree,other,images/placeholders/other.png,placeholder,0.988,no_image
+549,番石榴花蜜,guava nectar,other,images/placeholders/other.png,placeholder,1.000,no_image
+552,草莓果泥,strawberry puree,other,images/placeholders/other.png,placeholder,0.990,no_image
+556,柠檬雪葩,lemon sorbet,other,images/placeholders/other.png,placeholder,0.977,no_image
+559,酸味磷酸盐,acid phosphate,other,images/placeholders/other.png,placeholder,0.864,no_image
+560,浓缩咖啡粉,espresso powder,other,images/560_espresso_powder.png,cocktaildb,1.000,ok
+563,蔬菜,vegetables,other,images/563_vegetables.png,bing,0.896,ok
+571,香草精,vanilla extract,other,images/571_vanilla_extract.png,cocktaildb,1.000,ok
+575,饼干,biscuit,other,images/575_biscuit.png,bing,1.000,ok
+576,蜂蜜,honey,other,images/576_honey.png,cocktaildb,1.000,ok
+58,酱油,soy sauce,other,images/58_soy_sauce.png,cocktaildb,1.000,ok
+581,捣碎物,muddled ingredients,other,images/placeholders/other.png,placeholder,,not_found
+583,梨芹菜泥,pear celery puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+584,黑莓果酱,blackberry jam,other,images/placeholders/other.png,placeholder,0.000,no_image
+587,辣椒酊剂,chili tincture,other,images/placeholders/other.png,placeholder,0.000,no_image
+589,饮料粉,drink powder,other,images/placeholders/other.png,placeholder,0.806,no_image
+593,椰子开心果泥,coconut pistachio puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+6,椰子泡沫,coconut foam,other,images/placeholders/other.png,placeholder,1.000,no_image
+603,柚子浸泡苦艾酒,yuzu infused absinthe,other,images/603_yuzu_infused_absinthe.png,cocktaildb,1.000,ok
+605,树莓果冻粉,raspberry jelly powder,other,images/placeholders/other.png,placeholder,1.000,no_image
+611,龙蒿酊剂,tarragon tincture,other,images/placeholders/other.png,placeholder,1.000,no_image
+612,热巧克力,hot chocolate,other,images/612_hot_chocolate.png,csv,1.000,ok
+619,可可,cocoa,other,images/619_cocoa.png,cocktaildb,1.000,ok
+623,菠菜,spinach,other,images/623_spinach.png,bing,1.000,ok
+631,玫瑰水,rose water,other,images/placeholders/other.png,placeholder,1.000,no_image
+637,酸甜混合液,sweet and sour mix,other,images/637_sweet_and_sour_mix.png,cocktaildb,1.000,ok
+638,糖荚豌豆,sugar snap peas,other,images/placeholders/other.png,placeholder,0.222,no_image
+640,椰子醋,coconut vinegar,other,images/placeholders/other.png,placeholder,1.000,no_image
+643,抹茶,matcha,other,images/643_matcha.png,bing,0.938,ok
+645,芹菜根泥,celery root puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+650,柑橘龙舌兰混合液,citrus agave mix,other,images/650_citrus_agave_mix.png,cocktaildb,1.000,ok
+652,墨西哥米浆,horchata,other,images/placeholders/other.png,placeholder,0.032,no_image
+661,石榴冰块,pomegranate ice cube,other,images/placeholders/other.png,placeholder,1.000,no_image
+665,方糖,sugar cube,other,images/665_sugar_cube.png,cocktaildb,0.981,ok
+666,木槿花茶,hibiscus tea,other,images/666_hibiscus_tea.png,cocktaildb,0.938,ok
+67,独活草,lovage,other,images/67_lovage.png,image_search,1.000,ok
+674,浓缩咖啡,espresso,other,images/674_espresso.png,csv,1.000,ok
+693,苹果果泥,apple puree,other,images/placeholders/other.png,placeholder,0.970,no_image
+696,咖啡,coffee,other,images/696_coffee.png,csv,1.000,ok
+709,南瓜泥,pumpkin puree,other,images/placeholders/other.png,placeholder,0.588,no_image
+71,香草腌料,vanilla marinade,other,images/placeholders/other.png,placeholder,0.908,no_image
+710,爪哇蒸馏酒,java distilled spirit,other,images/placeholders/other.png,placeholder,0.999,no_image
+714,梨西洋菜泥,pear watercress puree,other,images/placeholders/other.png,placeholder,1.000,no_image
+718,棒,stick,other,images/718_stick.png,bing,1.000,ok
+726,血橙雪葩,blood orange sorbet,other,images/placeholders/other.png,placeholder,1.000,no_image
+727,焦糖色,caramel color,other,images/727_caramel_color.png,bing,1.000,ok
+729,橙子奶油柠檬酸盐,orange cream citrate,other,images/placeholders/other.png,placeholder,0.868,no_image
+735,橄榄盐水,olive brine,other,images/735_olive_brine.png,cocktaildb,1.000,ok
+740,甜菜糖水,beet sugar water,other,images/placeholders/other.png,placeholder,1.000,no_image
+752,泡菜盐水,pickle brine,other,images/placeholders/other.png,placeholder,0.901,no_image
+76,黑皮诺浓缩汁,pinot noir concentrate,other,images/76_pinot_noir_concentrate.png,cocktaildb,0.943,ok
+760,克里奥尔醋饮,creole shrub,other,images/placeholders/other.png,placeholder,0.939,no_image
+777,果冻,jelly,other,images/777_jelly.png,bing,1.000,ok
+779,血腥玛丽调味料,bloody mary seasoning,other,images/placeholders/other.png,placeholder,1.000,no_image
+78,土豆汁,potato juice,other,images/78_potato_juice.png,image_search,0.000,ok
+786,蔗糖,cane sugar,other,images/786_cane_sugar.png,cocktaildb,0.981,ok
+792,细砂糖,caster sugar,other,images/792_caster_sugar.png,cocktaildb,0.981,ok
+793,红糖,brown sugar,other,images/793_brown_sugar.png,cocktaildb,1.000,ok
+795,巧克力,chocolate,other,images/795_chocolate.png,csv,1.000,ok
+802,混合植物香料,mixed botanical spices,other,images/placeholders/other.png,placeholder,0.752,no_image
+816,甜果酱,sweet jam,other,images/placeholders/other.png,placeholder,0.820,no_image
+82,包装,packaging,other,images/82_packaging.png,image_search,0.005,ok
+84,冰块,ice cube,other,images/84_ice_cube.png,csv,1.000,ok
+88,花生酱粉,peanut butter powder,other,images/88_peanut_butter_powder.png,image_search,0.000,ok
+89,草莓醋饮,strawberry shrub,other,images/placeholders/other.png,placeholder,0.990,no_image
+90,吧勺,bar spoon,other,images/90_bar_spoon.png,image_search,0.000,ok
+92,椰子酊剂,coconut tincture,other,images/92_coconut_tincture.png,image_search,1.000,ok
+94,烤丁香,roasted cloves,other,images/94_roasted_cloves.png,cocktaildb,1.000,ok
+98,去核,pitted,other,images/placeholders/other.png,placeholder,0.135,no_image
+126,汤力水,tonic water,soda,images/126_tonic_water.png,cocktaildb,0.997,ok
+14,沙士汽水,root beer,soda,images/14_root_beer.png,cocktaildb,1.000,ok
+15,苏打水,soda water,soda,images/15_soda_water.png,csv,1.000,ok
+158,姜汁汽水,ginger ale,soda,images/158_ginger_ale.png,cocktaildb,1.000,ok
+171,可乐,cola,soda,images/171_cola.png,csv,0.986,ok
+206,姜汁啤酒,ginger beer,soda,images/206_ginger_beer.png,cocktaildb,1.000,ok
+269,青柠汽水,lime soda,soda,images/269_lime_soda.png,cocktaildb,1.000,ok
+280,柠檬汽水,lemon soda,soda,images/280_lemon_soda.png,csv,0.946,ok
+292,碳酸饮料,carbonated drink,soda,images/292_carbonated_drink.png,cocktaildb,1.000,ok
+348,葡萄味汽水,grape soda,soda,images/348_grape_soda.png,csv,1.000,ok
+369,葡萄柚汽水,grapefruit soda,soda,images/placeholders/soda.png,placeholder,1.000,no_image
+389,薄荷苏打水,mint soda,soda,images/placeholders/soda.png,placeholder,0.947,no_image
+406,雪碧,sprite,soda,images/406_sprite.png,cocktaildb,0.946,ok
+410,西柚味气泡水,grapefruit sparkling water,soda,images/410_grapefruit_sparkling_water.png,cocktaildb,1.000,ok
+476,气泡苹果汁,sparkling apple cider,soda,images/476_sparkling_apple_cider.png,cocktaildb,1.000,ok
+506,苦柠檬汽水,bitter lemon soda,soda,images/506_bitter_lemon_soda.png,cocktaildb,0.991,ok
+51,粉红葡萄柚苏打水,pink grapefruit soda,soda,images/51_pink_grapefruit_soda.png,image_search,1.000,ok
+599,汤力苦精,tonic bitters,soda,images/599_tonic_bitters.png,cocktaildb,0.997,ok
+641,气泡水,sparkling water,soda,images/641_sparkling_water.png,cocktaildb,1.000,ok
+663,汤力冰块,tonic ice cube,soda,images/663_tonic_ice_cube.png,cocktaildb,0.997,ok
+720,杏仁奶油苏打水,almond cream soda,soda,images/placeholders/soda.png,placeholder,1.000,no_image
+745,汽水,soda,soda,images/placeholders/soda.png,placeholder,1.000,no_image
+11,香料杏子糖浆,spiced apricot syrup,syrup,images/placeholders/syrup.png,placeholder,,not_found
+111,香草糖浆,vanilla syrup,syrup,images/placeholders/syrup.png,placeholder,0.617,no_image
+116,德梅拉拉糖浆,demerara syrup,syrup,images/placeholders/syrup.png,placeholder,0.678,no_image
+119,梨味糖浆,pear syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+133,香料糖浆,spiced syrup,syrup,images/placeholders/syrup.png,placeholder,0.525,no_image
+144,玫瑰梨糖浆,rose pear syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+146,橙味糖浆,orange syrup,syrup,images/146_orange_syrup.png,image_search,0.951,ok
+147,龙舌兰糖浆,agave syrup,syrup,images/147_agave_syrup.png,cocktaildb,1.000,ok
+16,覆盆子白胡椒糖浆,raspberry white pepper syrup,syrup,images/16_raspberry_white_pepper_syrup.png,image_search,1.000,low_conf
+166,百香果糖浆,passion fruit syrup,syrup,images/166_passion_fruit_syrup.png,image_search,0.237,ok
+169,月桂叶糖浆,bay leaf syrup,syrup,images/placeholders/syrup.png,placeholder,0.851,no_image
+18,椰子糖浆,coconut syrup,syrup,images/18_coconut_syrup.png,cocktaildb,0.980,ok
+180,姜糖浆,ginger syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+183,可乐糖浆,cola syrup,syrup,images/183_cola_syrup.png,image_search,0.979,ok
+194,蜂蜜糖浆,honey syrup,syrup,images/194_honey_syrup.png,cocktaildb,1.000,ok
+198,蔗糖糖浆,cane sugar syrup,syrup,images/198_cane_sugar_syrup.png,cocktaildb,1.000,ok
+199,梨子糖浆,pear syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+209,咖啡糖浆,coffee syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+213,柠檬马鞭草糖浆,lemon verbena syrup,syrup,images/placeholders/syrup.png,placeholder,0.977,no_image
+218,肉桂烟椒糖浆,cinnamon smoked pepper syrup,syrup,images/placeholders/syrup.png,placeholder,0.910,no_image
+223,接骨木花糖浆,elderflower syrup,syrup,images/223_elderflower_syrup.png,csv,1.000,ok
+225,莳萝糖浆,dill syrup,syrup,images/placeholders/syrup.png,placeholder,0.156,no_image
+229,柠檬草姜糖浆,lemongrass ginger syrup,syrup,images/placeholders/syrup.png,placeholder,0.000,no_image
+233,姜肉桂糖浆,ginger cinnamon syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+246,椰子糖血橙糖浆,coconut blood orange syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+262,菠萝糖浆,pineapple syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+267,坚果香料糖浆,nut spice syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+268,橙味枫糖浆,orange maple syrup,syrup,images/268_orange_maple_syrup.png,cocktaildb,1.000,ok
+293,焦糖德梅拉拉糖浆,caramel demerara syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+295,辣味橙糖浆,spicy orange syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+312,月桂蜂蜜糖浆,bay honey syrup,syrup,images/placeholders/syrup.png,placeholder,0.851,no_image
+315,迷迭香糖浆,rosemary syrup,syrup,images/placeholders/syrup.png,placeholder,0.807,no_image
+317,草莓糖浆,strawberry syrup,syrup,images/placeholders/syrup.png,placeholder,0.990,no_image
+320,姜味柑橘龙舌兰糖浆,ginger citrus agave syrup,syrup,images/320_ginger_citrus_agave_syrup.png,cocktaildb,1.000,ok
+330,糖浆,syrup,syrup,images/330_syrup.png,cocktaildb,1.000,ok
+336,芝麻蜂蜜,sesame honey,syrup,images/336_sesame_honey.png,cocktaildb,1.000,ok
+340,烤山核桃糖浆,toasted pecan syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+35,混合糖浆,mixed syrup,syrup,images/placeholders/syrup.png,placeholder,0.802,no_image
+372,蜂蜜辣椒糖浆,honey chili syrup,syrup,images/placeholders/syrup.png,placeholder,0.961,no_image
+373,木槿花糖浆,hibiscus syrup,syrup,images/placeholders/syrup.png,placeholder,0.018,no_image
+402,百香果浓缩液,passion fruit concentrate,syrup,images/placeholders/syrup.png,placeholder,0.002,no_image
+414,木槿罗勒花糖浆,hibiscus basil syrup,syrup,images/placeholders/syrup.png,placeholder,0.018,no_image
+418,无花果肉桂糖浆,fig cinnamon syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+424,肉桂蜂蜜糖浆,cinnamon honey syrup,syrup,images/placeholders/syrup.png,placeholder,0.910,no_image
+428,巧克力糖浆,chocolate syrup,syrup,images/428_chocolate_syrup.png,csv,0.947,ok
+444,红茶糖浆,black tea syrup,syrup,images/placeholders/syrup.png,placeholder,0.010,no_image
+453,烟熏枫糖浆,smoked maple syrup,syrup,images/453_smoked_maple_syrup.png,cocktaildb,1.000,ok
+465,椰奶糖浆,coconut cream syrup,syrup,images/465_coconut_cream_syrup.png,cocktaildb,0.980,ok
+467,辣椒糖浆,chili syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+48,薰衣草糖浆,lavender syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+489,简单糖浆,simple syrup,syrup,images/489_simple_syrup.png,cocktaildb,1.000,ok
+52,百里香糖浆,thyme syrup,syrup,images/placeholders/syrup.png,placeholder,0.999,no_image
+524,糖蜜,molasses,syrup,images/524_molasses.png,bing,0.022,low_white
+5266,法勒南,Falernum,syrup,images/5266_Falernum.png,cocktaildb,0.964,ok
+529,黑加仑糖浆,blackcurrant syrup,syrup,images/placeholders/syrup.png,placeholder,0.885,no_image
+53,汤力糖浆,tonic syrup,syrup,images/placeholders/syrup.png,placeholder,0.919,no_image
+533,枫糖浆,maple syrup,syrup,images/533_maple_syrup.png,cocktaildb,1.000,ok
+540,洋甘菊茶糖浆,chamomile tea syrup,syrup,images/placeholders/syrup.png,placeholder,0.632,no_image
+547,大黄糖浆,rhubarb syrup,syrup,images/placeholders/syrup.png,placeholder,0.067,no_image
+551,七香糖浆,seven spice syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+554,伯爵茶糖浆,earl grey tea syrup,syrup,images/placeholders/syrup.png,placeholder,0.094,no_image
+557,花味糖浆,floral syrup,syrup,images/placeholders/syrup.png,placeholder,0.998,no_image
+565,浓糖浆,rich syrup,syrup,images/565_rich_syrup.png,cocktaildb,1.000,ok
+582,蜂蜜姜糖浆,honey ginger syrup,syrup,images/582_honey_ginger_syrup.png,cocktaildb,1.000,ok
+59,果味糖浆,fruit syrup,syrup,images/placeholders/syrup.png,placeholder,0.993,no_image
+598,樱桃杏仁糖浆,cherry almond syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+60,浓蔗糖糖浆,rich sugar syrup,syrup,images/60_rich_sugar_syrup.png,cocktaildb,1.000,ok
+627,肉桂糖浆,cinnamon syrup,syrup,images/placeholders/syrup.png,placeholder,0.910,no_image
+644,酸樱桃糖浆,sour cherry syrup,syrup,images/placeholders/syrup.png,placeholder,0.163,no_image
+659,蜂蜜肉桂糖浆,honey cinnamon syrup,syrup,images/659_honey_cinnamon_syrup.png,cocktaildb,1.000,ok
+66,青柠罗望子复合糖浆,lime tamarind syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+667,肉桂姜糖浆,cinnamon ginger syrup,syrup,images/placeholders/syrup.png,placeholder,0.910,no_image
+670,泰国罗勒糖浆,thai basil syrup,syrup,images/placeholders/syrup.png,placeholder,0.303,no_image
+675,血橙糖浆,blood orange syrup,syrup,images/placeholders/syrup.png,placeholder,0.838,no_image
+684,浓德梅拉拉糖浆,rich demerara syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+698,覆盆子糖浆,raspberry syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+699,沙士糖浆,root beer syrup,syrup,images/placeholders/syrup.png,placeholder,0.971,no_image
+703,甘蔗糖浆,cane sugar syrup,syrup,images/703_cane_sugar_syrup.png,cocktaildb,1.000,ok
+713,大吉岭茶糖浆,darjeeling tea syrup,syrup,images/placeholders/syrup.png,placeholder,0.260,no_image
+715,樱桃糖浆,cherry syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+716,玉米糖浆,corn syrup,syrup,images/placeholders/syrup.png,placeholder,0.996,no_image
+725,法勒南糖浆,falernum syrup,syrup,images/725_falernum_syrup.png,cocktaildb,0.964,ok
+730,草莓覆盆子糖浆,strawberry raspberry syrup,syrup,images/placeholders/syrup.png,placeholder,0.990,no_image
+738,深色枫糖浆,dark maple syrup,syrup,images/738_dark_maple_syrup.png,cocktaildb,1.000,ok
+74,杏仁糖浆,orgeat almond syrup,syrup,images/74_orgeat_almond_syrup.png,cocktaildb,1.000,ok
+751,香料红糖糖浆,spiced brown sugar syrup,syrup,images/751_spiced_brown_sugar_syrup.png,cocktaildb,1.000,ok
+766,小豆蔻糖浆,cardamom syrup,syrup,images/placeholders/syrup.png,placeholder,0.000,no_image
+79,石榴糖浆,grenadine,syrup,images/79_grenadine.png,csv,0.979,ok
+796,蔓越莓糖浆,cranberry syrup,syrup,images/placeholders/syrup.png,placeholder,0.998,no_image
+8,姜味糖浆,ginger syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+800,柠檬糖浆,lemon syrup,syrup,images/placeholders/syrup.png,placeholder,0.977,no_image
+801,开心果糖浆,pistachio syrup,syrup,images/placeholders/syrup.png,placeholder,,not_found
+805,阿拉伯胶糖浆,gum arabic syrup,syrup,images/placeholders/syrup.png,placeholder,1.000,no_image
+810,糖渍姜,candied ginger,syrup,images/810_candied_ginger.png,cocktaildb,1.000,ok
+9,红糖糖浆,brown sugar syrup,syrup,images/9_brown_sugar_syrup.png,cocktaildb,1.000,ok
+93,薄荷糖浆,mint syrup,syrup,images/93_mint_syrup.png,image_search,1.000,ok
+107,桃红葡萄酒,rose wine,wine_beer,images/107_rose_wine.png,image_search,1.000,ok
+117,欧罗索雪利酒,oloroso sherry,wine_beer,images/117_oloroso_sherry.png,cocktaildb,0.975,ok
+129,干型阿蒙提拉多雪莉酒,dry amontillado sherry,wine_beer,images/129_dry_amontillado_sherry.png,cocktaildb,0.975,ok
+149,阿蒙蒂亚雪莉酒,amontillado sherry,wine_beer,images/149_amontillado_sherry.png,cocktaildb,0.975,ok
+150,鲜苹果酒,fresh cider,wine_beer,images/150_fresh_cider.png,cocktaildb,1.000,ok
+176,莫斯卡托甜白葡萄酒,moscato sweet white wine,wine_beer,images/176_moscato_sweet_white_wine.png,cocktaildb,1.000,ok
+19,艾尔啤酒,ale beer,wine_beer,images/19_ale_beer.png,cocktaildb,1.000,ok
+2,干型奥罗露索雪莉酒,dry oloroso sherry,wine_beer,images/2_dry_oloroso_sherry.png,cocktaildb,0.975,ok
+20,干雷司令葡萄酒,dry riesling wine,wine_beer,images/20_dry_riesling_wine.png,cocktaildb,1.000,ok
+220,红葡萄酒,red wine,wine_beer,images/220_red_wine.png,cocktaildb,0.943,ok
+226,葡萄酒,wine,wine_beer,images/226_wine.png,cocktaildb,0.926,ok
+250,印度淡色艾尔啤酒,India pale ale IPA,wine_beer,images/250_India_pale_ale_IPA.png,cocktaildb,0.975,ok
+264,金鸡纳味美思,quinquina vermouth,wine_beer,images/264_quinquina_vermouth.png,cocktaildb,0.930,ok
+27,马德拉酒,madeira wine,wine_beer,images/27_madeira_wine.png,cocktaildb,0.993,ok
+275,梨子酒,pear wine,wine_beer,images/275_pear_wine.png,cocktaildb,0.926,ok
+300,雪莉酒,sherry,wine_beer,images/300_sherry.png,cocktaildb,0.975,ok
+304,拉格啤酒,lager beer,wine_beer,images/304_lager_beer.png,cocktaildb,1.000,ok
+306,起泡红葡萄酒,sparkling red wine,wine_beer,images/306_sparkling_red_wine.png,cocktaildb,0.943,ok
+321,强化桃红葡萄酒,fortified rose wine,wine_beer,images/placeholders/wine_beer.png,placeholder,0.291,no_image
+322,麝香葡萄酒,muscat wine,wine_beer,images/322_muscat_wine.png,cocktaildb,1.000,ok
+328,圣诞啤酒,Christmas beer,wine_beer,images/328_Christmas_beer.png,cocktaildb,0.975,ok
+337,甜白葡萄酒,sweet white wine,wine_beer,images/337_sweet_white_wine.png,cocktaildb,1.000,ok
+339,龙胆开胃酒,gentian aperitif,wine_beer,images/339_gentian_aperitif.png,cocktaildb,1.000,ok
+352,苹果酒浓缩液,cider concentrate,wine_beer,images/352_cider_concentrate.png,cocktaildb,1.000,ok
+368,甜苹果酒,sweet cider,wine_beer,images/368_sweet_cider.png,cocktaildb,1.000,ok
+374,啤酒,beer,wine_beer,images/374_beer.png,csv,0.975,ok
+394,波特酒,port wine,wine_beer,images/394_port_wine.png,cocktaildb,0.982,ok
+397,波特啤酒,porter beer,wine_beer,images/397_porter_beer.png,cocktaildb,0.975,ok
+400,蒸汽啤酒,steam beer,wine_beer,images/400_steam_beer.png,cocktaildb,0.975,ok
+405,强化白葡萄酒,fortified white wine,wine_beer,images/405_fortified_white_wine.png,cocktaildb,1.000,ok
+417,干白葡萄酒,dry white wine,wine_beer,images/417_dry_white_wine.png,cocktaildb,1.000,ok
+429,甜起泡红葡萄酒,sweet sparkling red wine,wine_beer,images/429_sweet_sparkling_red_wine.png,cocktaildb,0.943,ok
+442,咖啡浸泡雪莉酒,coffee infused sherry,wine_beer,images/442_coffee_infused_sherry.png,cocktaildb,0.975,ok
+447,红宝石波特酒,ruby port,wine_beer,images/447_ruby_port.png,cocktaildb,0.982,ok
+449,红石榴糖浆啤酒,grenadine beer,wine_beer,images/449_grenadine_beer.png,cocktaildb,0.975,ok
+451,南瓜苹果酒,pumpkin cider,wine_beer,images/451_pumpkin_cider.png,cocktaildb,1.000,ok
+456,强化葡萄酒,fortified wine,wine_beer,images/456_fortified_wine.png,cocktaildb,0.926,ok
+461,白葡萄酒,white wine,wine_beer,images/461_white_wine.png,cocktaildb,1.000,ok
+492,起泡酒,sparkling wine,wine_beer,images/492_sparkling_wine.png,csv,0.932,ok
+493,热苹果酒,hot cider,wine_beer,images/493_hot_cider.png,cocktaildb,1.000,ok
+553,浊酒,cloudy sake,wine_beer,images/553_cloudy_sake.png,cocktaildb,1.000,ok
+562,黑啤酒,dark beer stout,wine_beer,images/562_dark_beer_stout.png,csv,0.985,ok
+572,开胃葡萄酒,aperitif wine,wine_beer,images/572_aperitif_wine.png,cocktaildb,0.979,ok
+580,菲诺雪莉酒,fino sherry,wine_beer,images/580_fino_sherry.png,cocktaildb,0.975,ok
+594,白波特酒,white port,wine_beer,images/594_white_port.png,cocktaildb,0.982,ok
+618,海苔浸渍清酒,nori infused sake,wine_beer,images/618_nori_infused_sake.png,cocktaildb,1.000,ok
+622,利莱开胃酒,Lillet aperitif,wine_beer,images/622_Lillet_aperitif.png,cocktaildb,0.979,ok
+651,佩德罗希梅内斯雪莉酒,Pedro Ximenez sherry,wine_beer,images/651_Pedro_Ximenez_sherry.png,cocktaildb,0.975,ok
+654,麦芽啤酒,malt beer,wine_beer,images/654_malt_beer.png,cocktaildb,0.975,ok
+672,清酒,sake,wine_beer,images/672_sake.png,cocktaildb,1.000,ok
+721,香槟,champagne,wine_beer,images/721_champagne.png,cocktaildb,0.932,ok
+757,干型香槟,dry champagne,wine_beer,images/757_dry_champagne.png,cocktaildb,0.932,ok
+773,阿蒙提拉多雪莉酒,amontillado sherry,wine_beer,images/773_amontillado_sherry.png,cocktaildb,0.975,ok
+784,苹果酒,cider,wine_beer,images/784_cider.png,csv,1.000,ok
+790,曼萨尼亚雪莉酒,manzanilla sherry,wine_beer,images/790_manzanilla_sherry.png,cocktaildb,0.975,ok
+91,加强葡萄酒,fortified wine,wine_beer,images/91_fortified_wine.png,cocktaildb,0.926,ok
+99,干型起泡酒,dry sparkling wine,wine_beer,images/99_dry_sparkling_wine.png,cocktaildb,0.951,ok

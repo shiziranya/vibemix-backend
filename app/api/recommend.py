@@ -93,20 +93,70 @@ def stream_recommend():
     def generate():
         session_id, event_gen = recommend_service.stream_recommend(user_id=user_id, prefs=prefs)
         # Immediately send session_id so the client can reference it for /refresh
-        yield f"data: {_json.dumps({'type': 'session', 'session_id': session_id}, ensure_ascii=False)}\n\n"
+        data_line = f"data: {_json.dumps({'type': 'session', 'session_id': session_id}, ensure_ascii=False)}\n\n"
+        yield data_line.encode('utf-8')
         for event in event_gen:
             # batch1 also carries session_id for convenience
             if event.get("type") == "batch1":
                 event["session_id"] = session_id
-            yield f"data: {_json.dumps(event, ensure_ascii=False)}\n\n"
+            data_line = f"data: {_json.dumps(event, ensure_ascii=False)}\n\n"
+            yield data_line.encode('utf-8')
 
     return Response(
         stream_with_context(generate()),
-        mimetype="text/event-stream",
+        mimetype="text/event-stream; charset=utf-8",
         headers={
             "Cache-Control": "no-cache",
             "X-Accel-Buffering": "no",  # disable nginx buffering
             "Connection": "keep-alive",
+            "Content-Encoding": "identity",  # disable gzip for this endpoint
+        },
+    )
+
+
+@recommend_bp.route("/stream_refresh", methods=["POST"])
+@jwt_required()
+def stream_refresh_recommend():
+    """SSE streaming refresh (换一杯) endpoint.
+    
+    Sends Server-Sent Events with the same format as /stream:
+      data: {"type":"batch1",...}
+      data: {"type":"batch2",...}
+      data: {"type":"batch3",...}
+      data: {"type":"done"}
+      data: {"type":"error","message":"..."}
+    """
+    user_id = get_jwt_identity()
+
+    if not _check_rate_limit(user_id):
+        return error(4299, "请求过于频繁，请稍后再试", 429)
+
+    data = request.get_json(silent=True) or {}
+    session_id = data.get("session_id", "").strip()
+    if not session_id:
+        return error(4101, "session_id 必填", 422)
+
+    def generate():
+        try:
+            event_gen = recommend_service.stream_refresh(user_id=user_id, session_id=session_id)
+            for event in event_gen:
+                # batch1 carries session_id for convenience
+                if event.get("type") == "batch1":
+                    event["session_id"] = session_id
+                data_line = f"data: {_json.dumps(event, ensure_ascii=False)}\n\n"
+                yield data_line.encode('utf-8')
+        except Exception as e:
+            data_line = f"data: {_json.dumps({'type': 'error', 'message': str(e)}, ensure_ascii=False)}\n\n"
+            yield data_line.encode('utf-8')
+
+    return Response(
+        stream_with_context(generate()),
+        mimetype="text/event-stream; charset=utf-8",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",  # disable nginx buffering
+            "Connection": "keep-alive",
+            "Content-Encoding": "identity",  # disable gzip for this endpoint
         },
     )
 

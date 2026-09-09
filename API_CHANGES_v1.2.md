@@ -68,7 +68,31 @@ DELETE /api/cabinet/items/5     （family_id）
 
 传入的 ID 含义从**原料 ID** 变为**品类 ID**。
 
-### Response `200`（结构不变，同 `GET /api/cabinet/stats`）
+### Response `200`
+
+返回值包含统计信息 + 删除导致的配方减少数：
+
+```json
+{
+  "code": 0,
+  "data": {
+    "total": 5,
+    "base_spirit_count": 3,
+    "modifier_count": 2,
+    "unlocked_recipe_count": 42,
+    "recipes_lost": 8  // 新增：删除该品类导致减少的配方数
+  },
+  "message": "ok"
+}
+```
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `total` | int | 酒柜中总品类数 |
+| `base_spirit_count` | int | 基酒数量 |
+| `modifier_count` | int | 辅料数量 |
+| `unlocked_recipe_count` | int | 当前可调配方总数 |
+| `recipes_lost` | int | 删除该品类导致减少的配方数（**新增**） |
 
 ---
 

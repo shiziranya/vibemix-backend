@@ -8,13 +8,7 @@ from flask_jwt_extended import get_jwt_identity, jwt_required
 from ..extensions import db
 from ..models.cocktail import Cocktail
 from ..models.share_card import ShareCard
-from ..services.card_templates import (
-    DEFAULT_TEMPLATE_ID,
-    FONT_ROLES,
-    get_template,
-    get_required_font_roles,
-    list_templates,
-)
+from ..services.card_gen_client import card_gen_client
 from ..tasks.card_tasks import async_generate_card
 from ..utils.errors import AppError, CardNotFound, ValidationError
 from ..utils.response import error, success
@@ -35,11 +29,49 @@ def handle_app_error(e: AppError):
 def get_templates():
     """
     GET /api/card/templates
-    返回所有模板摘要列表（平铺，不含 text_layers 和 decorations）。
+    返回 card_gen 服务提供的所有模板名称列表（33个模板）。
     """
+    templates = card_gen_client.get_available_templates()
+    if not templates:
+        return error(5001, "无法获取模板列表，card_gen 服务可能未启动", 503)
+    
+    # 随机选择一个作为默认模板（用于前端随机选择）
+    import random
+    default_template = random.choice(templates) if templates else None
+    
     return success({
-        "templates": list_templates(),
-        "default_template_id": DEFAULT_TEMPLATE_ID,
+        "templates": templates,
+        "total": len(templates),
+        "default_template_id": default_template,
+        "note": "建议前端随机选择一个模板用于卡片生成"
+    })
+
+
+@card_bp.route("/templates/with-ingredients", methods=["GET"])
+@jwt_required()
+def get_ingredient_templates():
+    """
+    GET /api/card/templates/with-ingredients
+    获取支持显示配料的模板列表（推荐用于生成卡片）。
+    
+    这些模板在 card_gen 服务的 ContentSlot 配置中设置了 show_ingredients=True，
+    可以正确显示配料列表而不是标签。
+    """
+    # 支持配料显示的模板（基于 card_gen/app/analysis/content_select.py 分析）
+    INGREDIENT_TEMPLATES = [
+        'vesper', 'strata', 'herald', 'docket', 'carte',
+        'lucent', 'vitrine', 'index', 'haze', 'remedy',
+        'entry', 'materia', 'vinyl', 'saffron'
+    ]
+    
+    all_templates = card_gen_client.get_available_templates()
+    filtered = [t for t in all_templates if t in INGREDIENT_TEMPLATES]
+    
+    return success({
+        "templates": filtered,
+        "total": len(filtered),
+        "note": "这些模板支持显示配料列表，推荐用于生成卡片",
+        "usage": "从这些模板中随机选择一个，确保卡片显示配料而不是标签"
     })
 
 
@@ -48,26 +80,16 @@ def get_templates():
 def get_template_detail(template_id: str):
     """
     GET /api/card/templates/:template_id
-    返回单个模板的完整定义（含 text_layers、decorations、fonts 信息），
-    前端用于实时 Canvas 预览。同时返回该模板所需的 font_roles 信息，
-    前端可据此批量加载 Google Fonts。
+    验证模板是否存在于 card_gen 服务中。
     """
-    tmpl = get_template(template_id)
-    if not tmpl:
-        return error(4207, "模板不存在", 404)
-
-    # 附上该模板用到的字体角色及其 Google Fonts URL，方便前端批量加载
-    required_roles = get_required_font_roles(template_id)
-    fonts_needed = {role: FONT_ROLES[role] for role in required_roles if role in FONT_ROLES}
-    # 前端不需要 backend_files，过滤掉
-    fonts_for_frontend = {
-        role: {k: v for k, v in info.items() if k != "backend_files"}
-        for role, info in fonts_needed.items()
-    }
+    templates = card_gen_client.get_available_templates()
+    if template_id not in templates:
+        return error(4207, f"模板 '{template_id}' 不存在", 404)
 
     return success({
-        "template": tmpl,
-        "fonts": fonts_for_frontend,
+        "template_id": template_id,
+        "exists": True,
+        "note": "该模板由 card_gen 服务提供"
     })
 
 
@@ -105,12 +127,20 @@ def upload_photo():
 def generate_card():
     """
     POST /api/card/generate
-    触发异步卡片合成。
+    触发异步卡片合成，使用 card_gen 服务生成高质量卡片。
 
-    Body 新增字段：
-      template_id    str   模板 ID，不传则使用默认模板
-      text_overrides dict  前端拖拽产生的文字层位置覆盖
-                           格式：{"layer_id": {"x": 0.06, "y": 0.65}, ...}
+    Body 字段：
+      cocktail_id        int     必填：鸡尾酒ID
+      session_id         str     可选：推荐会话ID
+      template_id        str     可选：模板ID，不传则随机选择
+      user_photo_url     str     可选：用户上传的图片URL
+      mood_caption       str     可选：心情描述
+      ai_copy            str     可选：AI诗意文案
+      ai_reason          str     可选：AI推荐理由
+      ai_tweaks          dict    可选：配方调整（原创模式）
+      prototype_name     str     可选：原型鸡尾酒名称（原创模式）
+      prototype_name_zh  str     可选：原型鸡尾酒中文名（原创模式）
+      ingredients        list    可选：配料列表
     """
     user_id = get_jwt_identity()
     data = request.get_json(silent=True) or {}
@@ -124,17 +154,26 @@ def generate_card():
     if not cocktail:
         return error(4203, "配方不存在", 404)
 
-    template_id = params.get("template_id") or DEFAULT_TEMPLATE_ID
-    text_overrides = params.get("text_overrides") or {}
+    # 获取或随机选择模板
+    template_id = params.get("template_id")
+    if not template_id:
+        templates = card_gen_client.get_available_templates()
+        if templates:
+            import random
+            template_id = random.choice(templates)
+        else:
+            return error(5001, "无法获取模板列表，card_gen 服务可能未启动", 503)
 
     card = ShareCard(
         id=uuid.uuid4(),
         user_id=uuid.UUID(user_id),
         cocktail_id=params["cocktail_id"],
+        cocktail_name=data.get("cocktail_name") or cocktail.name_zh or cocktail.name,
+        ai_poetic=data.get("ai_copy", ""),
         session_id=params.get("session_id"),
         layout="portrait",
         template_id=template_id,
-        text_overrides=text_overrides,
+        text_overrides={},
         user_photo_url=params.get("user_photo_url"),
         mood_caption=params.get("mood_caption", ""),
         status="pending",
@@ -143,14 +182,19 @@ def generate_card():
     db.session.commit()
 
     task_params = {
-        "cocktail_name":    cocktail.name,
-        "cocktail_name_zh": cocktail.name_zh or cocktail.name,
+        "cocktail_id":      params["cocktail_id"],
+        "session_id":       params.get("session_id"),
+        "cocktail_name":    data.get("cocktail_name") or cocktail.name,
+        "cocktail_name_zh": data.get("cocktail_name_zh") or cocktail.name_zh or cocktail.name,
         "ai_copy":          data.get("ai_copy", ""),
+        "ai_reason":        data.get("ai_reason", ""),
         "mood_caption":     params.get("mood_caption", ""),
+        "ai_tweaks":        data.get("ai_tweaks"),
+        "prototype_name":   data.get("prototype_name"),
+        "prototype_name_zh": data.get("prototype_name_zh"),
         "ingredients":      data.get("ingredients", []),
         "user_photo_url":   params.get("user_photo_url"),
         "template_id":      template_id,
-        "text_overrides":   text_overrides,
     }
 
     try:
@@ -164,7 +208,7 @@ def generate_card():
         except Exception as sync_err:
             current_app.logger.error("Sync card generation failed: %s", sync_err)
 
-    return success({"card_id": str(card.id), "status": "pending"}, http_status=202)
+    return success({"card_id": str(card.id), "status": "pending", "template_id": template_id}, http_status=202)
 
 
 # ── 前端直接上传卡片图片 ────────────────────────────────────────────────────────
@@ -175,13 +219,11 @@ def submit_card():
     """
     POST /api/card/submit
     前端 Canvas 渲染完毕后将图片直接上传，后端存储并立即返回结果。
-    预览与最终结果由同一份 Canvas 代码生成，保证完全一致。
 
     multipart/form-data:
         image          file   必填，Canvas 导出的 PNG 或 JPEG（最大 20 MB）
         cocktail_id    int    必填
-        template_id    str    可选，默认使用默认模板
-        text_overrides str    可选，JSON 字符串，格式同 /generate
+        template_id    str    可选，默认随机选择
         session_id     str    可选
         user_photo_url str    可选
         mood_caption   str    可选
@@ -194,14 +236,12 @@ def submit_card():
     file = request.files["image"]
 
     # Determine format from Content-Type first (reliable), then filename fallback.
-    # canvas.toBlob() defaults to image/png even when the filename says .jpg.
     content_type = (file.content_type or "").lower()
     if "png" in content_type:
         mime_ext = "png"
     elif "jpeg" in content_type or "jpg" in content_type:
         mime_ext = "jpg"
     else:
-        # Fall back to filename extension
         raw_ext = (file.filename.rsplit(".", 1)[-1] if file.filename and "." in file.filename else "").lower()
         if raw_ext == "png":
             mime_ext = "png"
@@ -214,21 +254,24 @@ def submit_card():
     if len(image_data) > 20 * 1024 * 1024:
         return error(4101, "文件大小不能超过 20MB", 422)
 
-    # ── 解析表单字段 ──
+    # 解析表单字段
+    cocktail_id_raw = request.form.get("cocktail_id")
+    if not cocktail_id_raw:
+        return error(4101, "cocktail_id 必填", 422)
+    
     try:
-        cocktail_id = int(request.form.get("cocktail_id", ""))
+        cocktail_id = int(cocktail_id_raw)
     except (ValueError, TypeError):
-        return error(4101, "cocktail_id 必填且必须是整数", 422)
+        return error(4101, "cocktail_id 必须是整数或可转换为整数的字符串", 422)
 
-    raw_overrides = request.form.get("text_overrides") or "{}"
-    try:
-        text_overrides = json.loads(raw_overrides)
-        if not isinstance(text_overrides, dict):
-            text_overrides = {}
-    except Exception:
-        text_overrides = {}
+    # 获取或随机选择模板
+    template_id = request.form.get("template_id")
+    if not template_id:
+        templates = card_gen_client.get_available_templates()
+        if templates:
+            import random
+            template_id = random.choice(templates)
 
-    template_id = request.form.get("template_id") or DEFAULT_TEMPLATE_ID
     session_id = request.form.get("session_id")
     user_photo_url = request.form.get("user_photo_url")
     mood_caption = request.form.get("mood_caption", "")
@@ -244,10 +287,11 @@ def submit_card():
         id=card_id,
         user_id=uuid.UUID(user_id),
         cocktail_id=cocktail_id,
+        cocktail_name=cocktail.name_zh or cocktail.name,
         session_id=session_id,
         layout="portrait",
         template_id=template_id,
-        text_overrides=text_overrides,
+        text_overrides={},
         user_photo_url=user_photo_url,
         mood_caption=mood_caption,
         image_url=image_url,
@@ -257,7 +301,7 @@ def submit_card():
     db.session.commit()
 
     return success(
-        {"card_id": str(card_id), "image_url": image_url, "status": "done"},
+        {"card_id": str(card_id), "image_url": image_url, "status": "done", "template_id": template_id},
         http_status=201,
     )
 
@@ -283,31 +327,119 @@ def get_card(card_id: str):
 @card_bp.route("/my", methods=["GET"])
 @jwt_required()
 def my_cards():
+    """
+    GET /api/card/my
+    获取当前用户的卡片列表。
+    
+    查询参数：
+      page          int    页码（默认 1）
+      per_page      int    每页数量（默认 20，最大 50）
+      include_temp  bool   是否包含未收藏的临时卡片（默认 false）
+    
+    默认只返回已收藏的卡片，未收藏的卡片会在 24 小时后自动清理。
+    """
     user_id = get_jwt_identity()
     page = request.args.get("page", 1, type=int)
     per_page = min(request.args.get("per_page", 20, type=int), 50)
+    include_temp = request.args.get("include_temp", "false").lower() == "true"
 
-    total = (
-        db.session.query(ShareCard)
-        .filter_by(user_id=uuid.UUID(user_id))
-        .count()
-    )
+    # 构建查询
+    query = db.session.query(ShareCard).filter_by(user_id=uuid.UUID(user_id))
+    
+    # 默认只返回已收藏的卡片
+    if not include_temp:
+        query = query.filter_by(is_favorited=True)
+
+    total = query.count()
     cards = (
-        db.session.query(ShareCard)
-        .filter_by(user_id=uuid.UUID(user_id))
-        .order_by(ShareCard.created_at.desc())
+        query.order_by(ShareCard.created_at.desc())
         .offset((page - 1) * per_page)
         .limit(per_page)
         .all()
     )
+    
     return success(
         {
             "items": [c.to_dict() for c in cards],
             "total": total,
             "page": page,
             "per_page": per_page,
+            "include_temp": include_temp,
+            "note": "默认只显示收藏的卡片，未收藏的卡片会在 24 小时后自动清理"
         }
     )
+
+
+# ── 卡片收藏 ──────────────────────────────────────────────────────────────────
+
+@card_bp.route("/<card_id>/favorite", methods=["POST"])
+@jwt_required()
+def favorite_card(card_id: str):
+    """
+    POST /api/card/{card_id}/favorite
+    收藏卡片。收藏后的卡片会永久保存，不会被自动清理。
+    """
+    user_id = get_jwt_identity()
+    
+    try:
+        card_uuid = uuid.UUID(card_id)
+    except ValueError:
+        return error(4101, "card_id 格式不正确", 422)
+    
+    card = db.session.get(ShareCard, card_uuid)
+    if not card or str(card.user_id) != user_id:
+        raise CardNotFound()
+    
+    if card.is_favorited:
+        return success({
+            "card_id": str(card.id),
+            "is_favorited": True,
+            "message": "卡片已经收藏过了"
+        })
+    
+    card.is_favorited = True
+    db.session.commit()
+    
+    return success({
+        "card_id": str(card.id),
+        "is_favorited": True,
+        "message": "收藏成功"
+    })
+
+
+@card_bp.route("/<card_id>/favorite", methods=["DELETE"])
+@jwt_required()
+def unfavorite_card(card_id: str):
+    """
+    DELETE /api/card/{card_id}/favorite
+    取消收藏卡片。取消收藏后，卡片会在 24 小时后被自动清理。
+    """
+    user_id = get_jwt_identity()
+    
+    try:
+        card_uuid = uuid.UUID(card_id)
+    except ValueError:
+        return error(4101, "card_id 格式不正确", 422)
+    
+    card = db.session.get(ShareCard, card_uuid)
+    if not card or str(card.user_id) != user_id:
+        raise CardNotFound()
+    
+    if not card.is_favorited:
+        return success({
+            "card_id": str(card.id),
+            "is_favorited": False,
+            "message": "卡片本来就没有收藏"
+        })
+    
+    card.is_favorited = False
+    db.session.commit()
+    
+    return success({
+        "card_id": str(card.id),
+        "is_favorited": False,
+        "message": "已取消收藏，该卡片将在 24 小时后被自动清理"
+    })
 
 
 # ── Storage helpers ────────────────────────────────────────────────────────────

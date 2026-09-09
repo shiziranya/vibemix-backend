@@ -4,6 +4,7 @@ from __future__ import annotations
 酒柜现在基于 ingredient_family（品类）存储，状态标注同步使用品类 ID 判断。
 """
 import json
+import random
 import uuid
 from collections import defaultdict
 
@@ -37,7 +38,20 @@ class RecommendService:
           {"type": "error", "message": <str>}        — on unexpected failure
         """
         session_id = f"sess_{uuid.uuid4().hex[:12]}"
-        return session_id, self._do_stream_recommend(user_id, prefs, session_id)
+        return session_id, self._do_stream_recommend(user_id, prefs, session_id, exclude_ids=[])
+    
+    def stream_refresh(self, user_id: str, session_id: str):
+        """Refresh (换一杯) within the same session with streaming.
+        
+        Returns generator that yields SSE-ready dicts (same format as stream_recommend).
+        """
+        session_data = self._load_session(session_id)
+        if not session_data:
+            raise SessionNotFound()
+        
+        prefs = session_data["prefs"]
+        exclude_ids = session_data.get("seen_ids", [])
+        return self._do_stream_recommend(user_id, prefs, session_id, exclude_ids=exclude_ids)
 
     def refresh(self, user_id: str, session_id: str) -> dict:
         """Refresh (换一个) within the same session."""
@@ -49,7 +63,7 @@ class RecommendService:
         exclude_ids = session_data.get("seen_ids", [])
         return self._do_recommend(user_id, prefs, session_id, exclude_ids=exclude_ids)
 
-    def _do_stream_recommend(self, user_id: str, prefs: dict, session_id: str):
+    def _do_stream_recommend(self, user_id: str, prefs: dict, session_id: str, exclude_ids: list[int]):
         """Two-phase streaming generator.
 
         Yields structured SSE event dicts in display order:
@@ -68,7 +82,7 @@ class RecommendService:
                 abv_pref=prefs.get("abv_pref", "any"),
                 flavor_tags=prefs.get("flavor_tags", []),
                 recipe_type=prefs.get("recipe_type", "classic"),
-                exclude_ids=[],
+                exclude_ids=exclude_ids,
                 history_ids=history_ids,
                 category=prefs.get("category"),
             )
@@ -76,6 +90,9 @@ class RecommendService:
                 yield {"type": "error", "message": "no_candidates"}
                 return
 
+            # 随机打乱候选列表，增加多样性
+            candidates = self._shuffle_candidates(candidates, strategy="hybrid")
+            
             candidates = self._enrich_candidates_with_ingredients(candidates)
             cabinet_fids = set(user_family_ids)
             candidates = self._tag_ingredient_status_for_llm(candidates, cabinet_fids)
@@ -85,78 +102,125 @@ class RecommendService:
             yield {"type": "error", "message": str(e)}
             return
 
-        # ── Two-phase LLM ────────────────────────────────────────────── #
+        recipe_type = prefs.get("recipe_type", "classic")
+
+        # ── Two-phase LLM or DB-backed (classic) ─────────────────────── #
         sel_raw: dict = {}
         llm_ingredients: list = []
         llm_steps: list = []
         cocktail = None
 
-        for phase, payload in llm_service.stream_two_phase(
-            candidates, prefs, owned_labels=owned_labels
-        ):
-            if phase == "error":
-                yield {"type": "error", "message": str(payload)}
+        if recipe_type == "classic":
+            # ── Classic：LLM 只做选酒+文案，原料+步骤读 DB ───────────── #
+            try:
+                sel_raw = llm_service.select_cocktail(
+                    candidates, prefs, owned_labels=owned_labels
+                )
+            except Exception as e:
+                yield {"type": "error", "message": str(e)}
                 return
 
-            if phase == "selection":
-                sel_raw = payload
-                selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
+            selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
+            cocktail = db.session.get(Cocktail, selected_id)
+            if not cocktail:
+                cocktail = db.session.get(Cocktail, candidates[0]["id"])
 
-                cocktail = db.session.get(Cocktail, selected_id)
-                if not cocktail:
-                    cocktail = db.session.get(Cocktail, candidates[0]["id"])
+            # ── Batch 1: cocktail card + AI text copy ─────────────────── #
+            # 使用 AI 生成的名字覆盖数据库名字（如果有的话）
+            cocktail_data = cocktail.to_summary(translate_enums=True)
+            if sel_raw.get("cocktail_name"):
+                cocktail_data["name"] = str(sel_raw.get("cocktail_name"))
+            if sel_raw.get("cocktail_name_zh"):
+                cocktail_data["name_zh"] = str(sel_raw.get("cocktail_name_zh"))
+            
+            yield {
+                "type": "batch1",
+                "cocktail": cocktail_data,
+                "ai": {
+                    "reason": str(sel_raw.get("reason", "")),
+                    "poetic_copy": str(sel_raw.get("poetic_copy", "")),
+                    "mood_caption": str(sel_raw.get("mood_caption", "")),
+                    "tweaks": None,
+                },
+            }
 
-                # ── Batch 1: cocktail card + AI text copy ─────────────── #
-                yield {
-                    "type": "batch1",
-                    "cocktail": cocktail.to_summary(),
-                    "ai": {
-                        "reason": str(sel_raw.get("reason", "")),
-                        "poetic_copy": str(sel_raw.get("poetic_copy", "")),
-                        "mood_caption": str(sel_raw.get("mood_caption", "")),
-                        "cocktail_name": str(sel_raw.get("cocktail_name", "") or cocktail.name),
-                        "cocktail_name_zh": str(
-                            sel_raw.get("cocktail_name_zh", "")
-                            or cocktail.name_zh
-                            or cocktail.name
-                        ),
-                        "prototype_name": sel_raw.get("prototype_name") or None,
-                        "prototype_name_zh": sel_raw.get("prototype_name_zh") or None,
-                        "tweaks": sel_raw.get("tweaks") or None,
-                    },
-                }
+            # ── Batch 2: 原料直接来自 DB ─────────────────────────────── #
+            selected_candidate = next(
+                (c for c in candidates if c["id"] == cocktail.id), None
+            )
+            base_ings = list(
+                (selected_candidate or {}).get("ingredient_list", [])
+            ) or cocktail_service._get_ingredients(cocktail.id)
+            annotated = self._annotate_ingredients(base_ings, cabinet_family_ids)
+            yield {"type": "batch2", "ingredients": annotated}
 
-            elif phase == "ingredients":
-                llm_ingredients = payload
-                selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
-                selected_candidate = next(
-                    (c for c in candidates if c["id"] == selected_id), None
-                )
-                db_ing_by_name: dict[str, dict] = {
-                    (ing.get("name_zh") or "").strip(): ing
-                    for ing in (selected_candidate or {}).get("ingredient_list", [])
-                    if ing.get("name_zh")
-                }
+            # ── Batch 3: 步骤直接来自 DB ─────────────────────────────── #
+            llm_steps = cocktail.preparation_steps or []
+            yield {"type": "batch3", "steps": llm_steps}
 
-                if llm_ingredients:
-                    base_ings = self._merge_llm_ingredients(llm_ingredients, db_ing_by_name)
-                else:
-                    base_ings = list(db_ing_by_name.values()) or (
-                        cocktail_service._get_ingredients(cocktail.id) if cocktail else []
+        else:
+            # ── Original：完整两阶段 LLM 生成原料+步骤 ───────────────── #
+            for phase, payload in llm_service.stream_two_phase(
+                candidates, prefs, owned_labels=owned_labels
+            ):
+                if phase == "error":
+                    yield {"type": "error", "message": str(payload)}
+                    return
+
+                if phase == "selection":
+                    sel_raw = payload
+                    selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
+
+                    cocktail = db.session.get(Cocktail, selected_id)
+                    if not cocktail:
+                        cocktail = db.session.get(Cocktail, candidates[0]["id"])
+
+                    # 使用 AI 生成的名字覆盖数据库名字（如果有的话）
+                    cocktail_data = cocktail.to_summary(translate_enums=True)
+                    if sel_raw.get("cocktail_name"):
+                        cocktail_data["name"] = str(sel_raw.get("cocktail_name"))
+                    if sel_raw.get("cocktail_name_zh"):
+                        cocktail_data["name_zh"] = str(sel_raw.get("cocktail_name_zh"))
+                    
+                    yield {
+                        "type": "batch1",
+                        "cocktail": cocktail_data,
+                        "ai": {
+                            "reason": str(sel_raw.get("reason", "")),
+                            "poetic_copy": str(sel_raw.get("poetic_copy", "")),
+                            "mood_caption": str(sel_raw.get("mood_caption", "")),
+                            "tweaks": sel_raw.get("tweaks") or None,
+                        },
+                    }
+
+                elif phase == "ingredients":
+                    llm_ingredients = payload
+                    selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
+                    selected_candidate = next(
+                        (c for c in candidates if c["id"] == selected_id), None
                     )
+                    db_ing_by_name: dict[str, dict] = {
+                        (ing.get("name_zh") or "").strip(): ing
+                        for ing in (selected_candidate or {}).get("ingredient_list", [])
+                        if ing.get("name_zh")
+                    }
 
-                annotated = self._annotate_ingredients(base_ings, cabinet_family_ids)
+                    if llm_ingredients:
+                        base_ings = self._merge_llm_ingredients(llm_ingredients, db_ing_by_name)
+                    else:
+                        base_ings = list(db_ing_by_name.values()) or (
+                            cocktail_service._get_ingredients(cocktail.id) if cocktail else []
+                        )
 
-                # ── Batch 2: ingredient list ──────────────────────────── #
-                yield {"type": "batch2", "ingredients": annotated}
+                    annotated = self._annotate_ingredients(base_ings, cabinet_family_ids)
+                    yield {"type": "batch2", "ingredients": annotated}
 
-            elif phase == "steps":
-                llm_steps = payload
-
-                # ── Batch 3: steps ────────────────────────────────────── #
-                yield {"type": "batch3", "steps": llm_steps}
+                elif phase == "steps":
+                    llm_steps = payload
+                    yield {"type": "batch3", "steps": llm_steps}
 
         # ── Save history & session, then signal done ─────────────────── #
+        recommendation_id = None
         try:
             if cocktail:
                 from .llm_service import LLMResult
@@ -173,22 +237,37 @@ class RecommendService:
                     ingredients=llm_ingredients,
                     steps=llm_steps,
                 )
-                self._save_history(user_id, session_id, cocktail.id, prefs, llm_result)
-                self._save_session(session_id, prefs, [cocktail.id])
+                recommendation_id = self._save_history(user_id, session_id, cocktail.id, prefs, llm_result)
+                # 累积 seen_ids: exclude_ids + 当前选中的配方
+                seen_ids = list(set(exclude_ids + [cocktail.id]))
+                self._save_session(session_id, prefs, seen_ids)
         except Exception as e:
-            # History save failure should not block the client
             import logging as _log
             _log.getLogger(__name__).error("Failed to save history: %s", e)
 
-        yield {"type": "done"}
+        yield {"type": "done", "recommendation_id": recommendation_id}
 
     def get_history(self, user_id: str, page: int = 1, per_page: int = 20) -> dict:
+        """获取推荐历史记录（v1.2 新格式）。
+        
+        返回格式与推荐接口一致：
+        - ingredients 在顶层（与 cocktail 同级）
+        - ingredients 包含 status 和 substitute 字段
+        - ai 对象包含 mood_caption 字段
+        """
         uid = uuid.UUID(user_id)
+        
+        # 获取用户酒柜品类 ID（用于计算 status）
+        cabinet_family_ids = self._get_cabinet_family_ids(user_id)
+        
+        # 统计总数
         total = (
             db.session.query(RecommendationHistory)
             .filter_by(user_id=uid)
             .count()
         )
+        
+        # 查询历史记录
         rows = (
             db.session.query(RecommendationHistory)
             .filter_by(user_id=uid)
@@ -197,16 +276,163 @@ class RecommendService:
             .limit(per_page)
             .all()
         )
+        
+        # 构建返回数据（新格式）
+        items = []
+        for r in rows:
+            # 获取 cocktail 信息
+            cocktail = None
+            if r.cocktail_id:
+                cocktail = db.session.get(Cocktail, r.cocktail_id)
+            
+            if not cocktail:
+                continue
+            
+            # 获取原料信息（带 status 和 substitute）
+            ingredients = self._get_history_ingredients(
+                r.cocktail_id, cabinet_family_ids
+            )
+            
+            # 构建 cocktail 对象，使用保存的 AI 生成名字（如果有的话）
+            cocktail_data = cocktail.to_summary(translate_enums=True)
+            if r.cocktail_name:
+                cocktail_data["name"] = r.cocktail_name
+            if r.cocktail_name_zh:
+                cocktail_data["name_zh"] = r.cocktail_name_zh
+            
+            # 构建返回项
+            item = {
+                "id": r.id,
+                "session_id": r.session_id,
+                "created_at": r.created_at.isoformat() if r.created_at else None,
+                "cocktail": cocktail_data,
+                "ingredients": ingredients,
+                "input": {
+                    "mood_tags": r.mood_tags or [],
+                    "abv_pref": r.abv_pref,
+                    "flavor_tags": r.flavor_tags or [],
+                    "recipe_type": r.recipe_type,
+                    "free_text": r.free_text,
+                },
+                "ai": {
+                    "reason": r.ai_reason or "",
+                    "poetic_copy": r.ai_poetic or "",
+                    "mood_caption": r.ai_mood_caption or "",
+                    "tweaks": r.ai_tweaks,
+                },
+            }
+            items.append(item)
+        
         return {
-            "items": [r.to_dict() for r in rows],
+            "items": items,
             "total": total,
             "page": page,
             "per_page": per_page,
+            "total_pages": (total + per_page - 1) // per_page,
         }
 
     # ------------------------------------------------------------------ #
     # Core pipeline
     # ------------------------------------------------------------------ #
+
+    def _shuffle_candidates(
+        self, candidates: list[dict], strategy: str = "hybrid"
+    ) -> list[dict]:
+        """对候选配方进行随机打乱，增加推荐多样性。
+        
+        Args:
+            candidates: 召回的候选配方列表
+            strategy: 随机策略
+                - "full": 完全随机打乱
+                - "hybrid": 混合策略，保留部分优质候选，其余随机
+                - "weighted": 加权随机，优质候选概率更高但不保证
+        
+        Returns:
+            打乱后的候选列表
+        """
+        if not candidates:
+            return candidates
+        
+        if strategy == "full":
+            # 完全随机打乱
+            shuffled = candidates.copy()
+            random.shuffle(shuffled)
+            return shuffled
+        
+        elif strategy == "hybrid":
+            # 混合策略：保留前30%的优质候选（缺料少），其余完全随机
+            # 然后从两组中随机交错选取
+            total = len(candidates)
+            top_k = max(1, total // 3)  # 保留前1/3
+            
+            # 分组
+            top_candidates = candidates[:top_k]
+            rest_candidates = candidates[top_k:]
+            
+            # 各自打乱
+            random.shuffle(top_candidates)
+            random.shuffle(rest_candidates)
+            
+            # 交错合并：60% 概率选优质候选，40% 概率选其他
+            result = []
+            top_idx, rest_idx = 0, 0
+            
+            while top_idx < len(top_candidates) or rest_idx < len(rest_candidates):
+                # 优先选择优质候选，但保持随机性
+                if top_idx < len(top_candidates) and (rest_idx >= len(rest_candidates) or random.random() < 0.6):
+                    result.append(top_candidates[top_idx])
+                    top_idx += 1
+                elif rest_idx < len(rest_candidates):
+                    result.append(rest_candidates[rest_idx])
+                    rest_idx += 1
+            
+            return result
+        
+        elif strategy == "weighted":
+            # 加权随机：根据配方质量（缺料数量）计算权重
+            # 缺料越少，权重越高，但不保证顺序
+            if not candidates:
+                return candidates
+            
+            # 计算权重：将 missing_count 转换为权重（越少越好）
+            max_missing = max((c.get("missing_count") or 0) for c in candidates)
+            weights = []
+            for c in candidates:
+                missing = c.get("missing_count") or 0
+                # 权重 = (max_missing - missing + 1) ^ 2，二次方增加差异
+                weight = (max_missing - missing + 1) ** 2
+                weights.append(weight)
+            
+            # 加权随机采样（不放回）
+            result = []
+            remaining = candidates.copy()
+            remaining_weights = weights.copy()
+            
+            while remaining:
+                # 归一化权重
+                total_weight = sum(remaining_weights)
+                if total_weight == 0:
+                    # 全部权重为0，直接随机选择
+                    selected_idx = random.randint(0, len(remaining) - 1)
+                else:
+                    # 加权随机选择
+                    rand_val = random.uniform(0, total_weight)
+                    cumsum = 0
+                    selected_idx = 0
+                    for i, w in enumerate(remaining_weights):
+                        cumsum += w
+                        if cumsum >= rand_val:
+                            selected_idx = i
+                            break
+                
+                result.append(remaining.pop(selected_idx))
+                remaining_weights.pop(selected_idx)
+            
+            return result
+        
+        else:
+            # 未知策略，返回原列表
+            return candidates
 
     def _do_recommend(
         self,
@@ -233,6 +459,10 @@ class RecommendService:
         if not candidates:
             raise NoCandidatesFound()
 
+        # 2b. 随机打乱候选列表，增加多样性
+        # 使用 hybrid 策略：保留部分优质候选，其余随机，然后交错组合
+        candidates = self._shuffle_candidates(candidates, strategy="hybrid")
+
         # 3. 为候选配方补充原料列表（供 LLM 使用）
         candidates = self._enrich_candidates_with_ingredients(candidates)
 
@@ -243,54 +473,104 @@ class RecommendService:
         # 3c. 获取用户已有原料的中文名称，供 LLM 提出替代建议
         owned_labels = self._get_owned_ingredient_labels(list(user_family_ids))
 
-        # 4. LLM 精选 + 生成步骤
-        llm_result = llm_service.recommend(candidates, prefs, owned_labels=owned_labels)
-
-        # 5. 获取完整配方记录
-        cocktail = db.session.get(Cocktail, llm_result.selected_id)
-        if not cocktail:
-            cocktail = db.session.get(Cocktail, candidates[0]["id"])
-
-        # 6. 构建带状态标注的原料列表
+        recipe_type = prefs.get("recipe_type", "classic")
         cabinet_family_ids = self._get_cabinet_family_ids(user_id)
-        selected_candidate = next(
-            (c for c in candidates if c["id"] == llm_result.selected_id), None
-        )
-        db_ing_by_name: dict[str, dict] = {
-            (ing.get("name_zh") or "").strip(): ing
-            for ing in (selected_candidate or {}).get("ingredient_list", [])
-            if ing.get("name_zh")
-        }
 
-        if llm_result.ingredients:
-            base_ingredients = self._merge_llm_ingredients(llm_result.ingredients, db_ing_by_name)
+        if recipe_type == "classic":
+            # ── Classic 模式：LLM 只负责选酒+文案，原料和步骤直接读 DB ── #
+            # 4. LLM 仅选酒
+            sel_raw = llm_service.select_cocktail(candidates, prefs, owned_labels=owned_labels)
+            selected_id = int(sel_raw.get("selected_id") or candidates[0]["id"])
+
+            # 5. 获取配方记录
+            cocktail = db.session.get(Cocktail, selected_id)
+            if not cocktail:
+                cocktail = db.session.get(Cocktail, candidates[0]["id"])
+
+            # 6. 原料直接来自 DB（候选列表中已含 ingredient_list）
+            selected_candidate = next(
+                (c for c in candidates if c["id"] == cocktail.id), None
+            )
+            base_ingredients = list(
+                (selected_candidate or {}).get("ingredient_list", [])
+            ) or cocktail_service._get_ingredients(cocktail.id)
+            annotated_ingredients = self._annotate_ingredients(base_ingredients, cabinet_family_ids)
+
+            # 7. 步骤直接来自 DB
+            steps = cocktail.preparation_steps or []
+
+            from .llm_service import LLMResult
+            llm_result = LLMResult(
+                selected_id=cocktail.id,
+                reason=str(sel_raw.get("reason", "")),
+                poetic_copy=str(sel_raw.get("poetic_copy", "")),
+                mood_caption=str(sel_raw.get("mood_caption", "")),
+                cocktail_name=str(sel_raw.get("cocktail_name", "") or cocktail.name),
+                cocktail_name_zh=str(
+                    sel_raw.get("cocktail_name_zh", "")
+                    or cocktail.name_zh or cocktail.name
+                ),
+                prototype_name=None,
+                prototype_name_zh=None,
+                tweaks=None,
+                ingredients=[],
+                steps=steps,
+            )
         else:
-            base_ingredients = list(db_ing_by_name.values()) or cocktail_service._get_ingredients(cocktail.id)
+            # ── Original 模式：LLM 两阶段完整生成原料+步骤 ────────────── #
+            # 4. LLM 精选 + 生成步骤
+            llm_result = llm_service.recommend(candidates, prefs, owned_labels=owned_labels)
 
-        annotated_ingredients = self._annotate_ingredients(base_ingredients, cabinet_family_ids)
+            # 5. 获取完整配方记录
+            cocktail = db.session.get(Cocktail, llm_result.selected_id)
+            if not cocktail:
+                cocktail = db.session.get(Cocktail, candidates[0]["id"])
+
+            # 6. 构建带状态标注的原料列表
+            selected_candidate = next(
+                (c for c in candidates if c["id"] == llm_result.selected_id), None
+            )
+            db_ing_by_name: dict[str, dict] = {
+                (ing.get("name_zh") or "").strip(): ing
+                for ing in (selected_candidate or {}).get("ingredient_list", [])
+                if ing.get("name_zh")
+            }
+
+            if llm_result.ingredients:
+                base_ingredients = self._merge_llm_ingredients(llm_result.ingredients, db_ing_by_name)
+            else:
+                base_ingredients = list(db_ing_by_name.values()) or cocktail_service._get_ingredients(cocktail.id)
+
+            annotated_ingredients = self._annotate_ingredients(base_ingredients, cabinet_family_ids)
+            steps = llm_result.steps
 
         # 7. 写入历史
-        self._save_history(user_id, session_id, cocktail.id, prefs, llm_result)
+        recommendation_id = self._save_history(user_id, session_id, cocktail.id, prefs, llm_result)
 
         # 8. 更新 session 缓存
         seen_ids = list(set(exclude_ids + [cocktail.id]))
         self._save_session(session_id, prefs, seen_ids)
 
+        # 构建 cocktail 对象，使用 AI 生成的名字（如果有的话）
+        # translate_enums=True 会在原字段基础上添加 *_zh 后缀的中文字段
+        cocktail_data = cocktail.to_summary(translate_enums=True)
+        if llm_result.cocktail_name:
+            cocktail_data["name"] = llm_result.cocktail_name
+        if llm_result.cocktail_name_zh:
+            cocktail_data["name_zh"] = llm_result.cocktail_name_zh
+        
         return {
             "session_id": session_id,
-            "cocktail": cocktail.to_summary(),
+            "recommendation_id": recommendation_id,
+            "cocktail": cocktail_data,
             "ai": {
                 "reason": llm_result.reason,
                 "poetic_copy": llm_result.poetic_copy,
                 "mood_caption": llm_result.mood_caption,
-                "cocktail_name": llm_result.cocktail_name or cocktail.name,
-                "cocktail_name_zh": llm_result.cocktail_name_zh or cocktail.name_zh or cocktail.name,
-                "prototype_name": llm_result.prototype_name,
-                "prototype_name_zh": llm_result.prototype_name_zh,
                 "tweaks": llm_result.tweaks,
             },
             "ingredients": annotated_ingredients,
-            "steps": llm_result.steps,
+            "steps": steps,
         }
 
     def _merge_llm_ingredients(
@@ -511,7 +791,8 @@ class RecommendService:
         cocktail_id: int,
         prefs: dict,
         llm_result,
-    ) -> None:
+    ) -> int:
+        """保存推荐历史记录，返回推荐ID"""
         record = RecommendationHistory(
             user_id=uuid.UUID(user_id),
             session_id=session_id,
@@ -528,12 +809,14 @@ class RecommendService:
             prototype_name_zh=llm_result.prototype_name_zh,
             ai_reason=llm_result.reason,
             ai_poetic=llm_result.poetic_copy,
+            ai_mood_caption=llm_result.mood_caption or None,
             ai_tweaks=llm_result.tweaks,
             ai_ingredients=llm_result.ingredients or None,
             ai_steps=llm_result.steps or None,
         )
         db.session.add(record)
         db.session.commit()
+        return record.id
 
     # ------------------------------------------------------------------ #
     # Session cache (Redis with DB fallback)
@@ -587,6 +870,69 @@ class RecommendService:
                 "seen_ids": [r[0] for r in seen_ids],
             }
         return None
+
+    def _get_history_ingredients(
+        self, cocktail_id: int, cabinet_family_ids: set[int]
+    ) -> list[dict]:
+        """获取历史记录的原料信息（v1.2 格式：包含 status 和 substitute）。"""
+        rows = db.session.execute(
+            text(
+                """
+                SELECT ci.ingredient_id,
+                       ci.ingredient_family_id,
+                       COALESCE(f.name, i.name)                               AS name,
+                       COALESCE(f.name_zh, f.name, i.name_zh, i.name)        AS name_zh,
+                       ci.measure_raw,
+                       ci.measure_ml,
+                       ci.measure_normalized,
+                       ci.measure_value,
+                       ci.measure_unit,
+                       ci.measure_type,
+                       COALESCE(f.is_easily_available, i.is_easily_available) AS is_easily_available,
+                       COALESCE(f.category, i.category)                       AS category,
+                       COALESCE(f.is_base_spirit, i.is_base_spirit)          AS is_base_spirit
+                FROM cocktail_ingredients ci
+                JOIN ingredients i ON i.id = ci.ingredient_id
+                LEFT JOIN ingredient_family f ON f.id = ci.ingredient_family_id
+                WHERE ci.cocktail_id = :cocktail_id
+                ORDER BY ci.sort_order
+                """
+            ),
+            {"cocktail_id": cocktail_id},
+        ).all()
+        
+        ingredients = []
+        for row in rows:
+            # 计算 status
+            fid = row.ingredient_family_id
+            if fid and fid in cabinet_family_ids:
+                status = "owned"
+                substitute = None
+            elif row.is_easily_available:
+                status = "available"
+                substitute = None
+            else:
+                status = "missing"
+                substitute = cocktail_service._find_substitute(fid, row.category)
+            
+            ingredients.append({
+                "id": row.ingredient_id,
+                "name": row.name,
+                "name_zh": row.name_zh,
+                "category": row.category,
+                "measure_raw": row.measure_raw,
+                "measure_ml": float(row.measure_ml) if row.measure_ml else None,
+                "measure": row.measure_normalized or row.measure_raw or "适量",
+                "measure_value": float(row.measure_value) if row.measure_value else None,
+                "measure_unit": row.measure_unit,
+                "measure_type": row.measure_type,
+                "is_base_spirit": row.is_base_spirit or False,
+                "is_easily_available": row.is_easily_available or False,
+                "status": status,
+                "substitute": substitute,
+            })
+        
+        return ingredients
 
 
 recommend_service = RecommendService()

@@ -24,6 +24,10 @@ class Ingredient(db.Model):
         Boolean, nullable=False, default=False
     )
     base_spirit_family: Mapped[Optional[str]] = mapped_column(String(50))
+    ingredient_family: Mapped[Optional[str]] = mapped_column(String(200))
+    ingredient_family_id: Mapped[Optional[int]] = mapped_column(
+        Integer, db.ForeignKey("ingredient_family.id"), nullable=True
+    )
     abv_approx: Mapped[Optional[Decimal]] = mapped_column(Numeric(5, 2))
     description: Mapped[Optional[str]] = mapped_column(Text)
     description_zh: Mapped[Optional[str]] = mapped_column(Text)

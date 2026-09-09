@@ -36,6 +36,7 @@ class RecommendationHistory(db.Model):
     prototype_name_zh: Mapped[Optional[str]] = mapped_column(String(200))
     ai_reason: Mapped[Optional[str]] = mapped_column(Text)
     ai_poetic: Mapped[Optional[str]] = mapped_column(Text)
+    ai_mood_caption: Mapped[Optional[str]] = mapped_column(Text)
     ai_tweaks: Mapped[Optional[Dict]] = mapped_column(JSONB)
     ai_ingredients: Mapped[Optional[List[Dict]]] = mapped_column(JSONB)
     ai_steps: Mapped[Optional[List[Dict]]] = mapped_column(JSONB)
@@ -60,6 +61,7 @@ class RecommendationHistory(db.Model):
             "prototype_name_zh": self.prototype_name_zh,
             "ai_reason": self.ai_reason,
             "ai_poetic": self.ai_poetic,
+            "ai_mood_caption": self.ai_mood_caption,
             "ai_tweaks": self.ai_tweaks,
             "ai_ingredients": self.ai_ingredients or [],
             "ai_steps": self.ai_steps or [],

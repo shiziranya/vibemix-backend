@@ -24,6 +24,9 @@ def get_redis(app=None):
 
 
 def init_celery(app):
+    # 导入 beat schedule 配置
+    from celerybeat_schedule import beat_schedule
+    
     celery.conf.update(
         broker_url=app.config["CELERY_BROKER_URL"],
         result_backend=app.config["CELERY_RESULT_BACKEND"],
@@ -32,6 +35,8 @@ def init_celery(app):
         accept_content=["json"],
         task_time_limit=60,
         worker_concurrency=4,
+        beat_schedule=beat_schedule,  # 添加定时任务配置
+        timezone='Asia/Shanghai',  # 设置时区
     )
 
     class ContextTask(celery.Task):

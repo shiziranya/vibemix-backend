@@ -21,9 +21,11 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 
+from flask import current_app
 from sqlalchemy import text
 
 from ..extensions import db, get_redis
+from ..utils.image_utils import get_or_generate_thumbnail
 
 # ── Redis key helpers ────────────────────────────────────────────────────────
 
@@ -177,6 +179,22 @@ WHERE rf.family_id NOT IN (SELECT family_id FROM user_families)
 
 
 class MapService:
+    # ── 辅助方法 ─────────────────────────────────────────────────────────────
+    
+    @staticmethod
+    def _get_full_image_url(image_url: str | None) -> str | None:
+        """将相对路径的图片URL转换为完整URL"""
+        if not image_url:
+            return None
+        
+        # 如果已经是完整URL（http/https开头），直接返回
+        if image_url.startswith(('http://', 'https://')):
+            return image_url
+        
+        # 如果是相对路径，拼接BASE_URL
+        base_url = current_app.config.get('BASE_URL', '')
+        return f"{base_url}{image_url}"
+    
     # ── 主题列表 ─────────────────────────────────────────────────────────────
 
     def get_themes(self, user_id: str) -> list[dict]:
@@ -259,8 +277,18 @@ class MapService:
             {"theme_id": theme_id, "user_id": user_id},
         ).fetchall()
 
-        nodes = [
-            {
+        # 构建节点列表，包含缩略图
+        nodes = []
+        for row in node_rows:
+            full_image_url = self._get_full_image_url(row.image_url)
+            # 生成100px缩略图
+            thumbnail_url = None
+            if full_image_url:
+                thumbnail_url = get_or_generate_thumbnail(full_image_url, size=100)
+                if thumbnail_url:
+                    thumbnail_url = self._get_full_image_url(thumbnail_url)
+            
+            nodes.append({
                 "id": row.id,
                 "node_key": row.node_key,
                 "display_name_zh": row.display_name_zh,
@@ -269,7 +297,8 @@ class MapService:
                 "is_boss": row.is_boss,
                 "complexity": row.complexity,
                 "gateway_spirit": row.gateway_spirit,
-                "image_url": row.image_url,
+                "image_url": full_image_url,
+                "thumbnail_url": thumbnail_url,  # 新增缩略图字段
                 "reward_xp": row.reward_xp,
                 "sort_order": row.sort_order,
                 "pos_x": float(row.pos_x) if row.pos_x is not None else None,
@@ -283,9 +312,7 @@ class MapService:
                     "slug": row.unlocks_theme_slug,
                     "color_primary": row.unlocks_theme_color,
                 } if row.unlocks_theme_id else None,
-            }
-            for row in node_rows
-        ]
+            })
 
         # 构建节点状态映射，用于计算边的解锁状态
         node_status_map = {row.id: row.status for row in node_rows}
@@ -344,6 +371,14 @@ class MapService:
                     "status": edge_status,
                 })
 
+        # 为主题生成预览图
+        theme_preview_url = None
+        if theme_row.cover_url:
+            full_cover_url = self._get_full_image_url(theme_row.cover_url)
+            theme_preview = get_or_generate_thumbnail(full_cover_url, size=100)
+            if theme_preview:
+                theme_preview_url = self._get_full_image_url(theme_preview)
+        
         result = {
             "theme": {
                 "id": theme_row.id,
@@ -353,6 +388,7 @@ class MapService:
                 "color_secondary": theme_row.color_secondary,
                 "portal_cocktail_id": theme_row.portal_cocktail_id,
                 "background_url": theme_row.cover_url,
+                "preview_url": theme_preview_url,  # 新增主题预览图
             },
             "nodes": nodes,
             "progression_edges": prereq_edges,
@@ -397,7 +433,7 @@ class MapService:
         if not row:
             return {}
 
-        # 配方食材（含用户是否拥有）
+        # 配方食材（含用户是否拥有及便利店可得状态）
         ingredients = db.session.execute(
             text("""
                 SELECT
@@ -413,6 +449,7 @@ class MapService:
                     igf.id        AS family_id,
                     igf.name_zh   AS family_name_zh,
                     igf.is_base_spirit,
+                    igf.is_easily_available,
                     CASE WHEN uc.family_id IS NOT NULL THEN true ELSE false END AS in_cabinet
                 FROM cocktail_ingredients ci
                 JOIN ingredients i ON i.id = ci.ingredient_id
@@ -492,6 +529,13 @@ class MapService:
         ]
         can_complete = all(s.in_cabinet for s in spirit_rows) if spirit_rows else True
 
+        # 添加枚举字段的中文映射
+        from ..utils.enums import (
+            translate_flavor_tags,
+            translate_mood_tags,
+            translate_glass_type,
+        )
+        
         return {
             "node": {
                 "id": row.id,
@@ -517,15 +561,18 @@ class MapService:
                 "technique_primary": row.technique_primary,
                 "cocktail_archetype": row.cocktail_archetype,
                 # 展示
-                "image_url": row.image_url,
+                "image_url": self._get_full_image_url(row.image_url),
                 "video_url": row.video_url,
                 "glass_type": row.glass_type,
+                "glass_type_zh": translate_glass_type(row.glass_type),
                 # 口味 & 难度
                 "difficulty": row.difficulty,
                 "abv_level": row.abv_level,
                 "complexity": row.complexity_score,
                 "mood_tags": row.mood_tags or [],
+                "mood_tags_zh": translate_mood_tags(row.mood_tags or []),
                 "flavor_tags": row.flavor_tags or [],
+                "flavor_tags_zh": translate_flavor_tags(row.flavor_tags or []),
                 # 基酒 & 关联
                 "gateway_spirit": row.gateway_spirit,
                 "parent_cocktail_slug": row.parent_cocktail_slug,
@@ -549,6 +596,12 @@ class MapService:
                     "family_name_zh": ing.family_name_zh,
                     "is_base_spirit": ing.is_base_spirit or False,
                     "in_cabinet": ing.in_cabinet,
+                    # 新增状态字段，与推荐接口保持一致
+                    "status": (
+                        "owned" if ing.in_cabinet
+                        else "available" if ing.is_easily_available
+                        else "missing"
+                    ),
                 }
                 for ing in ingredients
             ],
@@ -679,11 +732,16 @@ class MapService:
         card_id = uuid_lib.uuid4()
         image_url = self._upload_card_image(str(card_id), card_image, card_ext)
 
+        # 优先使用AI返回的名称（微调模式可能会改名），降级到数据库名称
+        cocktail_name = card_params.get("cocktail_name") or cocktail.name
+
         # 5. 创建卡片记录
         card = ShareCard(
             id=card_id,
             user_id=uuid_lib.UUID(user_id),
             cocktail_id=node.cocktail_id,
+            cocktail_name=cocktail_name,
+            ai_poetic=card_params.get("ai_poetic", ""),
             layout="portrait",
             template_id=card_params.get("template_id"),
             text_overrides=card_params.get("text_overrides") or {},

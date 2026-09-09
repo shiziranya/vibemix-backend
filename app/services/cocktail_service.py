@@ -41,7 +41,7 @@ class CocktailService:
         steps = self._parse_steps(cocktail.instructions_zh or cocktail.instructions_en or "")
 
         result = {
-            **cocktail.to_dict(),
+            **cocktail.to_dict(translate_enums=True),
             "ingredients": ingredients,
             "steps": steps,
         }
@@ -84,7 +84,7 @@ class CocktailService:
             query = query.filter(Cocktail.category == category)
 
         items = query.order_by(Cocktail.name).offset(offset).limit(limit).all()
-        return [c.to_summary() for c in items]
+        return [c.to_summary(translate_enums=True) for c in items]
 
     # ------------------------------------------------------------------ #
     # Internal helpers

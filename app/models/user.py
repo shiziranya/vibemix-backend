@@ -4,7 +4,7 @@ import uuid
 from datetime import datetime, timezone
 from typing import Optional
 
-from sqlalchemy import String, Text, DateTime
+from sqlalchemy import String, Text, DateTime, Integer
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -23,6 +23,11 @@ class User(db.Model):
     password_hash: Mapped[Optional[str]] = mapped_column(String(256), nullable=True)
     nickname: Mapped[Optional[str]] = mapped_column(String(50))
     avatar_url: Mapped[Optional[str]] = mapped_column(Text)
+    
+    # 推荐添加的基酒信息
+    recommended_spirit_family_id: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    recommended_spirit_unlock_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
     )
@@ -39,4 +44,6 @@ class User(db.Model):
             "nickname": self.nickname,
             "avatar_url": self.avatar_url,
             "created_at": self.created_at.isoformat() if self.created_at else None,
+            "recommended_spirit_family_id": self.recommended_spirit_family_id,
+            "recommended_spirit_unlock_count": self.recommended_spirit_unlock_count,
         }

@@ -23,6 +23,7 @@ class IngredientFamily(db.Model):
     is_easily_available: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     abv_approx: Mapped[Optional[Decimal]] = mapped_column(Numeric(5, 2))
     base_spirit_family: Mapped[Optional[str]] = mapped_column(String(40))
+    image_url: Mapped[Optional[str]] = mapped_column(String(255))
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
     )
@@ -44,4 +45,5 @@ class IngredientFamily(db.Model):
             "abv_approx": float(self.abv_approx) if self.abv_approx else None,
             "description": self.description,
             "in_cabinet": in_cabinet,
+            "image_url": self.image_url,
         }

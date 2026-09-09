@@ -10,13 +10,13 @@ from __future__ import annotations
 4. 文字层（text_layers，应用 text_overrides 位置覆盖）
 5. 食材列表（show_ingredients=True 时）
 
-固定输出：portrait 1080×1440 JPEG。
+固定输出：portrait 750×1000 JPEG。
 
 orientation_mode: "auto" 处理逻辑
 ──────────────────────────────────
 检测上传图片宽高比：
   横版 (width > height)：照片占据卡片顶部
-    - 高度 = min(photo_h/photo_w × 1080/1440, landscape.h_max)  （归一化）
+    - 高度 = min(photo_h/photo_w × 750/1000, landscape.h_max)  （归一化）
     - 轻叠层 + 底部渐变淡入背景色
   竖版/方形 (width ≤ height)：照片铺满整张卡片
     - rect = {x:0, y:0, w:1, h:1}
@@ -39,7 +39,7 @@ from .card_templates import FONT_ROLES, DEFAULT_TEMPLATE_ID, get_template_or_def
 
 logger = logging.getLogger(__name__)
 
-CANVAS_W, CANVAS_H = 1080, 1440
+CANVAS_W, CANVAS_H = 750, 1000
 
 # 相对路径基准
 _BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # app/
