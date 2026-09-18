@@ -60,3 +60,6 @@ htmlcov/
 
 # migrations versions (optional - remove if you want to track migrations)
 # migrations/versions/
+
+# Runtime-generated share cards
+app/static/cards/
